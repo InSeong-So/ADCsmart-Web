@@ -1,0 +1,22 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* SNB */
+.contain {background:url(../imgs/layout/bg_contTop.gif) repeat-x 0 0;}
+.contain .snb {position:absolute; left:0px; top:75px; width:205px; color:#000; background-color:red;}
+.contain .snb .title {height:100px; padding-top:40px; background:url(../imgs/layout/bg_snb_title.gif) repeat-x 0 0 #ff0; font-size:13px; text-indent:7px; /*border-top:1px solid #4c4f55;*/ border-right:1px solid #4c4f55; font-weight:bold;}
+.contain .snb .sch {height:46px; line-height:46px; background:url(../imgs/layout/bg_snb_sch.gif) repeat-x 0 0 #ff0; padding-left:7px; border-bottom:1px solid #bebebe;}
+.contain .snb .sch input {width:150px; height:22px; line-height:22px; border:1px solid #b0b0b0; border-right:0 none; padding-left:5px; color:#000; font-family:inherit; background-color:#eaeaea;}
+.contain .snb .snb_tree {font-size:11px;}
+.contain .snb .snb_tree .all a{display:block;}
+.contain .snb .snb_tree .depth1 p {cursor:pointer;}
+.contain .snb .snb_tree > li{line-height:28px; background-color:#d5d5d5; border-right:1px solid #bebebe; border-bottom:1px solid #bebebe;}
+.contain .snb .snb_tree > li > p {/*background:url(../imgs/layout/icon_folder_off.gif) no-repeat 7px center;*/ text-indent:14px; font-weight:bold;}
+.contain .snb .snb_tree > li > p.on {background-color:#c2c2c2;}
+.contain .snb .snb_tree > li .depth1 {border-top:1px solid #e7e7e7; /*display:none;*/}
+.contain .snb .snb_tree > li .depth1 > li{background-color:#dcdcdc; border-top:1px solid #bebebe; border-bottom:1px solid #e7e7e7;}
+.contain .snb .snb_tree > li .depth1 > li > p {background:url(../imgs/layout/icon_folder_off.png) no-repeat 14px center; text-indent:32px; overflow:hidden;}
+.contain .snb .snb_tree > li .depth1 > li > p.on{color:#283a68; font-weight:bold; background:url(../imgs/layout/icon_folder_on.png) no-repeat 14px center #C1C1D0;}
+.wrap .contain .snb .snb_tree > li .depth1 > li > p span {float:left; width:90%;}
+.wrap .contain .snb .snb_tree > li .depth1 > li > p a {float:right; width:2%;  text-indent: 0; padding:7px 4%; line-height: 1;  height:13px; min-width:2%; min-height:13px;}
+

@@ -1,0 +1,34 @@
+
+@charset "utf-8";
+/* CSS Document */
+
+/*Reset*/
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, 
+address, big, cite, code, del, dfn, em, font, img, ins,
+q, s, samp, small, strike, strong, sub, sup, tt, var, b,
+u, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {margin:0; padding:0; border:none 0;}  
+html, body {width:100%; height:100%;}
+/*body {background-color:#eaeaea;} */
+body, input, button, textarea, select {font-size:12px; line-height:1.5em; font-family: arial,sans-serif; }
+/*h1, h2, h3, h4, h5, h6 {font-size:12px; text-align:left;}*/
+img, fieldset, iframe {border:0 none;}
+table, div {border-collapse:collapse;}
+select, textarea {border:1px solid #999; background:#fff;  font-size:12px; vertical-align:middle; padding-left: 4px; }
+textarea {overflow:auto; border: solid 1px #999;}
+select, input, img, li {vertical-align: middle; text-align:left; }
+/*address, caption, cite, code, dfn, em, strong, th, var {font-style:normal; font-weight:normal;}*/
+ul, li, ol {list-style-type: none;}
+legend, caption {display:none;}
+/*hr {border-collapse:collapse; display:none;}*/
+input[type="checkbox"]{width:13px; height:13px; margin:0; padding:0; vertical-align:text-bottom; }
+/*a {outline: none; selector-dummy : expression(this.hideFocus=true);}
+a:link, a:visited {text-decoration:none; color: #000; }
+a:hover {/*text-decoration:underline;*/ cursor:pointer;}*/
+input[type="text"]{line-height:1; width:120px; border: solid 1px #999; height: 16px; }
+input[type="radio"]{margin:0; padding:0; width:13px; height:13px; }
+label {cursor:pointer; margin-left:1px;}
+/*hidden*/
+#accessibility,.skipnavi {position:absolute; width:0px; height:0px; font-size:0px; line-height:0px; overflow:hidden; visibility:hidden; text-indent:-1000px;}
+
+select {height:20 border: solid 1px #999; padding:1px; /*width:130px;*/}

@@ -1,0 +1,19 @@
+# site propertity
+site.isSDSSite = true
+
+# common
+common.isSecurityNoticeShown = true
+
+# dashboard
+# unit: seconds
+systemAdmin.refreshTime = 30
+dashboard.refreshTime = 30
+dashboard.alertTime = 5
+
+# header.notice
+# unit: seconds
+header.noticeTime = 10
+
+# report
+#report.saveDir = /temp/adcms/report/
+

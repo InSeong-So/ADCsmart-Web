@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>	
+	<package name="testUI" namespace="/testUI" extends="json-hierarchy">
+		<action name="testUIMain">
+			<result type="freemarker">/test/testPage/diagramFlowUI/main.ftl</result>
+		</action>
+		<action name="loadtestUI" method="loadtestUI" class="testUIAction">
+			<result type="freemarker">/test/testPage/diagramFlowUI/testUI.ftl</result>
+		</action>
+		<action name="loadSortableInfo" method="loadSortableInfo" class="testUIAction">
+			<result type="jsonHierarchy"/>
+		</action>
+		<action name="setSortableInfo" method="setSortableInfo" class="testUIAction">
+			<result type="jsonHierarchy"/>
+		</action>		
+	</package>
+	
+	<package name="testDiagramUI" namespace="/testDiagramUI" extends="json-hierarchy">
+		<action name="testDiagramUIMain">
+			<result type="freemarker">/test/testPage/diagramFlowUI/main.ftl</result>
+		</action>
+		
+		<action name="loadDiagramFlow" method="loadDiagramFlow" class="testUIAction">
+			<result type="freemarker">/test/testPage/diagramFlowUI/diagramFlow.ftl</result>
+		</action>
+	</package>
+</struts>

@@ -1,0 +1,6539 @@
+/* CSS Document */
+
+.legend1 {	text-align: center; 	padding: 30px 4px 20px 0px;	position:relative;  }
+.legend2 {	text-align: center; 	padding: 30px 4px 20px 0px;	position:relative;  }
+
+/*- F5_basic  --------------------------- */
+.F5_basic {
+	margin: 0px 0px 0px 35px;
+	background-image: url(../../imgs/monitoring/device/F5_basic.gif);
+	height: 183px;
+	width: 881px;
+	font-size: 13px !important;}		
+	
+.F5_basic .txt {
+	color: #042704;
+	font-size: 11px;	
+	font-weight: bold;
+	text-align: center;
+	line-height: 50px;
+	letter-spacing: -1px;	
+/* 	text-shadow: 1px 1px 2px #fff;	*/ }
+
+/*- HDD - */
+.F5_basic .hGreen { 
+	background-image: url(../../imgs/icon/icon_hdd_G.png);}
+
+.F5_basic .hRed { 
+	background-image: url(../../imgs/icon/icon_hdd_R.png);}
+
+.F5_basic .hBlack { 
+	background-image: url(../../imgs/icon/icon_hdd_B.png);}
+
+.F5_basic .hdd01 { 
+	width:124px; 
+	height: 23px; 	
+	display: inline-block;	
+	font-size: 11px;	
+	font-weight: bold;
+	text-align: center;	
+	color : #fff;
+	line-height: 28px;	
+	float:right;			 
+	margin: 22px 40px 0px 0px ;}	
+
+/*- 버전 - */	
+.F5_basic .version { 
+	display: inline-block;	
+	position:relative; 					 
+	margin: 11px 0px 0px 200px ;
+	color: #000;
+	font-weight: bold;
+	font-family: Arial;	
+	height: 18px;	
+	font-size: 10px;}	
+
+/*- CPU - */
+.F5_basic .cGreen { 
+	width:50px; 
+	height: 42px; 
+	background-image: url(../../imgs/icon/icon_cylinder_G.png);	}
+
+.F5_basic .cRed { 
+	width:50px; 
+	height: 42px;  
+	background-image: url(../../imgs/icon/icon_cylinder_R.png);	}
+
+.F5_basic .cBlack { 
+	width:50px; 
+	height: 42px; 
+	background-image: url(../../imgs/icon/icon_cylinder_B.png);	}
+		
+.F5_basic .cpu01 { 
+	display: inline-block;		
+	position:relative;     
+	margin: 0px 0px 0px 80px 	 }	
+
+.F5_basic .cpu02 { 
+	display: inline-block;		
+	position:relative;    
+	margin: 0px 0px 0px -4px  }
+	
+.F5_basic .cpu03 { 
+	display: inline-block;			
+	position:relative;     
+	margin: 0px 0px 0px -4px  }
+		
+.F5_basic .cpu04 { 
+	display: inline-block;			
+	position:relative;     
+	margin: 0px 0px 0px -4px  }	
+
+.F5_basic .cpu05 { 
+	display: inline-block;			
+	position:relative;     
+	margin: 0px 0px 0px -4px  }
+	
+.F5_basic .cpu06 { 
+	display: inline-block;			
+	position:relative;     
+	margin: 0px 0px 0px -4px  }
+	
+.F5_basic .cpu07 { 
+	display: inline-block;			
+	position:relative;     
+	margin: 0px 0px 0px -4px  }
+		
+.F5_basic .cpu08 { 
+	display: inline-block;			
+	position:relative;     
+	margin: 0px 0px 0px -4px  }
+
+/*- 팬 - */
+.F5_basic .fGreen { 
+	background-image: url(../../imgs/icon/icon_fan_G.png);	}
+
+.F5_basic .fRed { 
+	background-image: url(../../imgs/icon/icon_fan_R.png);	}
+
+.F5_basic .fBlack { 	
+	background-image: url(../../imgs/icon/icon_fan_B.png);	}
+
+.F5_basic .fan01 { 
+	width:43px; 
+	height: 42px;		
+	display: inline-block;		
+	float:right;		  			 
+	margin: 16px 15px 0px 0px;  }
+	
+/*- 파워 - */
+.F5_basic .poGreen { 
+	background-image: url(../../imgs/icon/icon_power_G.png);}
+
+.F5_basic .poRed { 
+	background-image: url(../../imgs/icon/icon_power_R.png);}
+
+.F5_basic .poBlack { 
+	background-image: url(../../imgs/icon/icon_power_B.png);}
+	
+.F5_basic .power01 { 
+	width:25px; 
+	height: 25px; 	
+	display: inline-block;	
+	position:relative; 	
+   	vertical-align: top;  	
+	float:right;			 
+	margin: 24px 90px 0px 0px ;}	
+
+.F5_basic .power02 { 
+	width:25px; 
+	height: 25px; 	
+	display: inline-block;	
+	position:relative;  
+   	vertical-align: top;  	
+	float:right;			 
+	margin: 24px -60px 0px 0px ;}	
+	 
+/*- 포트 - */	
+.F5_basic .Red { 	
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_port_R_31x23.gif);	}	
+	
+.F5_basic .Black { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_port_B_31x23.gif);	}	
+
+.F5_basic .Yellow { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_port_Y_31x23.gif);	}	
+	
+.F5_basic .Off { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_port_O_31x23.gif);	}	
+	
+.F5_basic .Green { 	
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_port_G_31x23.gif);	}		
+		
+.F5_basic .port11 { 	
+	display: inline-block;			
+	position:relative;    
+	vertical-align: top;  
+	margin: 15px 0px 0px 90px;  }	
+
+.F5_basic .port12 { 
+	display: inline-block;			
+	position:relative;  
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }		
+	
+.F5_basic .port13 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 15px 0px 0px -6px;  }		
+	
+.F5_basic .port14 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }			
+	
+.F5_basic .port15 { 
+	display: inline-block;			
+	position:relative;      
+   	vertical-align: top;  
+	margin: 15px 0px 0px -6px;  }		
+	
+.F5_basic .port16 { 
+	display: inline-block;			
+	position:relative;       
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }	
+	
+.F5_basic .port17{ 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 15px 0px 0px -6px;  }		
+	
+.F5_basic .port18 { 
+	display: inline-block;			
+	position:relative;    
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }		
+
+.F5_basic .port19 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 15px 0px 0px -6px;  }		
+	
+.F5_basic .port110 { 
+	display: inline-block;			
+	position:relative;    
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }	
+	
+.F5_basic .port111 { 
+	display: inline-block;			
+	position:relative;      
+   	vertical-align: top;  
+	margin: 15px 0px 0px -6px;  }	
+
+.F5_basic .port112 { 
+	display: inline-block;			
+	position:relative;      
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }	
+	
+.F5_basic .port113 { 
+	display: inline-block;			
+	position:relative;      
+   	vertical-align: top;  
+	margin: 15px 0px 0px -6px;  }	
+			
+.F5_basic .port114 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }	
+			
+.F5_basic .port115 { 
+	display: inline-block;			
+	position:relative;      
+   	vertical-align: top;  
+	margin: 15px 0px 0px -6px;  }				
+			
+.F5_basic .port116 { 
+	display: inline-block;			
+	position:relative;       
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }		
+			
+.F5_basic .port117 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 15px 0px 0px -6px;  }		
+	
+.F5_basic .port118 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px; }		
+	
+.F5_basic .port119 { 
+	display: inline-block;			
+	position:relative;      
+   	vertical-align: top;  
+	margin: 15px 0px 0px -6px;  }	
+
+.F5_basic .port120 { 
+	display: inline-block;			
+	position:relative;      
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }	
+	
+.F5_basic .port121 { 
+	display: inline-block;			
+	position:relative;      
+   	vertical-align: top;  
+	margin: 15px 0px 0px -6px;  }	
+			
+.F5_basic .port122 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }	
+			
+.F5_basic .port123 { 
+	display: inline-block;			
+	position:relative;      
+   	vertical-align: top;  
+	margin: 15px 0px 0px -6px;  }				
+			
+.F5_basic .port124 { 
+	display: inline-block;			
+	position:relative;       
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }	
+			
+.F5_basic .port125 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 15px 0px 0px -6px;  }		
+	
+.F5_basic .port126 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }	
+
+.F5_basic .portMGMT { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 15px 0px 0px 168px;  }	
+
+/*- F5_6400  --------------------------- */
+.F5_6400 {
+	margin: 0px 0px 0px 35px;
+	background-image: url(../../imgs/monitoring/device/F5_BIG_IP_6400.gif);
+	height: 183px;
+	width: 881px;
+	font-size: 13px !important;}		
+
+.F5_6400 .txt {
+	color: #042704;
+	font-size: 11px;	
+	font-weight: bold;
+	text-align: center;
+	line-height: 50px;
+	letter-spacing: -1px;	
+/* 	text-shadow: 1px 1px 2px #fff;	*/ }
+
+/*- HDD - */
+.F5_6400 .hGreen { 
+	background-image: url(../../imgs/icon/icon_hdd_G.png);}
+
+.F5_6400 .hRed { 
+	background-image: url(../../imgs/icon/icon_hdd_R.png);}
+
+.F5_6400 .hBlack { 
+	background-image: url(../../imgs/icon/icon_hdd_B.png);}
+
+.F5_6400 .hdd01 { 
+	width:124px; 
+	height: 23px; 	
+	display: inline-block;	
+	font-size: 11px;	
+	font-weight: bold;
+	text-align: center;	
+	color : #fff;
+	line-height: 28px;	
+	float:right;			 
+	margin: 22px 40px 0px 0px ;}
+
+/*- CPU - */
+.F5_6400 .cGreen { 
+	width:50px; 
+	height: 42px; 
+	background-image: url(../../imgs/icon/icon_cylinder_G.png);	}
+
+.F5_6400 .cRed { 
+	width:50px; 
+	height: 42px; 
+	background-image: url(../../imgs/icon/icon_cylinder_R.png);	}
+
+.F5_6400 .cBlack { 
+	width:50px; 
+	height: 42px; 
+	background-image: url(../../imgs/icon/icon_cylinder_B.png);	}
+		
+.F5_6400 .cpu01 { 
+	display: inline-block;		
+	position:relative;     
+	margin: 0px 0px 0px 80px 	 }
+
+.F5_6400 .cpu02 { 
+	display: inline-block;		
+	position:relative;    
+	margin: 0px 0px 0px -4px  }
+
+
+/*- 팬 - */
+.F5_6400 .fGreen { 
+	background-image: url(../../imgs/icon/icon_fan_G.png);	}
+
+.F5_6400 .fRed { 
+	background-image: url(../../imgs/icon/icon_fan_R.png);	}
+
+.F5_6400 .fBlack { 	
+	background-image: url(../../imgs/icon/icon_fan_B.png);	}
+
+.F5_6400 .fan01 { 
+	width:43px; 
+	height: 42px;		
+	display: inline-block;			  			 
+	float:right;		  			 
+	margin: 16px 15px 0px 0px;  }
+	
+/*- 파워 - */
+.F5_6400 .poGreen { 
+	background-image: url(../../imgs/icon/icon_power_G.png);}
+
+.F5_6400 .poRed { 
+	background-image: url(../../imgs/icon/icon_power_R.png);}
+
+.F5_6400 .poBlack { 
+	background-image: url(../../imgs/icon/icon_power_B.png);}
+		
+.F5_6400 .power01 { 
+	width:25px; 
+	height: 25px; 	
+	display: inline-block;	
+	position:relative; 	
+   	vertical-align: top;  	
+	float:right;			 
+	margin: 24px 90px 0px 0px ;}	
+
+.F5_6400 .power02 { 
+	width:25px; 
+	height: 25px; 	
+	display: inline-block;	
+	position:relative;  
+   	vertical-align: top;  	
+	float:right;			 
+	margin: 24px -60px 0px 0px ;}	
+	
+/*- 버전 - */	
+.F5_6400 .version { 
+	display: inline-block;	
+	position:relative; 					 
+	margin: 11px 0px 0px 200px ;
+	color: #000;
+	font-weight: bold;
+	font-family: Arial;
+	height: 18px;		
+	font-size: 10px;}	
+
+/*- 포트 - */	
+.F5_6400 .pCopper1Green { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper1_G_31x23.gif);	}	
+
+.F5_6400 .pCopper1Red { 	
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper1_R_31x23.gif);	}	
+	
+.F5_6400 .pCopper1Black { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper1_B_31x23.gif);	}	
+		
+.F5_6400 .pCopper1Yellow { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper1_Y_31x23.gif);	}		
+	
+.F5_6400 .pCopper1Off { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper1_O_31x23.gif);	}	
+	
+.F5_6400 .pCopper2Green { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper2_G_31x23.gif);	}	
+
+.F5_6400 .pCopper2Red { 	
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper2_R_31x23.gif);	}	
+	
+.F5_6400 .pCopper2Black { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper2_B_31x23.gif);	}	
+	
+.F5_6400 .pCopper2Yellow { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper2_Y_31x23.gif);	}	
+	
+.F5_6400 .pCopper2Off { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper2_O_31x23.gif);	}	
+	
+.F5_6400 .pFiber1Green { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_fiber1_G_31x23.gif);	}	
+
+.F5_6400 .pFiber1Red { 	
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_fiber1_R_31x23.gif);	}	
+	
+.F5_6400 .pFiber1Black { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_fiber1_B_31x23.gif);	}	
+
+.F5_6400 .pFiber1Yellow{ 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_fiber1_Y_31x23.gif);	}	
+	
+.F5_6400 .pFiber1Off { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_fiber1_O_31x23.gif);	}	
+		
+.F5_6400 .port11 { 	
+	display: inline-block;			
+	position:relative;    
+	vertical-align: top;  
+	margin: 15px 0px 0px 118px;  }		
+
+.F5_6400 .port12 { 
+	display: inline-block;			
+	position:relative;  
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }		
+	
+.F5_6400 .port13 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 15px 0px 0px -6px;  }			
+	
+.F5_6400 .port14 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }			
+	
+.F5_6400 .port15 { 
+	display: inline-block;			
+	position:relative;      
+   	vertical-align: top;  
+	margin: 15px 0px 0px -6px;  }		
+	
+.F5_6400 .port16 { 
+	display: inline-block;			
+	position:relative;       
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }	
+	
+.F5_6400 .port17{ 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 15px 0px 0px -6px;  }	
+	
+.F5_6400 .port18 { 
+	display: inline-block;			
+	position:relative;    
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }			
+
+.F5_6400 .port19 { 
+	display: inline-block;			
+	position:relative;    
+   	vertical-align: top;  
+	margin: 15px 0px 0px 23px;  }		
+	
+.F5_6400 .port110 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }		
+	
+.F5_6400 .port111 { 
+	display: inline-block;			
+	position:relative;      
+   	vertical-align: top;  
+	margin: 15px 0px 0px -6px;  }	
+	
+.F5_6400 .port112 { 
+	display: inline-block;			
+	position:relative;      
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }		
+	
+.F5_6400 .port113 { 
+	display: inline-block;			
+	position:relative;      
+   	vertical-align: top;  
+	margin: 15px 0px 0px -6px;  }	
+			
+.F5_6400 .port114 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }	
+			
+.F5_6400 .port115 { 
+	display: inline-block;			
+	position:relative;      
+   	vertical-align: top;  
+	margin: 15px 0px 0px -6px;  }				
+			
+.F5_6400 .port116 { 
+	display: inline-block;			
+	position:relative;       
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }		
+			
+.F5_6400 .port21 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 36px 0px 0px 23px;  }	
+	
+.F5_6400 .port22 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 36px 0px 0px -6px;  }		
+	
+.F5_6400 .port23 { 
+	display: inline-block;			
+	position:relative;      
+	margin: 36px 0px 0px -6px;  }	
+
+.F5_6400 .port24 { 
+	display: inline-block;			
+	position:relative;      
+   	vertical-align: top;  
+	margin: 36px 0px 0px -6px;  }	
+	
+.F5_6400 .port25 { 
+	display: inline-block;			
+	position:relative;      
+   	vertical-align: top;  
+	margin: 36px 0px 0px -6px;  }		
+	
+.F5_6400 .portMGMT { 
+	display: inline-block;			
+	position:relative;      
+   	vertical-align: top; 
+	margin: 15px 0px 0px 81px;  }		
+
+/*- F5_8400  --------------------------- */
+.F5_8400 {
+	margin: 0px 0px 0px 35px;
+	background-image: url(../../imgs/monitoring/device/F5_BIG_IP_8400.gif);
+	height: 183px;
+	width: 881px;
+	font-size: 13px !important ;}		
+	
+.F5_8400 .txt {
+	color: #042704;
+	font-size: 11px;	
+	font-weight: bold;
+	text-align: center;
+	line-height: 50px;
+	letter-spacing: -1px;	
+/* 	text-shadow: 1px 1px 2px #fff;	*/ }
+
+/*- HDD - */
+.F5_8400 .hGreen { 
+	background-image: url(../../imgs/icon/icon_hdd_G.png);}
+
+.F5_8400 .hRed { 
+	background-image: url(../../imgs/icon/icon_hdd_R.png);}
+
+.F5_8400 .hBlack { 
+	background-image: url(../../imgs/icon/icon_hdd_B.png);}
+
+.F5_8400 .hdd01 { 
+	width:124px; 
+	height: 23px; 	
+	display: inline-block;	
+	font-size: 11px;	
+	font-weight: bold;
+	text-align: center;	
+	color : #fff;
+	line-height: 28px;	
+	float:right;			 
+	margin: 22px 40px 0px 0px ;}	
+
+/*- CPU - */
+.F5_8400 .cGreen { 
+	width:50px; 
+	height: 42px; 
+	background-image: url(../../imgs/icon/icon_cylinder_G.png);	}
+
+.F5_8400 .cRed { 
+	width:50px; 
+	height: 42px; 
+	background-image: url(../../imgs/icon/icon_cylinder_R.png);	}
+
+.F5_8400 .cBlack { 
+	width:50px; 
+	height: 42px; 
+	background-image: url(../../imgs/icon/icon_cylinder_B.png);	}
+		
+.F5_8400 .cpu01 { 
+	display: inline-block;		
+	position:relative;     
+	margin: 0px 0px 0px 80px 	 }
+
+.F5_8400 .cpu02 { 
+	display: inline-block;		
+	position:relative;    
+	margin: 0px 0px 0px -4px  }
+	
+.F5_8400 .cpu03 { 
+	display: inline-block;			
+	position:relative;     
+	margin: 0px 0px 0px -4px  }
+		
+.F5_8400 .cpu04 { 
+	display: inline-block;			
+	position:relative;     
+	margin: 0px 0px 0px -4px  }
+
+.F5_8400 .cpu05 { 
+	display: inline-block;			
+	position:relative;     
+	margin: 0px 0px 0px -4px  }
+.F5_8400 .cpu06 { 
+	display: inline-block;			
+	position:relative;     
+	margin: 0px 0px 0px -4px  }
+.F5_8400 .cpu07 { 
+	display: inline-block;			
+	position:relative;     
+	margin: 0px 0px 0px -4px  }	
+	
+.F5_8400 .cpu08 { 
+	display: inline-block;			
+	position:relative;     
+	margin: 0px 0px 0px -4px  }
+
+/*- 팬 - */
+.F5_8400 .fGreen { 
+	background-image: url(../../imgs/icon/icon_fan_G.png);	}
+
+.F5_8400 .fRed { 
+	background-image: url(../../imgs/icon/icon_fan_R.png);	}
+
+.F5_8400 .fBlack { 	
+	background-image: url(../../imgs/icon/icon_fan_B.png);	}
+
+.F5_8400 .fan01 { 
+	width:43px; 
+	height: 42px;		
+	display: inline-block;			  			 
+	float:right;		  			 
+	margin: 16px 15px 0px 0px;  }
+
+	
+/*- 파워 - */
+.F5_8400 .poGreen { 
+	background-image: url(../../imgs/icon/icon_power_G.png);}
+
+.F5_8400 .poRed { 
+	background-image: url(../../imgs/icon/icon_power_R.png);}
+
+.F5_8400 .poBlack { 
+	background-image: url(../../imgs/icon/icon_power_B.png);}
+		
+.F5_8400 .power01 { 
+	width:25px; 
+	height: 25px; 	
+	display: inline-block;	
+	position:relative; 	
+   	vertical-align: top;  	
+	float:right;			 
+	margin: 24px 90px 0px 0px ;}	
+	
+.F5_8400 .power02 { 
+	width:25px; 
+	height: 25px; 	
+	display: inline-block;	
+	position:relative;  
+   	vertical-align: top;  	
+	float:right;			 
+	margin: 24px -60px 0px 0px ;}	
+	
+/*- 버전 - */	
+.F5_8400 .version { 
+	display: inline-block;	
+	position:relative; 					 
+	margin: 11px 0px 0px 200px ;
+	color: #000;
+	font-weight: bold;
+	font-family: Arial;		
+	height: 18px;	
+	font-size: 10px;}	
+	
+/*- 포트 - */	
+.F5_8400 .pCopper1Green { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper1_G_31x23.gif);	}	
+
+.F5_8400 .pCopper1Red { 	
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper1_R_31x23.gif);	}	
+	
+.F5_8400 .pCopper1Black { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper1_B_31x23.gif);	}	
+
+.F5_8400 .pCopper1Yellow { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper1_Y_31x23.gif);	}	
+	
+.F5_8400 .pCopper1Off { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper1_O_31x23.gif);	}	
+	
+.F5_8400 .pCopper2Green { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper2_G_31x23.gif);	}	
+
+.F5_8400 .pCopper2Red { 	
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper2_R_31x23.gif);	}	
+	
+.F5_8400 .pCopper2Black { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper2_B_31x23.gif);	}	
+	
+.F5_8400 .pCopper2Yellow { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper2_Y_31x23.gif);	}
+	
+.F5_8400 .pCopper2Off { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper2_O_31x23.gif);	}	
+	
+.F5_8400 .pFiber1Green { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_fiber1_G_31x23.gif);	}	
+
+.F5_8400 .pFiber1Red { 	
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_fiber1_R_31x23.gif);	}	
+	
+.F5_8400 .pFiber1Black { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_fiber1_B_31x23.gif);	}	
+	
+.F5_8400 .pFiber1Yellow { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_fiber1_Y_31x23.gif);	}
+	
+.F5_8400 .pFiber1Off { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_fiber1_O_31x23.gif);	}	
+
+.F5_8400 .pFiber2Green { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_fiber2_G_31x23.gif);	}	
+
+.F5_8400 .pFiber2Red { 	
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_fiber2_R_31x23.gif);	}	
+	
+.F5_8400 .pFiber2Black { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_fiber2_B_31x23.gif);	}	
+	
+.F5_8400 .pFiber2Yellow { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_fiber2_Y_31x23.gif);	}
+	
+.F5_8400 .pFiber2Off { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_fiber2_O_31x23.gif);	}	
+
+	
+.F5_8400 .port01 { 
+	display: inline-block;	
+	position:relative;     			    
+   	vertical-align: top;  
+	margin: 36px 0px 0px 90px;  }				
+			
+.F5_8400 .port02 { 
+	display: inline-block;		
+	position:relative;     		      
+   	vertical-align: top;  
+	margin: 36px 0px 0px -6px;  }		
+
+		
+.F5_8400 .port11 { 	
+	display: inline-block;			   
+	vertical-align: top;  
+	margin: 15px 0px 0px 23px;  }		
+
+.F5_8400 .port12 { 
+	display: inline-block;			 
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }		
+	
+.F5_8400 .port13 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 15px 0px 0px -6px;  }		
+	
+.F5_8400 .port14 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }				
+	
+.F5_8400 .port15 { 
+	display: inline-block;			
+	position:relative;      
+   	vertical-align: top;  
+	margin: 15px 0px 0px -6px;  }			
+	
+.F5_8400 .port16 { 
+	display: inline-block;			
+	position:relative;       
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }		
+	
+.F5_8400 .port17{ 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 15px 0px 0px -6px;  }	
+	
+.F5_8400 .port18 { 
+	display: inline-block;			
+	position:relative;    
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }		
+
+.F5_8400 .port19 { 
+	display: inline-block;			
+	position:relative;    
+   	vertical-align: top;  
+	margin: 15px 0px 0px -6px;  }		
+	
+.F5_8400 .port110 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }		
+	
+.F5_8400 .port111 { 
+	display: inline-block;			
+	position:relative;      
+   	vertical-align: top;  
+	margin: 15px 0px 0px -6px;  }	
+
+.F5_8400 .port112 { 
+	display: inline-block;			
+	position:relative;      
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }		
+			
+.F5_8400 .port21 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 15px 0px 0px 23px;  }		
+	
+.F5_8400 .port22 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }			
+	
+.F5_8400 .port23 { 
+	display: inline-block;			
+	position:relative;      
+   	vertical-align: top;  
+	margin: 15px 0px 0px -6px;  }	
+
+.F5_8400 .port24 { 
+	display: inline-block;			
+	position:relative;      
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }	
+	
+.F5_8400 .port25 { 
+	display: inline-block;			
+	position:relative;      
+   	vertical-align: top;  
+	margin: 15px 0px 0px -6px;  }		
+			
+.F5_8400 .port26 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }	
+			
+.F5_8400 .port27 { 
+	display: inline-block;			
+	position:relative;      
+   	vertical-align: top;  
+	margin: 15px 0px 0px -6px;  }				
+			
+.F5_8400 .port28 { 
+	display: inline-block;			
+	position:relative;       
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }	
+	
+.F5_8400 .port29 { 
+	display: inline-block;			
+	position:relative;      
+   	vertical-align: top;  
+	margin: 15px 0px 0px -6px;  }				
+			
+.F5_8400 .port210 { 
+	display: inline-block;			
+	position:relative;       
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }	
+			
+.F5_8400 .port211 { 
+	display: inline-block;			
+	position:relative;      
+   	vertical-align: top;  
+	margin: 15px 0px 0px -6px;  }				
+			
+.F5_8400 .port212 { 
+	display: inline-block;			
+	position:relative;       
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }	
+	
+.F5_8400 .portMGMT { 
+	display: inline-block;			
+	position:relative;      
+   	vertical-align: top;  
+	margin: 15px 0px 0px 81px;  }	
+
+/*- F5_8900  --------------------------- */
+.F5_8900 {
+	margin: 0px 0px 0px 35px;
+	background-image: url(../../imgs/monitoring/device/F5_BIG_IP_8900.gif);
+	height: 183px;
+	width: 881px;
+	font-size: 13px !important; }		
+	
+.F5_8900 .txt {
+	color: #042704;
+	font-size: 11px;	
+	font-weight: bold;
+	text-align: center;
+	line-height: 50px;
+	letter-spacing: -1px;	
+/* 	text-shadow: 1px 1px 2px #fff;	*/ }
+
+/*- HDD - */
+.F5_8900 .hGreen { 
+	background-image: url(../../imgs/icon/icon_hdd_G.png);}
+
+.F5_8900 .hRed { 
+	background-image: url(../../imgs/icon/icon_hdd_R.png);}
+
+.F5_8900 .hBlack { 
+	background-image: url(../../imgs/icon/icon_hdd_B.png);}
+
+.F5_8900 .hdd01 { 
+	width:124px; 
+	height: 23px; 	
+	display: inline-block;	
+	font-size: 11px;	
+	font-weight: bold;
+	text-align: center;	
+	color : #fff;
+	line-height: 28px;	
+	float:right;			 
+	margin: 22px 40px 0px 0px ;}
+
+/*- CPU - */
+.F5_8900 .cGreen { 
+	width:50px; 
+	height: 42px; 
+	background-image: url(../../imgs/icon/icon_cylinder_G.png);	}
+
+.F5_8900 .cRed { 
+	width:50px; 
+	height: 42px; 
+	background-image: url(../../imgs/icon/icon_cylinder_R.png);	}
+
+.F5_8900 .cBlack { 
+	width:50px; 
+	height: 42px; 
+	background-image: url(../../imgs/icon/icon_cylinder_B.png);	}
+		
+.F5_8900 .cpu01 { 
+	display: inline-block;		
+	position:relative;     
+	margin: 0px 0px 0px 80px 	 }
+
+.F5_8900 .cpu02 { 
+	display: inline-block;		
+	position:relative;    
+	margin: 0px 0px 0px -4px  }
+	
+.F5_8900 .cpu03 { 
+	display: inline-block;			
+	position:relative;     
+	margin: 0px 0px 0px -4px  }
+		
+.F5_8900 .cpu04 { 
+	display: inline-block;			
+	position:relative;     
+	margin: 0px 0px 0px -4px  }	
+
+.F5_8900 .cpu05 { 
+	display: inline-block;			
+	position:relative;     
+	margin: 0px 0px 0px -4px  }
+.F5_8900 .cpu06 { 
+	display: inline-block;			
+	position:relative;     
+	margin: 0px 0px 0px -4px  }
+.F5_8900 .cpu07 { 
+	display: inline-block;			
+	position:relative;     
+	margin: 0px 0px 0px -4px  }	
+.F5_8900 .cpu08 { 
+	display: inline-block;			
+	position:relative;     
+	margin: 0px 0px 0px -4px  }
+
+/*- 팬 - */
+.F5_8900 .fGreen { 
+	background-image: url(../../imgs/icon/icon_fan_G.png);	}
+
+.F5_8900 .fRed { 
+	background-image: url(../../imgs/icon/icon_fan_R.png);	}
+
+.F5_8900 .fBlack { 	
+	background-image: url(../../imgs/icon/icon_fan_B.png);	}
+
+.F5_8900 .fan01 { 
+	width:43px; 
+	height: 42px;		
+	display: inline-block;			  			 
+	float:right;		  			 
+	margin: 16px 15px 0px 0px;  }
+	
+/*- 파워 - */
+.F5_8900 .poGreen { 
+	background-image: url(../../imgs/icon/icon_power_G.png);}
+
+.F5_8900 .poRed { 
+	background-image: url(../../imgs/icon/icon_power_R.png);}
+
+.F5_8900 .poBlack { 
+	background-image: url(../../imgs/icon/icon_power_B.png);}
+
+.F5_8900 .power01 { 
+	width:25px; 
+	height: 25px; 	
+	display: inline-block;	
+	position:relative; 	
+   	vertical-align: top;  	
+	float:right;			 
+	margin: 24px 90px 0px 0px ;}	
+
+.F5_8900 .power02 { 
+	width:25px; 
+	height: 25px; 	
+	display: inline-block;	
+	position:relative;  
+   	vertical-align: top;  	
+	float:right;			 
+	margin: 24px -60px 0px 0px ;}	
+	
+/*- 버전 - */	
+.F5_8900 .version { 
+	display: inline-block;	
+	position:relative; 					 
+	margin: 11px 0px 0px 200px ;
+	color: #000;
+	font-weight: bold;
+	font-family: Arial;	
+	height: 18px;
+	font-size: 10px;}				
+	
+/*- 포트 - */	
+.F5_8900 .pCopper1Green { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper1_G_31x23.gif);	}	
+
+.F5_8900 .pCopper1Red { 	
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper1_R_31x23.gif);	}	
+	
+.F5_8900 .pCopper1Black { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper1_B_31x23.gif);	}	
+
+.F5_8900 .pCopper1Yellow { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper1_Y_31x23.gif);	}	
+	
+.F5_8900 .pCopper1Off { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper1_O_31x23.gif);	}	
+	
+.F5_8900 .pCopper2Green { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper2_G_31x23.gif);	}	
+
+.F5_8900 .pCopper2Red { 	
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper2_R_31x23.gif);	}	
+	
+.F5_8900 .pCopper2Black { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper2_B_31x23.gif);	}	
+
+.F5_8900 .pCopper2Yellow { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper2_Y_31x23.gif);	}	
+	
+.F5_8900 .pCopper2Off { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper2_O_31x23.gif);	}	
+	
+.F5_8900 .pFiber1Green { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_fiber1_G_31x23.gif);	}	
+
+.F5_8900 .pFiber1Red { 	
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_fiber1_R_31x23.gif);	}	
+	
+.F5_8900 .pFiber1Black { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_fiber1_B_31x23.gif);	}	
+
+.F5_8900 .pFiber1Yellow { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_fiber1_Y_31x23.gif);	}	
+	
+.F5_8900 .pFiber1Off { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_fiber1_O_31x23.gif);	}	
+		
+.F5_8900 .port11 { 	
+	display: inline-block;			
+	position:relative;    
+	vertical-align: top;  
+	margin: 15px 0px 0px 119px;  }	
+
+.F5_8900 .port12 { 
+	display: inline-block;			
+	position:relative;  
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }	
+	
+.F5_8900 .port13 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 15px 0px 0px -6px;  }		
+	
+.F5_8900 .port14 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }			
+	
+.F5_8900 .port15 { 
+	display: inline-block;			
+	position:relative;      
+   	vertical-align: top;  
+	margin: 15px 0px 0px -6px;  }		
+	
+.F5_8900 .port16 { 
+	display: inline-block;			
+	position:relative;       
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }		
+	
+.F5_8900 .port17{ 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 15px 0px 0px -6px;  }		
+	
+.F5_8900 .port18 { 
+	display: inline-block;			
+	position:relative;    
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }		
+
+.F5_8900 .port19 { 
+	display: inline-block;			
+	position:relative;    
+   	vertical-align: top;  
+	margin: 15px 0px 0px -6px;  }			
+	
+.F5_8900 .port110 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }			
+	
+.F5_8900 .port111 { 
+	display: inline-block;			
+	position:relative;      
+   	vertical-align: top;  
+	margin: 15px 0px 0px -6px;  }		
+
+.F5_8900 .port112 { 
+	display: inline-block;			
+	position:relative;      
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }		
+	
+.F5_8900 .port113 { 
+	display: inline-block;			
+	position:relative;      
+   	vertical-align: top;  
+	margin: 15px 0px 0px -6px;  }		
+			
+.F5_8900 .port114 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }		
+			
+.F5_8900 .port115 { 
+	display: inline-block;			
+	position:relative;      
+   	vertical-align: top;  
+	margin: 15px 0px 0px -6px;  }					
+			
+.F5_8900 .port116 { 
+	display: inline-block;			
+	position:relative;       
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }		
+			
+.F5_8900 .port21 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 15px 0px 0px 23px;  }	
+	
+.F5_8900 .port22 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }		
+	
+.F5_8900 .port23 { 
+	display: inline-block;			
+	position:relative;      
+   	vertical-align: top;  
+	margin: 15px 0px 0px -6px;  }	
+
+.F5_8900 .port24 { 
+	display: inline-block;			
+	position:relative;      
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }	
+	
+.F5_8900 .port25 { 
+	display: inline-block;			
+	position:relative;      
+   	vertical-align: top;  
+	margin: 15px 0px 0px -6px;  }		
+			
+.F5_8900 .port26 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }	
+			
+.F5_8900 .port27 { 
+	display: inline-block;			
+	position:relative;      
+   	vertical-align: top;  
+	margin: 15px 0px 0px -6px;  }					
+			
+.F5_8900 .port28 { 
+	display: inline-block;			
+	position:relative;       
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }	
+			
+.F5_8900 .port31 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 15px 0px 0px 23px;  }		
+	
+.F5_8900 .port32 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }
+	
+.F5_8900 .portMGMT { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 15px 0px 0px 81px;  }		
+
+/*- F5_6900  --------------------------- */
+.F5_6900 {
+	margin: 0px 0px 0px 35px;
+	background-image: url(../../imgs/monitoring/device/F5_BIG_IP_6900.gif);
+	height: 183px;
+	width: 881px;
+	font-size: 13px !important; }		
+	
+.F5_6900 .txt {
+	color: #042704;
+	font-size: 11px;	
+	font-weight: bold;
+	text-align: center;
+	line-height: 50px;
+	letter-spacing: -1px;	
+/* 	text-shadow: 1px 1px 2px #fff;	*/ }
+
+/*- HDD - */
+.F5_6900 .hGreen { 
+	background-image: url(../../imgs/icon/icon_hdd_G.png);}
+
+.F5_6900 .hRed { 
+	background-image: url(../../imgs/icon/icon_hdd_R.png);}
+
+.F5_6900 .hBlack { 
+	background-image: url(../../imgs/icon/icon_hdd_B.png);}
+
+.F5_6900 .hdd01 { 
+	width:124px; 
+	height: 23px; 	
+	display: inline-block;	
+	font-size: 11px;	
+	font-weight: bold;
+	text-align: center;	
+	color : #fff;
+	line-height: 28px;	
+	float:right;			 
+	margin: 22px 40px 0px 0px ;}	
+
+/*- CPU - */
+.F5_6900 .cGreen { 
+	width:50px; 
+	height: 42px; 
+	background-image: url(../../imgs/icon/icon_cylinder_G.png);	}
+
+.F5_6900 .cRed { 
+	width:50px; 
+	height: 42px; 
+	background-image: url(../../imgs/icon/icon_cylinder_R.png);	}
+
+.F5_6900 .cBlack { 
+	width:50px; 
+	height: 42px; 
+	background-image: url(../../imgs/icon/icon_cylinder_B.png);	}
+		
+.F5_6900 .cpu01 { 
+	display: inline-block;		
+	position:relative;     
+	margin: 0px 0px 0px 80px 	 }
+
+.F5_6900 .cpu02 { 
+	display: inline-block;		
+	position:relative;    
+	margin: 0px 0px 0px -4px  }
+	
+.F5_6900 .cpu03 { 
+	display: inline-block;			
+	position:relative;     
+	margin: 0px 0px 0px -4px  }
+		
+.F5_6900 .cpu04 { 
+	display: inline-block;			
+	position:relative;     
+	margin: 0px 0px 0px -4px  }
+
+.F5_6900 .cpu05 { 
+	display: inline-block;			
+	position:relative;     
+	margin: 0px 0px 0px -4px  }
+.F5_6900 .cpu06 { 
+	display: inline-block;			
+	position:relative;     
+	margin: 0px 0px 0px -4px  }
+.F5_6900 .cpu07 { 
+	display: inline-block;			
+	position:relative;     
+	margin: 0px 0px 0px -4px  }
+.F5_6900 .cpu08 { 
+	display: inline-block;			
+	position:relative;     
+	margin: 0px 0px 0px -4px  }
+
+/*- 팬 - */
+.F5_6900 .fGreen { 
+	background-image: url(../../imgs/icon/icon_fan_G.png);	}
+
+.F5_6900 .fRed { 
+	background-image: url(../../imgs/icon/icon_fan_R.png);	}
+
+.F5_6900 .fBlack { 	
+	background-image: url(../../imgs/icon/icon_fan_B.png);	}
+
+.F5_6900 .fan01 { 
+	width:43px; 
+	height: 42px;		
+	display: inline-block;			  			 
+	float:right;		  			 
+	margin: 16px 15px 0px 0px;  }
+
+	
+/*- 파워 - */
+.F5_6900 .poGreen { 
+	background-image: url(../../imgs/icon/icon_power_G.png);}
+
+.F5_6900 .poRed { 
+	background-image: url(../../imgs/icon/icon_power_R.png);}
+
+.F5_6900 .poBlack { 
+	background-image: url(../../imgs/icon/icon_power_B.png);}
+			
+.F5_6900 .power01 { 
+	width:25px; 
+	height: 25px; 	
+	display: inline-block;	
+	position:relative; 	
+   	vertical-align: top;  	
+	float:right;			 
+	margin: 24px 90px 0px 0px ;}	
+
+.F5_6900 .power02 { 
+	width:25px; 
+	height: 25px; 	
+	display: inline-block;	
+	position:relative;  
+   	vertical-align: top;  	
+	float:right;			 
+	margin: 24px -60px 0px 0px ;}	
+	
+/*- 버전 - */	
+.F5_6900 .version { 
+	display: inline-block;	
+	position:relative; 					 
+	margin: 11px 0px 0px 200px ;
+	color: #000;
+	font-weight: bold;
+	font-family: Arial;	
+	height: 18px;		
+	font-size: 10px;}		
+	
+/*- 포트 - */	
+.F5_6900 .pCopper1Green { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper1_G_31x23.gif);	}	
+
+.F5_6900 .pCopper1Red { 	
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper1_R_31x23.gif);	}	
+	
+.F5_6900 .pCopper1Black { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper1_B_31x23.gif);	}	
+
+.F5_6900 .pCopper1Yellow { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper1_Y_31x23.gif);	}	
+
+.F5_6900 .pCopper1Off { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper1_O_31x23.gif);	}	
+	
+.F5_6900 .pCopper2Green { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper2_G_31x23.gif);	}	
+
+.F5_6900 .pCopper2Red { 	
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper2_R_31x23.gif);	}	
+	
+.F5_6900 .pCopper2Black { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper2_B_31x23.gif);	}	
+
+.F5_6900 .pCopper2Yellow { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper2_Y_31x23.gif);	}	
+	
+.F5_6900 .pCopper2Off { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper2_O_31x23.gif);	}	
+	
+.F5_6900 .pFiber1Green { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_fiber1_G_31x23.gif);	}	
+
+.F5_6900 .pFiber1Red { 	
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_fiber1_R_31x23.gif);	}	
+	
+.F5_6900 .pFiber1Black { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_fiber1_B_31x23.gif);	}	
+
+.F5_6900 .pFiber1Yellow { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_fiber1_Y_31x23.gif);	}
+
+.F5_6900 .pFiber1Off { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_fiber1_O_31x23.gif);	}	
+		
+.F5_6900 .port11 { 	
+	display: inline-block;			
+	position:relative;    
+	vertical-align: top;  
+	margin: 15px 0px 0px 119px;  }	
+
+.F5_6900 .port12 { 
+	display: inline-block;			
+	position:relative;  
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }	
+	
+.F5_6900 .port13 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 15px 0px 0px -6px;  }	
+	
+.F5_6900 .port14 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }			
+	
+.F5_6900 .port15 { 
+	display: inline-block;			
+	position:relative;      
+   	vertical-align: top;  
+	margin: 15px 0px 0px -6px;  }		
+	
+.F5_6900 .port16 { 
+	display: inline-block;			
+	position:relative;       
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }	
+	
+.F5_6900 .port17{ 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 15px 0px 0px -6px;  }		
+	
+.F5_6900 .port18 { 
+	display: inline-block;			
+	position:relative;    
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }
+
+.F5_6900 .port19 { 
+	display: inline-block;			
+	position:relative;    
+   	vertical-align: top;  
+	margin: 15px 0px 0px -6px;  }		
+	
+.F5_6900 .port110 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }				
+	
+.F5_6900 .port111 { 
+	display: inline-block;			
+	position:relative;      
+   	vertical-align: top;  
+	margin: 15px 0px 0px -6px;  }	
+
+.F5_6900 .port112 { 
+	display: inline-block;			
+	position:relative;      
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }	
+	
+.F5_6900 .port113 { 
+	display: inline-block;			
+	position:relative;      
+   	vertical-align: top;  
+	margin: 15px 0px 0px -6px;  }	
+			
+.F5_6900 .port114 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }	
+			
+.F5_6900 .port115 { 
+	display: inline-block;			
+	position:relative;      
+   	vertical-align: top;  
+	margin: 15px 0px 0px -6px;  }				
+			
+.F5_6900 .port116 { 
+	display: inline-block;			
+	position:relative;       
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }		
+			
+.F5_6900 .port21 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 15px 0px 0px 23px;  }	
+	
+.F5_6900 .port22 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }	
+	
+.F5_6900 .port23 { 
+	display: inline-block;			
+	position:relative;      
+   	vertical-align: top;  
+	margin: 15px 0px 0px -6px;  }	
+
+.F5_6900 .port24 { 
+	display: inline-block;			
+	position:relative;      
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }	
+	
+.F5_6900 .port25 { 
+	display: inline-block;			
+	position:relative;      
+   	vertical-align: top;  
+	margin: 15px 0px 0px -6px;  }	
+			
+.F5_6900 .port26 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }	
+			
+.F5_6900 .port27 { 
+	display: inline-block;			
+	position:relative;      
+   	vertical-align: top;  
+	margin: 15px 0px 0px -6px;  }				
+			
+.F5_6900 .port28 { 
+	display: inline-block;			
+	position:relative;       
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }
+	
+.F5_6900 .portMGMT { 
+	display: inline-block;			
+	position:relative;       
+   	vertical-align: top;  
+	margin: 15px 0px 0px 139px;  }			
+
+/*- F5_3600  --------------------------- */
+.F5_3600 {
+	margin: 0px 0px 0px 35px;
+	background-image: url(../../imgs/monitoring/device/F5_BIG_IP_3600.gif);
+	height: 183px;
+	width: 881px;
+	font-size: 13px !important; }		
+
+
+.F5_3600 .txt {
+	color: #042704;
+	font-size: 11px;	
+	font-weight: bold;
+	text-align: center;
+	line-height: 50px;
+	letter-spacing: -1px; }
+
+/*- HDD - */
+.F5_3600 .hGreen { 
+	background-image: url(../../imgs/icon/icon_hdd_G.png);}
+
+.F5_3600 .hRed { 
+	background-image: url(../../imgs/icon/icon_hdd_R.png);}
+
+.F5_3600 .hBlack { 
+	background-image: url(../../imgs/icon/icon_hdd_B.png);}
+
+.F5_3600 .hdd01 { 
+	width:124px; 
+	height: 23px; 	
+	display: inline-block;	
+	font-size: 11px;	
+	font-weight: bold;
+	text-align: center;	
+	color : #fff;
+	line-height: 28px;	
+	float:right;			 
+	margin: 22px 40px 0px 0px ;}	
+
+/*- CPU - */
+.F5_3600 .cGreen { 
+	width:50px; 
+	height: 42px; 
+	background-image: url(../../imgs/icon/icon_cylinder_G.png);	}
+
+.F5_3600 .cRed { 
+	width:50px; 
+	height: 42px; 
+	background-image: url(../../imgs/icon/icon_cylinder_R.png);	}
+
+.F5_3600 .cBlack { 
+	width:50px; 
+	height: 42px; 
+	background-image: url(../../imgs/icon/icon_cylinder_B.png);	}
+		
+.F5_3600 .cpu01 { 
+	display: inline-block;		
+	position:relative;     
+	margin: 0px 0px 0px 80px 	 }
+
+.F5_3600 .cpu02 { 
+	display: inline-block;		
+	position:relative;    
+	margin: 0px 0px 0px -4px  }
+	
+.F5_3600 .cpu03 { 
+	display: inline-block;			
+	position:relative;     
+	margin: 0px 0px 0px -4px  }
+		
+.F5_3600 .cpu04 { 
+	display: inline-block;			
+	position:relative;     
+	margin: 0px 0px 0px -4px  }	
+
+.F5_3600 .cpu05 { 
+	display: inline-block;			
+	position:relative;     
+	margin: 0px 0px 0px -4px  }
+.F5_3600 .cpu06 { 
+	display: inline-block;			
+	position:relative;     
+	margin: 0px 0px 0px -4px  }
+.F5_3600 .cpu07 { 
+	display: inline-block;			
+	position:relative;     
+	margin: 0px 0px 0px -4px  }		
+.F5_3600 .cpu08 { 
+	display: inline-block;			
+	position:relative;     
+	margin: 0px 0px 0px -4px  }
+
+/*- 팬 - */
+.F5_3600 .fGreen { 
+	background-image: url(../../imgs/icon/icon_fan_G.png);	}
+
+.F5_3600 .fRed { 
+	background-image: url(../../imgs/icon/icon_fan_R.png);	}
+
+.F5_3600 .fBlack { 	
+	background-image: url(../../imgs/icon/icon_fan_B.png);	}
+
+.F5_3600 .fan01 { 
+	width:43px; 
+	height: 42px;		
+	display: inline-block;			  			 
+	float:right;		  			 
+	margin: 16px 15px 0px 0px;  }
+	
+/*- 파워 - */
+.F5_3600 .poGreen { 
+	background-image: url(../../imgs/icon/icon_power_G.png);}
+
+.F5_3600 .poRed { 
+	background-image: url(../../imgs/icon/icon_power_R.png);}
+
+.F5_3600 .poBlack { 
+	background-image: url(../../imgs/icon/icon_power_B.png);}
+			
+.F5_3600 .power01 { 
+	width:25px; 
+	height: 25px; 	
+	display: inline-block;	
+	position:relative; 	
+   	vertical-align: top;  	
+	float:right;			 
+	margin: 24px 90px 0px 0px ;}	
+
+.F5_3600 .power02 { 
+	width:25px; 
+	height: 25px; 	
+	display: inline-block;	
+	position:relative;  
+   	vertical-align: top;  	
+	float:right;			 
+	margin: 24px -60px 0px 0px ;}	
+	
+/*- 버전 - */	
+.F5_3600 .version { 
+	display: inline-block;	
+	position:relative; 					 
+	margin: 11px 0px 0px 200px ;
+	color: #000;
+	font-weight: bold;
+	font-family: Arial;	
+	height: 18px;		
+	font-size: 10px;}	
+
+/*- 포트 - */	
+.F5_3600 .pCopper1Green { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper1_G_31x23.gif);	}	
+
+.F5_3600 .pCopper1Red { 	
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper1_R_31x23.gif);	}	
+	
+.F5_3600 .pCopper1Black { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper1_B_31x23.gif);	}	
+
+.F5_3600 .pCopper1Yellow { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper1_Y_31x23.gif);	}	
+	
+.F5_3600 .pCopper1Off { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper1_O_31x23.gif);	}	
+	
+.F5_3600 .pCopper2Green { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper2_G_31x23.gif);	}	
+
+.F5_3600 .pCopper2Red { 	
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper2_R_31x23.gif);	}	
+	
+.F5_3600 .pCopper2Black { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper2_B_31x23.gif);	}	
+
+.F5_3600 .pCopper2Yellow { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper2_Y_31x23.gif);	}	
+	
+.F5_3600 .pCopper2Off { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper2_O_31x23.gif);	}	
+	
+.F5_3600 .pFiber1Green { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_fiber1_G_31x23.gif);	}	
+
+.F5_3600 .pFiber1Red { 	
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_fiber1_R_31x23.gif);	}	
+	
+.F5_3600 .pFiber1Black { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_fiber1_B_31x23.gif);	}	
+
+.F5_3600 .pFiber1Yellow { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_fiber1_Y_31x23.gif);	}	
+
+.F5_3600 .pFiber1Off { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_fiber1_O_31x23.gif);	}	
+		
+.F5_3600 .port11 { 	
+	display: inline-block;			
+	position:relative;    
+	vertical-align: top;  
+	margin: 15px 0px 0px 206px;  }	
+
+.F5_3600 .port12 { 
+	display: inline-block;			
+	position:relative;  
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }		
+	
+.F5_3600 .port13 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 15px 0px 0px -6px;  }		
+	
+.F5_3600 .port14 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }			
+	
+.F5_3600 .port15 { 
+	display: inline-block;			
+	position:relative;      
+   	vertical-align: top;  
+	margin: 15px 0px 0px 23px;  }		
+	
+.F5_3600 .port16 { 
+	display: inline-block;			
+	position:relative;       
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }	
+	
+.F5_3600 .port17{ 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 15px 0px 0px -6px;  }		
+	
+.F5_3600 .port18 { 
+	display: inline-block;			
+	position:relative;    
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }		
+	
+.F5_3600 .port21 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 36px 0px 0px 23px;  }		
+
+.F5_3600 .port22 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 36px 0px 0px -6px;  }
+	
+.F5_3600 .portMGMT { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 15px 0px 0px 197px;  }			
+
+/*- F5_3900  --------------------------- */
+.F5_3900 {
+	margin: 0px 0px 0px 35px;
+	background-image: url(../../imgs/monitoring/device/F5_BIG_IP_3900.gif);
+	height: 183px;
+	width: 881px;	
+	font-size: 13px !important; }
+
+.F5_3900 .txt {
+	color: #042704;
+	font-size: 11px;	
+	font-weight: bold;
+	text-align: center;
+	line-height: 50px;
+	letter-spacing: -1px;	
+/* 	text-shadow: 1px 1px 2px #fff;	*/ }
+
+/*- HDD - */
+.F5_3900 .hGreen { 
+	background-image: url(../../imgs/icon/icon_hdd_G.png);}
+
+.F5_3900 .hRed { 
+	background-image: url(../../imgs/icon/icon_hdd_R.png);}
+
+.F5_3900 .hBlack { 
+	background-image: url(../../imgs/icon/icon_hdd_B.png);}
+
+.F5_3900 .hdd01 { 
+	width:124px; 
+	height: 23px; 	
+	display: inline-block;	
+	font-size: 11px;	
+	font-weight: bold;
+	text-align: center;	
+	color : #fff;
+	line-height: 28px;	
+	float:right;			 
+	margin: 22px 40px 0px 0px ;}	
+
+/*- CPU - */
+.F5_3900 .cGreen { 
+	width:50px; 
+	height: 42px; 
+	background-image: url(../../imgs/icon/icon_cylinder_G.png);	}
+
+.F5_3900 .cRed { 
+	width:50px; 
+	height: 42px; 
+	background-image: url(../../imgs/icon/icon_cylinder_R.png);	}
+
+.F5_3900 .cBlack { 
+	width:50px; 
+	height: 42px; 
+	background-image: url(../../imgs/icon/icon_cylinder_B.png);	}
+		
+.F5_3900 .cpu01 { 
+	display: inline-block;		
+	position:relative;     
+	margin: 0px 0px 0px 80px ;	 }
+
+.F5_3900 .cpu02 { 
+	display: inline-block;		
+	position:relative;    
+	margin: 0px 0px 0px -4px;  }
+	
+.F5_3900 .cpu03 { 
+	display: inline-block;			
+	position:relative;     
+	margin: 0px 0px 0px -4px;  }
+		
+.F5_3900 .cpu04 { 
+	display: inline-block;			
+	position:relative;     
+	margin: 0px 0px 0px -4px;  }	
+
+.F5_3900 .cpu05 { 
+	display: inline-block;			
+	position:relative;     
+	margin: 0px 0px 0px -4px;  }
+.F5_3900 .cpu06 { 
+	display: inline-block;			
+	position:relative;     
+	margin: 0px 0px 0px -4px;  }
+.F5_3900 .cpu07 { 
+	display: inline-block;			
+	position:relative;     
+	margin: 0px 0px 0px -4px;  }		
+.F5_3900 .cpu08 { 
+	display: inline-block;			
+	position:relative;     
+	margin: 0px 0px 0px -4px;  }
+
+/*- 팬 - */
+.F5_3900 .fGreen { 
+	background-image: url(../../imgs/icon/icon_fan_G.png);	}
+
+.F5_3900 .fRed { 
+	background-image: url(../../imgs/icon/icon_fan_R.png);	}
+
+.F5_3900 .fBlack { 	
+	background-image: url(../../imgs/icon/icon_fan_B.png);	}
+
+.F5_3900 .fan01 { 
+	width:43px; 
+	height: 42px;		
+	display: inline-block;			  			 
+	float:right;		  			 
+	margin: 16px 15px 0px 0px;  }
+	
+/*- 파워 - */
+.F5_3900 .poGreen { 
+	background-image: url(../../imgs/icon/icon_power_G.png);}
+
+.F5_3900 .poRed { 
+	background-image: url(../../imgs/icon/icon_power_R.png);}
+
+.F5_3900 .poBlack { 
+	background-image: url(../../imgs/icon/icon_power_B.png);}
+			
+.F5_3900 .power01 { 
+	width:25px; 
+	height: 25px; 	
+	display: inline-block;	
+	position:relative; 	
+   	vertical-align: top;  	
+	float:right;			 
+	margin: 24px 90px 0px 0px ;}	
+
+.F5_3900 .power02 { 
+	width:25px; 
+	height: 25px; 	
+	display: inline-block;	
+	position:relative;  
+   	vertical-align: top;  	
+	float:right;			 
+	margin: 24px -60px 0px 0px ;}	
+
+/*- 버전 - */	
+.F5_3900 .version { 
+	display: inline-block;	
+	position:relative; 					 
+	margin: 11px 0px 0px 200px ;
+	color: #000;
+	font-weight: bold;
+	font-family: Arial;	
+	height: 18px;		
+	font-size: 10px;}	
+
+/*- 포트 - */	
+.F5_3900 .pCopper1Green { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper1_G_31x23.gif);	}	
+
+.F5_3900 .pCopper1Red { 	
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper1_R_31x23.gif);	}	
+	
+.F5_3900 .pCopper1Black { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper1_B_31x23.gif);	}	
+
+.F5_3900 .pCopper1Yellow { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper1_Y_31x23.gif);	}	
+	
+.F5_3900 .pCopper1Off { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper1_O_31x23.gif);	}	
+	
+.F5_3900 .pCopper2Green { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper2_G_31x23.gif);	}	
+
+.F5_3900 .pCopper2Red { 	
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper2_R_31x23.gif);	}	
+	
+.F5_3900 .pCopper2Black { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper2_B_31x23.gif);	}	
+
+.F5_3900 .pCopper2Yellow { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper2_Y_31x23.gif);	}	
+	
+.F5_3900 .pCopper2Off { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper2_O_31x23.gif);	}	
+	
+.F5_3900 .pFiber1Green { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_fiber1_G_31x23.gif);	}	
+
+.F5_3900 .pFiber1Red { 	
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_fiber1_R_31x23.gif);	}	
+	
+.F5_3900 .pFiber1Black { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_fiber1_B_31x23.gif);	}	
+
+.F5_3900 .pFiber1Yellow { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_fiber1_Y_31x23.gif);	}	
+
+.F5_3900 .pFiber1Off { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_fiber1_O_31x23.gif);	}	
+		
+.F5_3900 .port11 { 	
+	display: inline-block;			
+	position:relative;    
+	vertical-align: top;  
+	margin: 15px 0px 0px 206px;  }	
+
+.F5_3900 .port12 { 
+	display: inline-block;			
+	position:relative;  
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }		
+	
+.F5_3900 .port13 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 15px 0px 0px -6px;  }		
+	
+.F5_3900 .port14 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }			
+	
+.F5_3900 .port15 { 
+	display: inline-block;			
+	position:relative;      
+   	vertical-align: top;  
+	margin: 15px 0px 0px 23px;  }		
+	
+.F5_3900 .port16 { 
+	display: inline-block;			
+	position:relative;       
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }	
+	
+.F5_3900 .port17{ 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 15px 0px 0px -6px;  }		
+	
+.F5_3900 .port18 { 
+	display: inline-block;			
+	position:relative;    
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }		
+	
+.F5_3900 .port21 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 15px 0px 0px 23px;  }		
+	
+.F5_3900 .port22 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }	
+
+.F5_3900 .port23 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 15px 0px 0px -6px;  }		
+	
+.F5_3900 .port24 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }	
+	
+.F5_3900 .portMGMT { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 15px 0px 0px 197px;  }		
+
+/*- F5_2400  --------------------------- */
+.F5_2400 {
+	margin: 0px 0px 0px 35px;
+	background-image: url(../../imgs/monitoring/device/F5_VIPRION_2400.gif);
+	height: 183px;
+	width: 881px;
+	font-size: 13px !important; }	
+	
+.F5_2400 .txt {
+	color: #042704;
+	font-size: 11px;	
+	font-weight: bold;
+	text-align: center;
+	line-height: 50px;
+	letter-spacing: -1px;	
+/* 	text-shadow: 1px 1px 2px #fff;	*/ }
+
+/*- HDD - */
+.F5_2400 .hGreen { 
+	background-image: url(../../imgs/icon/icon_hdd_G.png);}
+
+.F5_2400 .hRed { 
+	background-image: url(../../imgs/icon/icon_hdd_R.png);}
+
+.F5_2400 .hBlack { 
+	background-image: url(../../imgs/icon/icon_hdd_B.png);}
+
+.F5_2400 .hdd01 { 
+	width:124px; 
+	height: 23px; 	
+	display: inline-block;	
+	font-size: 11px;	
+	font-weight: bold;
+	text-align: center;	
+	color : #fff;
+	line-height: 28px;	
+	float:right;			 
+	margin: 22px 40px 0px 0px ;}
+
+/*- CPU - */
+.F5_2400 .cGreen { 
+	width:50px; 
+	height: 42px; 
+	background-image: url(../../imgs/icon/icon_cylinder_G.png);	}
+
+.F5_2400 .cRed { 
+	width:50px; 
+	height: 42px; 
+	background-image: url(../../imgs/icon/icon_cylinder_R.png);	}
+
+.F5_2400 .cBlack { 
+	width:50px; 
+	height: 42px; 
+	background-image: url(../../imgs/icon/icon_cylinder_B.png);	}
+		
+.F5_2400 .cpu01 { 
+	display: inline-block;		
+	position:relative;     
+	margin: 0px 0px 0px 80px; 	 }
+
+.F5_2400 .cpu02 { 
+	display: inline-block;		
+	position:relative;    
+	margin: 0px 0px 0px -4px ; }	
+	
+.F5_2400 .cpu03 { 
+	display: inline-block;			
+	position:relative;     
+	margin: 0px 0px 0px -4px;  }
+		
+.F5_2400 .cpu04 { 
+	display: inline-block;			
+	position:relative;     
+	margin: 0px 0px 0px -4px;  }	
+
+.F5_2400 .cpu05 { 
+	display: inline-block;			
+	position:relative;     
+	margin: 0px 0px 0px -4px;  }
+	
+.F5_2400 .cpu06 { 
+	display: inline-block;			
+	position:relative;     
+	margin: 0px 0px 0px -4px;  }
+	
+.F5_2400 .cpu07 { 
+	display: inline-block;			
+	position:relative;     
+	margin: 0px 0px 0px -4px;  }
+			
+.F5_2400 .cpu08 { 
+	display: inline-block;			
+	position:relative;     
+	margin: 0px 0px 0px -4px;  }
+
+/*- 팬 - */
+.F5_2400 .fGreen {  
+	background-image: url(../../imgs/icon/icon_fan_G.png);	}
+
+.F5_2400 .fRed { 
+	background-image: url(../../imgs/icon/icon_fan_R.png);	}
+
+.F5_2400 .fBlack { 	
+	background-image: url(../../imgs/icon/icon_fan_B.png);	}
+
+.F5_2400 .fan01 { 
+	width:43px; 
+	height: 42px;		
+	display: inline-block;			  			 
+	float:right;		  			 
+	margin: 16px 15px 0px 0px;  }
+	
+/*- 버전 - */	
+.F5_2400 .version { 
+	display: inline-block;	
+	position:relative; 					 
+	margin: 11px 0px 0px 205px ;
+	color: #000;
+	font-weight: bold;
+	font-family: Arial;	
+	height: 18px;		
+	font-size: 10px;}	
+
+	
+/*- 파워 - */
+.F5_2400 .poGreen { 
+	background-image: url(../../imgs/icon/icon_power_G.png);}
+
+.F5_2400 .poRed { 
+	background-image: url(../../imgs/icon/icon_power_R.png);}
+
+.F5_2400 .poBlack { 
+	background-image: url(../../imgs/icon/icon_power_B.png);}
+			
+.F5_2400 .power01 { 
+	width:25px; 
+	height: 25px; 	
+	display: inline-block;	
+	position:relative; 	
+   	vertical-align: top;  	
+	float:right;			 
+	margin: 24px 90px 0px 0px ;}	
+
+.F5_2400 .power02 { 
+	width:25px; 
+	height: 25px; 	
+	display: inline-block;	
+	position:relative;  
+   	vertical-align: top;  	
+	float:right;			 
+	margin: 24px -60px 0px 0px ;}	
+
+/*- 포트 - */	
+.F5_2400 .pCopper1Green { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper1_G_31x23.gif);	}	
+
+.F5_2400 .pCopper1Red { 	
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper1_R_31x23.gif);	}	
+	
+.F5_2400 .pCopper1Black { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper1_B_31x23.gif);	}	
+
+.F5_2400 .pCopper1Yellow { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper1_Y_31x23.gif);	}	
+
+.F5_2400 .pCopper1Off { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper1_O_31x23.gif);	}	
+	
+.F5_2400 .pCopper2Green { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper2_G_31x23.gif);	}	
+
+.F5_2400 .pCopper2Red { 	
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper2_R_31x23.gif);	}	
+	
+.F5_2400 .pCopper2Black { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper2_B_31x23.gif);	}	
+
+.F5_2400 .pCopper2Yellow { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper2_Y_31x23.gif);	}	
+	
+.F5_2400 .pCopper2Off { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper2_O_31x23.gif);	}	
+	
+.F5_2400 .pFiber1Green { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_fiber1_G_31x23.gif);	}	
+
+.F5_2400 .pFiber1Red { 	
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_fiber1_R_31x23.gif);	}	
+	
+.F5_2400 .pFiber1Black { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_fiber1_B_31x23.gif);	}	
+
+.F5_2400 .pFiber1Yellow { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_fiber1_Y_31x23.gif);	}	
+	
+.F5_2400 .pFiber1Off { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_fiber1_O_31x23.gif);	}	
+		
+.F5_2400 .portA11 { 	
+	display: inline-block;			
+	position:relative;    
+	vertical-align: top;  
+	margin: 15px 0px 0px 72px;  }	
+
+.F5_2400 .portA12 { 
+	display: inline-block;			
+	position:relative;  
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }		
+	
+.F5_2400 .portA13 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 15px 0px 0px -6px;  }		
+	
+.F5_2400 .portA14 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }			
+	
+.F5_2400 .portA15 { 
+	display: inline-block;			
+	position:relative;      
+   	vertical-align: top;  
+	margin: 15px 0px 0px -6px;  }		
+	
+.F5_2400 .portA16 { 
+	display: inline-block;			
+	position:relative;       
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }	
+	
+.F5_2400 .portA17{ 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 15px 0px 0px -6px;  }			
+	
+.F5_2400 .portA18 { 
+	display: inline-block;			
+	position:relative;    
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }	
+		
+.F5_2400 .portMGMT1{ 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 15px 0px 0px -6px;  }			
+
+.F5_2400 .portB11 { 	
+	display: inline-block;			
+	position:relative;    
+	vertical-align: top;  
+	margin: 15px 0px 0px 0px;  }	
+
+.F5_2400 .portB12 { 
+	display: inline-block;			
+	position:relative;  
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }	
+	
+.F5_2400 .portB13 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 15px 0px 0px -6px;  }		
+	
+.F5_2400 .portB14 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }			
+	
+.F5_2400 .portB15 { 
+	display: inline-block;			
+	position:relative;      
+   	vertical-align: top;  
+	margin: 15px 0px 0px -6px;  }		
+	
+.F5_2400 .portB16 { 
+	display: inline-block;			
+	position:relative;       
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }		
+	
+.F5_2400 .portB17{ 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 15px 0px 0px -6px;  }			
+	
+.F5_2400 .portB18 { 
+	display: inline-block;			
+	position:relative;    
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }		
+
+.F5_2400 .portMGMT2{ 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 15px 0px 0px -6px;  }	
+	
+.F5_2400 .portC11 { 	
+	display: inline-block;			
+	position:relative;    
+	vertical-align: top;  
+	margin: 15px 0px 0px 0px;  }	
+
+.F5_2400 .portC12 { 
+	display: inline-block;			
+	position:relative;  
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }		
+	
+.F5_2400 .portC13 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 15px 0px 0px -6px;  }		
+	
+.F5_2400 .portC14 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }			
+	
+.F5_2400 .portC15 { 
+	display: inline-block;			
+	position:relative;      
+   	vertical-align: top;  
+	margin: 15px 0px 0px -6px;  }		
+	
+.F5_2400 .portC16 { 
+	display: inline-block;			
+	position:relative;       
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }	
+	
+.F5_2400 .portC17{ 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 15px 0px 0px -6px;  }		
+	
+.F5_2400 .portC18 { 
+	display: inline-block;			
+	position:relative;    
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }
+	
+.F5_2400 .portMGMT3{ 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 15px 0px 0px -6px;  }		
+
+.F5_2400 .portD11 { 	
+	display: inline-block;			
+	position:relative;    
+	vertical-align: top;  
+	margin: 15px 0px 0px 0px;  }
+
+.F5_2400 .portD12 { 
+	display: inline-block;			
+	position:relative;  
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }			
+	
+.F5_2400 .portD13 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 15px 0px 0px -6px;  }		
+	
+.F5_2400 .portD14 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }		
+	
+.F5_2400 .portD15 { 
+	display: inline-block;			
+	position:relative;      
+   	vertical-align: top;  
+	margin: 15px 0px 0px -6px;  }		
+	
+.F5_2400 .portD16 { 
+	display: inline-block;			
+	position:relative;       
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }	
+	
+.F5_2400 .portD17{ 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 15px 0px 0px -6px;  }			
+	
+.F5_2400 .portD18 { 
+	display: inline-block;			
+	position:relative;    
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }	
+	
+.F5_2400 .portMGMT4{ 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 15px 0px 0px -6px;  }		
+
+/*- F5_1600  --------------------------- */
+.F5_1600 {
+	margin: 0px 0px 0px 35px;
+	background-image: url(../../imgs/monitoring/device/F5_BIG_IP_1600.gif);
+	height: 183px;
+	width: 881px;
+	font-size: 13px !important; }	
+	
+.F5_1600 .txt {
+	color: #042704;
+	font-size: 11px;	
+	font-weight: bold;
+	text-align: center;
+	line-height: 50px;
+	letter-spacing: -1px;	
+/* 	text-shadow: 1px 1px 2px #fff;	*/ }
+
+/*- HDD - */
+.F5_1600 .hGreen { 
+	background-image: url(../../imgs/icon/icon_hdd_G.png);}
+
+.F5_1600 .hRed { 
+	background-image: url(../../imgs/icon/icon_hdd_R.png);}
+
+.F5_1600 .hBlack { 
+	background-image: url(../../imgs/icon/icon_hdd_B.png);}
+
+.F5_1600 .hdd01 { 
+	width:124px; 
+	height: 23px; 	
+	display: inline-block;	
+	font-size: 11px;	
+	font-weight: bold;
+	text-align: center;	
+	color : #fff;
+	line-height: 28px;	
+	float:right;			 
+	margin: 22px 40px 0px 0px ;}
+
+/*- CPU - */
+.F5_1600 .cGreen { 
+	width:50px; 
+	height: 42px; 
+	background-image: url(../../imgs/icon/icon_cylinder_G.png);	}
+
+.F5_1600 .cRed { 
+	width:50px; 
+	height: 42px; 
+	background-image: url(../../imgs/icon/icon_cylinder_R.png);	}
+
+.F5_1600 .cBlack { 
+	width:50px; 
+	height: 42px; 
+	background-image: url(../../imgs/icon/icon_cylinder_B.png);	}
+		
+.F5_1600 .cpu01 { 
+	display: inline-block;		
+	position:relative;     
+	margin: 0px 0px 0px 80px 	 }
+
+.F5_1600 .cpu02 { 
+	display: inline-block;		
+	position:relative;    
+	margin: 0px 0px 0px -4px  }
+
+/*- 팬 - */
+.F5_1600 .fGreen { 
+	background-image: url(../../imgs/icon/icon_fan_G.png);	}
+
+.F5_1600 .fRed { 
+	background-image: url(../../imgs/icon/icon_fan_R.png);	}
+
+.F5_1600 .fBlack { 	
+	background-image: url(../../imgs/icon/icon_fan_B.png);	}
+
+.F5_1600 .fan01 { 
+	width:43px; 
+	height: 42px;		
+	display: inline-block;			  			 
+	float:right;		  			 
+	margin: 16px 15px 0px 0px;  }
+	
+/*- 파워 - */
+.F5_1600 .poGreen { 
+	background-image: url(../../imgs/icon/icon_power_G.png);}
+
+.F5_1600 .poRed { 
+	background-image: url(../../imgs/icon/icon_power_R.png);}
+
+.F5_1600 .poBlack { 
+	background-image: url(../../imgs/icon/icon_power_B.png);}
+		
+.F5_1600 .power01 { 
+	width:25px; 
+	height: 25px; 	
+	display: inline-block;	
+	position:relative; 	
+   	vertical-align: top;  	
+	float:right;			 
+	margin: 24px 90px 0px 0px ;}	
+
+.F5_1600 .power02 { 
+	width:25px; 
+	height: 25px; 	
+	display: inline-block;	
+	position:relative;  
+   	vertical-align: top;  	
+	float:right;			 
+	margin: 24px -60px 0px 0px ;}	
+	
+/*- 버전 - */	
+.F5_1600 .version { 
+	display: inline-block;	
+	position:relative; 					 
+	margin: 11px 0px 0px 200px ;
+	color: #000;
+	font-weight: bold;
+	font-family: Arial;
+	height: 18px;		
+	font-size: 10px;}	
+
+/*- 포트 - */		
+.F5_1600 .pCopper1Green { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper1_G_31x23.gif);	}	
+
+.F5_1600 .pCopper1Red { 	
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper1_R_31x23.gif);	}	
+	
+.F5_1600 .pCopper1Black { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper1_B_31x23.gif);	}	
+		
+.F5_1600 .pCopper1Yellow { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper1_Y_31x23.gif);	}		
+	
+.F5_1600 .pCopper1Off { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper1_O_31x23.gif);	}	
+	
+.F5_1600 .pCopper2Green { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper2_G_31x23.gif);	}	
+
+.F5_1600 .pCopper2Red { 	
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper2_R_31x23.gif);	}	
+	
+.F5_1600 .pCopper2Black { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper2_B_31x23.gif);	}	
+	
+.F5_1600 .pCopper2Yellow { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper2_Y_31x23.gif);	}	
+	
+.F5_1600 .pCopper2Off { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper2_O_31x23.gif);	}	
+	
+.F5_1600 .pFiber1Green { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_fiber1_G_31x23.gif);	}	
+
+.F5_1600 .pFiber1Red { 	
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_fiber1_R_31x23.gif);	}	
+	
+.F5_1600 .pFiber1Black { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_fiber1_B_31x23.gif);	}	
+
+.F5_1600 .pFiber1Yellow{ 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_fiber1_Y_31x23.gif);	}	
+	
+.F5_1600 .pFiber1Off { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_fiber1_O_31x23.gif);	}	
+		
+.F5_1600 .port11 { 	
+	display: inline-block;			
+	position:relative;    
+	vertical-align: top;  
+	margin: 15px 0px 0px 176px;  }		
+
+.F5_1600 .port12 { 
+	display: inline-block;			
+	position:relative;  
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }		
+	
+.F5_1600 .port13 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 15px 0px 0px -6px;  }			
+	
+.F5_1600 .port14 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }			
+	
+.F5_1600 .port21 { 
+	display: inline-block;			
+	position:relative;      
+   	vertical-align: top;  
+	margin: 36px 0px 0px 23px;  }		
+	
+.F5_1600 .port22 { 
+	display: inline-block;			
+	position:relative;       
+   	vertical-align: top;  
+	margin: 36px 0px 0px -6px;  }	
+	
+.F5_1600 .portMGMT { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 15px 0px 0px 313px;  }		
+	
+	
+/*- F5_6800  --------------------------- */	
+.F5_6800 {
+	margin: 0px 0px 0px 35px;
+	background-image: url(../../imgs/monitoring/device/F5_BIG_IP_6800.gif);
+	height: 183px;
+	width: 881px;
+	font-size: 13px !important; }	
+
+.F5_6800 .txt {
+	color: #042704;
+	font-size: 11px;	
+	font-weight: bold;
+	text-align: center;
+	line-height: 50px;
+	letter-spacing: -1px;	
+/* 	text-shadow: 1px 1px 2px #fff;	*/ }
+
+/*- HDD - */
+.F5_6800 .hGreen { 
+	background-image: url(../../imgs/icon/icon_hdd_G.png);}
+
+.F5_6800 .hRed { 
+	background-image: url(../../imgs/icon/icon_hdd_R.png);}
+
+.F5_6800 .hBlack { 
+	background-image: url(../../imgs/icon/icon_hdd_B.png);}
+
+.F5_6800 .hdd01 { 
+	width:124px; 
+	height: 23px; 	
+	display: inline-block;	
+	font-size: 11px;	
+	font-weight: bold;
+	text-align: center;	
+	color : #fff;
+	line-height: 28px;	
+	float:right;			 
+	margin: 22px 40px 0px 0px ;}
+
+/*- CPU - */
+.F5_6800 .cGreen { 
+	width:50px; 
+	height: 42px; 
+	background-image: url(../../imgs/icon/icon_cylinder_G.png);	}
+
+.F5_6800 .cRed { 
+	width:50px; 
+	height: 42px; 
+	background-image: url(../../imgs/icon/icon_cylinder_R.png);	}
+
+.F5_6800 .cBlack { 
+	width:50px; 
+	height: 42px; 
+	background-image: url(../../imgs/icon/icon_cylinder_B.png);	}
+		
+.F5_6800 .cpu01 { 
+	display: inline-block;		
+	position:relative;     
+	margin: 0px 0px 0px 80px 	 }
+
+.F5_6800 .cpu02 { 
+	display: inline-block;		
+	position:relative;    
+	margin: 0px 0px 0px -4px  }
+
+/*- 팬 - */
+.F5_6800 .fGreen { 
+	background-image: url(../../imgs/icon/icon_fan_G.png);	}
+
+.F5_6800 .fRed { 
+	background-image: url(../../imgs/icon/icon_fan_R.png);	}
+
+.F5_6800 .fBlack { 	
+	background-image: url(../../imgs/icon/icon_fan_B.png);	}
+
+.F5_6800 .fan01 { 
+	width:43px; 
+	height: 42px;		
+	display: inline-block;			  			 
+	float:right;		  			 
+	margin: 16px 15px 0px 0px;  }
+	
+/*- 파워 - */
+.F5_6800 .poGreen { 
+	background-image: url(../../imgs/icon/icon_power_G.png);}
+
+.F5_6800 .poRed { 
+	background-image: url(../../imgs/icon/icon_power_R.png);}
+
+.F5_6800 .poBlack { 
+	background-image: url(../../imgs/icon/icon_power_B.png);}
+		
+.F5_6800 .power01 { 
+	width:25px; 
+	height: 25px; 	
+	display: inline-block;	
+	position:relative; 	
+   	vertical-align: top;  	
+	float:right;			 
+	margin: 24px 90px 0px 0px ;}	
+
+.F5_6800 .power02 { 
+	width:25px; 
+	height: 25px; 	
+	display: inline-block;	
+	position:relative;  
+   	vertical-align: top;  	
+	float:right;			 
+	margin: 24px -60px 0px 0px ;}	
+	
+/*- 버전 - */	
+.F5_6800 .version { 
+	display: inline-block;	
+	position:relative; 					 
+	margin: 11px 0px 0px 200px ;
+	color: #000;
+	font-weight: bold;
+	font-family: Arial;
+	height: 18px;		
+	font-size: 10px;}	
+
+/*- 포트 - */	
+.F5_6800 .pCopper1Green { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper1_G_31x23.gif);	}	
+
+.F5_6800 .pCopper1Red { 	
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper1_R_31x23.gif);	}	
+	
+.F5_6800 .pCopper1Black { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper1_B_31x23.gif);	}	
+		
+.F5_6800 .pCopper1Yellow { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper1_Y_31x23.gif);	}		
+	
+.F5_6800 .pCopper1Off { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper1_O_31x23.gif);	}	
+	
+.F5_6800 .pCopper2Green { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper2_G_31x23.gif);	}	
+
+.F5_6800 .pCopper2Red { 	
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper2_R_31x23.gif);	}	
+	
+.F5_6800 .pCopper2Black { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper2_B_31x23.gif);	}	
+	
+.F5_6800 .pCopper2Yellow { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper2_Y_31x23.gif);	}	
+	
+.F5_6800 .pCopper2Off { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper2_O_31x23.gif);	}	
+	
+.F5_6800 .pFiber1Green { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_fiber1_G_31x23.gif);	}	
+
+.F5_6800 .pFiber1Red { 	
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_fiber1_R_31x23.gif);	}	
+	
+.F5_6800 .pFiber1Black { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_fiber1_B_31x23.gif);	}	
+
+.F5_6800 .pFiber1Yellow{ 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_fiber1_Y_31x23.gif);	}	
+	
+.F5_6800 .pFiber1Off { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_fiber1_O_31x23.gif);	}	
+		
+.F5_6800 .port11 { 	
+	display: inline-block;			
+	position:relative;    
+	vertical-align: top;  
+	margin: 15px 0px 0px 118px;  }		
+
+.F5_6800 .port12 { 
+	display: inline-block;			
+	position:relative;  
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }		
+	
+.F5_6800 .port13 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 15px 0px 0px -6px;  }			
+	
+.F5_6800 .port14 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }			
+	
+.F5_6800 .port15 { 
+	display: inline-block;			
+	position:relative;      
+   	vertical-align: top;  
+	margin: 15px 0px 0px -6px;  }		
+	
+.F5_6800 .port16 { 
+	display: inline-block;			
+	position:relative;       
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }	
+	
+.F5_6800 .port17{ 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 15px 0px 0px -6px;  }	
+	
+.F5_6800 .port18 { 
+	display: inline-block;			
+	position:relative;    
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }			
+
+.F5_6800 .port19 { 
+	display: inline-block;			
+	position:relative;    
+   	vertical-align: top;  
+	margin: 15px 0px 0px 23px;  }		
+	
+.F5_6800 .port110 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }		
+	
+.F5_6800 .port111 { 
+	display: inline-block;			
+	position:relative;      
+   	vertical-align: top;  
+	margin: 15px 0px 0px -6px;  }	
+	
+.F5_6800 .port112 { 
+	display: inline-block;			
+	position:relative;      
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }		
+	
+.F5_6800 .port113 { 
+	display: inline-block;			
+	position:relative;      
+   	vertical-align: top;  
+	margin: 15px 0px 0px -6px;  }	
+			
+.F5_6800 .port114 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }	
+			
+.F5_6800 .port115 { 
+	display: inline-block;			
+	position:relative;      
+   	vertical-align: top;  
+	margin: 15px 0px 0px -6px;  }				
+			
+.F5_6800 .port116 { 
+	display: inline-block;			
+	position:relative;       
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }		
+			
+.F5_6800 .port21 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 36px 0px 0px 23px;  }	
+	
+.F5_6800 .port22 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 36px 0px 0px -6px;  }		
+	
+.F5_6800 .port23 { 
+	display: inline-block;			
+	position:relative;      
+	margin: 36px 0px 0px -6px;  }	
+
+.F5_6800 .port24 { 
+	display: inline-block;			
+	position:relative;      
+   	vertical-align: top;  
+	margin: 36px 0px 0px -6px;  }		
+	
+.F5_6800 .portMGMT { 
+	display: inline-block;			
+	position:relative;      
+   	vertical-align: top; 
+	margin: 15px 0px 0px 110px;  }		
+
+
+/*- F5_2000 --------------------------- */	
+.F5_2000 {
+	margin: 0px 0px 0px 35px;
+	background-image: url(../../imgs/monitoring/device/F5_BIG_IP_2000.gif);
+	height: 183px;
+	width: 881px;
+	font-size: 13px !important; }	
+
+.F5_2000  .txt {
+	color: #042704;
+	font-size: 11px;	
+	font-weight: bold;
+	text-align: center;
+	line-height: 50px;
+	letter-spacing: -1px;	
+/* 	text-shadow: 1px 1px 2px #fff;	*/ }
+
+/*- HDD - */
+.F5_2000  .hGreen { 
+	background-image: url(../../imgs/icon/icon_hdd_G.png);}
+
+.F5_2000  .hRed { 
+	background-image: url(../../imgs/icon/icon_hdd_R.png);}
+
+.F5_2000  .hBlack { 
+	background-image: url(../../imgs/icon/icon_hdd_B.png);}
+
+.F5_2000  .hdd01 { 
+	width:124px; 
+	height: 23px; 	
+	display: inline-block;	
+	font-size: 11px;	
+	font-weight: bold;
+	text-align: center;	
+	color : #fff;
+	line-height: 28px;	
+	float:right;			 
+	margin: 22px 40px 0px 0px ;}
+
+/*- CPU - */
+.F5_2000   .cGreen { 
+	width:50px; 
+	height: 42px; 
+	background-image: url(../../imgs/icon/icon_cylinder_G.png);	}
+
+.F5_2000   .cRed { 
+	width:50px; 
+	height: 42px; 
+	background-image: url(../../imgs/icon/icon_cylinder_R.png);	}
+
+.F5_2000   .cBlack { 
+	width:50px; 
+	height: 42px; 
+	background-image: url(../../imgs/icon/icon_cylinder_B.png);	}
+		
+.F5_2000   .cpu01 { 
+	display: inline-block;		
+	position:relative;     
+	margin: 0px 0px 0px 80px 	 }
+
+.F5_2000   .cpu02 { 
+	display: inline-block;		
+	position:relative;    
+	margin: 0px 0px 0px -4px  }
+
+.F5_2000   .cpu03 { 
+	display: inline-block;		
+	position:relative;    
+	margin: 0px 0px 0px -4px  }
+
+.F5_2000   .cpu04 { 
+	display: inline-block;		
+	position:relative;    
+	margin: 0px 0px 0px -4px  }
+
+/*- 팬 - */
+.F5_2000   .fGreen { 
+	background-image: url(../../imgs/icon/icon_fan_G.png);	}
+
+.F5_2000   .fRed { 
+	background-image: url(../../imgs/icon/icon_fan_R.png);	}
+
+.F5_2000   .fBlack { 	
+	background-image: url(../../imgs/icon/icon_fan_B.png);	}
+
+.F5_2000  .fan01 { 
+	width:43px; 
+	height: 42px;		
+	display: inline-block;			  			 
+	float:right;		  			 
+	margin: 16px 15px 0px 0px;  }
+	
+/*- 파워 - */
+.F5_2000   .poGreen { 
+	background-image: url(../../imgs/icon/icon_power_G.png);}
+
+.F5_2000   .poRed { 
+	background-image: url(../../imgs/icon/icon_power_R.png);}
+
+.F5_2000   .poBlack { 
+	background-image: url(../../imgs/icon/icon_power_B.png);}
+		
+.F5_2000   .power01 { 
+	width:25px; 
+	height: 25px; 	
+	display: inline-block;	
+	position:relative; 	
+   	vertical-align: top;  	
+	float:right;			 
+	margin: 24px 90px 0px 0px ;}	
+
+.F5_2000   .power02 { 
+	width:25px; 
+	height: 25px; 	
+	display: inline-block;	
+	position:relative;  
+   	vertical-align: top;  	
+	float:right;			 
+	margin: 24px -60px 0px 0px ;}	
+	
+/*- 버전 - */	
+.F5_2000   .version { 
+	display: inline-block;	
+	position:relative; 					 
+	margin: 11px 0px 0px 200px ;
+	color: #000;
+	font-weight: bold;
+	font-family: Arial;
+	height: 18px;		
+	font-size: 10px;}	
+
+/*- 포트 - */	
+.F5_2000   .pCopper1Green { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper1_G_31x23.gif);	}	
+
+.F5_2000   .pCopper1Red { 	
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper1_R_31x23.gif);	}	
+	
+.F5_2000   .pCopper1Black { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper1_B_31x23.gif);	}	
+		
+.F5_2000   .pCopper1Yellow { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper1_Y_31x23.gif);	}		
+	
+.F5_2000   .pCopper1Off { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper1_O_31x23.gif);	}	
+	
+.F5_2000  .pCopper2Green { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper2_G_31x23.gif);	}	
+
+.F5_2000   .pCopper2Red { 	
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper2_R_31x23.gif);	}	
+	
+.F5_2000   .pCopper2Black { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper2_B_31x23.gif);	}	
+	
+.F5_2000   .pCopper2Yellow { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper2_Y_31x23.gif);	}	
+	
+.F5_2000   .pCopper2Off { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper2_O_31x23.gif);	}	
+	
+.F5_2000   .pFiber1Green { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_fiber1_G_31x23.gif);	}	
+
+.F5_2000   .pFiber1Red { 	
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_fiber1_R_31x23.gif);	}	
+	
+.F5_2000   .pFiber1Black { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_fiber1_B_31x23.gif);	}	
+
+.F5_2000   .pFiber1Yellow{ 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_fiber1_Y_31x23.gif);	}	
+	
+.F5_2000   .pFiber1Off { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_fiber1_O_31x23.gif);	}	
+		
+.F5_2000   .port11 { 	
+	display: inline-block;			
+	position:relative;    
+	vertical-align: top;  
+	margin: 15px 0px 0px 118px;  }		
+
+.F5_2000   .port12 { 
+	display: inline-block;			
+	position:relative;  
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }		
+	
+.F5_2000   .port13 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 15px 0px 0px -6px;  }			
+	
+.F5_2000   .port14 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }			
+	
+.F5_2000   .port15 { 
+	display: inline-block;			
+	position:relative;      
+   	vertical-align: top;  
+	margin: 15px 0px 0px -6px;  }		
+	
+.F5_2000   .port16 { 
+	display: inline-block;			
+	position:relative;       
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }	
+	
+.F5_2000   .port17{ 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 15px 0px 0px -6px;  }	
+	
+.F5_2000   .port18 { 
+	display: inline-block;			
+	position:relative;    
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }				
+			
+.F5_2000   .port21 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 36px 0px 0px 23px;  }	
+	
+.F5_2000   .port22 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 36px 0px 0px -6px;  }		
+		
+.F5_2000   .portMGMT { 
+	display: inline-block;			
+	position:relative;      
+   	vertical-align: top; 
+	margin: 15px 0px 0px 313px;  }		
+
+/*- F5_2200 --------------------------- */
+.F5_2200 {
+	margin: 0px 0px 0px 35px;
+	background-image: url(../../imgs/monitoring/device/F5_BIG_IP_2200.gif);
+	height: 183px;
+	width: 881px;
+	font-size: 13px !important; }
+
+.F5_2200  .txt {
+	color: #042704;
+	font-size: 11px;	
+	font-weight: bold;
+	text-align: center;
+	line-height: 50px;
+	letter-spacing: -1px;	
+/* 	text-shadow: 1px 1px 2px #fff;	*/ }
+
+/*- HDD - */
+.F5_2200  .hGreen { 
+	background-image: url(../../imgs/icon/icon_hdd_G.png);}
+
+.F5_2200  .hRed { 
+	background-image: url(../../imgs/icon/icon_hdd_R.png);}
+
+.F5_2200  .hBlack { 
+	background-image: url(../../imgs/icon/icon_hdd_B.png);}
+
+.F5_2200  .hdd01 { 
+	width:124px; 
+	height: 23px; 	
+	display: inline-block;	
+	font-size: 11px;	
+	font-weight: bold;
+	text-align: center;	
+	color : #fff;
+	line-height: 28px;	
+	float:right;			 
+	margin: 22px 40px 0px 0px ;}
+
+/*- CPU - */
+.F5_2200   .cGreen { 
+	width:50px; 
+	height: 42px; 
+	background-image: url(../../imgs/icon/icon_cylinder_G.png);	}
+
+.F5_2200   .cRed { 
+	width:50px; 
+	height: 42px; 
+	background-image: url(../../imgs/icon/icon_cylinder_R.png);	}
+
+.F5_2200   .cBlack { 
+	width:50px; 
+	height: 42px; 
+	background-image: url(../../imgs/icon/icon_cylinder_B.png);	}
+		
+.F5_2200   .cpu01 { 
+	display: inline-block;		
+	position:relative;     
+	margin: 0px 0px 0px 80px 	 }
+
+.F5_2200   .cpu02 { 
+	display: inline-block;		
+	position:relative;    
+	margin: 0px 0px 0px -4px  }
+
+.F5_2200   .cpu03 { 
+	display: inline-block;		
+	position:relative;    
+	margin: 0px 0px 0px -4px  }
+
+.F5_2200   .cpu04 { 
+	display: inline-block;		
+	position:relative;    
+	margin: 0px 0px 0px -4px  }
+
+/*- 팬 - */
+.F5_2200   .fGreen { 
+	background-image: url(../../imgs/icon/icon_fan_G.png);	}
+
+.F5_2200   .fRed { 
+	background-image: url(../../imgs/icon/icon_fan_R.png);	}
+
+.F5_2200   .fBlack { 	
+	background-image: url(../../imgs/icon/icon_fan_B.png);	}
+
+.F5_2200   .fan01 { 
+	width:43px; 
+	height: 42px;		
+	display: inline-block;			  			 
+	float:right;		  			 
+	margin: 16px 15px 0px 0px;  }
+	
+/*- 파워 - */
+.F5_2200   .poGreen { 
+	background-image: url(../../imgs/icon/icon_power_G.png);}
+
+.F5_2200   .poRed { 
+	background-image: url(../../imgs/icon/icon_power_R.png);}
+
+.F5_2200   .poBlack { 
+	background-image: url(../../imgs/icon/icon_power_B.png);}
+		
+.F5_2200   .power01 { 
+	width:25px; 
+	height: 25px; 	
+	display: inline-block;	
+	position:relative; 	
+   	vertical-align: top;  	
+	float:right;			 
+	margin: 24px 90px 0px 0px ;}	
+
+.F5_2200   .power02 { 
+	width:25px; 
+	height: 25px; 	
+	display: inline-block;	
+	position:relative;  
+   	vertical-align: top;  	
+	float:right;			 
+	margin: 24px -60px 0px 0px ;}	
+	
+/*- 버전 - */	
+.F5_2200   .version { 
+	display: inline-block;	
+	position:relative; 					 
+	margin: 11px 0px 0px 200px ;
+	color: #000;
+	font-weight: bold;
+	font-family: Arial;
+	height: 18px;		
+	font-size: 10px;}	
+
+/*- 포트 - */	
+.F5_2200   .pCopper1Green { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper1_G_31x23.gif);	}	
+
+.F5_2200   .pCopper1Red { 	
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper1_R_31x23.gif);	}	
+	
+.F5_2200   .pCopper1Black { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper1_B_31x23.gif);	}	
+		
+.F5_2200   .pCopper1Yellow { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper1_Y_31x23.gif);	}		
+	
+.F5_2200   .pCopper1Off { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper1_O_31x23.gif);	}	
+	
+.F5_2200   .pCopper2Green { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper2_G_31x23.gif);	}	
+
+.F5_2200   .pCopper2Red { 	
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper2_R_31x23.gif);	}	
+	
+.F5_2200   .pCopper2Black { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper2_B_31x23.gif);	}	
+	
+.F5_2200   .pCopper2Yellow { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper2_Y_31x23.gif);	}	
+	
+.F5_2200   .pCopper2Off { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper2_O_31x23.gif);	}	
+	
+.F5_2200   .pFiber1Green { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_fiber1_G_31x23.gif);	}	
+
+.F5_2200   .pFiber1Red { 	
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_fiber1_R_31x23.gif);	}	
+	
+.F5_2200   .pFiber1Black { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_fiber1_B_31x23.gif);	}	
+
+.F5_2200   .pFiber1Yellow{ 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_fiber1_Y_31x23.gif);	}	
+	
+.F5_2200   .pFiber1Off { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_fiber1_O_31x23.gif);	}	
+		
+.F5_2200   .port11 { 	
+	display: inline-block;			
+	position:relative;    
+	vertical-align: top;  
+	margin: 15px 0px 0px 118px;  }		
+
+.F5_2200   .port12 { 
+	display: inline-block;			
+	position:relative;  
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }		
+	
+.F5_2200   .port13 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 15px 0px 0px -6px;  }			
+	
+.F5_2200   .port14 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }			
+	
+.F5_2200   .port15 { 
+	display: inline-block;			
+	position:relative;      
+   	vertical-align: top;  
+	margin: 15px 0px 0px -6px;  }		
+	
+.F5_2200   .port16 { 
+	display: inline-block;			
+	position:relative;       
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }	
+	
+.F5_2200   .port17{ 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 15px 0px 0px -6px;  }	
+	
+.F5_2200   .port18 { 
+	display: inline-block;			
+	position:relative;    
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }				
+			
+.F5_2200   .port21 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 36px 0px 0px 23px;  }	
+	
+.F5_2200   .port22 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 36px 0px 0px -6px;  }		
+		
+.F5_2200    .portMGMT { 
+	display: inline-block;			
+	position:relative;      
+   	vertical-align: top; 
+	margin: 15px 0px 0px 313px;  }		
+	
+
+/*- F5_4000/4200 --------------------------- */
+.F5_4000 {
+	margin: 0px 0px 0px 35px;
+	background-image: url(../../imgs/monitoring/device/F5_BIG_IP_4000.gif);
+	height: 183px;
+	width: 881px;
+	font-size: 13px !important; }	
+
+.F5_4000  .txt {
+	color: #042704;
+	font-size: 11px;	
+	font-weight: bold;
+	text-align: center;
+	line-height: 50px;
+	letter-spacing: -1px;	
+/* 	text-shadow: 1px 1px 2px #fff;	*/ }
+
+/*- HDD - */
+.F5_4000  .hGreen { 
+	background-image: url(../../imgs/icon/icon_hdd_G.png);}
+
+.F5_4000  .hRed { 
+	background-image: url(../../imgs/icon/icon_hdd_R.png);}
+
+.F5_4000  .hBlack { 
+	background-image: url(../../imgs/icon/icon_hdd_B.png);}
+
+.F5_4000  .hdd01 { 
+	width:124px; 
+	height: 23px; 	
+	display: inline-block;	
+	font-size: 11px;	
+	font-weight: bold;
+	text-align: center;	
+	color : #fff;
+	line-height: 28px;	
+	float:right;			 
+	margin: 22px 40px 0px 0px ;}
+
+/*- CPU - */
+.F5_4000   .cGreen { 
+	width:50px; 
+	height: 42px; 
+	background-image: url(../../imgs/icon/icon_cylinder_G.png);	}
+
+.F5_4000  .cRed { 
+	width:50px; 
+	height: 42px; 
+	background-image: url(../../imgs/icon/icon_cylinder_R.png);	}
+
+.F5_4000  .cBlack { 
+	width:50px; 
+	height: 42px; 
+	background-image: url(../../imgs/icon/icon_cylinder_B.png);	}
+		
+.F5_4000  .cpu01 { 
+	display: inline-block;		
+	position:relative;     
+	margin: 0px 0px 0px 80px 	 }
+
+.F5_4000  .cpu02 { 
+	display: inline-block;		
+	position:relative;    
+	margin: 0px 0px 0px -4px  }
+
+.F5_4000  .cpu03 { 
+	display: inline-block;		
+	position:relative;    
+	margin: 0px 0px 0px -4px  }
+
+.F5_4000 .cpu04 { 
+	display: inline-block;		
+	position:relative;    
+	margin: 0px 0px 0px -4px  }
+	
+.F5_4000  .cpu05 { 
+	display: inline-block;		
+	position:relative;    
+	margin: 0px 0px 0px -4px  }
+
+.F5_4000  .cpu06 { 
+	display: inline-block;		
+	position:relative;    
+	margin: 0px 0px 0px -4px  }
+
+.F5_4000  .cpu07 { 
+	display: inline-block;		
+	position:relative;    
+	margin: 0px 0px 0px -4px  }	
+
+.F5_4000  .cpu08 { 
+	display: inline-block;		
+	position:relative;    
+	margin: 0px 0px 0px -4px  }	
+	
+/*- 팬 - */
+.F5_4000  .fGreen { 
+	background-image: url(../../imgs/icon/icon_fan_G.png);	}
+
+.F5_4000  .fRed { 
+	background-image: url(../../imgs/icon/icon_fan_R.png);	}
+
+.F5_4000  .fBlack { 	
+	background-image: url(../../imgs/icon/icon_fan_B.png);	}
+
+.F5_4000  .fan01 { 
+	width:43px; 
+	height: 42px;		
+	display: inline-block;			  			 
+	float:right;		  			 
+	margin: 16px 15px 0px 0px;  }
+	
+/*- 파워 - */
+.F5_4000  .poGreen { 
+	background-image: url(../../imgs/icon/icon_power_G.png);}
+
+.F5_4000  .poRed { 
+	background-image: url(../../imgs/icon/icon_power_R.png);}
+
+.F5_4000  .poBlack { 
+	background-image: url(../../imgs/icon/icon_power_B.png);}
+		
+.F5_4000   .power01 { 
+	width:25px; 
+	height: 25px; 	
+	display: inline-block;	
+	position:relative; 	
+   	vertical-align: top;  	
+	float:right;			 
+	margin: 24px 90px 0px 0px ;}	
+
+.F5_4000   .power02 { 
+	width:25px; 
+	height: 25px; 	
+	display: inline-block;	
+	position:relative;  
+   	vertical-align: top;  	
+	float:right;			 
+	margin: 24px -60px 0px 0px ;}	
+	
+/*- 버전 - */	
+.F5_4000   .version { 
+	display: inline-block;	
+	position:relative; 					 
+	margin: 11px 0px 0px 200px ;
+	color: #000;
+	font-weight: bold;
+	font-family: Arial;
+	height: 18px;		
+	font-size: 10px;}	
+
+/*- 포트 - */	
+.F5_4000   .pCopper1Green { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper1_G_31x23.gif);	}	
+
+.F5_4000  .pCopper1Red { 	
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper1_R_31x23.gif);	}	
+	
+.F5_4000  .pCopper1Black { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper1_B_31x23.gif);	}	
+		
+.F5_4000  .pCopper1Yellow { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper1_Y_31x23.gif);	}		
+	
+.F5_4000   .pCopper1Off { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper1_O_31x23.gif);	}	
+	
+.F5_4000   .pCopper2Green { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper2_G_31x23.gif);	}	
+
+.F5_4000   .pCopper2Red { 	
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper2_R_31x23.gif);	}	
+	
+.F5_4000  .pCopper2Black { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper2_B_31x23.gif);	}	
+	
+.F5_4000   .pCopper2Yellow { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper2_Y_31x23.gif);	}	
+	
+.F5_4000   .pCopper2Off { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper2_O_31x23.gif);	}	
+	
+.F5_4000   .pFiber1Green { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_fiber1_G_31x23.gif);	}	
+
+.F5_4000   .pFiber1Red { 	
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_fiber1_R_31x23.gif);	}	
+	
+.F5_4000   .pFiber1Black { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_fiber1_B_31x23.gif);	}	
+
+.F5_4000  .pFiber1Yellow{ 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_fiber1_Y_31x23.gif);	}	
+	
+.F5_4000  .pFiber1Off { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_fiber1_O_31x23.gif);	}	
+		
+.F5_4000  .port11 { 	
+	display: inline-block;			
+	position:relative;    
+	vertical-align: top;  
+	margin: 15px 0px 0px 118px;  }		
+
+.F5_4000  .port12 { 
+	display: inline-block;			
+	position:relative;  
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }		
+	
+.F5_4000  .port13 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 15px 0px 0px -6px;  }			
+	
+.F5_4000  .port14 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }			
+	
+.F5_4000  .port15 { 
+	display: inline-block;			
+	position:relative;      
+   	vertical-align: top;  
+	margin: 15px 0px 0px -6px;  }		
+	
+.F5_4000   .port16 { 
+	display: inline-block;			
+	position:relative;       
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }	
+	
+.F5_4000   .port17{ 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 15px 0px 0px -6px;  }	
+	
+.F5_4000  .port18 { 
+	display: inline-block;			
+	position:relative;    
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }				
+			
+.F5_4000  .port21 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 36px 0px 0px 23px;  }	
+	
+.F5_4000   .port22 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 36px 0px 0px -6px;  }		
+		
+.F5_4000    .portMGMT { 
+	display: inline-block;			
+	position:relative;      
+   	vertical-align: top; 
+	margin: 15px 0px 0px 313px;  }		
+
+/*- F5_4200 --------------------------- */	
+.F5_4200 {
+	margin: 0px 0px 0px 35px;
+	background-image: url(../../imgs/monitoring/device/F5_BIG_IP_4200.gif);
+	height: 183px;
+	width: 881px;
+	font-size: 13px !important; }
+
+.F5_4200  .txt {
+	color: #042704;
+	font-size: 11px;	
+	font-weight: bold;
+	text-align: center;
+	line-height: 50px;
+	letter-spacing: -1px;	
+/* 	text-shadow: 1px 1px 2px #fff;	*/ }
+
+/*- HDD - */
+.F5_4200  .hGreen { 
+	background-image: url(../../imgs/icon/icon_hdd_G.png);}
+
+.F5_4200  .hRed { 
+	background-image: url(../../imgs/icon/icon_hdd_R.png);}
+
+.F5_4200  .hBlack { 
+	background-image: url(../../imgs/icon/icon_hdd_B.png);}
+
+.F5_4200  .hdd01 { 
+	width:124px; 
+	height: 23px; 	
+	display: inline-block;	
+	font-size: 11px;	
+	font-weight: bold;
+	text-align: center;	
+	color : #fff;
+	line-height: 28px;	
+	float:right;			 
+	margin: 22px 40px 0px 0px ;}
+
+/*- CPU - */
+.F5_4200   .cGreen { 
+	width:50px; 
+	height: 42px; 
+	background-image: url(../../imgs/icon/icon_cylinder_G.png);	}
+
+.F5_4200   .cRed { 
+	width:50px; 
+	height: 42px; 
+	background-image: url(../../imgs/icon/icon_cylinder_R.png);	}
+
+.F5_4200   .cBlack { 
+	width:50px; 
+	height: 42px; 
+	background-image: url(../../imgs/icon/icon_cylinder_B.png);	}
+		
+.F5_4200   .cpu01 { 
+	display: inline-block;		
+	position:relative;     
+	margin: 0px 0px 0px 80px 	 }
+
+.F5_4200   .cpu02 { 
+	display: inline-block;		
+	position:relative;    
+	margin: 0px 0px 0px -4px  }
+
+.F5_4200   .cpu03 { 
+	display: inline-block;		
+	position:relative;    
+	margin: 0px 0px 0px -4px  }
+
+.F5_4200   .cpu04 { 
+	display: inline-block;		
+	position:relative;    
+	margin: 0px 0px 0px -4px  }
+	
+.F5_4200   .cpu05 { 
+	display: inline-block;		
+	position:relative;    
+	margin: 0px 0px 0px -4px  }
+
+.F5_4200   .cpu06 { 
+	display: inline-block;		
+	position:relative;    
+	margin: 0px 0px 0px -4px  }
+
+.F5_4200   .cpu07 { 
+	display: inline-block;		
+	position:relative;    
+	margin: 0px 0px 0px -4px  }	
+
+.F5_4200   .cpu08 { 
+	display: inline-block;		
+	position:relative;    
+	margin: 0px 0px 0px -4px  }	
+	
+/*- 팬 - */
+.F5_4200   .fGreen { 
+	background-image: url(../../imgs/icon/icon_fan_G.png);	}
+
+.F5_4200   .fRed { 
+	background-image: url(../../imgs/icon/icon_fan_R.png);	}
+
+.F5_4200   .fBlack { 	
+	background-image: url(../../imgs/icon/icon_fan_B.png);	}
+
+.F5_4200   .fan01 { 
+	width:43px; 
+	height: 42px;		
+	display: inline-block;			  			 
+	float:right;		  			 
+	margin: 16px 15px 0px 0px;  }
+	
+/*- 파워 - */
+.F5_4200   .poGreen { 
+	background-image: url(../../imgs/icon/icon_power_G.png);}
+
+.F5_4200   .poRed { 
+	background-image: url(../../imgs/icon/icon_power_R.png);}
+
+.F5_4200   .poBlack { 
+	background-image: url(../../imgs/icon/icon_power_B.png);}
+		
+.F5_4200   .power01 { 
+	width:25px; 
+	height: 25px; 	
+	display: inline-block;	
+	position:relative; 	
+   	vertical-align: top;  	
+	float:right;			 
+	margin: 24px 90px 0px 0px ;}	
+
+.F5_4200   .power02 { 
+	width:25px; 
+	height: 25px; 	
+	display: inline-block;	
+	position:relative;  
+   	vertical-align: top;  	
+	float:right;			 
+	margin: 24px -60px 0px 0px ;}	
+	
+/*- 버전 - */	
+.F5_4200   .version { 
+	display: inline-block;	
+	position:relative; 					 
+	margin: 11px 0px 0px 200px ;
+	color: #000;
+	font-weight: bold;
+	font-family: Arial;
+	height: 18px;		
+	font-size: 10px;}	
+
+/*- 포트 - */	
+.F5_4200   .pCopper1Green { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper1_G_31x23.gif);	}	
+
+.F5_4200   .pCopper1Red { 	
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper1_R_31x23.gif);	}	
+	
+.F5_4200   .pCopper1Black { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper1_B_31x23.gif);	}	
+		
+.F5_4200   .pCopper1Yellow { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper1_Y_31x23.gif);	}		
+	
+.F5_4200   .pCopper1Off { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper1_O_31x23.gif);	}	
+	
+.F5_4200   .pCopper2Green { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper2_G_31x23.gif);	}	
+
+.F5_4200   .pCopper2Red { 	
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper2_R_31x23.gif);	}	
+	
+.F5_4200   .pCopper2Black { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper2_B_31x23.gif);	}	
+	
+.F5_4200   .pCopper2Yellow { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper2_Y_31x23.gif);	}	
+	
+.F5_4200   .pCopper2Off { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper2_O_31x23.gif);	}	
+	
+.F5_4200   .pFiber1Green { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_fiber1_G_31x23.gif);	}	
+
+.F5_4200   .pFiber1Red { 	
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_fiber1_R_31x23.gif);	}	
+	
+.F5_4200   .pFiber1Black { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_fiber1_B_31x23.gif);	}	
+
+.F5_4200   .pFiber1Yellow{ 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_fiber1_Y_31x23.gif);	}	
+	
+.F5_4200   .pFiber1Off { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_fiber1_O_31x23.gif);	}	
+		
+.F5_4200   .port11 { 	
+	display: inline-block;			
+	position:relative;    
+	vertical-align: top;  
+	margin: 15px 0px 0px 118px;  }		
+
+.F5_4200   .port12 { 
+	display: inline-block;			
+	position:relative;  
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }		
+	
+.F5_4200   .port13 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 15px 0px 0px -6px;  }			
+	
+.F5_4200   .port14 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }			
+	
+.F5_4200   .port15 { 
+	display: inline-block;			
+	position:relative;      
+   	vertical-align: top;  
+	margin: 15px 0px 0px -6px;  }		
+	
+.F5_4200   .port16 { 
+	display: inline-block;			
+	position:relative;       
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }	
+	
+.F5_4200   .port17{ 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 15px 0px 0px -6px;  }	
+	
+.F5_4200   .port18 { 
+	display: inline-block;			
+	position:relative;    
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }				
+			
+.F5_4200   .port21 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 36px 0px 0px 23px;  }	
+	
+.F5_4200   .port22 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 36px 0px 0px -6px;  }		
+		
+.F5_4200    .portMGMT { 
+	display: inline-block;			
+	position:relative;      
+   	vertical-align: top; 
+	margin: 15px 0px 0px 313px;  }		
+	
+/*- F5_5000--------------------------- */
+.F5_5000 {
+	margin: 0px 0px 0px 35px;
+	background-image: url(../../imgs/monitoring/device/F5_BIG_IP_5000.gif);
+	height: 183px;
+	width: 881px;
+	font-size: 13px !important; }	
+
+.F5_5000  .txt {
+	color: #042704;
+	font-size: 11px;	
+	font-weight: bold;
+	text-align: center;
+	line-height: 50px;
+	letter-spacing: -1px;	
+/* 	text-shadow: 1px 1px 2px #fff;	*/ }
+
+/*- HDD - */
+.F5_5000  .hGreen { 
+	background-image: url(../../imgs/icon/icon_hdd_G.png);}
+
+.F5_5000  .hRed { 
+	background-image: url(../../imgs/icon/icon_hdd_R.png);}
+
+.F5_5000  .hBlack { 
+	background-image: url(../../imgs/icon/icon_hdd_B.png);}
+
+.F5_5000  .hdd01 { 
+	width:124px; 
+	height: 23px; 	
+	display: inline-block;	
+	font-size: 11px;	
+	font-weight: bold;
+	text-align: center;	
+	color : #fff;
+	line-height: 28px;	
+	float:right;			 
+	margin: 22px 40px 0px 0px ;}
+
+/*- CPU - */
+.F5_5000   .cGreen { 
+	width:50px; 
+	height: 42px; 
+	background-image: url(../../imgs/icon/icon_cylinder_G.png);	}
+
+.F5_5000   .cRed { 
+	width:50px; 
+	height: 42px; 
+	background-image: url(../../imgs/icon/icon_cylinder_R.png);	}
+
+.F5_5000   .cBlack { 
+	width:50px; 
+	height: 42px; 
+	background-image: url(../../imgs/icon/icon_cylinder_B.png);	}
+		
+.F5_5000   .cpu01 { 
+	display: inline-block;		
+	position:relative;     
+	margin: 0px 0px 0px 80px 	 }
+
+.F5_5000   .cpu02 { 
+	display: inline-block;		
+	position:relative;    
+	margin: 0px 0px 0px -4px  }
+
+.F5_5000   .cpu03 { 
+	display: inline-block;		
+	position:relative;    
+	margin: 0px 0px 0px -4px  }
+
+.F5_5000   .cpu04 { 
+	display: inline-block;		
+	position:relative;    
+	margin: 0px 0px 0px -4px  }
+	
+.F5_5000   .cpu05 { 
+	display: inline-block;		
+	position:relative;    
+	margin: 0px 0px 0px -4px  }
+
+.F5_5000   .cpu06 { 
+	display: inline-block;		
+	position:relative;    
+	margin: 0px 0px 0px -4px  }
+
+.F5_5000   .cpu07 { 
+	display: inline-block;		
+	position:relative;    
+	margin: 0px 0px 0px -4px  }	
+
+.F5_5000   .cpu08 { 
+	display: inline-block;		
+	position:relative;    
+	margin: 0px 0px 0px -4px  }	
+	
+/*- 팬 - */
+.F5_5000   .fGreen { 
+	background-image: url(../../imgs/icon/icon_fan_G.png);	}
+
+.F5_5000   .fRed { 
+	background-image: url(../../imgs/icon/icon_fan_R.png);	}
+
+.F5_5000   .fBlack { 	
+	background-image: url(../../imgs/icon/icon_fan_B.png);	}
+
+.F5_5000   .fan01 { 
+	width:43px; 
+	height: 42px;		
+	display: inline-block;			  			 
+	float:right;		  			 
+	margin: 16px 15px 0px 0px;  }
+	
+/*- 파워 - */
+.F5_5000   .poGreen { 
+	background-image: url(../../imgs/icon/icon_power_G.png);}
+
+.F5_5000   .poRed { 
+	background-image: url(../../imgs/icon/icon_power_R.png);}
+
+.F5_5000   .poBlack { 
+	background-image: url(../../imgs/icon/icon_power_B.png);}
+		
+.F5_5000   .power01 { 
+	width:25px; 
+	height: 25px; 	
+	display: inline-block;	
+	position:relative; 	
+   	vertical-align: top;  	
+	float:right;			 
+	margin: 24px 90px 0px 0px ;}	
+
+.F5_5000   .power02 { 
+	width:25px; 
+	height: 25px; 	
+	display: inline-block;	
+	position:relative;  
+   	vertical-align: top;  	
+	float:right;			 
+	margin: 24px -60px 0px 0px ;}	
+	
+/*- 버전 - */	
+.F5_5000   .version { 
+	display: inline-block;	
+	position:relative; 					 
+	margin: 11px 0px 0px 200px ;
+	color: #000;
+	font-weight: bold;
+	font-family: Arial;
+	height: 18px;		
+	font-size: 10px;}	
+
+/*- 포트 - */	
+.F5_5000   .pCopper1Green { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper1_G_31x23.gif);	}	
+
+.F5_5000   .pCopper1Red { 	
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper1_R_31x23.gif);	}	
+	
+.F5_5000   .pCopper1Black { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper1_B_31x23.gif);	}	
+		
+.F5_5000   .pCopper1Yellow { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper1_Y_31x23.gif);	}		
+	
+.F5_5000   .pCopper1Off { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper1_O_31x23.gif);	}	
+	
+.F5_5000   .pCopper2Green { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper2_G_31x23.gif);	}	
+
+.F5_5000   .pCopper2Red { 	
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper2_R_31x23.gif);	}	
+	
+.F5_5000   .pCopper2Black { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper2_B_31x23.gif);	}	
+	
+.F5_5000   .pCopper2Yellow { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper2_Y_31x23.gif);	}	
+	
+.F5_5000   .pCopper2Off { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper2_O_31x23.gif);	}	
+	
+.F5_5000   .pFiber1Green { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_fiber1_G_31x23.gif);	}	
+
+.F5_5000   .pFiber1Red { 	
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_fiber1_R_31x23.gif);	}	
+	
+.F5_5000   .pFiber1Black { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_fiber1_B_31x23.gif);	}	
+
+.F5_5000   .pFiber1Yellow{ 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_fiber1_Y_31x23.gif);	}	
+	
+.F5_5000   .pFiber1Off { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_fiber1_O_31x23.gif);	}	
+		
+.F5_5000   .port11 { 	
+	display: inline-block;			
+	position:relative;    
+	vertical-align: top;  
+	margin: 15px 0px 0px 147px;  }		
+
+.F5_5000   .port12 { 
+	display: inline-block;			
+	position:relative;  
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }		
+	
+.F5_5000   .port13 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 15px 0px 0px -6px;  }			
+	
+.F5_5000   .port14 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }			
+			
+			
+.F5_5000   .port21 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 15px 0px 0px 23px;  }	
+	
+.F5_5000   .port22 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }		
+
+.F5_5000   .port23 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 15px 0px 0px -6px;  }	
+	
+.F5_5000   .port24 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }
+
+.F5_5000   .port25 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 15px 0px 0px -6px;  }	
+	
+.F5_5000   .port26 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }
+
+.F5_5000   .port27 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 15px 0px 0px -6px;  }	
+	
+.F5_5000   .port28 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }
+		
+.F5_5000    .portMGMT { 
+	display: inline-block;			
+	position:relative;      
+   	vertical-align: top; 
+	margin: 15px 0px 0px 283px;  }		
+
+
+/*- F5_5200--------------------------- */
+.F5_5200 {
+	margin: 0px 0px 0px 35px;
+	background-image: url(../../imgs/monitoring/device/F5_BIG_IP_5200.gif);
+	height: 183px;
+	width: 881px;
+	font-size: 13px !important; }
+
+.F5_5200  .txt {
+	color: #042704;
+	font-size: 11px;	
+	font-weight: bold;
+	text-align: center;
+	line-height: 50px;
+	letter-spacing: -1px;	
+/* 	text-shadow: 1px 1px 2px #fff;	*/ }
+
+/*- HDD - */
+.F5_5200  .hGreen { 
+	background-image: url(../../imgs/icon/icon_hdd_G.png);}
+
+.F5_5200  .hRed { 
+	background-image: url(../../imgs/icon/icon_hdd_R.png);}
+
+.F5_5200  .hBlack { 
+	background-image: url(../../imgs/icon/icon_hdd_B.png);}
+
+.F5_5200  .hdd01 { 
+	width:124px; 
+	height: 23px; 	
+	display: inline-block;	
+	font-size: 11px;	
+	font-weight: bold;
+	text-align: center;	
+	color : #fff;
+	line-height: 28px;	
+	float:right;			 
+	margin: 22px 40px 0px 0px ;}
+
+/*- CPU - */
+.F5_5200   .cGreen { 
+	width:50px; 
+	height: 42px; 
+	background-image: url(../../imgs/icon/icon_cylinder_G.png);	}
+
+.F5_5200   .cRed { 
+	width:50px; 
+	height: 42px; 
+	background-image: url(../../imgs/icon/icon_cylinder_R.png);	}
+
+.F5_5200   .cBlack { 
+	width:50px; 
+	height: 42px; 
+	background-image: url(../../imgs/icon/icon_cylinder_B.png);	}
+		
+.F5_5200   .cpu01 { 
+	display: inline-block;		
+	position:relative;     
+	margin: 0px 0px 0px 80px 	 }
+
+.F5_5200   .cpu02 { 
+	display: inline-block;		
+	position:relative;    
+	margin: 0px 0px 0px -4px  }
+
+.F5_5200   .cpu03 { 
+	display: inline-block;		
+	position:relative;    
+	margin: 0px 0px 0px -4px  }
+
+.F5_5200   .cpu04 { 
+	display: inline-block;		
+	position:relative;    
+	margin: 0px 0px 0px -4px  }
+	
+.F5_5200   .cpu05 { 
+	display: inline-block;		
+	position:relative;    
+	margin: 0px 0px 0px -4px  }
+
+.F5_5200   .cpu06 { 
+	display: inline-block;		
+	position:relative;    
+	margin: 0px 0px 0px -4px  }
+
+.F5_5200   .cpu07 { 
+	display: inline-block;		
+	position:relative;    
+	margin: 0px 0px 0px -4px  }	
+
+.F5_5200   .cpu08 { 
+	display: inline-block;		
+	position:relative;    
+	margin: 0px 0px 0px -4px  }	
+	
+/*- 팬 - */
+.F5_5200   .fGreen { 
+	background-image: url(../../imgs/icon/icon_fan_G.png);	}
+
+.F5_5200   .fRed { 
+	background-image: url(../../imgs/icon/icon_fan_R.png);	}
+
+.F5_5200   .fBlack { 	
+	background-image: url(../../imgs/icon/icon_fan_B.png);	}
+
+.F5_5200   .fan01 { 
+	width:43px; 
+	height: 42px;		
+	display: inline-block;			  			 
+	float:right;		  			 
+	margin: 16px 15px 0px 0px;  }
+	
+/*- 파워 - */
+.F5_5200   .poGreen { 
+	background-image: url(../../imgs/icon/icon_power_G.png);}
+
+.F5_5200   .poRed { 
+	background-image: url(../../imgs/icon/icon_power_R.png);}
+
+.F5_5200   .poBlack { 
+	background-image: url(../../imgs/icon/icon_power_B.png);}
+		
+.F5_5200   .power01 { 
+	width:25px; 
+	height: 25px; 	
+	display: inline-block;	
+	position:relative; 	
+   	vertical-align: top;  	
+	float:right;			 
+	margin: 24px 90px 0px 0px ;}	
+
+.F5_5200   .power02 { 
+	width:25px; 
+	height: 25px; 	
+	display: inline-block;	
+	position:relative;  
+   	vertical-align: top;  	
+	float:right;			 
+	margin: 24px -60px 0px 0px ;}	
+	
+/*- 버전 - */	
+.F5_5200   .version { 
+	display: inline-block;	
+	position:relative; 					 
+	margin: 11px 0px 0px 200px ;
+	color: #000;
+	font-weight: bold;
+	font-family: Arial;
+	height: 18px;		
+	font-size: 10px;}	
+
+/*- 포트 - */	
+.F5_5200   .pCopper1Green { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper1_G_31x23.gif);	}	
+
+.F5_5200   .pCopper1Red { 	
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper1_R_31x23.gif);	}	
+	
+.F5_5200   .pCopper1Black { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper1_B_31x23.gif);	}	
+		
+.F5_5200   .pCopper1Yellow { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper1_Y_31x23.gif);	}		
+	
+.F5_5200   .pCopper1Off { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper1_O_31x23.gif);	}	
+	
+.F5_5200   .pCopper2Green { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper2_G_31x23.gif);	}	
+
+.F5_5200   .pCopper2Red { 	
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper2_R_31x23.gif);	}	
+	
+.F5_5200   .pCopper2Black { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper2_B_31x23.gif);	}	
+	
+.F5_5200   .pCopper2Yellow { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper2_Y_31x23.gif);	}	
+	
+.F5_5200   .pCopper2Off { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper2_O_31x23.gif);	}	
+	
+.F5_5200   .pFiber1Green { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_fiber1_G_31x23.gif);	}	
+
+.F5_5200   .pFiber1Red { 	
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_fiber1_R_31x23.gif);	}	
+	
+.F5_5200   .pFiber1Black { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_fiber1_B_31x23.gif);	}	
+
+.F5_5200   .pFiber1Yellow{ 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_fiber1_Y_31x23.gif);	}	
+	
+.F5_5200   .pFiber1Off { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_fiber1_O_31x23.gif);	}	
+		
+.F5_5200   .port11 { 	
+	display: inline-block;			
+	position:relative;    
+	vertical-align: top;  
+	margin: 15px 0px 0px 147px;  }		
+
+.F5_5200   .port12 { 
+	display: inline-block;			
+	position:relative;  
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }		
+	
+.F5_5200   .port13 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 15px 0px 0px -6px;  }			
+	
+.F5_5200   .port14 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }			
+			
+			
+.F5_5200   .port21 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 15px 0px 0px 23px;  }	
+	
+.F5_5200   .port22 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }		
+
+.F5_5200   .port23 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 15px 0px 0px -6px;  }	
+	
+.F5_5200   .port24 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }
+
+.F5_5200   .port25 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 15px 0px 0px -6px;  }	
+	
+.F5_5200   .port26 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }
+
+.F5_5200   .port27 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 15px 0px 0px -6px;  }	
+	
+.F5_5200   .port28 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }
+		
+.F5_5200    .portMGMT { 
+	display: inline-block;			
+	position:relative;      
+   	vertical-align: top; 
+	margin: 15px 0px 0px 283px;  }	
+	
+/*- F5_7000--------------------------- */
+.F5_7000 {
+	margin: 0px 0px 0px 35px;
+	background-image: url(../../imgs/monitoring/device/F5_BIG_IP_7000.gif);
+	height: 183px;
+	width: 881px;
+	font-size: 13px !important; }	
+
+.F5_7000  .txt {
+	color: #042704;
+	font-size: 11px;	
+	font-weight: bold;
+	text-align: center;
+	line-height: 50px;
+	letter-spacing: -1px;	
+/* 	text-shadow: 1px 1px 2px #fff;	*/ }
+
+/*- HDD - */
+.F5_7000  .hGreen { 
+	background-image: url(../../imgs/icon/icon_hdd_G.png);}
+
+.F5_7000  .hRed { 
+	background-image: url(../../imgs/icon/icon_hdd_R.png);}
+
+.F5_7000  .hBlack { 
+	background-image: url(../../imgs/icon/icon_hdd_B.png);}
+
+.F5_7000  .hdd01 { 
+	width:124px; 
+	height: 23px; 	
+	display: inline-block;	
+	font-size: 11px;	
+	font-weight: bold;
+	text-align: center;	
+	color : #fff;
+	line-height: 28px;	
+	float:right;			 
+	margin: 22px 40px 0px 0px ;}
+
+/*- CPU - */
+.F5_7000   .cGreen { 
+	width:50px; 
+	height: 42px; 
+	background-image: url(../../imgs/icon/icon_cylinder_G.png);	}
+
+.F5_7000   .cRed { 
+	width:50px; 
+	height: 42px; 
+	background-image: url(../../imgs/icon/icon_cylinder_R.png);	}
+
+.F5_7000   .cBlack { 
+	width:50px; 
+	height: 42px; 
+	background-image: url(../../imgs/icon/icon_cylinder_B.png);	}
+		
+.F5_7000   .cpu01 { 
+	display: inline-block;		
+	position:relative;     
+	margin: 0px 0px 0px 80px 	 }
+
+.F5_7000   .cpu02 { 
+	display: inline-block;		
+	position:relative;    
+	margin: 0px 0px 0px -4px  }
+
+.F5_7000   .cpu03 { 
+	display: inline-block;		
+	position:relative;    
+	margin: 0px 0px 0px -4px  }
+
+.F5_7000   .cpu04 { 
+	display: inline-block;		
+	position:relative;    
+	margin: 0px 0px 0px -4px  }
+	
+.F5_7000   .cpu05 { 
+	display: inline-block;		
+	position:relative;    
+	margin: 0px 0px 0px -4px  }
+
+.F5_7000   .cpu06 { 
+	display: inline-block;		
+	position:relative;    
+	margin: 0px 0px 0px -4px  }
+
+.F5_7000   .cpu07 { 
+	display: inline-block;		
+	position:relative;    
+	margin: 0px 0px 0px -4px  }	
+
+.F5_7000   .cpu08 { 
+	display: inline-block;		
+	position:relative;    
+	margin: 0px 0px 0px -4px  }	
+	
+/*- 팬 - */
+.F5_7000   .fGreen { 
+	background-image: url(../../imgs/icon/icon_fan_G.png);	}
+
+.F5_7000   .fRed { 
+	background-image: url(../../imgs/icon/icon_fan_R.png);	}
+
+.F5_7000   .fBlack { 	
+	background-image: url(../../imgs/icon/icon_fan_B.png);	}
+
+.F5_7000   .fan01 { 
+	width:43px; 
+	height: 42px;		
+	display: inline-block;			  			 
+	float:right;		  			 
+	margin: 16px 15px 0px 0px;  }
+	
+/*- 파워 - */
+.F5_7000   .poGreen { 
+	background-image: url(../../imgs/icon/icon_power_G.png);}
+
+.F5_7000   .poRed { 
+	background-image: url(../../imgs/icon/icon_power_R.png);}
+
+.F5_7000   .poBlack { 
+	background-image: url(../../imgs/icon/icon_power_B.png);}
+		
+.F5_7000   .power01 { 
+	width:25px; 
+	height: 25px; 	
+	display: inline-block;	
+	position:relative; 	
+   	vertical-align: top;  	
+	float:right;			 
+	margin: 24px 90px 0px 0px ;}	
+
+.F5_7000   .power02 { 
+	width:25px; 
+	height: 25px; 	
+	display: inline-block;	
+	position:relative;  
+   	vertical-align: top;  	
+	float:right;			 
+	margin: 24px -60px 0px 0px ;}	
+	
+/*- 버전 - */	
+.F5_7000   .version { 
+	display: inline-block;	
+	position:relative; 					 
+	margin: 11px 0px 0px 200px ;
+	color: #000;
+	font-weight: bold;
+	font-family: Arial;
+	height: 18px;		
+	font-size: 10px;}	
+
+/*- 포트 - */	
+.F5_7000   .pCopper1Green { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper1_G_31x23.gif);	}	
+
+.F5_7000   .pCopper1Red { 	
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper1_R_31x23.gif);	}	
+	
+.F5_7000   .pCopper1Black { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper1_B_31x23.gif);	}	
+		
+.F5_7000   .pCopper1Yellow { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper1_Y_31x23.gif);	}		
+	
+.F5_7000   .pCopper1Off { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper1_O_31x23.gif);	}	
+	
+.F5_7000   .pCopper2Green { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper2_G_31x23.gif);	}	
+
+.F5_7000   .pCopper2Red { 	
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper2_R_31x23.gif);	}	
+	
+.F5_7000   .pCopper2Black { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper2_B_31x23.gif);	}	
+	
+.F5_7000   .pCopper2Yellow { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper2_Y_31x23.gif);	}	
+	
+.F5_7000   .pCopper2Off { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper2_O_31x23.gif);	}	
+	
+.F5_7000   .pFiber1Green { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_fiber1_G_31x23.gif);	}	
+
+.F5_7000   .pFiber1Red { 	
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_fiber1_R_31x23.gif);	}	
+	
+.F5_7000   .pFiber1Black { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_fiber1_B_31x23.gif);	}	
+
+.F5_7000   .pFiber1Yellow{ 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_fiber1_Y_31x23.gif);	}	
+	
+.F5_7000   .pFiber1Off { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_fiber1_O_31x23.gif);	}	
+		
+.F5_7000   .port11 { 	
+	display: inline-block;			
+	position:relative;    
+	vertical-align: top;  
+	margin: 15px 0px 0px 147px;  }		
+
+.F5_7000   .port12 { 
+	display: inline-block;			
+	position:relative;  
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }		
+	
+.F5_7000   .port13 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 15px 0px 0px -6px;  }			
+	
+.F5_7000   .port14 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }			
+			
+			
+.F5_7000   .port21 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 15px 0px 0px 23px;  }	
+	
+.F5_7000   .port22 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }		
+
+.F5_7000   .port23 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 15px 0px 0px -6px;  }	
+	
+.F5_7000   .port24 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }
+
+.F5_7000   .port25 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 15px 0px 0px -6px;  }	
+	
+.F5_7000   .port26 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }
+
+.F5_7000   .port27 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 15px 0px 0px -6px;  }	
+	
+.F5_7000   .port28 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }
+		
+.F5_7000    .portMGMT { 
+	display: inline-block;			
+	position:relative;      
+   	vertical-align: top; 
+	margin: 15px 0px 0px 283px;  }	
+
+/*- F5_7200--------------------------- */
+.F5_7200 {
+	margin: 0px 0px 0px 35px;
+	background-image: url(../../imgs/monitoring/device/F5_BIG_IP_7200.gif);
+	height: 183px;
+	width: 881px;
+	font-size: 13px !important; }
+	
+.F5_7200  .txt {
+	color: #042704;
+	font-size: 11px;	
+	font-weight: bold;
+	text-align: center;
+	line-height: 50px;
+	letter-spacing: -1px;	
+/* 	text-shadow: 1px 1px 2px #fff;	*/ }
+
+/*- HDD - */
+.F5_7200  .hGreen { 
+	background-image: url(../../imgs/icon/icon_hdd_G.png);}
+
+.F5_7200  .hRed { 
+	background-image: url(../../imgs/icon/icon_hdd_R.png);}
+
+.F5_7200  .hBlack { 
+	background-image: url(../../imgs/icon/icon_hdd_B.png);}
+
+.F5_7200  .hdd01 { 
+	width:124px; 
+	height: 23px; 	
+	display: inline-block;	
+	font-size: 11px;	
+	font-weight: bold;
+	text-align: center;	
+	color : #fff;
+	line-height: 28px;	
+	float:right;			 
+	margin: 22px 40px 0px 0px ;}
+
+/*- CPU - */
+.F5_7200   .cGreen { 
+	width:50px; 
+	height: 42px; 
+	background-image: url(../../imgs/icon/icon_cylinder_G.png);	}
+
+.F5_7200   .cRed { 
+	width:50px; 
+	height: 42px; 
+	background-image: url(../../imgs/icon/icon_cylinder_R.png);	}
+
+.F5_7200   .cBlack { 
+	width:50px; 
+	height: 42px; 
+	background-image: url(../../imgs/icon/icon_cylinder_B.png);	}
+		
+.F5_7200   .cpu01 { 
+	display: inline-block;		
+	position:relative;     
+	margin: 0px 0px 0px 80px 	 }
+
+.F5_7200   .cpu02 { 
+	display: inline-block;		
+	position:relative;    
+	margin: 0px 0px 0px -4px  }
+
+.F5_7200   .cpu03 { 
+	display: inline-block;		
+	position:relative;    
+	margin: 0px 0px 0px -4px  }
+
+.F5_7200   .cpu04 { 
+	display: inline-block;		
+	position:relative;    
+	margin: 0px 0px 0px -4px  }
+	
+.F5_7200   .cpu05 { 
+	display: inline-block;		
+	position:relative;    
+	margin: 0px 0px 0px -4px  }
+
+.F5_7200   .cpu06 { 
+	display: inline-block;		
+	position:relative;    
+	margin: 0px 0px 0px -4px  }
+
+.F5_7200   .cpu07 { 
+	display: inline-block;		
+	position:relative;    
+	margin: 0px 0px 0px -4px  }	
+
+.F5_7200   .cpu08 { 
+	display: inline-block;		
+	position:relative;    
+	margin: 0px 0px 0px -4px  }	
+	
+/*- 팬 - */
+.F5_7200   .fGreen { 
+	background-image: url(../../imgs/icon/icon_fan_G.png);	}
+
+.F5_7200   .fRed { 
+	background-image: url(../../imgs/icon/icon_fan_R.png);	}
+
+.F5_7200   .fBlack { 	
+	background-image: url(../../imgs/icon/icon_fan_B.png);	}
+
+.F5_7200   .fan01 { 
+	width:43px; 
+	height: 42px;		
+	display: inline-block;			  			 
+	float:right;		  			 
+	margin: 16px 15px 0px 0px;  }
+	
+/*- 파워 - */
+.F5_7200   .poGreen { 
+	background-image: url(../../imgs/icon/icon_power_G.png);}
+
+.F5_7200   .poRed { 
+	background-image: url(../../imgs/icon/icon_power_R.png);}
+
+.F5_7200   .poBlack { 
+	background-image: url(../../imgs/icon/icon_power_B.png);}
+		
+.F5_7200   .power01 { 
+	width:25px; 
+	height: 25px; 	
+	display: inline-block;	
+	position:relative; 	
+   	vertical-align: top;  	
+	float:right;			 
+	margin: 24px 90px 0px 0px ;}	
+
+.F5_7200   .power02 { 
+	width:25px; 
+	height: 25px; 	
+	display: inline-block;	
+	position:relative;  
+   	vertical-align: top;  	
+	float:right;			 
+	margin: 24px -60px 0px 0px ;}	
+	
+/*- 버전 - */	
+.F5_7200   .version { 
+	display: inline-block;	
+	position:relative; 					 
+	margin: 11px 0px 0px 200px ;
+	color: #000;
+	font-weight: bold;
+	font-family: Arial;
+	height: 18px;		
+	font-size: 10px;}	
+
+/*- 포트 - */	
+.F5_7200   .pCopper1Green { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper1_G_31x23.gif);	}	
+
+.F5_7200   .pCopper1Red { 	
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper1_R_31x23.gif);	}	
+	
+.F5_7200   .pCopper1Black { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper1_B_31x23.gif);	}	
+		
+.F5_7200   .pCopper1Yellow { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper1_Y_31x23.gif);	}		
+	
+.F5_7200   .pCopper1Off { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper1_O_31x23.gif);	}	
+	
+.F5_7200   .pCopper2Green { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper2_G_31x23.gif);	}	
+
+.F5_7200   .pCopper2Red { 	
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper2_R_31x23.gif);	}	
+	
+.F5_7200   .pCopper2Black { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper2_B_31x23.gif);	}	
+	
+.F5_7200   .pCopper2Yellow { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper2_Y_31x23.gif);	}	
+	
+.F5_7200   .pCopper2Off { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper2_O_31x23.gif);	}	
+	
+.F5_7200   .pFiber1Green { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_fiber1_G_31x23.gif);	}	
+
+.F5_7200   .pFiber1Red { 	
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_fiber1_R_31x23.gif);	}	
+	
+.F5_7200   .pFiber1Black { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_fiber1_B_31x23.gif);	}	
+
+.F5_7200   .pFiber1Yellow{ 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_fiber1_Y_31x23.gif);	}	
+	
+.F5_7200   .pFiber1Off { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_fiber1_O_31x23.gif);	}	
+		
+.F5_7200   .port11 { 	
+	display: inline-block;			
+	position:relative;    
+	vertical-align: top;  
+	margin: 15px 0px 0px 147px;  }		
+
+.F5_7200   .port12 { 
+	display: inline-block;			
+	position:relative;  
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }		
+	
+.F5_7200   .port13 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 15px 0px 0px -6px;  }			
+	
+.F5_7200   .port14 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }			
+			
+			
+.F5_7200   .port21 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 15px 0px 0px 23px;  }	
+	
+.F5_7200   .port22 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }		
+
+.F5_7200   .port23 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 15px 0px 0px -6px;  }	
+	
+.F5_7200   .port24 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }
+
+.F5_7200   .port25 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 15px 0px 0px -6px;  }	
+	
+.F5_7200   .port26 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }
+
+.F5_7200   .port27 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 15px 0px 0px -6px;  }	
+	
+.F5_7200   .port28 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }
+		
+.F5_7200    .portMGMT { 
+	display: inline-block;			
+	position:relative;      
+   	vertical-align: top; 
+	margin: 15px 0px 0px 283px;  }	
+			
+			
+/*- F5_10000--------------------------- */
+.F5_10000{
+	margin: 0px 0px 0px 35px;
+	background-image: url(../../imgs/monitoring/device/F5_BIG_IP_10000.gif);
+	height: 183px;
+	width: 881px;
+	font-size: 13px !important; }	
+
+.F5_10000  .txt {
+	color: #042704;
+	font-size: 11px;	
+	font-weight: bold;
+	text-align: center;
+	line-height: 50px;
+	letter-spacing: -1px;	
+/* 	text-shadow: 1px 1px 2px #fff;	*/ }
+
+/*- HDD - */
+.F5_10000  .hGreen { 
+	background-image: url(../../imgs/icon/icon_hdd_G.png);}
+
+.F5_10000  .hRed { 
+	background-image: url(../../imgs/icon/icon_hdd_R.png);}
+
+.F5_10000  .hBlack { 
+	background-image: url(../../imgs/icon/icon_hdd_B.png);}
+
+.F5_10000  .hdd01 { 
+	width:124px; 
+	height: 23px; 	
+	display: inline-block;	
+	font-size: 11px;	
+	font-weight: bold;
+	text-align: center;	
+	color : #fff;
+	line-height: 28px;	
+	float:right;			 
+	margin: 22px 40px 0px 0px ;}
+
+/*- CPU - */
+.F5_10000   .cGreen { 
+	width:50px; 
+	height: 42px; 
+	background-image: url(../../imgs/icon/icon_cylinder_G.png);	}
+
+.F5_10000   .cRed { 
+	width:50px; 
+	height: 42px; 
+	background-image: url(../../imgs/icon/icon_cylinder_R.png);	}
+
+.F5_10000   .cBlack { 
+	width:50px; 
+	height: 42px; 
+	background-image: url(../../imgs/icon/icon_cylinder_B.png);	}
+		
+.F5_10000   .cpu01 { 
+	display: inline-block;		
+	position:relative;     
+	margin: 0px 0px 0px 80px 	 }
+
+.F5_10000   .cpu02 { 
+	display: inline-block;		
+	position:relative;    
+	margin: 0px 0px 0px -4px  }
+
+.F5_10000   .cpu03 { 
+	display: inline-block;		
+	position:relative;    
+	margin: 0px 0px 0px -4px  }
+
+.F5_10000   .cpu04 { 
+	display: inline-block;		
+	position:relative;    
+	margin: 0px 0px 0px -4px  }
+	
+.F5_10000   .cpu05 { 
+	display: inline-block;		
+	position:relative;    
+	margin: 0px 0px 0px -4px  }
+
+.F5_10000   .cpu06 { 
+	display: inline-block;		
+	position:relative;    
+	margin: 0px 0px 0px -4px  }
+
+.F5_10000   .cpu07 { 
+	display: inline-block;		
+	position:relative;    
+	margin: 0px 0px 0px -4px  }	
+
+.F5_10000   .cpu08 { 
+	display: inline-block;		
+	position:relative;    
+	margin: 0px 0px 0px -4px  }	
+
+.F5_10000   .cpu09 { 
+	display: inline-block;		
+	position:relative;    
+	margin: 0px 0px 0px -4px  }
+	
+.F5_10000   .cpu10 { 
+	display: inline-block;		
+	position:relative;    
+	margin: 0px 0px 0px -4px  }
+
+.F5_10000   .cpu11 { 
+	display: inline-block;		
+	position:relative;    
+	margin: 0px 0px 0px -4px  }
+
+.F5_10000   .cpu12 { 
+	display: inline-block;		
+	position:relative;    
+	margin: 0px 0px 0px -4px  }	
+
+/*- 팬 - */
+.F5_10000   .fGreen { 
+	background-image: url(../../imgs/icon/icon_fan_G.png);	}
+
+.F5_10000   .fRed { 
+	background-image: url(../../imgs/icon/icon_fan_R.png);	}
+
+.F5_10000   .fBlack { 	
+	background-image: url(../../imgs/icon/icon_fan_B.png);	}
+
+.F5_10000   .fan01 { 
+	width:43px; 
+	height: 42px;		
+	display: inline-block;			  			 
+	float:right;		  			 
+	margin: 16px 15px 0px 0px;  }
+	
+/*- 파워 - */
+.F5_10000   .poGreen { 
+	background-image: url(../../imgs/icon/icon_power_G.png);}
+
+.F5_10000   .poRed { 
+	background-image: url(../../imgs/icon/icon_power_R.png);}
+
+.F5_10000   .poBlack { 
+	background-image: url(../../imgs/icon/icon_power_B.png);}
+		
+.F5_10000   .power01 { 
+	width:25px; 
+	height: 25px; 	
+	display: inline-block;	
+	position:relative; 	
+   	vertical-align: top;  	
+	float:right;			 
+	margin: 24px 90px 0px 0px ;}	
+
+.F5_10000   .power02 { 
+	width:25px; 
+	height: 25px; 	
+	display: inline-block;	
+	position:relative;  
+   	vertical-align: top;  	
+	float:right;			 
+	margin: 24px -60px 0px 0px ;}	
+	
+/*- 버전 - */	
+.F5_10000   .version { 
+	display: inline-block;	
+	position:relative; 					 
+	margin: 11px 0px 0px 200px ;
+	color: #000;
+	font-weight: bold;
+	font-family: Arial;
+	height: 18px;		
+	font-size: 10px;}	
+
+/*- 포트 - */	
+.F5_10000   .pCopper1Green { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper1_G_31x23.gif);	}	
+
+.F5_10000   .pCopper1Red { 	
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper1_R_31x23.gif);	}	
+	
+.F5_10000   .pCopper1Black { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper1_B_31x23.gif);	}	
+		
+.F5_10000   .pCopper1Yellow { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper1_Y_31x23.gif);	}		
+	
+.F5_10000   .pCopper1Off { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper1_O_31x23.gif);	}	
+	
+.F5_10000   .pCopper2Green { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper2_G_31x23.gif);	}	
+
+.F5_10000   .pCopper2Red { 	
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper2_R_31x23.gif);	}	
+	
+.F5_10000   .pCopper2Black { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper2_B_31x23.gif);	}	
+	
+.F5_10000   .pCopper2Yellow { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper2_Y_31x23.gif);	}	
+	
+.F5_10000   .pCopper2Off { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper2_O_31x23.gif);	}	
+	
+.F5_10000   .pFiber1Green { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_fiber1_G_31x23.gif);	}	
+
+.F5_10000   .pFiber1Red { 	
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_fiber1_R_31x23.gif);	}	
+	
+.F5_10000   .pFiber1Black { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_fiber1_B_31x23.gif);	}	
+
+.F5_10000   .pFiber1Yellow{ 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_fiber1_Y_31x23.gif);	}	
+	
+.F5_10000   .pFiber1Off { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_fiber1_O_31x23.gif);	}	
+		
+.F5_10000   .port11 { 	
+	display: inline-block;			
+	position:relative;    
+	vertical-align: top;  
+	margin: 15px 0px 0px 147px;  }		
+
+.F5_10000   .port12 { 
+	display: inline-block;			
+	position:relative;  
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }		
+	
+.F5_10000   .port13 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 15px 0px 0px -6px;  }			
+	
+.F5_10000   .port14 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }			
+
+.F5_10000   .port15 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 15px 0px 0px -6px;  }			
+	
+.F5_10000   .port16 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }	
+	
+.F5_10000   .port17 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 15px 0px 0px -6px;  }			
+	
+.F5_10000   .port18 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }	
+
+.F5_10000   .port19 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 15px 0px 0px 23px;  }	
+	
+.F5_10000   .port110 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }	
+	
+.F5_10000   .port111 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 15px 0px 0px -6px;  }			
+	
+.F5_10000   .port112 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }	
+
+.F5_10000   .port113 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 15px 0px 0px -6px;  }			
+	
+.F5_10000   .port114 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }	
+	
+.F5_10000   .port115 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 15px 0px 0px -6px;  }			
+	
+.F5_10000   .port116 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }		
+	
+
+.F5_10000   .port21 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 36px 0px 0px 23px;  }	
+	
+.F5_10000   .port22 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 36px 0px 0px -6px;  }		
+
+.F5_10000   .port23 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 15px 0px 0px -6px;  }	
+	
+.F5_10000    .portMGMT { 
+	display: inline-block;			
+	position:relative;      
+   	vertical-align: top; 
+	margin: 15px 0px 0px 138px;  }	
+
+/*- F5_10200--------------------------- */
+.F5_10200 {
+	margin: 0px 0px 0px 35px;
+	background-image: url(../../imgs/monitoring/device/F5_BIG_IP_10200.gif);
+	height: 183px;
+	width: 881px;
+	font-size: 13px !important; }	
+	
+.F5_10200  .txt {
+	color: #042704;
+	font-size: 11px;	
+	font-weight: bold;
+	text-align: center;
+	line-height: 50px;
+	letter-spacing: -1px;	
+/* 	text-shadow: 1px 1px 2px #fff;	*/ }
+
+/*- HDD - */
+.F5_10200  .hGreen { 
+	background-image: url(../../imgs/icon/icon_hdd_G.png);}
+
+.F5_10200  .hRed { 
+	background-image: url(../../imgs/icon/icon_hdd_R.png);}
+
+.F5_10200  .hBlack { 
+	background-image: url(../../imgs/icon/icon_hdd_B.png);}
+
+.F5_10200  .hdd01 { 
+	width:124px; 
+	height: 23px; 	
+	display: inline-block;	
+	font-size: 11px;	
+	font-weight: bold;
+	text-align: center;	
+	color : #fff;
+	line-height: 28px;	
+	float:right;			 
+	margin: 22px 40px 0px 0px ;}
+
+/*- CPU - */
+.F5_10200   .cGreen { 
+	width:50px; 
+	height: 42px; 
+	background-image: url(../../imgs/icon/icon_cylinder_G.png);	}
+
+.F5_10200   .cRed { 
+	width:50px; 
+	height: 42px; 
+	background-image: url(../../imgs/icon/icon_cylinder_R.png);	}
+
+.F5_10200   .cBlack { 
+	width:50px; 
+	height: 42px; 
+	background-image: url(../../imgs/icon/icon_cylinder_B.png);	}
+		
+.F5_10200   .cpu01 { 
+	display: inline-block;		
+	position:relative;     
+	margin: 0px 0px 0px 80px 	 }
+
+.F5_10200   .cpu02 { 
+	display: inline-block;		
+	position:relative;    
+	margin: 0px 0px 0px -4px  }
+
+.F5_10200   .cpu03 { 
+	display: inline-block;		
+	position:relative;    
+	margin: 0px 0px 0px -4px  }
+
+.F5_10200   .cpu04 { 
+	display: inline-block;		
+	position:relative;    
+	margin: 0px 0px 0px -4px  }
+	
+.F5_10200   .cpu05 { 
+	display: inline-block;		
+	position:relative;    
+	margin: 0px 0px 0px -4px  }
+
+.F5_10200   .cpu06 { 
+	display: inline-block;		
+	position:relative;    
+	margin: 0px 0px 0px -4px  }
+
+.F5_10200   .cpu07 { 
+	display: inline-block;		
+	position:relative;    
+	margin: 0px 0px 0px -4px  }	
+
+.F5_10200   .cpu08 { 
+	display: inline-block;		
+	position:relative;    
+	margin: 0px 0px 0px -4px  }	
+
+.F5_10200   .cpu09 { 
+	display: inline-block;		
+	position:relative;    
+	margin: 0px 0px 0px -4px  }
+	
+.F5_10200   .cpu10 { 
+	display: inline-block;		
+	position:relative;    
+	margin: 0px 0px 0px -4px  }
+
+.F5_10200   .cpu11 { 
+	display: inline-block;		
+	position:relative;    
+	margin: 0px 0px 0px -4px  }
+
+.F5_10200   .cpu12 { 
+	display: inline-block;		
+	position:relative;    
+	margin: 0px 0px 0px -4px  }	
+
+/*- 팬 - */
+.F5_10200   .fGreen { 
+	background-image: url(../../imgs/icon/icon_fan_G.png);	}
+
+.F5_10200   .fRed { 
+	background-image: url(../../imgs/icon/icon_fan_R.png);	}
+
+.F5_10200   .fBlack { 	
+	background-image: url(../../imgs/icon/icon_fan_B.png);	}
+
+.F5_10200   .fan01 { 
+	width:43px; 
+	height: 42px;		
+	display: inline-block;			  			 
+	float:right;		  			 
+	margin: 16px 15px 0px 0px;  }
+	
+/*- 파워 - */
+.F5_10200   .poGreen { 
+	background-image: url(../../imgs/icon/icon_power_G.png);}
+
+.F5_10200   .poRed { 
+	background-image: url(../../imgs/icon/icon_power_R.png);}
+
+.F5_10200   .poBlack { 
+	background-image: url(../../imgs/icon/icon_power_B.png);}
+		
+.F5_10200   .power01 { 
+	width:25px; 
+	height: 25px; 	
+	display: inline-block;	
+	position:relative; 	
+   	vertical-align: top;  	
+	float:right;			 
+	margin: 24px 90px 0px 0px ;}	
+
+.F5_10200   .power02 { 
+	width:25px; 
+	height: 25px; 	
+	display: inline-block;	
+	position:relative;  
+   	vertical-align: top;  	
+	float:right;			 
+	margin: 24px -60px 0px 0px ;}	
+	
+/*- 버전 - */	
+.F5_10200   .version { 
+	display: inline-block;	
+	position:relative; 					 
+	margin: 11px 0px 0px 200px ;
+	color: #000;
+	font-weight: bold;
+	font-family: Arial;
+	height: 18px;		
+	font-size: 10px;}	
+
+/*- 포트 - */	
+.F5_10200   .pCopper1Green { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper1_G_31x23.gif);	}	
+
+.F5_10200   .pCopper1Red { 	
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper1_R_31x23.gif);	}	
+	
+.F5_10200   .pCopper1Black { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper1_B_31x23.gif);	}	
+		
+.F5_10200   .pCopper1Yellow { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper1_Y_31x23.gif);	}		
+	
+.F5_10200   .pCopper1Off { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper1_O_31x23.gif);	}	
+	
+.F5_10200   .pCopper2Green { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper2_G_31x23.gif);	}	
+
+.F5_10200   .pCopper2Red { 	
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper2_R_31x23.gif);	}	
+	
+.F5_10200   .pCopper2Black { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper2_B_31x23.gif);	}	
+	
+.F5_10200   .pCopper2Yellow { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper2_Y_31x23.gif);	}	
+	
+.F5_10200   .pCopper2Off { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_copper2_O_31x23.gif);	}	
+	
+.F5_10200   .pFiber1Green { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_fiber1_G_31x23.gif);	}	
+
+.F5_10200   .pFiber1Red { 	
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_fiber1_R_31x23.gif);	}	
+	
+.F5_10200   .pFiber1Black { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_fiber1_B_31x23.gif);	}	
+
+.F5_10200   .pFiber1Yellow{ 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_fiber1_Y_31x23.gif);	}	
+	
+.F5_10200   .pFiber1Off { 
+	width:31px; 
+	height: 23px;		
+	background-image: url(../../imgs/icon/icon_fiber1_O_31x23.gif);	}	
+		
+.F5_10200   .port11 { 	
+	display: inline-block;			
+	position:relative;    
+	vertical-align: top;  
+	margin: 15px 0px 0px 147px;  }		
+
+.F5_10200   .port12 { 
+	display: inline-block;			
+	position:relative;  
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }		
+	
+.F5_10200   .port13 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 15px 0px 0px -6px;  }			
+	
+.F5_10200   .port14 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }			
+
+.F5_10200   .port15 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 15px 0px 0px -6px;  }			
+	
+.F5_10200   .port16 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }	
+	
+.F5_10200   .port17 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 15px 0px 0px -6px;  }			
+	
+.F5_10200   .port18 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }	
+
+.F5_10200   .port19 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 15px 0px 0px 23px;  }	
+	
+.F5_10200   .port110 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }	
+	
+.F5_10200   .port111 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 15px 0px 0px -6px;  }			
+	
+.F5_10200   .port112 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }	
+
+.F5_10200   .port113 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 15px 0px 0px -6px;  }			
+	
+.F5_10200   .port114 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }	
+	
+.F5_10200   .port115 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 15px 0px 0px -6px;  }			
+	
+.F5_10200   .port116 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 36px 0px 0px -35px;  }			
+
+.F5_10200   .port21 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 36px 0px 0px 23px;  }	
+	
+.F5_10200   .port22 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 36px 0px 0px -6px;  }		
+
+.F5_10200   .port23 { 
+	display: inline-block;			
+	position:relative;     
+   	vertical-align: top;  
+	margin: 15px 0px 0px -6px;  }	
+	
+.F5_10200    .portMGMT { 
+	display: inline-block;			
+	position:relative;      
+   	vertical-align: top; 
+	margin: 15px 0px 0px 138px;  }	

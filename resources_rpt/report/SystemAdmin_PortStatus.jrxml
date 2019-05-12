@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="SystemAdmin_PortStatus" language="groovy" pageWidth="555" pageHeight="802" columnWidth="555" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="17fcbc6f-f466-4232-b8d2-8d70e42f88bc">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<template><![CDATA["./AdcmsReportStyle.jrtx"]]></template>
+	<subDataset name="Dataset_PortStatus" uuid="3a5e59ed-3117-4d61-a3c5-2493515634af">
+		<queryString>
+			<![CDATA[]]>
+		</queryString>
+		<field name="x" class="java.util.Date">
+			<fieldDescription><![CDATA[x]]></fieldDescription>
+		</field>
+		<field name="y" class="java.lang.Long">
+			<fieldDescription><![CDATA[y]]></fieldDescription>
+		</field>
+	</subDataset>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="discardChart" class="java.util.List">
+		<fieldDescription><![CDATA[discardChart]]></fieldDescription>
+	</field>
+	<field name="errorChart" class="java.util.List">
+		<fieldDescription><![CDATA[errorChart]]></fieldDescription>
+	</field>
+	<field name="fromPeriod" class="java.util.Date">
+		<fieldDescription><![CDATA[fromPeriod]]></fieldDescription>
+	</field>
+	<field name="portName" class="java.lang.String">
+		<fieldDescription><![CDATA[portName]]></fieldDescription>
+	</field>
+	<field name="toPeriod" class="java.util.Date">
+		<fieldDescription><![CDATA[toPeriod]]></fieldDescription>
+	</field>
+	<field name="textHdr" class="kr.openbase.adcsmart.web.report.admin.PortStatusDtoTextHdr">
+		<fieldDescription><![CDATA[textHdr]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="199" splitType="Stretch">
+			<textField isBlankWhenNull="true">
+				<reportElement style="boldM" x="0" y="0" width="35" height="20" uuid="669f60c5-b1af-4c31-a8a9-f3da69b9ec52"/>
+				<textFieldExpression><![CDATA["Port " + $F{portName}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement mode="Opaque" x="35" y="25" width="225" height="14" forecolor="#EAEAEA" backcolor="#676D7F" uuid="70fc1ea1-2d93-4e67-bbff-f5e39ca6dd58"/>
+				<box>
+					<pen lineWidth="1.0" lineColor="#999999"/>
+					<topPen lineWidth="0.5" lineColor="#D4D4D4"/>
+					<leftPen lineWidth="0.5" lineColor="#D4D4D4"/>
+					<bottomPen lineWidth="0.5" lineColor="#D4D4D4"/>
+					<rightPen lineWidth="0.5" lineColor="#D4D4D4"/>
+				</box>
+				<textElement>
+					<font size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Errors]]></text>
+			</staticText>
+			<timeSeriesChart>
+				<chart isShowLegend="false" theme="default.spring">
+					<reportElement x="0" y="40" width="260" height="152" uuid="bbf5f449-6d7d-4231-a9d3-398a2cc5d929"/>
+					<chartTitle>
+						<font size="7"/>
+					</chartTitle>
+					<chartSubtitle>
+						<font size="7"/>
+					</chartSubtitle>
+					<chartLegend textColor="#000000" position="Top">
+						<font size="7"/>
+					</chartLegend>
+				</chart>
+				<timeSeriesDataset timePeriod="Minute">
+					<dataset>
+						<datasetRun subDataset="Dataset_PortStatus" uuid="c978d8d0-4b18-4515-b024-9248c8fd5501">
+							<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{errorChart})]]></dataSourceExpression>
+						</datasetRun>
+					</dataset>
+					<timeSeries>
+						<seriesExpression><![CDATA["Errors"]]></seriesExpression>
+						<timePeriodExpression><![CDATA[$F{x}]]></timePeriodExpression>
+						<valueExpression><![CDATA[$F{y}]]></valueExpression>
+					</timeSeries>
+				</timeSeriesDataset>
+				<timeSeriesPlot isShowShapes="false">
+					<plot>
+						<seriesColor seriesOrder="0" color="#FF3333"/>
+					</plot>
+					<timeAxisFormat>
+						<axisFormat>
+							<labelFont>
+								<font size="7"/>
+							</labelFont>
+							<tickLabelFont>
+								<font size="7"/>
+							</tickLabelFont>
+						</axisFormat>
+					</timeAxisFormat>
+					<valueAxisFormat>
+						<axisFormat>
+							<tickLabelFont>
+								<font size="7"/>
+							</tickLabelFont>
+						</axisFormat>
+					</valueAxisFormat>
+				</timeSeriesPlot>
+			</timeSeriesChart>
+			<timeSeriesChart>
+				<chart isShowLegend="false" theme="default.spring">
+					<reportElement x="260" y="40" width="260" height="152" uuid="bbf5f449-6d7d-4231-a9d3-398a2cc5d929"/>
+					<chartTitle>
+						<font size="7"/>
+					</chartTitle>
+					<chartSubtitle>
+						<font size="7"/>
+					</chartSubtitle>
+					<chartLegend>
+						<font size="7"/>
+					</chartLegend>
+				</chart>
+				<timeSeriesDataset timePeriod="Minute">
+					<dataset>
+						<datasetRun subDataset="Dataset_PortStatus" uuid="c978d8d0-4b18-4515-b024-9248c8fd5501">
+							<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{discardChart})]]></dataSourceExpression>
+						</datasetRun>
+					</dataset>
+					<timeSeries>
+						<seriesExpression><![CDATA["Discards"]]></seriesExpression>
+						<timePeriodExpression><![CDATA[$F{x}]]></timePeriodExpression>
+						<valueExpression><![CDATA[$F{y}]]></valueExpression>
+					</timeSeries>
+				</timeSeriesDataset>
+				<timeSeriesPlot isShowShapes="false">
+					<plot>
+						<seriesColor seriesOrder="0" color="#3333FF"/>
+					</plot>
+					<timeAxisFormat>
+						<axisFormat>
+							<labelFont>
+								<font size="7"/>
+							</labelFont>
+							<tickLabelFont>
+								<font size="7"/>
+							</tickLabelFont>
+						</axisFormat>
+					</timeAxisFormat>
+					<valueAxisFormat>
+						<axisFormat>
+							<tickLabelFont>
+								<font size="7"/>
+							</tickLabelFont>
+						</axisFormat>
+					</valueAxisFormat>
+				</timeSeriesPlot>
+			</timeSeriesChart>
+			<staticText>
+				<reportElement mode="Opaque" x="295" y="25" width="225" height="14" forecolor="#EAEAEA" backcolor="#676D7F" uuid="70fc1ea1-2d93-4e67-bbff-f5e39ca6dd58"/>
+				<box>
+					<pen lineWidth="1.0" lineColor="#999999"/>
+					<topPen lineWidth="0.5" lineColor="#D4D4D4"/>
+					<leftPen lineWidth="0.5" lineColor="#D4D4D4"/>
+					<bottomPen lineWidth="0.5" lineColor="#D4D4D4"/>
+					<rightPen lineWidth="0.5" lineColor="#D4D4D4"/>
+				</box>
+				<textElement>
+					<font size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Discards]]></text>
+			</staticText>
+			<textField>
+				<reportElement style="boldM" x="35" y="0" width="100" height="20" uuid="2da438c6-6a5d-4b98-adef-7f20c6015143"/>
+				<textFieldExpression><![CDATA[""+$F{textHdr}.getTitle()]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="L4Operation" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="bbeab7a6-3c34-4291-a0f5-2c1cf7f702eb">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<style name="table">
+		<box>
+			<topPen lineWidth="1.0" lineColor="#CCCCCC"/>
+			<bottomPen lineWidth="1.0" lineColor="#CCCCCC"/>
+		</box>
+	</style>
+	<style name="table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#CCCCCC"/>
+			<bottomPen lineWidth="0.5" lineColor="#CCCCCC"/>
+		</box>
+	</style>
+	<style name="table_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#CCCCCC"/>
+			<bottomPen lineWidth="0.5" lineColor="#CCCCCC"/>
+		</box>
+	</style>
+	<style name="table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#CCCCCC"/>
+			<bottomPen lineWidth="0.5" lineColor="#CCCCCC"/>
+		</box>
+	</style>
+	<subDataset name="Table Dataset 1" uuid="e96e2bd4-c433-4a5d-893f-91465b072642"/>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["./"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="IMG_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="REPORT_INDEX" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="ACCUNT_INDEX" class="java.lang.Integer" isForPrompting="false">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="IMG_DIR_CUSTOM" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="toPeriod" class="java.util.Date">
+		<fieldDescription><![CDATA[toPeriod]]></fieldDescription>
+	</field>
+	<field name="fromPeriod" class="java.util.Date">
+		<fieldDescription><![CDATA[fromPeriod]]></fieldDescription>
+	</field>
+	<background>
+		<band height="802" splitType="Stretch">
+			<image scaleImage="FillFrame">
+				<reportElement uuid="fcbf005b-5350-4a26-a6b7-217742a09155" x="0" y="0" width="555" height="774"/>
+				<imageExpression><![CDATA[$P{IMG_DIR} + "bg_daily_body.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement uuid="11cb3ad1-fb47-4079-b5ad-3317c93f74bd" x="0" y="774" width="555" height="28"/>
+				<imageExpression><![CDATA[$P{IMG_DIR} + "bg_daily_foot.png"]]></imageExpression>
+			</image>
+		</band>
+	</background>
+	<title>
+		<band height="129" splitType="Stretch">
+			<image>
+				<reportElement uuid="d9e6b49b-963e-4d3c-9ebb-d9390dc26244" x="0" y="0" width="555" height="101"/>
+				<imageExpression><![CDATA[$P{IMG_DIR} + "bg_daily_header.png"]]></imageExpression>
+			</image>
+			<frame>
+				<reportElement uuid="2e30497e-dfd9-4e71-bb3b-cdd2375a444a" mode="Opaque" x="27" y="103" width="528" height="24" backcolor="#F6F0F0"/>
+				<box>
+					<pen lineWidth="1.0" lineColor="#CCCCCC"/>
+					<topPen lineWidth="1.0" lineColor="#CCCCCC"/>
+					<leftPen lineWidth="1.0" lineColor="#CCCCCC"/>
+					<bottomPen lineWidth="1.0" lineColor="#CCCCCC"/>
+					<rightPen lineWidth="1.0" lineColor="#CCCCCC"/>
+				</box>
+				<image>
+					<reportElement uuid="14afe047-66fb-427c-9809-04f709c95c31" x="5" y="0" width="29" height="24"/>
+					<imageExpression><![CDATA[$P{IMG_DIR} +"icon_setMonitor.png"]]></imageExpression>
+				</image>
+				<staticText>
+					<reportElement uuid="78339ed0-bffc-4f09-a1d8-ef9130f34892" x="37" y="0" width="100" height="20"/>
+					<textElement verticalAlignment="Middle">
+						<font fontName="나눔고딕" isBold="true"/>
+					</textElement>
+					<text><![CDATA[설정 정보 변경 요약]]></text>
+				</staticText>
+			</frame>
+			<image>
+				<reportElement uuid="ba8c75a5-294f-4c29-8f0d-8c1be582bfcf" x="245" y="7" width="109" height="22"/>
+				<imageExpression><![CDATA[$P{IMG_DIR_CUSTOM} +"img_siteLogo.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement uuid="098bbeb8-a0fe-4eb8-a8eb-70d45f51362d" x="254" y="46" width="21" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="나눔고딕" isBold="false"/>
+				</textElement>
+				<text><![CDATA[기간:]]></text>
+			</staticText>
+			<textField pattern="yyyy-MM-dd HH:mm" isBlankWhenNull="true">
+				<reportElement uuid="b3354722-6a43-434e-8ff3-009a1d3c55a3" x="279" y="70" width="100" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="나눔고딕"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{toPeriod}]]></textFieldExpression>
+			</textField>
+			<textField pattern="yyyy-MM-dd HH:mm" isBlankWhenNull="true">
+				<reportElement uuid="50e805c7-d6d2-41ec-89ca-7a525f7f631c" x="280" y="46" width="88" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="나눔고딕"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fromPeriod}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="9eb25c63-cd99-4380-a2a4-bb50b594d814" x="261" y="70" width="11" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="나눔고딕"/>
+				</textElement>
+				<text><![CDATA[~]]></text>
+			</staticText>
+			<image>
+				<reportElement uuid="5c2bd22d-dea3-46e7-99f5-aeb951627e2c" x="49" y="46" width="201" height="42"/>
+				<imageExpression><![CDATA[$P{IMG_DIR}+"img_l4Report_tlt_2.png"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<detail>
+		<band height="54" splitType="Stretch">
+			<subreport>
+				<reportElement uuid="a28b22b1-c655-40dc-b37a-7a991d9391f3" x="27" y="0" width="528" height="52"/>
+				<subreportParameter name="REPORT_INDEX"/>
+				<subreportParameter name="SUBREPORT_DIR"/>
+				<subreportParameter name="IMG_DIR"/>
+				<subreportParameter name="ACCUNT_INDEX">
+					<subreportParameterExpression><![CDATA[$P{ACCUNT_INDEX}]]></subreportParameterExpression>
+				</subreportParameter>
+				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource(kr.openbase.adcsmart.web.report.l4operation.L4Factory.getL4SlbConfChange($P{REPORT_INDEX},$P{ACCUNT_INDEX}))]]></dataSourceExpression>
+				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "L4Operation_ChangeConf.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+		<band height="95">
+			<frame>
+				<reportElement uuid="8cfae746-94d1-4e4c-bf70-f56de778e92d" mode="Opaque" x="27" y="0" width="528" height="24" backcolor="#F6F0F0"/>
+				<box>
+					<pen lineWidth="1.0" lineColor="#CCCCCC"/>
+					<topPen lineWidth="1.0" lineColor="#CCCCCC"/>
+					<leftPen lineWidth="1.0" lineColor="#CCCCCC"/>
+					<bottomPen lineWidth="1.0" lineColor="#CCCCCC"/>
+					<rightPen lineWidth="1.0" lineColor="#CCCCCC"/>
+				</box>
+				<image>
+					<reportElement uuid="3e3bf088-3239-400c-a11f-97bbc6269b75" x="5" y="0" width="28" height="22"/>
+					<imageExpression><![CDATA[$P{IMG_DIR} +"icon_trafficMonitor.png"]]></imageExpression>
+				</image>
+				<staticText>
+					<reportElement uuid="d873bfb1-2cc9-4797-ab9f-d90d51ab6d32" x="37" y="0" width="100" height="20"/>
+					<textElement verticalAlignment="Middle">
+						<font fontName="나눔고딕" isBold="true"/>
+					</textElement>
+					<text><![CDATA[성능 정보 요약]]></text>
+				</staticText>
+			</frame>
+			<subreport>
+				<reportElement uuid="1cb08d8e-c8ed-4305-9589-3a308153aecd" x="27" y="29" width="528" height="55"/>
+				<subreportParameter name="SUBREPORT_DIR">
+					<subreportParameterExpression><![CDATA[$P{SUBREPORT_DIR}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="REPORT_INDEX">
+					<subreportParameterExpression><![CDATA[$P{REPORT_INDEX}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="IMG_DIR">
+					<subreportParameterExpression><![CDATA[$P{IMG_DIR}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="ACCUNT_INDEX">
+					<subreportParameterExpression><![CDATA[$P{ACCUNT_INDEX}]]></subreportParameterExpression>
+				</subreportParameter>
+				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource(kr.openbase.adcsmart.web.report.l4operation.L4Factory.getPerformSummary($P{REPORT_INDEX},$P{ACCUNT_INDEX}))]]></dataSourceExpression>
+				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "L4Operation_PerformInfo.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+	</detail>
+</jasperReport>

@@ -1,0 +1,2956 @@
+/* CSS Document */
+
+@import url("device_Interface_eng_F5.css");
+
+.legend1 {	text-align: center; 	padding: 30px 4px 20px 0px;	position:relative;  }
+.legend2 {	text-align: center; 	padding: 30px 4px 20px 0px;	position:relative;  }
+
+/*- Alteon basic --------------------------- */
+.alteon_basic {
+	margin: 0px 0px 0px 35px;
+	background-image: url(../../imgs/monitoring/device/alteon_basic.gif);
+	height: 183px;
+	width: 881px;
+	font-size: 13px !important; }
+	
+.alteon_basic .txt {
+	color: #042704;
+	font-size: 11px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 45px;
+	letter-spacing: 0px;
+	/* text-shadow: 1px 1px 2px #fff; */ }
+
+/*- HDD - */
+.alteon_basic .hGreen { 
+	background-image: url(../../imgs/icon/icon_hdd_G.png);}
+
+.alteon_basic .hRed { 
+	background-image: url(../../imgs/icon/icon_hdd_R.png);}
+
+.alteon_basic .hBlack { 
+	background-image: url(../../imgs/icon/icon_hdd_B.png);}
+
+.alteon_basic .hdd01 { 
+	width:124px; 
+	height: 23px; 	
+	display: inline-block;	
+	font-size: 11px;	
+	font-weight: bold;
+	text-align: center;	
+	color : #fff;
+	line-height: 28px;	
+	float:right;			 
+	margin: 22px 40px 0px 0px ;}
+
+/*- CPU 8개이상 - */
+.alteon_basic .cGreen { 
+	width:94px; 
+	height: 42px; 
+	background-image: url(../../imgs/icon/icon_cylinderTip_G.png);	}
+
+.alteon_basic .cRed { 
+	width:94px; 
+	height: 42px; 
+	background-image: url(../../imgs/icon/icon_cylinderTip_R.png);	}
+
+.alteon_basic .cBlack { 
+	width:94px; 
+	height: 42px; 
+	background-image: url(../../imgs/icon/icon_cylinderTip_B.png);	}
+		
+.alteon_basic .cpu01 { 
+	display: inline-block;		
+	position:relative;     
+	margin: 2px 0px 0px 80px  }
+
+.alteon_basic .cpu02 { 
+	display: inline-block;		
+	position:relative;    
+	margin: 0px 0px 0px -4px  }	
+	
+.alteon_basic .cpu03 { 
+	display: inline-block;			
+	position:relative;     
+	margin: 0px 0px 0px -4px  }	
+		
+.alteon_basic .cpu04 { 
+	display: inline-block;			
+	position:relative;     
+	margin: 0px 0px 0px -4px  }	
+			
+
+/*- 팬 - */
+.alteon_basic .fGreen { 
+	background-image: url(../../imgs/icon/icon_fan_G.png);	}
+
+.alteon_basic .fRed { 
+	background-image: url(../../imgs/icon/icon_fan_R.png);	}
+
+.alteon_basic .fBlack { 	
+	background-image: url(../../imgs/icon/icon_fan_B.png);	}
+
+.alteon_basic .fan01 { 
+	width:43px; 
+	height: 42px;		
+	display: inline-block;			  			 
+	float:right;		  			 
+	margin: 16px 11px 0px 0px;  }
+	
+/*- 파워 - */
+.alteon_basic .poGreen { 
+	background-image: url(../../imgs/icon/icon_power_G.png);}
+
+.alteon_basic .poRed { 
+	background-image: url(../../imgs/icon/icon_power_R.png);}
+
+.alteon_basic .poBlack { 
+	background-image: url(../../imgs/icon/icon_power_B.png);}
+			
+.alteon_basic .power01 { 
+	width:25px; 
+	height: 25px; 	
+	display: inline-block;	
+	position:relative; 	
+   	vertical-align: top;  	
+	float:right;			 
+	margin: 24px 90px 0px 0px ;}	
+
+.alteon_basic .power02 { 
+	width:25px; 
+	height: 25px; 	
+	display: inline-block;	
+	position:relative;  
+   	vertical-align: top;  	
+	float:right;			 
+	margin: 24px -60px 0px 0px ;}	
+
+/*- 버전 - */	
+.alteon_basic .version { 
+	display: inline-block;	
+	position:relative; 					 
+	margin: 11px 0px 0px 213px ;
+	color: #000;
+	font-weight: bold;
+	font-family: Arial;	
+	height: 18px;	
+	font-size: 10px;}	
+
+/*- 포트 - */	
+.alteon_basic .Green { 
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;		
+	background-image: url(../../imgs/icon/icon_port_G_25x17.gif);	}	
+
+.alteon_basic .Red { 	
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;		
+	background-image: url(../../imgs/icon/icon_port_R_25x17.gif);	}	
+	
+.alteon_basic .Black { 
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;		
+	background-image: url(../../imgs/icon/icon_port_B_25x17.gif);	}	
+
+.alteon_basic .Yellow { 
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;			
+	background-image: url(../../imgs/icon/icon_port_Y_25x17.gif);	}	
+	
+.alteon_basic .Off { 
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;		
+	background-image: url(../../imgs/icon/icon_port_O_25x17.gif);	}	
+		
+/*- 포트  테이블 - */			
+.alteon_basic .porttable {
+	display: inline-block;
+	margin: 17px 0px 0px 120px;
+	cellpadding: 0px;
+	cellspacing: 0px;	
+}
+.alteon_basic .porttable  td { vertical-align: top;}
+
+/*- Alteon 3408 --------------------------- */
+.alteon_3408 {
+	margin: 0px 0px 0px 35px;
+	background-image: url(../../imgs/monitoring/device/alteon_3408.gif);
+	height: 183px;
+	width: 881px;
+	font-size: 13px !important; }		
+	
+.alteon_3408 .txt {
+	color: #042704;
+	font-size: 11px;	
+	font-weight: bold;
+	text-align: center;
+	line-height: 50px;
+	letter-spacing: -1px;	
+/* 	text-shadow: 1px 1px 2px #fff;	*/ }
+
+/*- HDD - */
+.alteon_3408 .hGreen { 
+	background-image: url(../../imgs/icon/icon_hdd_G.png);}
+
+.alteon_3408 .hRed { 
+	background-image: url(../../imgs/icon/icon_hdd_R.png);}
+
+.alteon_3408 .hBlack { 
+	background-image: url(../../imgs/icon/icon_hdd_B.png);}
+
+.alteon_3408 .hdd01 { 
+	width:124px; 
+	height: 23px; 	
+	display: inline-block;	
+	font-size: 11px;	
+	font-weight: bold;
+	text-align: center;	
+	color : #fff;
+	line-height: 28px;	
+	float:right;			 
+	margin: 22px 40px 0px 0px ;}	
+
+/*- CPU - */
+.alteon_3408 .cGreen { 
+	width:50px; 
+	height: 42px; 
+	background-image: url(../../imgs/icon/icon_cylinder_G.png);	}
+
+.alteon_3408 .cRed { 
+	width:50px; 
+	height: 42px; 
+	background-image: url(../../imgs/icon/icon_cylinder_R.png);	}
+
+.alteon_3408 .cBlack { 
+	width:50px; 
+	height: 42px; 
+	background-image: url(../../imgs/icon/icon_cylinder_B.png);	}
+		
+.alteon_3408 .cpu01 { 
+	display: inline-block;		
+	position:relative;     
+	margin: 0px 0px 0px 80px 	 }
+
+.alteon_3408 .cpu02 { 
+	display: inline-block;		
+	position:relative;    
+	margin: 0px 0px 0px -4px  }	
+	
+.alteon_3408 .cpu03 { 
+	display: inline-block;			
+	position:relative;     
+	margin: 0px 0px 0px -4px  }
+		
+.alteon_3408 .cpu04 { 
+	display: inline-block;			
+	position:relative;     
+	margin: 0px 0px 0px -4px  }	
+
+.alteon_3408 .cpu05 { 
+	display: inline-block;			
+	position:relative;     
+	margin: 0px 0px 0px -4px  }
+
+
+/*- 팬 - */
+.alteon_3408 .fGreen { 
+	background-image: url(../../imgs/icon/icon_fan_G.png);	}
+
+.alteon_3408 .fRed { 	
+	background-image: url(../../imgs/icon/icon_fan_R.png);	}
+
+.alteon_3408 .fBlack { 	
+	background-image: url(../../imgs/icon/icon_fan_B.png);	}
+
+.alteon_3408 .fan01 { 
+	width:43px; 
+	height: 42px;		
+	display: inline-block;			  			 
+	float:right;		  			 
+	margin: 16px 25px 0px 0px;  }
+	
+/*- 파워 - */
+.alteon_3408 .poGreen { 
+	background-image: url(../../imgs/icon/icon_power_G.png);}
+
+.alteon_3408 .poRed { 
+	background-image: url(../../imgs/icon/icon_power_R.png);}
+
+.alteon_3408 .poBlack { 
+	background-image: url(../../imgs/icon/icon_power_B.png);}
+		
+.alteon_3408 .power01 { 
+	width:25px; 
+	height: 25px; 	
+	display: inline-block;	
+	float:right;			 
+	margin: 24px 65px 0px 0px ;}	
+
+/*- 버전 - */	
+.alteon_3408 .version { 
+	display: inline-block;	
+	position:relative; 					 
+	margin: 11px 0px 0px 203px ;
+	color: #000;
+	font-weight: bold;
+	font-family: Arial;	
+	height: 18px;	
+	font-size: 10px;}		
+
+/*- 포트 - */	
+.alteon_3408 .pCopper1Green { 
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;		
+	background-image: url(../../imgs/icon/icon_copper1_G_25x17.gif);	}	
+
+.alteon_3408 .pCopper1Red { 	
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;			
+	background-image: url(../../imgs/icon/icon_copper1_R_25x17.gif);	}	
+	
+.alteon_3408 .pCopper1Black { 
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;			
+	background-image: url(../../imgs/icon/icon_copper1_B_25x17.gif);	}	
+
+.alteon_3408 .pCopper1Yellow { 
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;			
+	background-image: url(../../imgs/icon/icon_copper1_Y_25x17.gif);	}	
+
+.alteon_3408 .pCopper1Off { 
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;			
+	background-image: url(../../imgs/icon/icon_copper1_O_25x17.gif);	}	
+
+.alteon_3408 .pFiber1Green { 
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;			
+	background-image: url(../../imgs/icon/icon_fiber1_G_25x17.gif);	}	
+
+.alteon_3408 .pFiber1Red { 	
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;			
+	background-image: url(../../imgs/icon/icon_fiber1_R_25x17.gif);	}	
+	
+.alteon_3408 .pFiber1Black { 
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;			
+	background-image: url(../../imgs/icon/icon_fiber1_B_25x17.gif);	}	
+
+.alteon_3408 .pFiber1Yellow { 
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;			
+	background-image: url(../../imgs/icon/icon_fiber1_Y_25x17.gif);	}
+	
+.alteon_3408 .pFiber1Off { 
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;			
+	background-image: url(../../imgs/icon/icon_fiber1_O_25x17.gif);	}	
+
+/*- 포트  테이블 - */			
+.alteon_3408 .porttable {
+	display: inline-block;
+	margin: 17px 0px 0px 120px;
+	cellpadding: 0px;
+	cellspacing: 0px;	
+}
+.alteon_3408 .porttable  td { vertical-align: top;}
+
+			
+/*- Alteon 4408 --------------------------- */
+.alteon_4408 {
+	margin: 0px 0px 0px 35px;
+	background-image: url(../../imgs/monitoring/device/alteon_4408.gif);
+	height: 183px;
+	width: 881px;
+	font-size: 13px !important;}	
+	
+.alteon_4408 .txt {
+	color: #042704;
+	font-size: 11px;	
+	font-weight: bold;
+	text-align: center;
+	line-height: 50px;
+	letter-spacing: -1px;	
+/* 	text-shadow: 1px 1px 2px #fff;	*/ }
+
+/*- HDD - */
+.alteon_4408 .hGreen { 
+	background-image: url(../../imgs/icon/icon_hdd_G.png);}
+
+.alteon_4408 .hRed { 
+	background-image: url(../../imgs/icon/icon_hdd_R.png);}
+
+.alteon_4408 .hBlack { 
+	background-image: url(../../imgs/icon/icon_hdd_B.png);}
+
+.alteon_4408 .hdd01 { 
+	width:124px; 
+	height: 23px; 	
+	display: inline-block;	
+	font-size: 11px;	
+	font-weight: bold;
+	text-align: center;	
+	color : #fff;
+	line-height: 28px;	
+	float:right;			 
+	margin: 22px 40px 0px 0px ;}	
+
+/*- CPU - */
+.alteon_4408 .cGreen { 
+	width:50px; 
+	height: 42px; 
+	background-image: url(../../imgs/icon/icon_cylinder_G.png);	}
+
+.alteon_4408 .cRed { 
+	width:50px; 
+	height: 42px; 
+	background-image: url(../../imgs/icon/icon_cylinder_R.png);	}
+
+.alteon_4408 .cBlack { 
+	width:50px; 
+	height: 42px; 
+	background-image: url(../../imgs/icon/icon_cylinder_B.png);	}
+		
+.alteon_4408 .cpu01 { 
+	display: inline-block;		
+	position:relative;     
+	margin: 0px 0px 0px 80px;}
+
+.alteon_4408 .cpu02 { 
+	display: inline-block;		
+	position:relative;    
+	margin: 0px 0px 0px -4px;}
+	
+.alteon_4408 .cpu03 { 
+	display: inline-block;			
+	position:relative;     
+	margin: 0px 0px 0px -4px;}
+		
+.alteon_4408 .cpu04 { 
+	display: inline-block;			
+	position:relative;     
+	margin: 0px 0px 0px -4px;}
+
+/*- 팬 - */
+.alteon_4408 .fGreen { 
+	background-image: url(../../imgs/icon/icon_fan_G.png);	}
+
+.alteon_4408 .fRed { 
+	background-image: url(../../imgs/icon/icon_fan_R.png);	}
+
+.alteon_4408 .fBlack { 	
+	background-image: url(../../imgs/icon/icon_fan_B.png);	}
+
+.alteon_4408 .fan01 {
+	width:43px; 
+	height: 42px;		
+	display: inline-block;	
+	float:right;		  			 
+	margin: 16px 11px 0px 0px;  }
+
+/*- 파워 - */
+.alteon_4408 .poGreen { 
+	background-image: url(../../imgs/icon/icon_power_G.png);}
+
+.alteon_4408 .poRed { 
+	background-image: url(../../imgs/icon/icon_power_R.png);}
+
+.alteon_4408 .poBlack { 
+	background-image: url(../../imgs/icon/icon_power_B.png);}
+		
+.alteon_4408 .power01 { 
+	width:25px; 
+	height: 25px; 	
+	display: inline-block;	
+	position:relative; 	
+   	vertical-align: top;  	
+	float:right;			 
+	margin: 24px 90px 0px 0px;}	
+
+.alteon_4408 .power02 { 
+	width:25px; 
+	height: 25px; 	
+	display: inline-block;	
+	position:relative;  
+   	vertical-align: top;  	
+	float:right;			 
+	margin: 24px -60px 0px 0px;}	
+
+/*- 버전 - */	
+.alteon_4408 .version { 
+	display: inline-block;	
+	position:relative; 					 
+	margin: 11px 0px 0px 203px ;
+	color: #000;
+	font-weight: bold;
+	font-family: Arial;	
+	height: 18px;	
+	font-size: 10px;}	
+
+/*- 포트 - */	
+.alteon_4408 .pCopper1Green { 
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;			
+	background-image: url(../../imgs/icon/icon_copper1_G_25x17.gif);	}	
+
+.alteon_4408 .pCopper1Red { 	
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;			
+	background-image: url(../../imgs/icon/icon_copper1_R_25x17.gif);	}	
+	
+.alteon_4408 .pCopper1Black { 
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;			
+	background-image: url(../../imgs/icon/icon_copper1_B_25x17.gif);	}	
+
+.alteon_4408 .pCopper1Yellow { 
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;			
+	background-image: url(../../imgs/icon/icon_copper1_Y_25x17.gif);	}	
+	
+.alteon_4408 .pCopper1Off { 
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;			
+	background-image: url(../../imgs/icon/icon_copper1_O_25x17.gif);	}	
+
+.alteon_4408 .pFiber1Green { 
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;			
+	background-image: url(../../imgs/icon/icon_fiber1_G_25x17.gif);	}	
+
+.alteon_4408 .pFiber1Red { 	
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;			
+	background-image: url(../../imgs/icon/icon_fiber1_R_25x17.gif);	}	
+	
+.alteon_4408 .pFiber1Black { 
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;			
+	background-image: url(../../imgs/icon/icon_fiber1_B_25x17.gif);	}	
+
+.alteon_4408 .pFiber1Yellow { 
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;			
+	background-image: url(../../imgs/icon/icon_fiber1_Y_25x17.gif);	}	
+
+.alteon_4408 .pFiber1Off { 
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;		
+	background-image: url(../../imgs/icon/icon_fiber1_O_25x17.gif);	}	
+
+/*- 포트  테이블 - */			
+.alteon_4408 .porttable {
+	display: inline-block;
+	margin: 17px 0px 0px 381px;
+	cellpadding: 0px;
+	cellspacing: 0px;	
+}
+.alteon_4408 .porttable  td { vertical-align: top;}			
+	
+	
+/*- Alteon 2424 --------------------------- */
+.alteon_2424 {
+	margin: 0px 0px 0px 35px;
+	background-image: url(../../imgs/monitoring/device/alteon_2424.gif);
+	height: 183px;
+	width: 881px;
+	font-size: 13px !important; }	
+	
+.alteon_2424 .txt {
+	color: #042704;
+	font-size: 11px;	
+	font-weight: bold;
+	text-align: center;
+	line-height: 50px;
+	letter-spacing: -1px;	
+/* 	text-shadow: 1px 1px 2px #fff;	*/ }
+
+
+/*- HDD - */
+.alteon_2424 .hGreen { 
+	background-image: url(../../imgs/icon/icon_hdd_G.png);}
+
+.alteon_2424 .hRed { 
+	background-image: url(../../imgs/icon/icon_hdd_R.png);}
+
+.alteon_2424 .hBlack { 
+	background-image: url(../../imgs/icon/icon_hdd_B.png);}
+
+.alteon_2424 .hdd01 { 
+	width:124px; 
+	height: 23px; 	
+	display: inline-block;	
+	font-size: 11px;	
+	font-weight: bold;
+	text-align: center;	
+	color : #fff;
+	line-height: 28px;	
+	float:right;			 
+	margin: 22px 40px 0px 0px ;}	
+
+
+/*- CPU - */
+.alteon_2424 .cGreen { 
+	width:50px; 
+	height: 42px; 
+	background-image: url(../../imgs/icon/icon_cylinder_G.png);	}
+
+.alteon_2424 .cRed { 
+	width:50px; 
+	height: 42px; 
+	background-image: url(../../imgs/icon/icon_cylinder_R.png);	}
+
+.alteon_2424 .cBlack { 
+	width:50px; 
+	height: 42px; 
+	background-image: url(../../imgs/icon/icon_cylinder_B.png);	}
+		
+.alteon_2424 .cpu01 { 
+	display: inline-block;		
+	position:relative;     
+	margin: 0px 0px 0px 80px; 	 }
+
+.alteon_2424 .cpu02 { 
+	display: inline-block;		
+	position:relative;    
+	margin: 0px 0px 0px -4px;  }	
+	
+.alteon_2424 .cpu03 { 
+	display: inline-block;			
+	position:relative;     
+	margin: 0px 0px 0px -4px;  }
+		
+.alteon_2424 .cpu04 { 
+	display: inline-block;			
+	position:relative;     
+	margin: 0px 0px 0px -4px;  }	
+
+.alteon_2424 .cpu05 { 
+	display: inline-block;			
+	position:relative;     
+	margin: 0px 0px 0px -4px;  }
+
+/*- 팬 - */
+.alteon_2424 .fGreen { 
+	background-image: url(../../imgs/icon/icon_fan_G.png);	}
+
+.alteon_2424 .fRed { 
+	background-image: url(../../imgs/icon/icon_fan_R.png);	}
+
+.alteon_2424 .fBlack { 	
+	background-image: url(../../imgs/icon/icon_fan_B.png);	}
+
+.alteon_2424 .fan01 { 
+	width:43px; 
+	height: 42px;		
+	display: inline-block;			  			 
+	float:right;		  			 
+	margin: 16px 25px 0px 0px;  }
+	
+/*- 파워 - */
+.alteon_2424 .poGreen { 
+	background-image: url(../../imgs/icon/icon_power_G.png);}
+
+.alteon_2424 .poRed { 
+	background-image: url(../../imgs/icon/icon_power_R.png);}
+
+.alteon_2424 .poBlack { 
+	background-image: url(../../imgs/icon/icon_power_B.png);}
+		
+.alteon_2424 .power01 { 
+	width:25px; 
+	height: 25px; 	
+	display: inline-block;	
+	float:right;			 
+	margin: 24px 65px 0px 0px;}	
+
+/*- 버전 - */	
+.alteon_2424 .version { 
+	display: inline-block;	
+	position:relative; 					 
+	margin: 11px 0px 0px 203px ;
+	color: #000;
+	font-weight: bold;
+	font-family: Arial;	
+	height: 18px;	
+	font-size: 10px;}	
+
+/*- 포트 - */	
+.alteon_2424 .pCopper1Green { 
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;			
+	background-image: url(../../imgs/icon/icon_copper1_G_25x17.gif);	}	
+
+.alteon_2424 .pCopper1Red { 	
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;			
+	background-image: url(../../imgs/icon/icon_copper1_R_25x17.gif);	}	
+	
+.alteon_2424 .pCopper1Black { 
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;		
+	background-image: url(../../imgs/icon/icon_copper1_B_25x17.gif);	}	
+
+.alteon_2424 .pCopper1Yellow { 
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;		
+	background-image: url(../../imgs/icon/icon_copper1_Y_25x17.gif);	}	
+	
+.alteon_2424 .pCopper1Off { 
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;			
+	background-image: url(../../imgs/icon/icon_copper1_O_25x17.gif);	}	
+
+.alteon_2424 .pCopper2Green { 
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;			
+	background-image: url(../../imgs/icon/icon_copper2_G_25x17.gif);	}	
+
+.alteon_2424 .pCopper2Red { 	
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;			
+	background-image: url(../../imgs/icon/icon_copper2_R_25x17.gif);	}	
+	
+.alteon_2424 .pCopper2Black { 
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;			
+	background-image: url(../../imgs/icon/icon_copper2_B_25x17.gif);	}	
+
+.alteon_2424 .pCopper2Yellow { 
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;			
+	background-image: url(../../imgs/icon/icon_copper2_Y_25x17.gif);	}	
+	
+.alteon_2424 .pCopper2Off { 
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;			
+	background-image: url(../../imgs/icon/icon_copper2_O_25x17.gif);	}	
+
+
+.alteon_2424 .pFiber1Green { 
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;			
+	background-image: url(../../imgs/icon/icon_fiber1_G_25x17.gif);	}	
+
+.alteon_2424 .pFiber1Red { 	
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;			
+	background-image: url(../../imgs/icon/icon_fiber1_R_25x17.gif);	}	
+	
+.alteon_2424 .pFiber1Black { 
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;			
+	background-image: url(../../imgs/icon/icon_fiber1_B_25x17.gif);	}	
+
+.alteon_2424 .pFiber1Yellow { 
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;			
+	background-image: url(../../imgs/icon/icon_fiber1_Y_25x17.gif);	}
+	
+.alteon_2424 .pFiber1Off { 
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;			
+	background-image: url(../../imgs/icon/icon_fiber1_O_25x17.gif);	}	
+
+/*- 포트  테이블 - */			
+.alteon_2424 .porttable {
+	display: inline-block;
+	margin: 17px 0px 0px 120px;
+	cellpadding: 0px;
+	cellspacing: 0px;	
+}
+.alteon_2424 .porttable  td { vertical-align: top;}		
+		
+/*- Alteon 2216 --------------------------- */
+.alteon_2216 {
+	margin: 0px 0px 0px 35px;
+	background-image: url(../../imgs/monitoring/device/alteon_2216.gif);
+	height: 183px;
+	width: 881px;
+	font-size: 13px !important; }
+	
+.alteon_2216 .txt {
+	color: #042704;
+	font-size: 11px;	
+	font-weight: bold;
+	text-align: center;
+	line-height: 50px;
+	letter-spacing: -1px;	
+/* 	text-shadow: 1px 1px 2px #fff;	*/ }
+
+/*- HDD - */
+.alteon_2216 .hGreen { 
+	background-image: url(../../imgs/icon/icon_hdd_G.png);}
+
+.alteon_2216 .hRed { 
+	background-image: url(../../imgs/icon/icon_hdd_R.png);}
+
+.alteon_2216 .hBlack { 
+	background-image: url(../../imgs/icon/icon_hdd_B.png);}
+
+.alteon_2216 .hdd01 { 
+	width:124px; 
+	height: 23px; 	
+	display: inline-block;	
+	font-size: 11px;	
+	font-weight: bold;
+	text-align: center;	
+	color : #fff;
+	line-height: 28px;	
+	float:right;			 
+	margin: 22px 40px 0px 0px ;}	
+
+/*- CPU - */
+.alteon_2216 .cGreen { 
+	width:50px; 
+	height: 42px; 
+	background-image: url(../../imgs/icon/icon_cylinder_G.png);	}
+
+.alteon_2216 .cRed { 
+	width:50px; 
+	height: 42px; 
+	background-image: url(../../imgs/icon/icon_cylinder_R.png);	}
+
+.alteon_2216 .cBlack { 
+	width:50px; 
+	height: 42px; 
+	background-image: url(../../imgs/icon/icon_cylinder_B.png);	}
+		
+.alteon_2216 .cpu01 { 
+	display: inline-block;		
+	position:relative;     
+	margin: 0px 0px 0px 80px; 	 }	
+
+.alteon_2216 .cpu02 { 
+	display: inline-block;		
+	position:relative;    
+	margin: 0px 0px 0px -4px;  }
+	
+.alteon_2216 .cpu03 { 
+	display: inline-block;			
+	position:relative;     
+	margin: 0px 0px 0px -4px;  }
+
+/*- 팬 - */
+.alteon_2216 .fGreen { 
+	background-image: url(../../imgs/icon/icon_fan_G.png);	}
+
+.alteon_2216 .fRed { 
+	background-image: url(../../imgs/icon/icon_fan_R.png);	}
+
+.alteon_2216 .fBlack { 	
+	background-image: url(../../imgs/icon/icon_fan_B.png);	}
+
+.alteon_2216 .fan01 { 
+	width:43px; 
+	height: 42px;		
+	display: inline-block;			  			 
+	float:right;		  			 
+	margin: 16px 25px 0px 0px;  }	
+
+/*- 파워 - */
+.alteon_2216 .poGreen { 
+	background-image: url(../../imgs/icon/icon_power_G.png);}
+
+.alteon_2216 .poRed { 
+	background-image: url(../../imgs/icon/icon_power_R.png);}
+
+.alteon_2216 .poBlack { 
+	background-image: url(../../imgs/icon/icon_power_B.png);}
+		
+.alteon_2216 .power01 { 
+	width:25px; 
+	height: 25px; 	
+	display: inline-block;	
+	float:right;			 
+	margin: 24px 65px 0px 0px;}	
+
+/*- 버전 - */	
+.alteon_2216 .version { 
+	display: inline-block;	
+	position:relative; 					 
+	margin: 11px 0px 0px 203px ;
+	color: #000;
+	font-weight: bold;
+	font-family: Arial;	
+	height: 18px;	
+	font-size: 10px;
+	/*background:#333*/
+	}	
+
+/*- 포트 - */	
+.alteon_2216 .pCopper1Green { 
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;			
+	background-image: url(../../imgs/icon/icon_copper1_G_25x17.gif);	}	
+
+.alteon_2216 .pCopper1Red { 	
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;			
+	background-image: url(../../imgs/icon/icon_copper1_R_25x17.gif);	}	
+	
+.alteon_2216 .pCopper1Black { 
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;			
+	background-image: url(../../imgs/icon/icon_copper1_B_25x17.gif);	}	
+
+.alteon_2216 .pCopper1Yellow { 
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;			
+	background-image: url(../../imgs/icon/icon_copper1_Y_25x17.gif);	}	
+	
+.alteon_2216 .pCopper1Off { 
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;		
+	background-image: url(../../imgs/icon/icon_copper1_O_25x17.gif);	}	
+
+.alteon_2216 .pCopper2Green { 
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;			
+	background-image: url(../../imgs/icon/icon_copper2_G_25x17.gif);	}	
+
+.alteon_2216 .pCopper2Red { 	
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;			
+	background-image: url(../../imgs/icon/icon_copper2_R_25x17.gif);	}	
+	
+.alteon_2216 .pCopper2Black { 
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;			
+	background-image: url(../../imgs/icon/icon_copper2_B_25x17.gif);	}	
+
+.alteon_2216 .pCopper2Yellow { 
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;			
+	background-image: url(../../imgs/icon/icon_copper2_Y_25x17.gif);	}	
+	
+.alteon_2216 .pCopper2Off { 
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;			
+	background-image: url(../../imgs/icon/icon_copper2_O_25x17.gif);	}
+		
+.alteon_2216 .pFiber1Green { 
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;			
+	background-image: url(../../imgs/icon/icon_fiber1_G_25x17.gif);	}	
+
+.alteon_2216 .pFiber1Red { 	
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;			
+	background-image: url(../../imgs/icon/icon_fiber1_R_25x17.gif);	}	
+	
+.alteon_2216 .pFiber1Black { 
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;			
+	background-image: url(../../imgs/icon/icon_fiber1_B_25x17.gif);	}	
+
+.alteon_2216 .pFiber1Yellow { 
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;			
+	background-image: url(../../imgs/icon/icon_fiber1_Y_25x17.gif);	}	
+	
+.alteon_2216 .pFiber1Off { 
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;			
+	background-image: url(../../imgs/icon/icon_fiber1_O_25x17.gif);	}	
+
+/*- 포트  테이블 - */			
+.alteon_2216 .porttable {
+	display: inline-block;
+	margin: 17px 0px 0px 120px;
+	cellpadding: 0px;
+	cellspacing: 0px;	
+}
+.alteon_2216 .porttable  td { vertical-align: top;}		
+		
+
+/*- Alteon  --------------------------- */
+.alteon_2208 {
+	margin: 0px 0px 0px 35px;
+	background-image: url(../../imgs/monitoring/device/alteon_2208.gif);
+	height: 183px;
+	width: 881px;
+	font-size: 13px !important; 	}	
+	
+.alteon_2208 .txt {
+	color: #042704;
+	font-size: 11px;	
+	font-weight: bold;
+	text-align: center;
+	line-height: 50px;
+	letter-spacing: -1px;	
+/* 	text-shadow: 1px 1px 2px #fff;	*/ }
+
+/*- HDD - */
+.alteon_2208 .hGreen { 
+	background-image: url(../../imgs/icon/icon_hdd_G.png);}
+
+.alteon_2208 .hRed { 
+	background-image: url(../../imgs/icon/icon_hdd_R.png);}
+
+.alteon_2208 .hBlack { 
+	background-image: url(../../imgs/icon/icon_hdd_B.png);}
+
+.alteon_2208 .hdd01 { 
+	width:124px; 
+	height: 23px; 	
+	display: inline-block;	
+	font-size: 11px;	
+	font-weight: bold;
+	text-align: center;	
+	color : #fff;
+	line-height: 28px;	
+	float:right;			 
+	margin: 22px 40px 0px 0px ;}	
+
+/*- CPU - */
+.alteon_2208 .cGreen { 
+	width:50px; 
+	height: 42px; 
+	background-image: url(../../imgs/icon/icon_cylinder_G.png);	}
+
+.alteon_2208 .cRed { 
+	width:50px; 
+	height: 42px; 
+	background-image: url(../../imgs/icon/icon_cylinder_R.png);	}
+
+.alteon_2208 .cBlack { 
+	width:50px; 
+	height: 42px; 
+	background-image: url(../../imgs/icon/icon_cylinder_B.png);	}
+		
+.alteon_2208 .cpu01 { 
+	display: inline-block;		
+	position:relative;     
+	margin: 0px 0px 0px 80px; 	 }	
+
+.alteon_2208 .cpu02 { 
+	display: inline-block;		
+	position:relative;    
+	margin: 0px 0px 0px -4px;  }	
+	
+.alteon_2208 .cpu03 { 
+	display: inline-block;			
+	position:relative;     
+	margin: 0px 0px 0px -4px;  }
+
+/*- 팬 - */
+.alteon_2208 .fGreen { 	
+	background-image: url(../../imgs/icon/icon_fan_G.png);	}
+
+.alteon_2208 .fRed { 
+	background-image: url(../../imgs/icon/icon_fan_R.png);	}
+
+.alteon_2208 .fBlack { 
+	background-image: url(../../imgs/icon/icon_fan_B.png);	}
+
+.alteon_2208 .fan01 { 
+	width:43px; 
+	height: 42px;		
+	display: inline-block;			  			 
+	float:right;		  			 
+	margin: 16px 25px 0px 0px;  }
+
+	
+/*- 파워 - */
+.alteon_2208 .poGreen { 
+	background-image: url(../../imgs/icon/icon_power_G.png);}
+
+.alteon_2208 .poRed { 
+	background-image: url(../../imgs/icon/icon_power_R.png);}
+
+.alteon_2208 .poBlack { 
+	background-image: url(../../imgs/icon/icon_power_B.png);}
+		
+.alteon_2208 .power01 { 
+	width:25px; 
+	height: 25px; 	
+	display: inline-block;	
+	float:right;			 
+	margin: 24px 65px 0px 0px ;}	
+
+/*- 버전 - */	
+.alteon_2208 .version { 
+	display: inline-block;	
+	position:relative; 					 
+	margin: 11px 0px 0px 203px ;
+	color: #000;
+	font-weight: bold;
+	font-family: Arial;	
+	height: 18px;	
+	font-size: 10px;}	
+
+/*- 포트 - */	
+.alteon_2208 .pCopper1Green { 
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;			
+	background-image: url(../../imgs/icon/icon_copper1_G_25x17.gif);	}	
+
+.alteon_2208 .pCopper1Red { 	
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;			
+	background-image: url(../../imgs/icon/icon_copper1_R_25x17.gif);	}	
+	
+.alteon_2208 .pCopper1Black { 
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;			
+	background-image: url(../../imgs/icon/icon_copper1_B_25x17.gif);	}	
+
+.alteon_2208 .pCopper1Yellow { 
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;		
+	background-image: url(../../imgs/icon/icon_copper1_Y_25x17.gif);	}	
+	
+.alteon_2208 .pCopper1Off { 
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;			
+	background-image: url(../../imgs/icon/icon_copper1_O_25x17.gif);	}	
+	
+.alteon_2208 .pCopper2Green { 
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;			
+	background-image: url(../../imgs/icon/icon_copper2_G_25x17.gif);	}	
+
+.alteon_2208 .pCopper2Red { 	
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;			
+	background-image: url(../../imgs/icon/icon_copper2_R_25x17.gif);	}	
+	
+.alteon_2208 .pCopper2Black { 
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;			
+	background-image: url(../../imgs/icon/icon_copper2_B_25x17.gif);	}	
+
+.alteon_2208 .pCopper2Yellow { 
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;			
+	background-image: url(../../imgs/icon/icon_copper2_Y_25x17.gif);	}
+	
+.alteon_2208 .pCopper2Off { 
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;			
+	background-image: url(../../imgs/icon/icon_copper2_O_25x17.gif);	}	
+	
+.alteon_2208 .pFiber1Green { 
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;		
+	background-image: url(../../imgs/icon/icon_fiber1_G_25x17.gif);	}	
+
+.alteon_2208 .pFiber1Red { 	
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;		
+	background-image: url(../../imgs/icon/icon_fiber1_R_25x17.gif);	}	
+	
+.alteon_2208 .pFiber1Black { 
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;			
+	background-image: url(../../imgs/icon/icon_fiber1_B_25x17.gif);	}	
+
+.alteon_2208 .pFiber1Yellow { 
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;			
+	background-image: url(../../imgs/icon/icon_fiber1_Y_25x17.gif);	}	
+
+.alteon_2208 .pFiber1Off { 
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;			
+	background-image: url(../../imgs/icon/icon_fiber1_O_25x17.gif);	}	
+
+/*- 포트  테이블 - */			
+.alteon_2208 .porttable {
+	display: inline-block;
+	margin: 17px 0px 0px 120px;
+	cellpadding: 0px;
+	cellspacing: 0px;	
+}
+.alteon_2208 .porttable  td { vertical-align: top;}			
+
+/*- Alteon 4024 --------------------------- */
+.alteon_4024 {
+	margin: 0px 0px 0px 35px;
+	background-image: url(../../imgs/monitoring/device/alteon_4024.gif);
+	height: 183px;
+	width: 881px;
+	font-size: 13px !important; }	
+	
+.alteon_4024 .txt {
+	color: #042704;
+	font-size: 11px;	
+	font-weight: bold;
+	text-align: center;
+	line-height: 50px;
+	letter-spacing: -1px;	
+/* 	text-shadow: 1px 1px 2px #fff;	*/ }
+
+/*- HDD - */
+.alteon_4024 .hGreen { 
+	background-image: url(../../imgs/icon/icon_hdd_G.png);}
+
+.alteon_4024 .hRed { 
+	background-image: url(../../imgs/icon/icon_hdd_R.png);}
+
+.alteon_4024 .hBlack { 
+	background-image: url(../../imgs/icon/icon_hdd_B.png);}
+
+.alteon_4024 .hdd01 { 
+	width:124px; 
+	height: 23px; 	
+	display: inline-block;	
+	font-size: 11px;	
+	font-weight: bold;
+	text-align: center;	
+	color : #fff;
+	line-height: 28px;	
+	float:right;			 
+	margin: 22px 40px 0px 0px ;}
+
+/*- CPU - */
+.alteon_4024 .cGreen { 
+	width:50px; 
+	height: 42px; 
+	background-image: url(../../imgs/icon/icon_cylinder_G.png);	}
+
+.alteon_4024 .cRed { 
+	width:50px; 
+	height: 42px; 
+	background-image: url(../../imgs/icon/icon_cylinder_R.png);	}
+
+.alteon_4024 .cBlack { 
+	width:50px; 
+	height: 42px; 
+	background-image: url(../../imgs/icon/icon_cylinder_B.png);	}
+		
+.alteon_4024 .cpu01 { 
+	display: inline-block;		
+	position:relative;     
+	margin: 0px 0px 0px 80px 	 }
+
+.alteon_4024 .cpu02 { 
+	display: inline-block;		
+	position:relative;    
+	margin: 0px 0px 0px -4px  }
+	
+.alteon_4024 .cpu03 { 
+	display: inline-block;			
+	position:relative;     
+	margin: 0px 0px 0px -4px  }
+		
+.alteon_4024 .cpu04 { 
+	display: inline-block;			
+	position:relative;     
+	margin: 0px 0px 0px -4px;  }
+
+.alteon_4024 .cpu05 { 
+	display: inline-block;			
+	position:relative;     
+	margin: 0px 0px 0px -4px;  }
+.alteon_4024 .cpu06 { 
+	display: inline-block;			
+	position:relative;     
+	margin: 0px 0px 0px -4px;  }
+.alteon_4024 .cpu07 { 
+	display: inline-block;			
+	position:relative;     
+	margin: 0px 0px 0px -4px;  }	
+
+
+/*- 팬 - */
+.alteon_4024 .fGreen { 
+	background-image: url(../../imgs/icon/icon_fan_G.png);	}
+
+.alteon_4024 .fRed { 
+	background-image: url(../../imgs/icon/icon_fan_R.png);	}
+
+.alteon_4024 .fBlack { 	
+	background-image: url(../../imgs/icon/icon_fan_B.png);	}
+
+.alteon_4024 .fan01 { 
+	width:43px; 
+	height: 42px;		
+	display: inline-block;			  			 
+	float:right;		  			 
+	margin: 16px 11px 0px 0px;  }
+	
+/*- 파워 - */
+.alteon_4024 .poGreen { 
+	background-image: url(../../imgs/icon/icon_power_G.png);}
+
+.alteon_4024 .poRed { 
+	background-image: url(../../imgs/icon/icon_power_R.png);}
+
+.alteon_4024 .poBlack { 
+	background-image: url(../../imgs/icon/icon_power_B.png);}
+		
+.alteon_4024 .power01 { 
+	width:25px; 
+	height: 25px; 	
+	display: inline-block;	
+	position:relative; 	
+   	vertical-align: top;  	
+	float:right;			 
+	margin: 24px 90px 0px 0px ;}	
+
+.alteon_4024 .power02 { 
+	width:25px; 
+	height: 25px; 	
+	display: inline-block;	
+	position:relative;  
+   	vertical-align: top;  	
+	float:right;			 
+	margin: 24px -60px 0px 0px ;}	
+
+/*- 버전 - */	
+.alteon_4024 .version { 
+	display: inline-block;	
+	position:relative; 					 
+	margin: 11px 0px 0px 203px ;
+	color: #000;
+	font-weight: bold;
+	font-family: Arial;	
+	height: 18px;	
+	font-size: 10px;}	
+
+/*- 포트 - */	
+.alteon_4024 .pCopper1Green { 
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;			
+	background-image: url(../../imgs/icon/icon_copper1_G_25x17.gif);	}	
+
+.alteon_4024 .pCopper1Red { 	
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;			
+	background-image: url(../../imgs/icon/icon_copper1_R_25x17.gif);	}	
+	
+.alteon_4024 .pCopper1Black { 
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;			
+	background-image: url(../../imgs/icon/icon_copper1_B_25x17.gif);	}	
+
+.alteon_4024 .pCopper1Yellow { 
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;			
+	background-image: url(../../imgs/icon/icon_copper1_Y_25x17.gif);	}	
+	
+.alteon_4024 .pCopper1Off { 
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;			
+	background-image: url(../../imgs/icon/icon_copper1_O_25x17.gif);	}	
+	
+.alteon_4024 .pCopper2Green { 
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;			
+	background-image: url(../../imgs/icon/icon_copper2_G_25x17.gif);	}	
+
+.alteon_4024 .pCopper2Red { 	
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;			
+	background-image: url(../../imgs/icon/icon_copper2_R_25x17.gif);	}	
+	
+.alteon_4024 .pCopper2Black { 
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;			
+	background-image: url(../../imgs/icon/icon_copper2_B_25x17.gif);	}	
+
+.alteon_4024 .pCopper2Yellow { 
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;			
+	background-image: url(../../imgs/icon/icon_copper2_Y_25x17.gif);	}	
+
+
+.alteon_4024 .pCopper2Off { 
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;			
+	background-image: url(../../imgs/icon/icon_copper2_O_25x17.gif);	}	
+	
+.alteon_4024 .pFiber1Green { 
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;			
+	background-image: url(../../imgs/icon/icon_fiber1_G_25x17.gif);	}	
+
+.alteon_4024 .pFiber1Red { 	
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;			
+	background-image: url(../../imgs/icon/icon_fiber1_R_25x17.gif);	}	
+	
+.alteon_4024 .pFiber1Black { 
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;		
+	background-image: url(../../imgs/icon/icon_fiber1_B_25x17.gif);	}	
+
+.alteon_4024 .pFiber1Yellow { 
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;			
+	background-image: url(../../imgs/icon/icon_fiber1_Y_25x17.gif);	}	
+
+.alteon_4024 .pFiber1Off { 
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;		
+	background-image: url(../../imgs/icon/icon_fiber1_O_25x17.gif);	}
+
+/*- 포트  테이블 - */			
+.alteon_4024 .porttable {
+	display: inline-block;
+	margin: 17px 0px 0px 120px;
+	cellpadding: 0px;
+	cellspacing: 0px;	
+}
+.alteon_4024 .porttable  td { vertical-align: top;}			
+
+
+/*- Alteon 5224 --------------------------- */
+.alteon_5224 {
+	margin: 0px 0px 0px 35px;
+	background-image: url(../../imgs/monitoring/device/alteon_5224.gif);
+	height: 183px;
+	width: 881px;
+	font-size: 13px !important;}		
+	
+.alteon_5224 .txt {
+	color: #042704;
+	font-size: 11px;	
+	font-weight: bold;
+	text-align: center;
+	line-height: 50px;
+	letter-spacing: -1px;	
+/* 	text-shadow: 1px 1px 2px #fff;	*/ }
+
+/*- HDD - */
+.alteon_5224 .hGreen { 
+	background-image: url(../../imgs/icon/icon_hdd_G.png);}
+
+.alteon_5224 .hRed { 
+	background-image: url(../../imgs/icon/icon_hdd_R.png);}
+
+.alteon_5224 .hBlack { 
+	background-image: url(../../imgs/icon/icon_hdd_B.png);}
+
+.alteon_5224 .hdd01 { 
+	width:124px; 
+	height: 23px; 	
+	display: inline-block;	
+	font-size: 11px;	
+	font-weight: bold;
+	text-align: center;	
+	color : #fff;
+	line-height: 28px;	
+	float:right;			 
+	margin: 22px 40px 0px 0px ;}
+
+/*- CPU - */
+.alteon_5224 .cGreen { 
+	width:50px; 
+	height: 42px; 
+	background-image: url(../../imgs/icon/icon_cylinder_G.png);	}
+
+.alteon_5224 .cRed { 
+	width:50px; 
+	height: 42px; 
+	background-image: url(../../imgs/icon/icon_cylinder_R.png);	}
+
+.alteon_5224 .cBlack { 
+	width:50px; 
+	height: 42px; 
+	background-image: url(../../imgs/icon/icon_cylinder_B.png);	}
+		
+.alteon_5224 .cpu01 { 
+	display: inline-block;		
+	position:relative;     
+	margin: 0px 0px 0px 80px; }
+
+.alteon_5224 .cpu02 { 
+	display: inline-block;		
+	position:relative;    
+	margin: 0px 0px 0px -4px;  }
+	
+.alteon_5224 .cpu03 { 
+	display: inline-block;		
+	position:relative;    
+	margin: 0px 0px 0px -4px;  }
+		
+.alteon_5224 .cpu04 { 
+	display: inline-block;		
+	position:relative;    
+	margin: 0px 0px 0px -4px;  }
+
+.alteon_5224 .cpu05 { 
+	display: inline-block;		
+	position:relative;    
+	margin: 0px 0px 0px -4px;  }
+.alteon_5224 .cpu06 { 
+	display: inline-block;		
+	position:relative;    
+	margin: 0px 0px 0px -4px; }
+.alteon_5224 .cpu07 { 
+	display: inline-block;		
+	position:relative;    
+	margin: 0px 0px 0px -4px  }	
+
+/*- 팬 - */
+.alteon_5224 .fGreen { 
+	background-image: url(../../imgs/icon/icon_fan_G.png);	}
+
+.alteon_5224 .fRed { 
+	background-image: url(../../imgs/icon/icon_fan_R.png);	}
+
+.alteon_5224 .fBlack { 
+	background-image: url(../../imgs/icon/icon_fan_B.png);	}
+
+.alteon_5224 .fan01 { 		  
+	width:43px; 
+	height: 42px;		
+	display: inline-block;			  			 
+	float:right;		  			 
+	margin: 16px 11px 0px 0px;  }
+	
+/*- 파워 - */
+.alteon_5224 .poGreen { 
+	background-image: url(../../imgs/icon/icon_power_G.png);}
+
+.alteon_5224 .poRed { 
+	background-image: url(../../imgs/icon/icon_power_R.png)}
+
+.alteon_5224 .poBlack { 
+	background-image: url(../../imgs/icon/icon_power_B.png);}
+		
+.alteon_5224 .power01 { 
+	width:25px; 
+	height: 25px; 	
+	display: inline-block;	
+	position:relative; 	
+   	vertical-align: top;  	
+	float:right;			 
+	margin: 24px 90px 0px 0px ;}	
+	
+.alteon_5224 .power02 { 
+	width:25px; 
+	height: 25px; 	
+	display: inline-block;	
+	position:relative;  
+   	vertical-align: top;  	
+	float:right;			 
+	margin: 24px -60px 0px 0px ;}		
+
+/*- 버전 - */	
+.alteon_5224 .version { 
+	display: inline-block;	
+	position:relative; 					 
+	margin: 11px 0px 0px 203px ;
+	color: #000;
+	font-weight: bold;
+	font-family: Arial;	
+	height: 18px;	
+	font-size: 10px;}	
+
+/*- 포트 - */	
+.alteon_5224 .pCopper1Green { 
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;			
+	background-image: url(../../imgs/icon/icon_copper1_G_25x17.gif);	}	
+
+.alteon_5224 .pCopper1Red { 	
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;			
+	background-image: url(../../imgs/icon/icon_copper1_R_25x17.gif);	}	
+	
+.alteon_5224 .pCopper1Black { 
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;			
+	background-image: url(../../imgs/icon/icon_copper1_B_25x17.gif);	}	
+
+.alteon_5224 .pCopper1Yellow { 
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;			
+	background-image: url(../../imgs/icon/icon_copper1_Y_25x17.gif);	}	
+	
+.alteon_5224 .pCopper1Off { 
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;			
+	background-image: url(../../imgs/icon/icon_copper1_O_25x17.gif);	}	
+
+.alteon_5224 .pCopper2Green { 
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;			
+	background-image: url(../../imgs/icon/icon_copper2_G_25x17.gif);	}	
+
+.alteon_5224 .pCopper2Red { 	
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;			
+	background-image: url(../../imgs/icon/icon_copper2_R_25x17.gif);	}	
+	
+.alteon_5224 .pCopper2Black { 
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;			
+	background-image: url(../../imgs/icon/icon_copper2_B_25x17.gif);	}
+	
+.alteon_5224 .pCopper2Yellow { 
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;			
+	background-image: url(../../imgs/icon/icon_copper2_Y_25x17.gif);	}
+	
+.alteon_5224 .pCopper2Off { 
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;			
+	background-image: url(../../imgs/icon/icon_copper2_O_25x17.gif);	}
+	
+.alteon_5224 .pFiber1Green { 
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;			
+	background-image: url(../../imgs/icon/icon_fiber1_G_25x17.gif);	}	
+
+.alteon_5224 .pFiber1Red { 	
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;			
+	background-image: url(../../imgs/icon/icon_fiber1_R_25x17.gif);	}	
+	
+.alteon_5224 .pFiber1Black { 
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;			
+	background-image: url(../../imgs/icon/icon_fiber1_B_25x17.gif);	}	
+
+.alteon_5224 .pFiber1Yellow { 
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;			
+	background-image: url(../../imgs/icon/icon_fiber1_Y_25x17.gif);	}	
+	
+.alteon_5224 .pFiber1Off { 
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;		
+	background-image: url(../../imgs/icon/icon_fiber1_O_25x17.gif);	}
+
+/*- 포트  테이블 - */			
+.alteon_5224 .porttable {
+	display: inline-block;
+	margin: 17px 0px 0px 62px;
+	cellpadding: 0px;
+	cellspacing: 0px;	
+}
+.alteon_5224 .porttable  td { vertical-align: top;}		
+
+/*- Alteon 5412 --------------------------- */
+.alteon_5412 {
+	margin: 0px 0px 0px 35px;
+	background-image: url(../../imgs/monitoring/device/alteon_5412.gif);
+	height: 183px;
+	width: 881px;
+	font-size: 13px !important; }	
+	
+.alteon_5412 .txt {
+	color: #042704;
+	font-size: 11px;	
+	font-weight: bold;
+	text-align: center;
+	line-height: 50px;
+	letter-spacing: -1px;	
+/* 	text-shadow: 1px 1px 2px #fff;	*/ }
+
+/*- HDD - */
+.alteon_5412 .hGreen { 
+	background-image: url(../../imgs/icon/icon_hdd_G.png);}
+
+.alteon_5412 .hRed { 
+	background-image: url(../../imgs/icon/icon_hdd_R.png);}
+
+.alteon_5412 .hBlack { 
+	background-image: url(../../imgs/icon/icon_hdd_B.png);}
+
+.alteon_5412 .hdd01 { 
+	width:124px; 
+	height: 23px; 	
+	display: inline-block;	
+	font-size: 11px;	
+	font-weight: bold;
+	text-align: center;	
+	color : #fff;
+	line-height: 28px;	
+	float:right;			 
+	margin: 22px 40px 0px 0px ;}
+
+/*- CPU - */
+.alteon_5412 .cGreen { 
+	width:50px; 
+	height: 42px; 
+	background-image: url(../../imgs/icon/icon_cylinder_G.png);	}
+
+.alteon_5412 .cRed { 
+	width:50px; 
+	height: 42px; 
+	background-image: url(../../imgs/icon/icon_cylinder_R.png);	}
+
+.alteon_5412 .cBlack { 
+	width:50px; 
+	height: 42px;  
+	background-image: url(../../imgs/icon/icon_cylinder_B.png);	}
+		
+.alteon_5412 .cpu01 { 
+	display: inline-block;		
+	position:relative;     
+	margin: 0px 0px 0px 80px 	 }
+
+.alteon_5412 .cpu02 { 
+	display: inline-block;		
+	position:relative;    
+	margin: 0px 0px 0px -4px  }
+	
+.alteon_5412 .cpu03 { 
+	display: inline-block;			
+	position:relative;     
+	margin: 0px 0px 0px -4px  }
+		
+.alteon_5412 .cpu04 { 
+	display: inline-block;			
+	position:relative;     
+	margin: 0px 0px 0px -4px  }
+
+.alteon_5412 .cpu05 { 
+	display: inline-block;			
+	position:relative;     
+	margin: 0px 0px 0px -4px  }
+	
+.alteon_5412 .cpu06 { 
+	display: inline-block;			
+	position:relative;     
+	margin: 0px 0px 0px -4px  }
+	
+.alteon_5412 .cpu07 { 
+	display: inline-block;			
+	position:relative;     
+	margin: 0px 0px 0px -4px  }		
+
+.alteon_5412 .cpu08 { 
+	display: inline-block;			
+	position:relative;     
+	margin: 0px 0px 0px -4px  }		
+
+/*- 팬 - */
+.alteon_5412 .fGreen { 
+	background-image: url(../../imgs/icon/icon_fan_G.png);	}
+
+.alteon_5412 .fRed { 
+	background-image: url(../../imgs/icon/icon_fan_R.png);	}
+
+.alteon_5412 .fBlack { 
+	background-image: url(../../imgs/icon/icon_fan_B.png);	}
+
+.alteon_5412 .fan01 { 		  
+	width:43px; 
+	height: 42px;		
+	display: inline-block;			  			 
+	float:right;		  			 
+	margin: 16px 11px 0px 0px;  }
+	
+/*- 파워 - */
+.alteon_5412 .poGreen { 
+	background-image: url(../../imgs/icon/icon_power_G.png);}
+
+.alteon_5412 .poRed { 
+	background-image: url(../../imgs/icon/icon_power_R.png);}
+
+.alteon_5412 .poBlack { 
+	background-image: url(../../imgs/icon/icon_power_B.png);}
+		
+.alteon_5412 .power01 { 
+	width:25px; 
+	height: 25px; 	
+	display: inline-block;	
+	position:relative; 	
+   	vertical-align: top;  	
+	float:right;			 
+	margin: 24px 90px 0px 0px ;}	
+
+.alteon_5412 .power02 { 
+	width:25px; 
+	height: 25px; 	
+	display: inline-block;	
+	position:relative;  
+   	vertical-align: top;  	
+	float:right;			 
+	margin: 24px -60px 0px 0px ;}	
+
+/*- 버전 - */	
+.alteon_5412 .version { 
+	display: inline-block;	
+	position:relative; 					 
+	margin: 11px 0px 0px 203px ;
+	color: #000;
+	font-weight: bold;
+	font-family: Arial;	
+	height: 18px;	
+	font-size: 10px;}	
+
+/*- 포트 - */	
+.alteon_5412 .pCopper1Green { 
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;			
+	background-image: url(../../imgs/icon/icon_copper1_G_25x17.gif);	}	
+
+.alteon_5412 .pCopper1Red { 	
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;			
+	background-image: url(../../imgs/icon/icon_copper1_R_25x17.gif);	}	
+	
+.alteon_5412 .pCopper1Black { 
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;		
+	background-image: url(../../imgs/icon/icon_copper1_B_25x17.gif);	}	
+	
+.alteon_5412 .pCopper1Yellow { 
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;			
+	background-image: url(../../imgs/icon/icon_copper1_Y_25x17.gif);	}
+	
+.alteon_5412 .pCopper1Off { 
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;			
+	background-image: url(../../imgs/icon/icon_copper1_O_25x17.gif);	}	
+
+.alteon_5412 .pCopper2Green { 
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;			
+	background-image: url(../../imgs/icon/icon_copper2_G_25x17.gif);	}	
+
+.alteon_5412 .pCopper2Red { 	
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;			
+	background-image: url(../../imgs/icon/icon_copper2_R_25x17.gif);	}	
+	
+.alteon_5412 .pCopper2Black { 
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;			
+	background-image: url(../../imgs/icon/icon_copper2_B_25x17.gif);	}	
+	
+.alteon_5412 .pCopper2Yellow { 
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;			
+	background-image: url(../../imgs/icon/icon_copper2_Y_25x17.gif);	}	
+	
+.alteon_5412 .pCopper2Off { 
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;			
+	background-image: url(../../imgs/icon/icon_copper2_O_25x17.gif);	}		
+	
+.alteon_5412 .pFiber1Green { 
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;			
+	background-image: url(../../imgs/icon/icon_fiber1_G_25x17.gif);	}	
+
+.alteon_5412 .pFiber1Red { 	
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;			
+	background-image: url(../../imgs/icon/icon_fiber1_R_25x17.gif);	}	
+	
+.alteon_5412 .pFiber1Black { 
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;			
+	background-image: url(../../imgs/icon/icon_fiber1_B_25x17.gif);	}	
+
+.alteon_5412 .pFiber1Yellow { 
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;			
+	background-image: url(../../imgs/icon/icon_fiber1_Y_25x17.gif);	}
+	
+.alteon_5412 .pFiber1Off { 
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;			
+	background-image: url(../../imgs/icon/icon_fiber1_O_25x17.gif);	}	
+
+/*- 포트  테이블 - */			
+.alteon_5412 .porttable {
+	display: inline-block;
+	margin: 17px 0px 0px 120px;
+	cellpadding: 0px;
+	cellspacing: 0px;	
+}
+.alteon_5412 .porttable  td { vertical-align: top;}			
+
+/*- Alteon 4416 --------------------------- */
+.alteon_4416 {
+	margin: 0px 0px 0px 35px;
+	background-image: url(../../imgs/monitoring/device/alteon_4416.gif);
+	height: 183px;
+	width: 881px;
+	font-size: 13px !important; }	
+	
+.alteon_4416 .txt {
+	color: #042704;
+	font-size: 11px;	
+	font-weight: bold;
+	text-align: center;
+	line-height: 50px;
+	letter-spacing: -1px;	
+/* 	text-shadow: 1px 1px 2px #fff;	*/ }
+
+/*- HDD - */
+.alteon_4416 .hGreen { 
+	background-image: url(../../imgs/icon/icon_hdd_G.png);}
+
+.alteon_4416 .hRed { 
+	background-image: url(../../imgs/icon/icon_hdd_R.png);}
+
+.alteon_4416 .hBlack { 
+	background-image: url(../../imgs/icon/icon_hdd_B.png);}
+
+.alteon_4416 .hdd01 { 
+	width:124px; 
+	height: 23px; 	
+	display: inline-block;	
+	font-size: 11px;	
+	font-weight: bold;
+	text-align: center;	
+	color : #fff;
+	line-height: 28px;	
+	float:right;			 
+	margin: 22px 40px 0px 0px ;}	
+
+/*- CPU - */
+.alteon_4416 .cGreen { 
+	width:50px; 
+	height: 42px; 
+	background-image: url(../../imgs/icon/icon_cylinder_G.png);	}
+
+.alteon_4416 .cRed { 
+	width:50px; 
+	height: 42px; 
+	background-image: url(../../imgs/icon/icon_cylinder_R.png);	}
+
+.alteon_4416 .cBlack { 
+	width:50px; 
+	height: 42px; 
+	background-image: url(../../imgs/icon/icon_cylinder_B.png);	}
+		
+.alteon_4416 .cpu01 { 
+	display: inline-block;		
+	position:relative;     
+	margin: 0px 0px 0px 80px; 	 }
+
+.alteon_4416 .cpu02 { 
+	display: inline-block;		
+	position:relative;    
+	margin: 0px 0px 0px -4px;  }	
+	
+.alteon_4416 .cpu03 { 
+	display: inline-block;			
+	position:relative;     
+	margin: 0px 0px 0px -4px; }	
+		
+.alteon_4416 .cpu04 { 
+	display: inline-block;			
+	position:relative;     
+	margin: 0px 0px 0px -4px;  }	
+
+.alteon_4416 .cpu05 { 
+	display: inline-block;			
+	position:relative;     
+	margin: 0px 0px 0px -4px;  }	
+.alteon_4416 .cpu06 { 
+	display: inline-block;			
+	position:relative;     
+	margin: 0px 0px 0px -4px;  }	
+.alteon_4416 .cpu07 { 
+	display: inline-block;			
+	position:relative;     
+	margin: 0px 0px 0px -4px;  }	
+
+/*- 팬 - */
+.alteon_4416 .fGreen { 
+	background-image: url(../../imgs/icon/icon_fan_G.png);	}
+
+.alteon_4416 .fRed { 
+	background-image: url(../../imgs/icon/icon_fan_R.png);	}
+
+.alteon_4416 .fBlack { 
+	background-image: url(../../imgs/icon/icon_fan_B.png);	}
+
+.alteon_4416 .fan01 { 		  
+	width:43px; 
+	height: 42px;		
+	display: inline-block;			  			 
+	float:right;		  			 
+	margin: 16px 11px 0px 0px;  }
+	
+	
+/*- 파워 - */
+.alteon_4416 .poGreen { 
+	background-image: url(../../imgs/icon/icon_power_G.png);}
+
+.alteon_4416 .poRed { 
+	background-image: url(../../imgs/icon/icon_power_R.png);}
+
+.alteon_4416 .poBlack { 
+	background-image: url(../../imgs/icon/icon_power_B.png);}
+		
+.alteon_4416 .power01 { 
+	width:25px; 
+	height: 25px; 	
+	display: inline-block;	
+	position:relative; 	
+   	vertical-align: top;  	
+	float:right;			 
+	margin: 24px 90px 0px 0px ;}	
+
+.alteon_4416 .power02 { 
+	width:25px;
+	height: 25px;
+	display: inline-block;	
+	position:relative;  
+   	vertical-align: top;  	
+	float:right;			 
+	margin: 24px -60px 0px 0px ;}			
+
+/*- 버전 - */	
+.alteon_4416 .version { 
+	display: inline-block;	
+	position:relative; 					 
+	margin: 11px 0px 0px 203px ;
+	color: #000;
+	font-weight: bold;
+	font-family: Arial;	
+	height: 18px;	
+	font-size: 10px;}	
+
+/*- 포트 - */	
+.alteon_4416 .pCopper1Green { 
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;		
+	background-image: url(../../imgs/icon/icon_copper1_G_25x17.gif);	}	
+
+.alteon_4416 .pCopper1Red { 	
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;			
+	background-image: url(../../imgs/icon/icon_copper1_R_25x17.gif);	}	
+	
+.alteon_4416 .pCopper1Black { 
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;			
+	background-image: url(../../imgs/icon/icon_copper1_B_25x17.gif);	}	
+	
+.alteon_4416 .pCopper1Yellow { 
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;			
+	background-image: url(../../imgs/icon/icon_copper1_Y_25x17.gif);	}	
+	
+.alteon_4416 .pCopper1Off { 
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;			
+	background-image: url(../../imgs/icon/icon_copper1_O_25x17.gif);	}	
+
+.alteon_4416 .pCopper2Green { 
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;			
+	background-image: url(../../imgs/icon/icon_copper2_G_25x17.gif);	}	
+
+.alteon_4416 .pCopper2Red { 	
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;		
+	background-image: url(../../imgs/icon/icon_copper2_R_25x17.gif);	}	
+	
+.alteon_4416 .pCopper2Black { 
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;			
+	background-image: url(../../imgs/icon/icon_copper2_B_25x17.gif);	}	
+	
+.alteon_4416 .pCopper2Yellow { 
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;			
+	background-image: url(../../imgs/icon/icon_copper2_Y_25x17.gif);	}	
+	
+.alteon_4416 .pCopper2Off { 
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;			
+	background-image: url(../../imgs/icon/icon_copper2_O_25x17.gif);	}
+		
+.alteon_4416 .pFiber1Green { 
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;			
+	background-image: url(../../imgs/icon/icon_fiber1_G_25x17.gif);	}	
+
+.alteon_4416 .pFiber1Red { 	
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;			
+	background-image: url(../../imgs/icon/icon_fiber1_R_25x17.gif);	}	
+	
+.alteon_4416 .pFiber1Black { 
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;			
+	background-image: url(../../imgs/icon/icon_fiber1_B_25x17.gif);	}	
+	
+.alteon_4416 .pFiber1Yellow { 
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;			
+	background-image: url(../../imgs/icon/icon_fiber1_Y_25x17.gif);	}	
+	
+.alteon_4416 .pFiber1Off { 
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;			
+	background-image: url(../../imgs/icon/icon_fiber1_O_25x17.gif);	}	
+
+/*- 포트  테이블 - */			
+.alteon_4416 .porttable {
+	display: inline-block;
+	margin: 17px 0px 0px 120px;
+	cellpadding: 0px;
+	cellspacing: 0px;	
+}
+.alteon_4416 .porttable  td { vertical-align: top;}
+
+
+
+/*- Alteon 6420p --------------------------- */
+.alteon_6420p {
+	margin: 0px 0px 0px 35px;
+	background-image: url(../../imgs/monitoring/device/alteon_6420p.gif);
+	height: 183px;
+	width: 881px;
+	font-size: 13px !important; }
+	
+.alteon_6420p .txt {
+	color: #042704;
+	font-size: 11px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 45px;
+	letter-spacing: 01px; 
+	/* text-shadow: 1px 1px 2px #fff; */ }
+
+/*- HDD - */
+.alteon_6420p .hGreen { 
+	background-image: url(../../imgs/icon/icon_hdd_G.png);}
+
+.alteon_6420p .hRed { 
+	background-image: url(../../imgs/icon/icon_hdd_R.png);}
+
+.alteon_6420p .hBlack { 
+	background-image: url(../../imgs/icon/icon_hdd_B.png);}
+
+.alteon_6420p .hdd01 { 
+	width:124px; 
+	height: 23px; 	
+	display: inline-block;	
+	font-size: 11px;	
+	font-weight: bold;
+	text-align: center;	
+	color : #fff;
+	line-height: 28px;	
+	float:right;			 
+	margin: 22px 40px 0px 0px ;}
+
+/*- CPU - */
+.alteon_6420p .cGreen { 
+	width:94px; 
+	height: 42px; 
+	background-image: url(../../imgs/icon/icon_cylinderTip_G.png);	}
+
+.alteon_6420p .cRed { 
+	width:94px; 
+	height: 42px; 
+	background-image: url(../../imgs/icon/icon_cylinderTip_R.png);	}
+
+.alteon_6420p .cBlack { 
+	width:94px; 
+	height: 42px; 
+	background-image: url(../../imgs/icon/icon_cylinderTip_B.png);	}
+		
+.alteon_6420p .cpu01 { 
+	display: inline-block;		
+	position:relative;     
+	margin: 2px 0px 0px 80px  }
+
+.alteon_6420p .cpu02 { 
+	display: inline-block;		
+	position:relative;    
+	margin: 0px 0px 0px -4px  }	
+	
+.alteon_6420p .cpu03 { 
+	display: inline-block;			
+	position:relative;     
+	margin: 0px 0px 0px -4px  }	
+		
+.alteon_6420p .cpu04 { 
+	display: inline-block;			
+	position:relative;     
+	margin: 0px 0px 0px -4px  }		
+
+			
+
+/*- 팬 - */
+.alteon_6420p .fGreen { 
+	background-image: url(../../imgs/icon/icon_fan_G.png);	}
+
+.alteon_6420p .fRed { 
+	background-image: url(../../imgs/icon/icon_fan_R.png);	}
+
+.alteon_6420p .fBlack { 	
+	background-image: url(../../imgs/icon/icon_fan_B.png);	}
+	
+.alteon_6420p .fGreenRed { 
+	background-image: url(../../imgs/icon/icon_fan_G-R.gif);	}
+
+.alteon_6420p .fGreenBlack { 	
+	background-image: url(../../imgs/icon/icon_fan_G-B.gif);	}	
+	
+.alteon_6420p .fRedBlack { 
+	background-image: url(../../imgs/icon/icon_fan_R-B.gif);	}	
+
+.alteon_6420p .fGreenRedBlack { 
+	background-image: url(../../imgs/icon/icon_fan_G-R-B.gif);	}	
+
+.alteon_6420p .fan01 { 
+	width:43px; 
+	height: 42px;		
+	display: inline-block;			  			 
+	float:right;		  			 
+	margin: 16px 11px 0px 0px; 
+	CURSOR: POINTER;
+	 }
+	 .alteon_6420p .fan01:hover{}
+	
+/*- 파워 - */
+.alteon_6420p .poGreen { 
+	background-image: url(../../imgs/icon/icon_power_G.png);}
+
+.alteon_6420p .poRed { 
+	background-image: url(../../imgs/icon/icon_power_R.png);}
+
+.alteon_6420p .poBlack { 
+	background-image: url(../../imgs/icon/icon_power_B.png);}
+			
+.alteon_6420p .power01 { 
+	width:25px; 
+	height: 25px; 	
+	display: inline-block;	
+	position:relative; 	
+   	vertical-align: top;  	
+	float:right;			 
+	margin: 24px 90px 0px 0px ;}	
+
+.alteon_6420p .power02 { 
+	width:25px; 
+	height: 25px; 	
+	display: inline-block;	
+	position:relative;  
+   	vertical-align: top;  	
+	float:right;			 
+	margin: 24px -60px 0px 0px ;}	
+
+/*- 버전 - */	
+.alteon_6420p .version { 
+	display: inline-block;	
+	position:relative; 					 
+	margin: 11px 0px 0px 213px ;
+	color: #000;
+	font-weight: bold;
+	font-family: Arial;	
+	height: 18px;	
+	font-size: 10px;}	
+
+/*- 포트 - */		
+.alteon_6420p .pFiber1Green { 
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;		
+	background-image: url(../../imgs/icon/icon_fiber1_G_25x17.gif);	}	
+
+.alteon_6420p .pFiber1Red { 	
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;		
+	background-image: url(../../imgs/icon/icon_fiber1_R_25x17.gif);	}	
+	
+.alteon_6420p .pFiber1Black { 
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;		
+	background-image: url(../../imgs/icon/icon_fiber1_B_25x17.gif);	}	
+
+.alteon_6420p .pFiber1Yellow { 
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;			
+	background-image: url(../../imgs/icon/icon_fiber1_Y_25x17.gif);	}	
+	
+.alteon_6420p .pFiber1Off { 
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;		
+	background-image: url(../../imgs/icon/icon_fiber1_O_25x17.gif);	}	
+		
+/*- 포트  테이블 - */			
+.alteon_6420p .porttable {
+	display: inline-block;
+	margin: 17px 0px 0px 120px;
+	cellpadding: 0px;
+	cellspacing: 0px;	
+}
+.alteon_6420p .porttable  td { vertical-align: top;}
+
+/*- Alteon 6420 --------------------------- */
+.alteon_6420 {
+	margin: 0px 0px 0px 35px;
+	background-image: url(../../imgs/monitoring/device/alteon_6420.gif);
+	height: 183px;
+	width: 881px;
+	font-size: 13px !important; }
+	
+.alteon_6420 .txt {
+	color: #042704;
+	font-size: 11px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 46px;
+	/* letter-spacing: -1px; */
+	/* text-shadow: 1px 1px 2px #fff; */ }
+
+/*- HDD - */
+.alteon_6420 .hGreen { 
+	background-image: url(../../imgs/icon/icon_hdd_G.png);}
+
+.alteon_6420 .hRed { 
+	background-image: url(../../imgs/icon/icon_hdd_R.png);}
+
+.alteon_6420 .hBlack { 
+	background-image: url(../../imgs/icon/icon_hdd_B.png);}
+
+.alteon_6420 .hdd01 { 
+	width:124px; 
+	height: 23px; 	
+	display: inline-block;	
+	font-size: 11px;	
+	font-weight: bold;
+	text-align: center;	
+	color : #fff;
+	line-height: 28px;	
+	float:right;			 
+	margin: 22px 40px 0px 0px ;}
+
+/*- CPU - */
+.alteon_6420 .cGreen { 
+	width:94px; 
+	height: 42px; 
+	background-image: url(../../imgs/icon/icon_cylinderTip_G.png);	}
+
+.alteon_6420 .cRed { 
+	width:94px; 
+	height: 42px; 
+	background-image: url(../../imgs/icon/icon_cylinderTip_R.png);	}
+
+.alteon_6420 .cBlack { 
+	width:94px; 
+	height: 42px; 
+	background-image: url(../../imgs/icon/icon_cylinderTip_B.png);	}
+		
+.alteon_6420 .cpu01 { 
+	display: inline-block;		
+	position:relative;     
+	margin: 2px 0px 0px 80px  }
+
+.alteon_6420 .cpu02 { 
+	display: inline-block;		
+	position:relative;    
+	margin: 0px 0px 0px -4px  }	
+	
+.alteon_6420 .cpu03 { 
+	display: inline-block;			
+	position:relative;     
+	margin: 0px 0px 0px -4px  }	
+		
+.alteon_6420 .cpu04 { 
+	display: inline-block;			
+	position:relative;     
+	margin: 0px 0px 0px -4px  }		
+
+			
+
+/*- 팬 - */
+.alteon_6420 .fGreen { 
+	background-image: url(../../imgs/icon/icon_fan_G.png);	}
+
+.alteon_6420 .fRed { 
+	background-image: url(../../imgs/icon/icon_fan_R.png);	}
+
+.alteon_6420 .fBlack { 	
+	background-image: url(../../imgs/icon/icon_fan_B.png);	}
+	
+.alteon_6420 .fGreenRed { 
+	background-image: url(../../imgs/icon/icon_fan_G-R.gif);	}
+
+.alteon_6420 .fGreenBlack { 	
+	background-image: url(../../imgs/icon/icon_fan_G-B.gif);	}	
+	
+.alteon_6420 .fRedBlack { 
+	background-image: url(../../imgs/icon/icon_fan_R-B.gif);	}	
+
+.alteon_6420 .fGreenRedBlack { 
+	background-image: url(../../imgs/icon/icon_fan_G-R-B.gif);	}	
+
+.alteon_6420 .fan01 { 
+	width:43px; 
+	height: 42px;		
+	display: inline-block;			  			 
+	float:right;		  			 
+	margin: 16px 11px 0px 0px; 
+	CURSOR: POINTER;
+	 }
+	 .alteon_6420p .fan01:hover{}
+	
+/*- 파워 - */
+.alteon_6420 .poGreen { 
+	background-image: url(../../imgs/icon/icon_power_G.png);}
+
+.alteon_6420 .poRed { 
+	background-image: url(../../imgs/icon/icon_power_R.png);}
+
+.alteon_6420 .poBlack { 
+	background-image: url(../../imgs/icon/icon_power_B.png);}
+			
+.alteon_6420 .power01 { 
+	width:25px; 
+	height: 25px; 	
+	display: inline-block;	
+	position:relative; 	
+   	vertical-align: top;  	
+	float:right;			 
+	margin: 24px 90px 0px 0px ;}	
+
+.alteon_6420 .power02 { 
+	width:25px; 
+	height: 25px; 	
+	display: inline-block;	
+	position:relative;  
+   	vertical-align: top;  	
+	float:right;			 
+	margin: 24px -60px 0px 0px ;}	
+
+/*- 버전 - */	
+.alteon_6420 .version { 
+	display: inline-block;	
+	position:relative; 					 
+	margin: 11px 0px 0px 213px ;
+	color: #000;
+	font-weight: bold;
+	font-family: Arial;	
+	height: 18px;	
+	font-size: 10px;}	
+
+/*- 포트 - */		
+.alteon_6420 .pFiber1Green { 
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;		
+	background-image: url(../../imgs/icon/icon_fiber1_G_25x17.gif);	}	
+
+.alteon_6420 .pFiber1Red { 	
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;		
+	background-image: url(../../imgs/icon/icon_fiber1_R_25x17.gif);	}	
+	
+.alteon_6420 .pFiber1Black { 
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;		
+	background-image: url(../../imgs/icon/icon_fiber1_B_25x17.gif);	}	
+
+.alteon_6420 .pFiber1Yellow { 
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;			
+	background-image: url(../../imgs/icon/icon_fiber1_Y_25x17.gif);	}	
+	
+.alteon_6420 .pFiber1Off { 
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;		
+	background-image: url(../../imgs/icon/icon_fiber1_O_25x17.gif);	}	
+		
+/*- 포트  테이블 - */			
+.alteon_6420 .porttable {
+	display: inline-block;
+	margin: 17px 0px 0px 120px;
+	cellpadding: 0px;
+	cellspacing: 0px;	
+}
+.alteon_6420 .porttable  td { vertical-align: top;}
+
+/*- Alteon 6024 --------------------------- */
+.alteon_6024 {
+	margin: 0px 0px 0px 35px;
+	background-image: url(../imgs/monitoring/device/alteon_6024.gif);
+	height: 183px;
+	width: 881px;
+	font-size: 13px !important; }	
+	
+.alteon_6024 .txt {
+	color: #042704;
+	font-size: 11px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 46px;
+	/* letter-spacing: -1px; */
+	/* text-shadow: 1px 1px 2px #fff; */ }
+
+/*- HDD - */
+.alteon_6024 .hGreen { 
+	background-image: url(../imgs/icon/icon_hdd_G.png);}
+
+.alteon_6024 .hRed { 
+	background-image: url(../imgs/icon/icon_hdd_R.png);}
+
+.alteon_6024 .hBlack { 
+	background-image: url(../imgs/icon/icon_hdd_B.png);}
+
+.alteon_6024 .hdd01 { 
+	width:124px; 
+	height: 23px; 	
+	display: inline-block;	
+	font-size: 11px;	
+	font-weight: bold;
+	text-align: center;	
+	color : #fff;
+	line-height: 28px;	
+	float:right;			 
+	margin: 22px 40px 0px 0px ;}
+
+/*- CPU 8개이상 - */
+.alteon_6024 .cGreen { 
+	width:94px; 
+	height: 42px; 
+	background-image: url(../imgs/icon/icon_cylinderTip_G.png);	}
+
+.alteon_6024 .cRed { 
+	width:94px; 
+	height: 42px; 
+	background-image: url(../imgs/icon/icon_cylinderTip_R.png);	}
+
+.alteon_6024 .cBlack { 
+	width:94px; 
+	height: 42px; 
+	background-image: url(../imgs/icon/icon_cylinderTip_B.png);	}
+		
+.alteon_6024 .cpu01 { 
+	display: inline-block;		
+	position:relative;     
+	margin: 2px 0px 0px 80px  }
+
+.alteon_6024 .cpu02 { 
+	display: inline-block;		
+	position:relative;    
+	margin: 0px 0px 0px -4px  }	
+	
+.alteon_6024 .cpu03 { 
+	display: inline-block;			
+	position:relative;     
+	margin: 0px 0px 0px -4px  }	
+		
+.alteon_6024 .cpu04 { 
+	display: inline-block;			
+	position:relative;     
+	margin: 0px 0px 0px -4px  }	
+
+
+/*- 팬 - */
+.alteon_6024 .fGreen { 
+	background-image: url(../imgs/icon/icon_fan_G.png);	}
+
+.alteon_6024 .fRed { 
+	background-image: url(../imgs/icon/icon_fan_R.png);	}
+
+.alteon_6024 .fBlack { 	
+	background-image: url(../imgs/icon/icon_fan_B.png);	}
+
+.alteon_6024 .fan01 { 
+	width:43px; 
+	height: 42px;		
+	display: inline-block;			  			 
+	float:right;		  			 
+	margin: 16px 11px 0px 0px;  }
+	
+/*- 파워 - */
+.alteon_6024 .poGreen { 
+	background-image: url(../imgs/icon/icon_power_G.png);}
+
+.alteon_6024 .poRed { 
+	background-image: url(../imgs/icon/icon_power_R.png);}
+
+.alteon_6024 .poBlack { 
+	background-image: url(../imgs/icon/icon_power_B.png);}
+		
+.alteon_6024 .power01 { 
+	width:25px; 
+	height: 25px; 	
+	display: inline-block;	
+	position:relative; 	
+   	vertical-align: top;  	
+	float:right;			 
+	margin: 24px 90px 0px 0px ;}	
+
+.alteon_6024 .power02 { 
+	width:25px; 
+	height: 25px; 	
+	display: inline-block;	
+	position:relative;  
+   	vertical-align: top;  	
+	float:right;			 
+	margin: 24px -60px 0px 0px ;}	
+
+/*- 버전 - */	
+.alteon_6024 .version { 
+	display: inline-block;	
+	position:relative; 					 
+	margin: 11px 0px 0px 203px ;
+	color: #000;
+	font-weight: bold;
+	font-family: Arial;	
+	height: 18px;	
+	font-size: 10px;}	
+
+/*- 포트 - */
+.alteon_6024 .pCopper1Green { 
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;			
+	background-image: url(../imgs/icon/icon_copper1_G_25x17.gif);	}	
+
+.alteon_6024 .pCopper1Red { 	
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;			
+	background-image: url(../imgs/icon/icon_copper1_R_25x17.gif);	}	
+	
+.alteon_6024 .pCopper1Black { 
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;			
+	background-image: url(../imgs/icon/icon_copper1_B_25x17.gif);	}	
+
+.alteon_6024 .pCopper1Yellow { 
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;			
+	background-image: url(../imgs/icon/icon_copper1_Y_25x17.gif);	}	
+	
+.alteon_6024 .pCopper1Off { 
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;			
+	background-image: url(../imgs/icon/icon_copper1_O_25x17.gif);	}	
+	
+.alteon_6024 .pFiber1Green { 
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;			
+	background-image: url(../imgs/icon/icon_fiber1_G_25x17.gif);	}	
+
+.alteon_6024 .pFiber1Red { 	
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;			
+	background-image: url(../imgs/icon/icon_fiber1_R_25x17.gif);	}	
+	
+.alteon_6024 .pFiber1Black { 
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;		
+	background-image: url(../imgs/icon/icon_fiber1_B_25x17.gif);	}	
+
+.alteon_6024 .pFiber1Yellow { 
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;			
+	background-image: url(../imgs/icon/icon_fiber1_Y_25x17.gif);	}	
+
+.alteon_6024 .pFiber1Off { 
+	width: 29px; 
+	height: 20px;				
+	background-position:center  center;
+	background-repeat: no-repeat;		
+	background-image: url(../imgs/icon/icon_fiber1_O_25x17.gif);	}
+
+/*- 포트  테이블 - */			
+.alteon_6024 .porttable {
+	display: inline-block;
+	margin: 17px 0px 0px 120px;
+	cellpadding: 0px;
+	cellspacing: 0px;	
+}
+.alteon_6024 .porttable  td { vertical-align: top;}		

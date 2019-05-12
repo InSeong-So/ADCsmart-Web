@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<package name="sysTools" namespace="/sysTools" extends="json-hierarchy">
+		<!-- 사용하지 않음. 테스트 이상 없으면 삭제처리함. 
+		<action name="loadLeftPane" method="loadLeftPane" class="sysToolsAction">
+			<result type="freemarker">/WEB-INF/pages/sysTools/toolsLeftPane.ftl</result>
+		</action> 
+		-->
+						
+		<!-- SysView Dump -->
+		<action name="loadSysViewContent" method="loadSysViewList" class="sysToolsAction">
+			<result type="freemarker">/WEB-INF/pages/sysTools/sysView/loadSysVeiwContent.html</result>
+		</action>
+		<action name="isDumpDownloadFileExist" method="isDumpDownloadFileExist" class="sysToolsAction">
+			<result type="jsonHierarchy"/>
+		</action>
+		<action name="dumpFileCreate" method="dumpFileCreate" class="sysToolsAction">
+			<result type="jsonHierarchy"/>
+		</action>
+		<action name="runDumpDownFile" method="runDumpDownFile" class="sysToolsAction">
+			<result type="jsonHierarchy"/>
+		</action>
+		<action name="runDumpDownload" method="runDumpDownload" class="sysToolsAction">
+        	<result type="stream">
+                <param name="contentType">application/octet-stream</param>
+                <param name="contentLength">${contentLength}</param>
+                <param name="contentDisposition">${contentDisposition}</param>
+                <!-- <param name="inputName">inputStream</param> -->
+                <param name="bufferSize">8192</param>
+            </result>
+        </action>						
+						
+		<!-- ReponseTime Check -->
+		<action name="loadResponseTimeContent" method="loadResponseTimeContent" class="sysToolsAction">
+			<result type="freemarker">/WEB-INF/pages/sysTools/responseTime/responseTimeContent.ftl</result>
+		</action>	
+		<action name="loadResponseInfoList" method="loadResponseInfoList" class="sysToolsAction">
+			<result type="freemarker">/WEB-INF/pages/sysTools/responseTime/responseTimeList.ftl</result>
+		</action>
+		<action name="loadResponseTimeHistoryInfo" method="loadResponseTimeHistoryInfo" class="sysToolsAction">
+			<result type="jsonHierarchy"/>
+		</action>
+		<action name="loadRespInfoAddContent" method="loadRespInfoModifyContent" class="sysToolsAction">
+			<result type="freemarker">/WEB-INF/pages/sysTools/responseTime/responseTimeAddPopupContent.ftl</result>	
+		</action>
+		<action name="loadRespInfoModifyContent" method="loadRespInfoModifyContent" class="sysToolsAction">
+			<result type="freemarker">/WEB-INF/pages/sysTools/responseTime/responseTimePopupContent.ftl</result>	
+		</action>
+		<action name="addRespIntervalCheck" method="addRespIntervalCheck" class="sysToolsAction">
+			<result type="jsonHierarchy"/>
+		</action>
+		<action name="setRespIntervalCheck" method="setRespIntervalCheck" class="sysToolsAction">
+			<result type="jsonHierarchy"/>
+		</action>
+		<action name="delRespIntervalCheck" method="delRespIntervalCheck" class="sysToolsAction">
+			<result type="freemarker">/WEB-INF/pages/sysTools/responseTime/responseTimeContent.ftl</result>
+		</action>
+		<action name="delRespIntervalCheck" method="delRespIntervalCheck" class="sysToolsAction">
+			<result type="jsonHierarchy"/>
+		</action>
+		
+		
+		<action name="portUsageLoadContent" method="portUsageLoadContent" class="sysToolsAction">
+			<result type="freemarker">/WEB-INF/pages/sysTools/portInfoContent.ftl</result>
+		</action>
+		<action name="slbSessionLoadContent" method="slbSessionLoadContent" class="sysToolsAction">
+			<result type="freemarker">/WEB-INF/pages/sysTools/slbSessionContent.ftl</result>
+		</action>
+		<action name="unUsedSlbLoadContent" method="unUsedSlbLoadContent" class="sysToolsAction">
+			<result type="freemarker">/WEB-INF/pages/sysTools/unUsedSlbInfoContent.ftl</result>
+		</action>
+		<action name="checkPortUsageDataExist" method="checkPortUsageDataExist" class="sysToolsAction">
+			<result type="jsonHierarchy"/>
+		</action>		
+		<action name="portUsageDownloadCsv" method="portUsageDownloadCsv" class="sysToolsAction">
+			<result type="stream">
+				<param name="contentType">application/octet-stream</param>
+				<param name="contentLength">contentLength</param>
+				<param name="contentDisposition">contentDisposition</param>
+				<param name="inputName">inputStream</param>
+				<param name="bufferSize">8192</param>		
+			</result>
+		</action>	
+		<action name="slbSessionDownloadCsv" method="slbSessionDownloadCsv" class="sysToolsAction">
+			<result type="stream">
+				<param name="contentType">application/octet-stream</param>
+				<param name="contentLength">contentLength</param>
+				<param name="contentDisposition">contentDisposition</param>
+				<param name="inputName">inputStream</param>
+				<param name="bufferSize">8192</param>		
+			</result>
+		</action> 			
+		<action name="unUsedSlbDownloadCsv" method="unUsedSlbDownloadCsv" class="sysToolsAction">
+			<result type="stream">
+				<param name="contentType">application/octet-stream</param>
+				<param name="contentLength">contentLength</param>
+				<param name="contentDisposition">contentDisposition</param>
+				<param name="inputName">inputStream</param>
+				<param name="bufferSize">8192</param>		
+			</result>
+		</action> 			
+	</package>
+</struts>

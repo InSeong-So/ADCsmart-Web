@@ -1,0 +1,227 @@
+/* Container Style */
+.ob-alert-backdrop {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+	width: 100%;
+	height: 100%;
+	background: #000;
+	opacity: 0.5;
+	filter: alpha(opacity = 50);
+}
+
+.ob-alert-modal {
+	position: absolute;
+	z-index: 1001;
+	background-color: #fff;
+	-webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+	box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+	border: 1px solid rgba(0, 0, 0, .2);
+	padding: 3px;
+}
+
+/* General Styles */
+.ob-alert-modal * {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.ob-alert-modal div,
+.ob-alert-modal pre {
+	margin: 10px;
+}
+
+.ob-alert-modal ol {
+	display: block;
+	list-style-type: decimal;
+	margin-left: inherit;
+	margin-right: inherit;
+}
+
+.ob-alert-modal ul {
+	display: block;
+	list-style-type: disc;
+	margin-left: inherit;
+	margin-right: inherit;
+}
+
+.ob-alert-modal li {
+	display: list-item;
+	list-style-type: inherit;
+	margin-left: inherit;
+	margin-right: inherit;
+}
+
+.ob-alert-modal pre {
+	padding: 5px;
+	border: 1px solid #e3e3e3;
+	background-color: #f5f5f5;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+	max-height: 150px;
+	overflow: auto;
+}
+
+/* Component Styles */
+.ob-alert-title {
+	border-bottom: 1px solid #eee;
+	padding-bottom: 5px;
+	margin-bottom: 5px!important;
+	font-weight: bold;
+}
+
+.ob-alert-occurtime {
+	margin-bottom: 5px;
+	text-align: right;
+	color: #777;
+}
+
+.ob-alert-content {
+	margin-top: 5px;
+}
+
+.ob-alert-detail-toggle {
+	display: inline-block;
+	line-height: 20px;
+	margin: 0 10px;
+	padding: 2px 0 0 17px;
+	color: #000!important;
+}
+
+.ob-alert-detail-toggle.on {
+	background: url('/imgs/icon/bu_thmb_01.png') no-repeat 0 5px;
+}
+
+.ob-alert-detail-toggle:not(.on) {
+	background: url('/imgs/icon/bu_thmb_02.png') no-repeat 0 5px;
+}
+
+.ob-alert-buttons {
+	padding: 0px;
+	margin-left: 8px!important;
+	margin-right: 8px!important;
+}
+
+.ob-alert-buttons button {
+	margin-left: 2px;
+	margin-right:2px;
+}
+
+/* Button Styles */
+.ob-alert-button-default {
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	color: #333;
+	font-size: 12px;
+	background: #ffffff;
+	padding: 2px 8px 0px 8px;
+	border: solid #bebebe 1px;
+	text-decoration: none;
+	margin-left: -1px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.ob-alert-button-default:link,
+.ob-alert-button-default:active,
+.ob-alert-button-default:visited,
+.ob-alert-button-default:focus {
+	color: #333 !important;
+	text-decoration: none !important;
+}
+
+.ob-alert-button-default:hover {
+	color: #85bfda !important;
+	text-decoration: none !important;
+}
+
+.ob-alert-button-default[disabled]:hover {
+	color: #a2a2a2 !important;
+	cursor: default;
+}
+
+.ob-alert-button-primary {
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	color: #fff;
+	font-size: 12px;
+	background: #3babf5;
+	padding: 2px 8px 0px 8px;
+	border: solid #339be0 1px;
+	text-decoration: none;
+	text-align: center;
+	cursor: pointer;
+}
+
+.ob-alert-button-primary:link,
+.ob-alert-button-primary:active,
+.ob-alert-button-primary:visited,
+.ob-alert-button-primary:focus {
+	color: #fff !important;
+	text-decoration: none !important;
+}
+
+.ob-alert-button-primary:hover {
+	color: #ffff00 !important;
+	text-decoration: none !important;
+}
+
+.ob-alert-button-primary[disabled]:hover {
+	color: #a2a2a2 !important;
+	cursor: default;
+}
+
+.ob-alert-button-danger {
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	color: #fff;
+	font-size: 12px;
+	background: #fe771f;
+	padding: 2px 8px 0px 8px;
+	border: solid #da5800 1px;
+	text-decoration: none;
+	text-align: center;
+	cursor: pointer;
+}
+
+.ob-alert-button-danger:link,
+.ob-alert-button-danger:active,
+.ob-alert-button-danger:visited,
+.ob-alert-button-danger:focus {
+	color: #fff !important;
+	text-decoration: none !important;
+}
+
+.ob-alert-button-danger:hover {
+	color: #ffff00 !important;
+	text-decoration: none !important;
+}
+
+.ob-alert-button-danger[disabled]:hover {
+	color: #a2a2a2 !important;
+	cursor: default;
+}
+
+/* Util Classes */
+.center-block {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.pull-left {
+	float: left;
+}
+
+.pull-right {
+	float: right;
+}
+
+.clearfix {
+	clear: both;
+}

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<package name="report" namespace="/report" extends="json-hierarchy">
+		<action name="loadListContent" method="loadListContent" class="reportAction">
+			<result type="freemarker">/WEB-INF/pages/report/listContent.ftl</result>
+		</action>
+		<action name="loadReportTableInListContent" method="loadListContent" class="reportAction">
+			<result type="freemarker">/WEB-INF/pages/report/reportTableInListContent.ftl</result>
+		</action>
+		<action name="retrieveReportsTotal" method="retrieveReportsTotal" class="reportAction">
+			<result type="jsonHierarchy"/>
+		</action>
+		<action name="loadAddContent" method="loadAddContent" class="reportAction">
+			<result type="freemarker">/WEB-INF/pages/report/addContent.ftl</result>
+		</action>
+		<action name="addReport" method="addReport" class="reportAction">
+			<result type="jsonHierarchy"/>
+		</action>
+		<action name="delReports" method="delReports" class="reportAction">
+			<result type="jsonHierarchy"/>
+		</action>
+		<action name="checkDownloadReportDataExist" method="checkDownloadReportDataExist" class="reportAction">
+			<result type="json">
+				<param name="ignoreHierarchy">false</param>
+			</result>
+		</action>
+		<action name="downloadReport" method="downloadReport" class="reportAction">
+        	<result type="stream">
+                <param name="contentType">application/octet-stream</param>
+                <param name="contentLength">${contentLength}</param>
+                <param name="contentDisposition">${contentDisposition}</param>
+                <param name="inputName">inputStream</param>
+                <param name="bufferSize">8192</param>
+            </result>
+        </action>
+	</package>
+</struts>

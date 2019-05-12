@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<package name="virtualServer" namespace="/virtualServer" extends="json-hierarchy">
+		<action name="retrieveVirtualSvrTotal" method="retrieveVirtualSvrTotal" class="virtualServerAction">
+			<result type="jsonHierarchy"/>
+		</action>
+		
+		<action name="loadRefreshListContent" method="loadRefreshListContent" class="virtualServerAction">
+			<result type="jsonHierarchy"/>
+		</action>
+		
+		<!-- All / Group -->
+		<action name="loadVsListContent" method="loadListContent" class="virtualServerAction">
+			<result type="freemarker">/WEB-INF/pages/virtualServer/vsSetting/vsListContent.ftl</result>
+		</action>
+		<action name="loadVsTableInListContent" method="loadListContent" class="virtualServerAction">
+			<result type="freemarker">/WEB-INF/pages/virtualServer/vsSetting/vsTableInListContent.ftl</result>
+		</action>
+		
+		<!-- Alteon -->
+		<action name="loadAlteonVsListContent" method="loadListContent" class="virtualServerAction">
+			<result type="freemarker">/WEB-INF/pages/virtualServer/alteon/alteonListContent.ftl</result>
+		</action>
+		<action name="loadVirtualSvrTableInAlteonListContent" method="loadListContent" class="virtualServerAction">
+			<result type="freemarker">/WEB-INF/pages/virtualServer/alteon/virtualSvrTableInAlteonListContent.ftl</result>
+		</action>
+		<action name="loadAlteonVsAddContent" method="loadAlteonVsAddContent" class="virtualServerAction">
+			<result type="freemarker">/WEB-INF/pages/virtualServer/alteon/alteonAddContent.ftl</result>
+		</action>
+		<action name="loadAlteonVsModifyContent" method="loadAlteonVsModifyContent" class="virtualServerAction">
+			<result type="freemarker">/WEB-INF/pages/virtualServer/alteon/alteonAddContent.ftl</result>
+		</action>	
+		
+		<!-- F5 -->
+		<action name="loadF5VsListContent" method="loadListContent" class="virtualServerAction">
+			<result type="freemarker">/WEB-INF/pages/virtualServer/f5/f5ListContent.ftl</result>
+		</action>
+		<action name="loadVirtualSvrTableInF5ListContent" method="loadListContent" class="virtualServerAction">
+			<result type="freemarker">/WEB-INF/pages/virtualServer/f5/virtualSvrTableInF5ListContent.ftl</result>
+		</action>		
+		<action name="loadF5VsAddContent" method="loadF5VsAddContent" class="virtualServerAction">
+			<result type="freemarker">/WEB-INF/pages/virtualServer/f5/f5AddContent.ftl</result>
+		</action>
+		<action name="loadF5VsModifyContent" method="loadF5VsModifyContent" class="virtualServerAction">
+			<result type="freemarker">/WEB-INF/pages/virtualServer/f5/f5AddContent.ftl</result>
+		</action>
+		
+		<!-- PAS -->
+		<action name="loadPASVsListContent" method="loadListContent" class="virtualServerAction">
+			<result type="freemarker">/WEB-INF/pages/virtualServer/pas/pasListContent.ftl</result>
+		</action>
+		<action name="loadVirtualSvrTableInPASListContent" method="loadListContent" class="virtualServerAction">
+			<result type="freemarker">/WEB-INF/pages/virtualServer/pas/virtualSvrTableInpasListContent.ftl</result>
+		</action>
+		<action name="loadPASVsAddVsAddContent" method="loadPASVsAddVsAddContent" class="virtualServerAction">
+			<result type="freemarker">/WEB-INF/pages/virtualServer/pas/pasAddContent.ftl</result>
+		</action>
+		<action name="loadPASVsModifyContent" method="loadPASVsModifyContent" class="virtualServerAction">
+			<result type="freemarker">/WEB-INF/pages/virtualServer/pas/pasAddContent.ftl</result>
+		</action>
+		
+		<!-- PAS-K -->
+		<action name="loadPASKVsListContent" method="loadListContent" class="virtualServerAction">
+			<result type="freemarker">/WEB-INF/pages/virtualServer/pask/paskListContent.ftl</result>
+		</action>
+		<action name="loadVirtualSvrTableInPASKListContent" method="loadListContent" class="virtualServerAction">
+			<result type="freemarker">/WEB-INF/pages/virtualServer/pask/virtualSvrTableInpaskListContent.ftl</result>
+		</action>
+			<action name="loadPASKVsAddContent" method="loadPASKVsAddVsAddContent" class="virtualServerAction">
+			<result type="freemarker">/WEB-INF/pages/virtualServer/pask/paskAddContent.ftl</result>
+		</action>
+		<action name="loadPASKVsModifyContent" method="loadPASKVsModifyContent" class="virtualServerAction">
+			<result type="freemarker">/WEB-INF/pages/virtualServer/pask/paskModifyContent.ftl</result>
+		</action>
+		
+		<!-- VS ADD & Modify (Json) -->
+		<action name="addAlteonVs" method="addAlteonVs" class="virtualServerAction">
+			<result type="jsonHierarchy"/>
+		</action>
+		<action name="modifyAlteonVs" method="modifyAlteonVs" class="virtualServerAction">
+			<result type="jsonHierarchy"/>
+		</action>
+		<action name="addF5Vs" method="addF5Vs" class="virtualServerAction">
+			<result type="jsonHierarchy"/>
+		</action>
+		<action name="modifyF5Vs" method="modifyF5Vs" class="virtualServerAction">
+			<result type="jsonHierarchy"/>
+		</action>
+		<action name="addPASVs" method="addPASVs" class="virtualServerAction">
+			<result type="jsonHierarchy"/>
+		</action>
+		<action name="modifyPASVs" method="modifyPASVs" class="virtualServerAction">
+			<result type="jsonHierarchy"/>
+		</action>
+		<action name="addPASKVs" method="addPASKVs" class="virtualServerAction">
+			<result type="jsonHierarchy"/>
+		</action>
+		<action name="modifyPASKVs" method="modifyPASKVs" class="virtualServerAction">
+			<result type="jsonHierarchy"/>
+		</action>
+		
+		<action name="addAlteonVsPeer" method="addAlteonVsPeer" class="virtualServerAction">
+			<result type="jsonHierarchy"/>
+		</action>
+		<action name="modifyAlteonVsPeer" method="modifyAlteonVsPeer" class="virtualServerAction">
+			<result type="jsonHierarchy"/>
+		</action>
+		<action name="addF5VsPeer" method="addF5VsPeer" class="virtualServerAction">
+			<result type="jsonHierarchy"/>
+		</action>
+		<action name="modifyF5VsPeer" method="modifyF5VsPeer" class="virtualServerAction">
+			<result type="jsonHierarchy"/>
+		</action>
+		
+		<action name="checkPairIndex" method="checkPairIndex" class="virtualServerAction">
+			<result type="jsonHierarchy"/>
+		</action>
+		<action name="isExistVirtualServer" method="isExistVirtualServer" class="virtualServerAction">
+			<result type="jsonHierarchy"/>
+		</action>
+		<action name="checkPoolIndexAlteon" method="checkPoolIndexAlteon" class="virtualServerAction">
+			<result type="jsonHierarchy"/>
+		</action>
+		<action name="checkVSIndexAlteon" method="checkVSIndexAlteon" class="virtualServerAction">
+			<result type="jsonHierarchy"/>
+		</action>
+
+		<action name="retrieveValidIndexAlteon" method="retrieveValidIndexAlteon" class="virtualServerAction">
+			<result type="jsonHierarchy"/>
+		</action>
+		<action name="checkVSIPAddress" method="checkVSIPAddress" class="virtualServerAction">
+			<result type="jsonHierarchy"/>
+		</action>
+		<action name="searchVSListUsedByPoolAlteon" method="searchVSListUsedByPoolAlteon" class="virtualServerAction">
+			<result type="jsonHierarchy"/>
+		</action>
+				
+		<!-- Etc -->
+		<action name="enableVss" method="enableVss" class="virtualServerAction">
+			<result name="ALTEON" type="freemarker">/WEB-INF/pages/virtualServer/alteon/alteonListContent.ftl</result>
+			<result name="F5" type="freemarker">/WEB-INF/pages/virtualServer/f5/f5ListContent.ftl</result>
+			<result name="PAS" type="freemarker">/WEB-INF/pages/virtualServer/pas/pasListContent.ftl</result>
+			<result name="PASK" type="freemarker">/WEB-INF/pages/virtualServer/pask/paskListContent.ftl</result>
+			<result name="ALL" type="freemarker">/WEB-INF/pages/virtualServer/vsSetting/vsListContent.ftl</result>
+		</action>
+		<action name="disableVss" method="disableVss" class="virtualServerAction">
+			<result name="ALTEON" type="freemarker">/WEB-INF/pages/virtualServer/alteon/alteonListContent.ftl</result>
+			<result name="F5" type="freemarker">/WEB-INF/pages/virtualServer/f5/f5ListContent.ftl</result>
+			<result name="PAS" type="freemarker">/WEB-INF/pages/virtualServer/pas/pasListContent.ftl</result>
+			<result name="PASK" type="freemarker">/WEB-INF/pages/virtualServer/pask/paskListContent.ftl</result>
+			<result name="ALL" type="freemarker">/WEB-INF/pages/virtualServer/vsSetting/vsListContent.ftl</result>
+		</action>
+		<action name="delVss" method="delVss" class="virtualServerAction">
+			<result name="ALTEON" type="freemarker">/WEB-INF/pages/virtualServer/alteon/alteonListContent.ftl</result>
+			<result name="F5" type="freemarker">/WEB-INF/pages/virtualServer/f5/f5ListContent.ftl</result>
+			<result name="PAS" type="freemarker">/WEB-INF/pages/virtualServer/pas/pasListContent.ftl</result>
+			<result name="PASK" type="freemarker">/WEB-INF/pages/virtualServer/pask/paskListContent.ftl</result>
+			<result name="ALL" type="freemarker">/WEB-INF/pages/virtualServer/vsSetting/vsListContent.ftl</result>
+		</action>
+		<action name="enableVssPeer" method="enableVssPeer" class="virtualServerAction">
+			<result name="ALTEON" type="freemarker">/WEB-INF/pages/virtualServer/alteon/alteonListContent.ftl</result>
+			<result name="F5" type="freemarker">/WEB-INF/pages/virtualServer/f5/f5ListContent.ftl</result>
+			<result name="PAS" type="freemarker">/WEB-INF/pages/virtualServer/pas/pasListContent.ftl</result>
+			<result name="PASK" type="freemarker">/WEB-INF/pages/virtualServer/pask/paskListContent.ftl</result>
+			<result name="ALL" type="freemarker">/WEB-INF/pages/virtualServer/vsSetting/vsListContent.ftl</result>
+		</action>
+		<action name="disableVssPeer" method="disableVssPeer" class="virtualServerAction">
+			<result name="ALTEON" type="freemarker">/WEB-INF/pages/virtualServer/alteon/alteonListContent.ftl</result>
+			<result name="F5" type="freemarker">/WEB-INF/pages/virtualServer/f5/f5ListContent.ftl</result>
+			<result name="PAS" type="freemarker">/WEB-INF/pages/virtualServer/pas/pasListContent.ftl</result>
+			<result name="PASK" type="freemarker">/WEB-INF/pages/virtualServer/pask/paskListContent.ftl</result>
+			<result name="ALL" type="freemarker">/WEB-INF/pages/virtualServer/vsSetting/vsListContent.ftl</result>
+		</action>
+		<action name="delVssPeer" method="delVssPeer" class="virtualServerAction">
+			<result name="ALTEON" type="freemarker">/WEB-INF/pages/virtualServer/alteon/alteonListContent.ftl</result>
+			<result name="F5" type="freemarker">/WEB-INF/pages/virtualServer/f5/f5ListContent.ftl</result>
+			<result name="PAS" type="freemarker">/WEB-INF/pages/virtualServer/pas/pasListContent.ftl</result>
+			<result name="PASK" type="freemarker">/WEB-INF/pages/virtualServer/pask/paskListContent.ftl</result>
+			<result name="ALL" type="freemarker">/WEB-INF/pages/virtualServer/vsSetting/vsListContent.ftl</result>
+		</action>
+		
+		<action name="loadVsNameList" method="loadVsNameList" class="virtualServerAction">
+			<result type="jsonHierarchy" />
+		</action>	
+		
+		<action name="loadListContent" method="loadListContent" class="virtualServerAction">
+			<result type="json"/>
+		</action>
+		<action name="retrieveAdcPools" method="retrieveAdcPools" class="virtualServerAction">
+			<result type="json"/>
+		</action>
+		<action name="retrieveAdcNodes" method="retrieveAdcNodes" class="virtualServerAction">
+			<result type="json"/>
+		</action>
+		<action name="retrieveVirtualSvc" method="retrieveVirtualSvc" class="virtualServerAction">
+			<result type="json"/>
+		</action>
+		<action name="retrievePASKHealths" method="retrievePASKHealths" class="virtualServerAction">
+			<result type="json"/>
+		</action>
+		<action name="existsVirtualSvrName" method="existsVirtualSvrName" class="virtualServerAction">
+			<result type="jsonHierarchy"/>
+		</action>
+		<action name="existsVirtualSvr" method="existsVirtualSvr" class="virtualServerAction">
+			<result type="jsonHierarchy"/>
+		</action>
+		
+		<!-- Node -->
+		<action name="retrieverNodeListTotal" method="retrieverNodeListTotal" class="nodeAction">
+			<result type="jsonHierarchy"/>
+		</action>
+		<action name="loadNodeListContent" method="loadNodeListContent" class="nodeAction">
+			<result type="freemarker">/WEB-INF/pages/virtualServer/node/nodeListContent.ftl</result>
+		</action>
+		<action name="loadNodeTableInListContent" method="loadNodeListContent" class="nodeAction">
+			<result type="freemarker">/WEB-INF/pages/virtualServer/node/nodeTableInContent.ftl</result>
+		</action>
+		
+		<!-- Node - All / Group -->
+		<action name="retrieverNodeListGroupTotal" method="retrieverNodeListGroupTotal" class="nodeAction">
+			<result type="jsonHierarchy"/>
+		</action>
+		<action name="loadNodeListGroupContent" method="loadNodeListGroupContent" class="nodeAction">
+			<result type="freemarker">/WEB-INF/pages/virtualServer/node/nodeListGroupContent.ftl</result>
+		</action>
+		<action name="loadNodeTableInListGroupContent" method="loadNodeListGroupContent" class="nodeAction">
+			<result type="freemarker">/WEB-INF/pages/virtualServer/node/nodeTableInGroupContent.ftl</result>
+		</action>
+		
+		<!-- ALL / Group Enable, Disable, ForcedOffline -->
+		<action name="enableGroupVss" method="enableGroupVss" class="virtualServerAction">
+			<result type="jsonHierarchy"/>
+		</action>
+		<action name="disableGroupVss" method="disableGroupVss" class="virtualServerAction">
+			<result type="jsonHierarchy"/>
+		</action>
+		<action name="delGroupVss" method="delGroupVss" class="virtualServerAction">
+			<result type="jsonHierarchy"/>
+		</action>
+		<action name="setGroupNode" method="setGroupNode" class="nodeAction">
+			<result type="jsonHierarchy"/>
+		</action>
+		
+		<action name="loadRefreshNodeTableInListContent" method="loadNodeListGroupContent" class="nodeAction">
+			<result type="jsonHierarchy"/>
+		</action>
+		<action name="setNode" method="setNode" class="nodeAction">
+			<result type="jsonHierarchy"/>
+		</action>
+		
+		<action name="addRsGroup" method="addRsGroup" class="nodeAction">
+			<result type="jsonHierarchy"/>
+		</action>
+		<action name="modifyRsGroup" method="modifyRsGroup" class="nodeAction">
+			<result type="jsonHierarchy"/>
+		</action>
+		<action name="delRsGroup" method="delRsGroup" class="nodeAction">
+			<result type="jsonHierarchy"/>
+		</action>
+		<action name="updateRsGroup" method="updateRsGroup" class="nodeAction">
+			<result type="jsonHierarchy"/>
+		</action>
+		<!-- <action name="disableRss" method="disableRss" class="nodeAction">
+			<result type="jsonHierarchy"/>
+		</action>
+		<action name="forcedOffline" method="forcedOffline" class="nodeAction">
+			<result type="jsonHierarchy"/>
+		</action> -->
+		
+		<!-- Notice -->
+		<action name="retrieverNoticeListTotal" method="retrieverNoticeListTotal" class="noticeGrpAction">
+			<result type="jsonHierarchy"/>
+		</action>
+		<action name="loadNoticeListContent" method="loadNoticeListContent" class="noticeGrpAction">
+			<result type="freemarker">/WEB-INF/pages/virtualServer/notice/noticeListContent.ftl</result>
+		</action>
+		<action name="loadNoticeOnTableInListContent" method="loadNoticeListContent" class="noticeGrpAction">
+			<result type="freemarker">/WEB-INF/pages/virtualServer/notice/noticeOnTableInListContent.ftl</result>
+		</action>
+		<action name="loadNoticeOffTableInListContent" method="loadNoticeListContent" class="noticeGrpAction">
+			<result type="freemarker">/WEB-INF/pages/virtualServer/notice/noticeOffTableInListContent.ftl</result>
+		</action>
+		<action name="setNoticeGroup" method="setNoticeGroup" class="noticeGrpAction">
+			<result type="jsonHierarchy"/>
+		</action>
+		<action name="setVServerNoticeOn" method="setVServerNoticeOn" class="noticeGrpAction">
+			<result type="jsonHierarchy"/>
+		</action>	
+		<action name="setVServerNoticeOff" method="setVServerNoticeOff" class="noticeGrpAction">
+			<result type="jsonHierarchy"/>
+		</action>
+		<action name="downloadVSList" method="downloadVSList" class="noticeGrpAction">
+			<result type="jsonHierarchy"/>
+		</action>
+		<action name="checkNoticePairIndex" method="checkPairIndex" class="noticeGrpAction">
+			<result type="jsonHierarchy"/>
+		</action>
+		<action name="existVServerNoticeOn" method="existVServerNoticeOn" class="noticeGrpAction">
+			<result type="jsonHierarchy"/>
+		</action>
+	</package>
+	
+	<package name="slbSchedule" namespace="/slbSchedule" extends="json-hierarchy">
+		<action name="retrieveSlbScheduleTotal" method="retrieveSlbScheduleTotal" class="slbScheduleAction">
+			<result type="jsonHierarchy"/>
+		</action>
+		
+		<action name="loadRefreshListContent" method="loadRefreshListContent" class="slbScheduleAction">
+			<result type="jsonHierarchy"/>
+		</action>		
+<!-- 		<action name="loadSlbScheduleContent" method="loadListContent" class="slbScheduleAction">
+			<result type="jsonHierarchy"/>
+		</action> -->
+		<action name="loadSlbScheduleListContent" method="loadListContent" class="slbScheduleAction">
+			<result type="freemarker">/WEB-INF/pages/virtualServer/schedule/slbScheduleListContent.ftl</result>
+		</action>
+		<action name="loadSlbScheduleTableInListContent" method="loadListContent" class="slbScheduleAction">
+			<result type="freemarker">/WEB-INF/pages/virtualServer/schedule/slbScheduleTableInListContent.ftl</result>
+		</action>	
+		
+		<action name="loadAlteonVsModifyContent" method="loadAlteonVsModifyContent" class="virtualServerAction">
+			<result type="freemarker">/WEB-INF/pages/virtualServer/schedule/slbAlteonInfoTableInContent.ftl</result>
+		</action>
+		<action name="loadF5VsModifyContent" method="loadF5VsModifyContent" class="virtualServerAction">
+			<result type="freemarker">/WEB-INF/pages/virtualServer/schedule/slbF5InfoTableInContent.ftl</result>
+		</action>
+		
+		<action name="loadSlbScheduleAddContent" method="loadSlbScheduleAddContent" class="slbScheduleAction">
+			<result type="freemarker">/WEB-INF/pages/virtualServer/schedule/slbScheduleAddContent.ftl</result>
+		</action>
+		<action name="loadSlbScheduleModifyContent" method="loadSlbScheduleModifyContent" class="slbScheduleAction">
+			<result type="freemarker">/WEB-INF/pages/virtualServer/schedule/slbScheduleAddContent.ftl</result>
+		</action>
+		<action name="addSlbSchedule" method="addSlbSchedule" class="slbScheduleAction">
+			<result type="jsonHierarchy"/>
+		</action>
+		<action name="modifySlbSchedule" method="modifySlbSchedule" class="slbScheduleAction">
+			<result type="jsonHierarchy"/>
+		</action>
+		<action name="delSlbSchedule" method="delSlbSchedule" class="slbScheduleAction">
+			<!-- <result type="jsonHierarchy"/> -->
+			<result type="freemarker">/WEB-INF/pages/virtualServer/schedule/slbScheduleListContent.ftl</result>
+		</action>
+		
+		<!-- slbList -->
+		<action name="retrieveSlbListInfoTotal" method="retrieveSlbListInfoTotal" class="slbScheduleAction">
+			<result type="jsonHierarchy"/>
+		</action>
+		<!-- <action name="loadSlbListInfoContent" method="loadSlbListInfoContent" class="slbScheduleAction">
+			<result type="jsonHierarchy"/>
+		</action> -->		
+		<action name="loadSlbListInfoContent" method="loadSlbListInfoContent" class="slbScheduleAction">
+			<result type="freemarker">/WEB-INF/pages/virtualServer/schedule/slbListTableInContent.ftl</result>
+		</action>
+		<action name="loadSlbListTableInListContent" method="loadSlbListInfoContent" class="slbScheduleAction">
+			<result type="freemarker">/WEB-INF/pages/virtualServer/schedule/slbListTableInContent.ftl</result>
+		</action>
+		<!-- slbUserList -->	
+		<action name="retrieveSlbUsrListTotal" method="retrieveSlbUsrListTotal" class="slbScheduleAction">
+			<result type="jsonHierarchy"/>
+		</action>
+		<action name="loadSlbUsrListJsonContent" method="loadSlbUsrListContent" class="slbScheduleAction">
+			<result type="jsonHierarchy"/>
+		</action>
+		<action name="loadSlbUsrListContent" method="loadSlbUsrListContent" class="slbScheduleAction">
+			<result type="freemarker">/WEB-INF/pages/virtualServer/schedule/slbUserTableInContent.ftl</result>
+		</action>
+		<action name="loadSlbUsrTableInListContent" method="loadSlbUsrListContent" class="slbScheduleAction">
+			<result type="freemarker">/WEB-INF/pages/virtualServer/schedule/slbUserTableInContent.ftl</result>
+		</action>
+		<action name="loadSlbUserModifyContent" method="loadSlbUserModifyContent" class="slbScheduleAction">
+			<result type="freemarker">/WEB-INF/pages/virtualServer/schedule/slbUserModifyContent.ftl</result>
+		</action>	
+		<action name="addSlbUser" method="addSlbUser" class="slbScheduleAction">
+			<result type="jsonHierarchy"/>
+		</action>		
+		<action name="modifySlbUser" method="modifySlbUser" class="slbScheduleAction">
+			<result type="jsonHierarchy"/>
+		</action>		
+		<action name="delSlbUser" method="delSlbUser" class="slbScheduleAction">
+			<result type="jsonHierarchy"/>
+		</action>
+		<action name="loadLastResponseUserInfo" method="loadLastResponseUserInfo" class="slbScheduleAction">
+			<result type="jsonHierarchy"/>
+		</action>		
+		
+		<action name="loadSlbRespUserAddContent" method="loadSlbRespUserAddContent" class="slbScheduleAction">
+			<result type="freemarker">/WEB-INF/pages/virtualServer/schedule/slbRespUserAddContent.ftl</result>
+		</action>	
+		<action name="loadSlbRespUserModifyContent" method="loadSlbRespUserModifyContent" class="slbScheduleAction">
+			<result type="freemarker">/WEB-INF/pages/virtualServer/schedule/slbRespUserModifyContent.ftl</result>
+		</action>
+		<!-- 
+		F5	
+		<action name="loadSlbScheduleF5AddContent" method="loadSlbScheduleF5AddContent" class="slbScheduleAction">
+			<result type="freemarker">/WEB-INF/pages/virtualServer/schedule/slbScheduleF5AddContent.ftl</result>
+		</action>
+		<action name="loadSlbScheduleF5ModifyContent" method="loadSlbScheduleF5ModifyContent" class="slbScheduleAction">
+			<result type="freemarker">/WEB-INF/pages/virtualServer/schedule/slbScheduleF5AddContent.ftl</result>
+		</action>
+		<action name="loadSlbScheduleAlteonAddContent" method="loadSlbScheduleAlteonAddContent" class="slbScheduleAction">
+			<result type="freemarker">/WEB-INF/pages/virtualServer/schedule/slbScheduleAlteonAddContent.ftl</result>
+		</action>
+		<action name="loadSlbScheduleAlteonModifyContent" method="loadSlbScheduleAlteonModifyContent" class="slbScheduleAction">
+			<result type="freemarker">/WEB-INF/pages/virtualServer/schedule/slbScheduleAlteonAddContent.ftl</result>
+		</action>	
+		<action name="sendMeaage" method="sendMeaage" class="slbScheduleAction">
+			<result type="jsonHierarchy" />
+		</action> -->
+	</package>
+	
+	<!-- f5 Profile -->
+	<package name="profile" namespace="/profile" extends="json-hierarchy">
+		<action name="loadProfileListContent" method="loadProfileListContent" class="profileAction">
+			<result type="freemarker">/WEB-INF/pages/profile/profileListContent.ftl</result>
+		</action>
+		<action name="loadProfileAddContent" method="loadProfileAddContent" class="profileAction">
+			<result type="freemarker">/WEB-INF/pages/profile/profileAddContent.ftl</result>
+		</action>
+		<action name="loadProfileModifyContent" method="loadProfileModifyContent" class="profileAction">
+			<result type="freemarker">/WEB-INF/pages/profile/profileAddContent.ftl</result>
+		</action>
+		<action name="addProfile" method="addProfile" class="profileAction">
+			<result type="jsonHierarchy"/>
+		</action>
+		<action name="modifyProfile" method="modifyProfile" class="profileAction">
+			<result type="jsonHierarchy"/>
+		</action>
+		<action name="delProfiles" method="delProfiles" class="profileAction">
+			<result type="jsonHierarchy"/>
+		</action>
+		<action name="retrieveProfileAdd" method="retrieveProfileAdd" class="profileAction">
+			<result type="jsonHierarchy"/>
+		</action>
+	</package>
+</struts>

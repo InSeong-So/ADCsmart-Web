@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="SystemAdmin_Summary" language="groovy" pageWidth="555" pageHeight="802" columnWidth="555" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="4dc6fd56-c17f-489e-9948-f20f21b3283d">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<template><![CDATA["./AdcmsReportStyle.jrtx"]]></template>
+	<style name="table">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#D4D4D4"/>
+			<leftPen lineWidth="0.5" lineColor="#D4D4D4"/>
+			<bottomPen lineWidth="0.5" lineColor="#D4D4D4"/>
+			<rightPen lineWidth="0.5" lineColor="#D4D4D4"/>
+		</box>
+	</style>
+	<style name="table_CH" mode="Opaque" backcolor="#313754">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#D4D4D4"/>
+			<leftPen lineWidth="0.5" lineColor="#D4D4D4"/>
+			<bottomPen lineWidth="0.5" lineColor="#D4D4D4"/>
+			<rightPen lineWidth="0.5" lineColor="#D4D4D4"/>
+		</box>
+	</style>
+	<style name="table_TD" mode="Opaque">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#D4D4D4"/>
+			<leftPen lineWidth="0.5" lineColor="#D4D4D4"/>
+			<bottomPen lineWidth="0.5" lineColor="#D4D4D4"/>
+			<rightPen lineWidth="0.5" lineColor="#D4D4D4"/>
+		</box>
+		<conditionalStyle>
+			<conditionExpression><![CDATA[new Boolean($V{REPORT_COUNT}.intValue()%2==0)]]></conditionExpression>
+			<style backcolor="#F2F2F2"/>
+		</conditionalStyle>
+	</style>
+	<subDataset name="Dataset_SystemStatus" uuid="691b0592-4ede-4eb6-9640-f2a88112fbad">
+		<queryString>
+			<![CDATA[]]>
+		</queryString>
+		<field name="category" class="java.lang.String">
+			<fieldDescription><![CDATA[category]]></fieldDescription>
+		</field>
+		<field name="detail" class="java.lang.String">
+			<fieldDescription><![CDATA[detail]]></fieldDescription>
+		</field>
+		<field name="item" class="java.lang.String">
+			<fieldDescription><![CDATA[item]]></fieldDescription>
+		</field>
+		<field name="remarks" class="java.lang.String">
+			<fieldDescription><![CDATA[remarks]]></fieldDescription>
+		</field>
+		<field name="result" class="java.lang.String">
+			<fieldDescription><![CDATA[result]]></fieldDescription>
+		</field>
+		<field name="textHdr" class="kr.openbase.adcsmart.web.report.admin.SystemStatusRowDtoTextHdr">
+			<fieldDescription><![CDATA[textHdr]]></fieldDescription>
+		</field>
+	</subDataset>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["d:\\Users\\oklee\\Documents\\JR Projects\\"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="REPORT_INDEX" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA[$P{REPORT_INDEX}]]></defaultValueExpression>
+	</parameter>
+	<parameter name="IMG_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="adc" class="kr.openbase.adcsmart.web.report.admin.AdcInfoDto">
+		<fieldDescription><![CDATA[adc]]></fieldDescription>
+	</field>
+	<field name="portStatuses" class="java.util.List">
+		<fieldDescription><![CDATA[portStatuses]]></fieldDescription>
+	</field>
+	<field name="systemStatus" class="kr.openbase.adcsmart.web.report.admin.SystemStatusDto">
+		<fieldDescription><![CDATA[systemStatus]]></fieldDescription>
+	</field>
+	<field name="textHdr" class="kr.openbase.adcsmart.web.report.admin.SystemAdminSummaryDtoTextHdr">
+		<fieldDescription><![CDATA[textHdr]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="307" splitType="Stretch">
+			<frame>
+				<reportElement mode="Opaque" x="42" y="30" width="246" height="26" backcolor="#FFFFFF" uuid="c8b2661b-5f15-4838-a805-1390d67c083c"/>
+				<box>
+					<pen lineWidth="1.0" lineColor="#D4D4D4"/>
+					<topPen lineWidth="0.0" lineColor="#D4D4D4"/>
+					<leftPen lineWidth="0.0" lineColor="#D4D4D4"/>
+					<bottomPen lineWidth="0.0" lineColor="#D4D4D4"/>
+					<rightPen lineWidth="0.0" lineColor="#D4D4D4"/>
+				</box>
+				<rectangle radius="10">
+					<reportElement x="0" y="0" width="244" height="24" forecolor="#D9D9D9" backcolor="#D9D9D9" uuid="463d33d3-c2f6-4989-a6dd-14cc79ae9d41"/>
+					<graphicElement>
+						<pen lineWidth="0.0"/>
+					</graphicElement>
+				</rectangle>
+				<image>
+					<reportElement x="12" y="1" width="22" height="23" uuid="8026480f-4e40-448e-93f0-8c9880dde6d4"/>
+					<imageExpression><![CDATA[$P{IMG_DIR} + "icon_disableMonitor.png"]]></imageExpression>
+				</image>
+				<textField>
+					<reportElement style="boldL" x="39" y="4" width="100" height="14" uuid="b2a1ceb8-282f-46aa-acad-22000be2b6e9"/>
+					<textFieldExpression><![CDATA[""+$F{textHdr}.getTitle()]]></textFieldExpression>
+				</textField>
+			</frame>
+			<frame>
+				<reportElement mode="Transparent" x="42" y="66" width="511" height="21" backcolor="#FFFFFF" uuid="c8b2661b-5f15-4838-a805-1390d67c083c"/>
+				<textField>
+					<reportElement style="defaultTDS" mode="Opaque" x="70" y="0" width="186" height="20" uuid="669f60c5-b1af-4c31-a8a9-f3da69b9ec52"/>
+					<textFieldExpression><![CDATA[$F{adc}.getIp()]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement style="defaultTDS" mode="Opaque" x="326" y="0" width="184" height="20" uuid="43af417d-ac15-4667-ba4e-75bed99bf37e"/>
+					<textFieldExpression><![CDATA[$F{adc}.getName()]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement style="defaultTHS" mode="Opaque" x="0" y="0" width="70" height="20" uuid="7adb4a7d-81d3-446d-abe5-decd22c48382"/>
+					<textFieldExpression><![CDATA[""+$F{textHdr}.getAdcIP()]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement style="defaultTHS" mode="Opaque" x="256" y="0" width="70" height="20" uuid="c22bd079-3823-413c-8d12-6b83f6db0f9d"/>
+					<textFieldExpression><![CDATA[""+$F{textHdr}.getAdcName()]]></textFieldExpression>
+				</textField>
+			</frame>
+			<componentElement>
+				<reportElement key="table" style="table" x="42" y="251" width="510" height="50" uuid="2f5fe2af-7d78-4504-940b-eb0001cecf35"/>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<datasetRun subDataset="Dataset_SystemStatus" uuid="b5f32114-5351-419e-aee4-bdbd21c06b48">
+						<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{systemStatus}.getTable())]]></dataSourceExpression>
+					</datasetRun>
+					<jr:column width="57" uuid="16ad70d9-0e9f-4eb8-9593-6598dad007de">
+						<jr:columnHeader style="table_CH" height="21" rowSpan="1">
+							<textField>
+								<reportElement style="inverse_boldS" x="0" y="0" width="57" height="20" uuid="d24d04db-9320-4999-b5e4-6508c1aeebc0"/>
+								<textFieldExpression><![CDATA[""+$F{textHdr}.getColumn1()]]></textFieldExpression>
+							</textField>
+						</jr:columnHeader>
+						<jr:detailCell style="table_TD" height="20" rowSpan="1">
+							<textField>
+								<reportElement style="plainS" x="0" y="0" width="57" height="20" uuid="d5c320b6-a980-4270-9e75-5c2f633935d4"/>
+								<box bottomPadding="4"/>
+								<textElement textAlignment="Center"/>
+								<textFieldExpression><![CDATA[$F{category}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="93" uuid="4892b31d-303e-4a63-a2da-8cd1642552cb">
+						<jr:columnHeader style="table_CH" height="21" rowSpan="1">
+							<textField>
+								<reportElement style="inverse_boldS" x="0" y="0" width="93" height="20" uuid="d24d04db-9320-4999-b5e4-6508c1aeebc0"/>
+								<textFieldExpression><![CDATA[""+$F{textHdr}.getColumn1()]]></textFieldExpression>
+							</textField>
+						</jr:columnHeader>
+						<jr:detailCell style="table_TD" height="20" rowSpan="1">
+							<textField>
+								<reportElement style="plainS" x="0" y="0" width="93" height="20" uuid="7f493a5c-0c86-4dd0-a2cf-8e0638c0ef66"/>
+								<box bottomPadding="4"/>
+								<textFieldExpression><![CDATA[$F{item}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="60" uuid="9ac0c089-a9a8-4e71-a2ea-c7ace6c7eba0">
+						<jr:columnHeader style="table_CH" height="21" rowSpan="1">
+							<textField>
+								<reportElement style="inverse_boldS" x="0" y="0" width="60" height="20" uuid="d9fa66eb-1115-4e67-aa8e-48759ca4a74a"/>
+								<textFieldExpression><![CDATA[""+$F{textHdr}.getColumn3()]]></textFieldExpression>
+							</textField>
+						</jr:columnHeader>
+						<jr:detailCell style="table_TD" height="20" rowSpan="1">
+							<textField isBlankWhenNull="true">
+								<reportElement style="plainS" x="0" y="0" width="60" height="20" uuid="b75ab5ec-abb0-4679-9a06-a783a5146d8a"/>
+								<box bottomPadding="4"/>
+								<textElement textAlignment="Center"/>
+								<textFieldExpression><![CDATA[$F{result}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="241" uuid="07643447-7223-4c2c-a47a-8bde021ae12e">
+						<jr:columnHeader style="table_CH" height="21" rowSpan="1">
+							<textField>
+								<reportElement style="inverse_boldS" x="0" y="0" width="241" height="20" uuid="1bf53216-5733-4369-9fcb-99b65a1b2ad0"/>
+								<textFieldExpression><![CDATA[""+$F{textHdr}.getColumn4()]]></textFieldExpression>
+							</textField>
+						</jr:columnHeader>
+						<jr:detailCell style="table_TD" height="20" rowSpan="1">
+							<textField isStretchWithOverflow="true">
+								<reportElement style="plainS" x="0" y="0" width="241" height="20" uuid="0c37fc73-7412-4a72-9d9b-4799e5a3a15a"/>
+								<box bottomPadding="4"/>
+								<textFieldExpression><![CDATA[$F{detail}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="60" uuid="c1ea3d38-2f44-4b26-b529-0b0354608015">
+						<jr:columnHeader style="table_CH" height="21" rowSpan="1">
+							<textField>
+								<reportElement style="inverse_boldS" x="0" y="0" width="60" height="20" uuid="e254c317-b274-4949-952b-f84bf83089c1"/>
+								<textFieldExpression><![CDATA[""+$F{textHdr}.getColumn5()]]></textFieldExpression>
+							</textField>
+						</jr:columnHeader>
+						<jr:detailCell style="table_TD" height="20" rowSpan="1">
+							<textField isBlankWhenNull="true">
+								<reportElement style="plainS" x="0" y="0" width="60" height="20" uuid="aca3d7c2-480b-49be-b323-124b19cafd11"/>
+								<box bottomPadding="4"/>
+								<textFieldExpression><![CDATA[$F{remarks}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+				</jr:table>
+			</componentElement>
+			<textField>
+				<reportElement style="boldM" x="42" y="107" width="100" height="14" uuid="f7ea9214-922a-444f-913f-38b910f8f193"/>
+				<textFieldExpression><![CDATA[""+$F{textHdr}.getAdcInfo()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="boldM" x="42" y="232" width="100" height="14" uuid="016274bc-0c50-4004-be57-36c9b2169cf1"/>
+				<textFieldExpression><![CDATA[""+$F{textHdr}.getSystemInfo()]]></textFieldExpression>
+			</textField>
+			<frame>
+				<reportElement mode="Transparent" x="42" y="125" width="511" height="82" uuid="c8b2661b-5f15-4838-a805-1390d67c083c"/>
+				<textField>
+					<reportElement style="defaultTDS" mode="Opaque" x="70" y="0" width="186" height="20" uuid="669f60c5-b1af-4c31-a8a9-f3da69b9ec52"/>
+					<textFieldExpression><![CDATA[$F{adc}.getHostName()]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement style="defaultTDS" mode="Opaque" x="326" y="0" width="184" height="20" uuid="43af417d-ac15-4667-ba4e-75bed99bf37e"/>
+					<textFieldExpression><![CDATA[$F{adc}.getModel()]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement style="defaultTDS" mode="Opaque" x="70" y="20" width="186" height="20" uuid="669f60c5-b1af-4c31-a8a9-f3da69b9ec52"/>
+					<textFieldExpression><![CDATA[$F{adc}.getOsVersion()]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement style="defaultTDS" mode="Opaque" x="326" y="20" width="184" height="20" uuid="43af417d-ac15-4667-ba4e-75bed99bf37e"/>
+					<textFieldExpression><![CDATA[$F{adc}.getLicenseInfo()]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement style="defaultTDS" mode="Opaque" x="70" y="40" width="186" height="20" uuid="669f60c5-b1af-4c31-a8a9-f3da69b9ec52"/>
+					<textFieldExpression><![CDATA[$F{adc}.getSerialNo()]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement style="defaultTDS" mode="Opaque" x="326" y="40" width="184" height="20" uuid="43af417d-ac15-4667-ba4e-75bed99bf37e"/>
+					<textFieldExpression><![CDATA[$F{adc}.getMacAddress()]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement style="defaultTDS" mode="Opaque" x="70" y="60" width="186" height="20" uuid="669f60c5-b1af-4c31-a8a9-f3da69b9ec52"/>
+					<textFieldExpression><![CDATA[$F{adc}.getActiveOrStandby()]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement style="defaultTDS" mode="Opaque" x="326" y="60" width="184" height="20" uuid="43af417d-ac15-4667-ba4e-75bed99bf37e"/>
+					<textFieldExpression><![CDATA[$F{adc}.getDaysAlive()]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement style="defaultTHS" mode="Opaque" x="0" y="0" width="70" height="20" uuid="63f6cec2-4a72-447f-9491-9500394a54cf"/>
+					<textFieldExpression><![CDATA[""+$F{textHdr}.getHostName()]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement style="defaultTHS" mode="Opaque" x="256" y="0" width="70" height="20" uuid="b1889899-cc55-4a7e-bc4b-b8717c3bf272"/>
+					<textFieldExpression><![CDATA[""+$F{textHdr}.getAdcModel()]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement style="defaultTHS" mode="Opaque" x="0" y="20" width="70" height="20" uuid="0fcb3ca9-8c9c-4270-be38-a70f4670706b"/>
+					<textFieldExpression><![CDATA[""+$F{textHdr}.getOsVersion()]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement style="defaultTHS" mode="Opaque" x="256" y="20" width="70" height="20" uuid="aa251c3a-a88d-4f3e-b4ab-6fa290502132"/>
+					<textFieldExpression><![CDATA[""+$F{textHdr}.getLicenseInfo()]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement style="defaultTHS" mode="Opaque" x="0" y="40" width="70" height="20" uuid="af99bf0c-909a-4609-9bb0-4d8df210ac93"/>
+					<textFieldExpression><![CDATA[""+$F{textHdr}.getSerialNo()]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement style="defaultTHS" mode="Opaque" x="256" y="40" width="70" height="20" uuid="f71f1041-fac4-4cdf-a1f4-9cf52a080a5e"/>
+					<textFieldExpression><![CDATA[""+$F{textHdr}.getMacAddr()]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement style="defaultTHS" mode="Opaque" x="0" y="60" width="70" height="20" uuid="f06742e4-cff0-4382-ac76-aa96c44f85e4"/>
+					<textFieldExpression><![CDATA[""+$F{textHdr}.getActiveStandby()]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement style="defaultTHS" mode="Opaque" x="256" y="60" width="70" height="20" uuid="93425d26-9f3b-403d-acc9-6c0c497b83cd"/>
+					<textFieldExpression><![CDATA[""+$F{textHdr}.getRunningTime()]]></textFieldExpression>
+				</textField>
+			</frame>
+		</band>
+		<band height="50" splitType="Stretch">
+			<subreport>
+				<reportElement x="42" y="0" width="510" height="50" uuid="357500e8-e7a2-4798-93ea-3153dc2cd432"/>
+				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{portStatuses})]]></dataSourceExpression>
+				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "SystemAdmin_PortStatus.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+	</detail>
+</jasperReport>

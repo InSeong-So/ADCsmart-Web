@@ -1,0 +1,818 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="monitor" namespace="/monitor" extends="json-default">
+		<!--  사용하지 않음. 테스트 이상 없으면 삭제처리함.
+		<action name="loadLeftPane" method="loadLeftPane" class="monitorAction">
+			<result type="freemarker">/WEB-INF/pages/monitor/leftPane.ftl</result>
+		</action>
+		<action name="loadTrafficMonitorContent" method="loadTrafficMonitorContent" class="trafficMonitorAction">
+			<result type="freemarker">/WEB-INF/pages/monitor/trafficMonitorContent.ftl</result>
+		</action> 
+		-->
+		
+		<action name="loadNetworkMapContent" method="loadNetworkMapContent" class="networkMapAction">
+			<result type="freemarker">/WEB-INF/pages/monitor/networkMapContent.ftl</result>
+		</action>
+		<action name="loadNetworkMapTableInContent" method="loadNetworkMapContent" class="networkMapAction">
+			<result type="freemarker">/WEB-INF/pages/monitor/networkMapTableInContent.ftl</result>
+		</action>
+		<action name="loadVsMonitorContent" method="loadVsMonitorContent" class="vsMonitorAction">
+			<result type="freemarker">/WEB-INF/pages/monitor/vsMonitorContent.ftl</result>
+		</action>
+		<action name="loadVsTrafficInfoList" method="loadVsTrafficInfoList" class="vsMonitorAction">
+			<result type="freemarker">/WEB-INF/pages/monitor/vsMonitorTrafficList.ftl</result>
+		</action>
+		
+		<action name="retrieveTotalCountVsTrafficInfoList" method="retrieveTotalCountVsTrafficInfoList" class="vsMonitorAction">
+			<result type="json">
+				<param name="ignoreHierarchy">false</param>
+			</result>
+		</action>
+		<action name="loadVsTrafficInfo" method="loadVsTrafficInfo" class="vsMonitorAction">
+			<result type="freemarker">/WEB-INF/pages/monitor/vsMonitorTrafficDetail.ftl</result>
+		</action>
+		<action name="loadVirtualVsTrafficInfo" method="loadVsTrafficInfo" class="vsMonitorAction">
+			<result type="freemarker">/WEB-INF/pages/monitor/vsMonitorTrafficPop.ftl</result>
+		</action>
+		<action name="loadMemberVsTrafficInfo" method="loadMemberVsTrafficInfo" class="vsMonitorAction">
+			<result type="freemarker">/WEB-INF/pages/monitor/memberVsMonitorTrafficPop.ftl</result>
+		</action>
+		<action name="loadFilterVsTrafficInfo" method="loadFilterVsTrafficInfo" class="vsMonitorAction">
+			<result type="freemarker">/WEB-INF/pages/monitor/filterVsMonitorTrafficPop.ftl</result>
+		</action>
+		
+		<action name="loadVsConnectionInfo" method="loadVsConnectionInfo" class="vsMonitorAction">
+			<result type="json">
+				<param name="ignoreHierarchy">false</param>
+			</result>
+		</action>
+		<action name="checkExportVsMonitorDataExist" method="checkExportVsMonitorDataExist" class="vsMonitorAction">
+			<result type="json">
+				<param name="ignoreHierarchy">false</param>
+			</result>
+		</action>		
+		<action name="loadRealTimeVsConnectionData" method="loadRealTimeVsConnectionData" class="vsMonitorAction">
+			<result type="json">
+				<param name="ignoreHierarchy">false</param>
+			</result>
+		</action>
+		<action name="checkExportServiceMapExist" method="checkExportServiceMapExist" class="networkMapAction">
+			<result type="json">
+				<param name="ignoreHierarchy">false</param>
+			</result>
+		</action>
+		<action name="checkExportServiceMapExist" method="checkExportServiceMapExist" class="networkMapAction">
+            <result type="json">
+                <param name="ignoreHierarchy">false</param>
+            </result>
+        </action>
+		<action name="saveVsDescription" method="saveVsDescription" class="networkMapAction">
+            <result type="json">
+                <param name="ignoreHierarchy">false</param>
+            </result>
+        </action>
+        		
+		<!-- VS Monitor 내보내기 -->
+		<action name="downloadVsMonitor" method="downloadVsMonitor" class="vsMonitorAction">
+			<result type="stream">
+				<param name="contentType">application/octet-stream</param>
+                <param name="contentLength">${contentLength}</param>
+                <param name="contentDisposition">${contentDisposition}</param>
+                <param name="inputName">inputStream</param>
+                <param name="bufferSize">8192</param>		
+            </result>
+		</action>
+				
+		<!-- Performance 내보내기 -->
+		<action name="downloadPerformanceF5" method="downloadPerformanceF5" class="performanceAction">
+			<result type="stream">
+				<param name="contentType">application/octet-stream</param>
+				<param name="contentLength">${contentLength}</param>
+				<param name="contentDisposition">${contentDisposition}</param>
+				<param name="inputName">inputStream</param>
+				<param name="bufferSize">8192</param>
+			</result>
+		</action>
+		<action name="downloadPerformanceDefault" method="downloadPerformanceDefault" class="performanceAction">
+			<result type="stream">
+				<param name="contentType">application/octet-stream</param>
+				<param name="contentLength">${contentLength}</param>
+				<param name="contentDisposition">${contentDisposition}</param>
+				<param name="inputName">inputStream</param>
+				<param name="bufferSize">8192</param>
+			</result>
+		</action>
+		<action name="loadSystemPerformanceContent" method="loadSystemPerformanceContent" class="performanceAction">
+			<result type="freemarker">/WEB-INF/pages/monitor/systemPerformanceContent.ftl</result>
+		</action>
+		<action name="loadSystemPerformanceInfo" method="loadSystemPerformanceInfo" class="performanceAction">
+			<result type="json">
+				<param name="ignoreHierarchy">false</param>
+			</result>
+		</action>
+		<action name="checkExportPerformDataExist" method="checkExportPerformDataExist" class="performanceAction">
+			<result type="json">
+				<param name="ignoreHierarchy">false</param>
+			</result>
+		</action>
+		
+		<!-- Alert Log Monitoring -->
+		<action name="loadAlertMonitorContent" method="loadAlertMonitorContent" class="alertMonitorAction">
+			<result type="freemarker">/WEB-INF/pages/monitor/alertMonitoring/alertMonitorContent.ftl</result>
+		</action>
+		<action name="loadAlertTableInListContent" method="loadAlertMonitorContent" class="alertMonitorAction">
+			<result type="freemarker">/WEB-INF/pages/monitor/alertMonitoring/alertMonitorTableInListContent.ftl</result>
+		</action>
+		<action name="loadAlertTableInListGroupContent" method="loadAlertMonitorContent" class="alertMonitorAction">
+			<result type="freemarker">/WEB-INF/pages/monitor/alertMonitoring/alertMonitorTableInListGroupContent.ftl</result>
+		</action>
+		<action name="retrieveAlertLogCount" method="retrieveAlertLogCount" class="alertMonitorAction">
+			<result type="json">
+				<param name="ignoreHierarchy">false</param>
+			</result>
+		</action>
+		
+		<!-- Fault Log Monitoring -->
+		<action name="loadFaultLogContent" method="loadFaultLogContent" class="faultLogAction">
+			<result type="freemarker">/WEB-INF/pages/monitor/faultMonitoring/faultLogContent.ftl</result>
+		</action>
+		<action name="loadFaultTableInListContent" method="loadFaultLogContent" class="faultLogAction">
+			<result type="freemarker">/WEB-INF/pages/monitor/faultMonitoring/faultTableInListContent.ftl</result>
+		</action>
+		<action name="loadFaultTableInListGroupContent" method="loadFaultLogContent" class="faultLogAction">
+			<result type="freemarker">/WEB-INF/pages/monitor/faultMonitoring/faultTableInListGroupContent.ftl</result>
+		</action>
+		<action name="retrieveFaultLogCount" method="retrieveFaultLogCount" class="faultLogAction">
+			<result type="json">
+				<param name="ignoreHierarchy">false</param>
+			</result>
+		</action>
+		<action name="checkFaultDataExist" method="checkFaultDataExist" class="faultLogAction">
+			<result type="json">
+				<param name="ignoreHierarchy">false</param>
+			</result>
+		</action>
+		<action name="downloadFaultLog" method="downloadFaultLog" class="faultLogAction">
+        	<result type="stream">
+                <param name="contentType">application/octet-stream</param>
+                <param name="contentLength">${contentLength}</param>
+                <param name="contentDisposition">${contentDisposition}</param>
+                <param name="inputName">inputStream</param>
+                <param name="bufferSize">8192</param>
+            </result>
+        </action>		
+		
+		<!-- Service Monitoring -->
+		<!-- 전체 / 그룹인경우 -->
+		<action name="retrieveServiceMonTotal" method="retrieveServiceMonTotal" class="groupTotalMonitorAction">
+			<result type="json">
+				<param name="ignoreHierarchy">false</param>
+			</result>
+		</action>
+		<action name="loadServiceMonitorList" method="loadServiceMonitorList" class="groupTotalMonitorAction">
+			<result type="freemarker">/WEB-INF/pages/monitor/groupTotalMonitoring/serviceMonitoringListContent.ftl</result>
+		</action>
+		<action name="loadServiceMonitoringTableInListContent" method="loadServiceMonitorList" class="groupTotalMonitorAction">
+			<result type="json"/>
+<!-- 			<result type="freemarker">/WEB-INF/pages/monitor/groupTotalMonitoring/adcMonitoringTableInListContent.ftl</result> -->
+		</action>
+		<action name="checkExportSvcMonDataExist" method="checkExportSvcMonDataExist" class="groupTotalMonitorAction">
+			<result type="json">
+				<param name="ignoreHierarchy">false</param>
+			</result>
+		</action>
+		<action name="downloadSvcMonList" method="downloadSvcMonList" class="groupTotalMonitorAction">
+			<result type="stream">
+				<!-- 
+				<param name="contentType">application/octet-steam</param>
+				<param name="contentLength">${contentLength}</param>
+				<param name="contentDisposition">${contentDisposition}</param>
+				<param name="inputName">inputStream</param>
+				<param name="bufferSize">8192</param>
+				-->				 
+				<param name="contentType">text/csv;charset=EUC-KR;</param>
+				<!--
+				<param name="contentEncoding">EUC-KR</param>
+				-->
+			</result>
+		</action>
+		<action name="loadMultiBpsInfo" method="loadMulitBpsConnInfo" class="groupTotalMonitorAction">
+			<result type="json">
+				<param name="ignoreHierarchy">false</param>
+			</result>
+		</action>
+		<action name="loadMulitConnInfo" method="loadMulitBpsConnInfo" class="groupTotalMonitorAction">
+			<result type="json">
+				<param name="ignoreHierarchy">false</param>
+			</result>
+		</action>
+		
+		<action name="loadMultiBpsMaxAvgInfo" method="loadMultiBpsConnMaxAvgInfo" class="groupTotalMonitorAction">
+			<result type="freemarker">/WEB-INF/pages/monitor/groupTotalMonitoring/serviceMonitoringBpsAvgMaxDataContent.ftl</result>
+		</action>
+		<action name="loadMultiConnMaxAvgInfo" method="loadMultiBpsConnMaxAvgInfo" class="groupTotalMonitorAction">
+			<result type="freemarker">/WEB-INF/pages/monitor/groupTotalMonitoring/serviceMonitoringConnAvgMaxDataContent.ftl</result>
+		</action>
+			
+		<!-- Group Monitoring -->
+		<!-- 전체 / 그룹인 경우 -->
+		<action name="retrieveGroupMonTotal" method="retrieveGroupMonTotal" class="groupTotalMonitorAction">
+			<result type="json">
+				<param name="ignoreHierarchy">false</param>
+			</result>
+		</action>
+		<action name="loadGroupMonitorList" method="loadGroupMonitorList" class="groupTotalMonitorAction">
+			<result type="freemarker">/WEB-INF/pages/monitor/groupTotalMonitoring/groupMonitoringListContent.ftl</result>
+		</action>
+		<action name="loadGroupMonitoringTableInListContent" method="loadGroupMonitorList" class="groupTotalMonitorAction">
+			<result type="json">
+				<param name="ignoreHierarchy">false</param>
+			</result>
+		</action>
+		<action name="checkExportGroupMonDataExist" method="checkExportGroupMonDataExist" class="groupTotalMonitorAction">
+			<result type="json">
+				<param name="ignoreHierarchy">false</param>
+			</result>
+		</action>
+		<action name="downloadGroupMonList" method="downloadGroupMonList" class="groupTotalMonitorAction">
+			<result type="stream">
+				<param name="contentType">application/octet-steam</param>
+				<param name="contentLength">${contentLength}</param>
+				<param name="contentDisposition">${contentDisposition}</param>
+				<param name="inputName">inputStream</param>
+				<param name="bufferSize">8192</param>
+			</result>
+		</action>
+		
+		<!-- RealServer Monitoring -->
+		<!-- 전체 / 그룹인 경우 -->
+		<action name="retrieveRealServerMonTotal" method="retrieveRealServerMonTotal" class="groupTotalMonitorAction">
+			<result type="json">
+				<param name="ignoreHierarchy">false</param>
+			</result>
+		</action>
+		<action name="loadRealServerMonitorList" method="loadRealServerMonitorList" class="groupTotalMonitorAction">
+			<result type="freemarker">/WEB-INF/pages/monitor/groupTotalMonitoring/realserverMonitoringListContent.ftl</result>
+		</action>
+		<action name="loadRealServerMonitoringTableInListContent" method="loadRealServerMonitorList" class="groupTotalMonitorAction">
+			<result type="json">
+				<param name="ignoreHierarchy">false</param>
+			</result>
+		</action>
+		<action name="checkExportRealServerMonDataExist" method="checkExportRealServerMonDataExist" class="groupTotalMonitorAction">
+			<result type="json">
+				<param name="ignoreHierarchy">false</param>
+			</result>
+		</action>
+		<action name="downloadRealServerMonList" method="downloadRealServerMonList" class="groupTotalMonitorAction">
+			<result type="stream">
+				<param name="contentType">application/octet-steam</param>
+				<param name="contentLength">${contentLength}</param>
+				<param name="contentDisposition">${contentDisposition}</param>
+				<param name="inputName">inputStream</param>
+				<param name="bufferSize">8192</param>
+			</result>
+		</action>
+		
+		<!-- 서비스성능 모니터링 -->
+		<action name="loadServicePerfomanceContent" method="loadServicePerfomanceContent" class="servicePerfomanceMonitorAction">
+			<result type="freemarker">/WEB-INF/pages/monitor/servicePerfomanceMonitoring/servicePerfomanceContent.ftl</result>
+		</action>
+		<action name="loadBpsMaxAvgHistoryInfo" method="loadBpsConnMaxAvgHistoryInfo" class="servicePerfomanceMonitorAction">
+			<result type="freemarker">/WEB-INF/pages/monitor/servicePerfomanceMonitoring/servicePerfomanceAvgMaxDataContent.ftl</result>
+		</action>
+		<action name="loadConnMaxAvgHistoryInfo" method="loadBpsConnMaxAvgHistoryInfo" class="servicePerfomanceMonitorAction">
+			<result type="freemarker">/WEB-INF/pages/monitor/servicePerfomanceMonitoring/servicePerfomanceConnAvgMaxDataContent.ftl</result>
+		</action>
+		<action name="loadResponseMaxAvgHistoryInfo" method="loadResponseMaxAvgHistoryInfo" class="servicePerfomanceMonitorAction">
+			<result type="freemarker">/WEB-INF/pages/monitor/servicePerfomanceMonitoring/servicePerfomanceResponseAvgMaxDataContent.ftl</result>
+		</action>		
+		<action name="loadAlteonSvcPerfInfoList" method="loadSvcPerfInfoList" class="servicePerfomanceMonitorAction">
+			<result type="freemarker">/WEB-INF/pages/monitor/servicePerfomanceMonitoring/servicePerfomanceAlteonList.ftl</result>
+		</action>
+		<action name="loadSvcPerfInfoList" method="loadSvcPerfInfoList" class="servicePerfomanceMonitorAction">
+			<result type="freemarker">/WEB-INF/pages/monitor/servicePerfomanceMonitoring/servicePerfomanceList.ftl</result>
+		</action>
+		
+		<action name="loadAlteonSvcPerfRsInfoList" method="loadVsTrafficInfo" class="servicePerfomanceMonitorAction">
+			<result type="freemarker">/WEB-INF/pages/monitor/servicePerfomanceMonitoring/servicePerfomanceAlteonList.ftl</result>
+		</action>
+		<action name="loadSvcPerfRsInfoList" method="loadVsTrafficInfo" class="servicePerfomanceMonitorAction">
+			<result type="freemarker">/WEB-INF/pages/monitor/servicePerfomanceMonitoring/servicePerfomanceList.ftl</result>
+		</action>
+			
+		<action name="retrieveSvcPerfInfoTotalCount" method="retrieveSvcPerfInfoTotalCount" class="servicePerfomanceMonitorAction">
+			<result type="json">
+				<param name="ignoreHierarchy">false</param>
+			</result>
+		</action>		
+		<action name="loadBpsConnHistoryInfo" method="loadBpsConnHistoryInfo" class="servicePerfomanceMonitorAction">
+			<result type="json">
+				<param name="ignoreHierarchy">false</param>
+			</result>
+		</action>
+		<action name="loadConnHistoryInfo" method="loadBpsConnHistoryInfo" class="servicePerfomanceMonitorAction">
+			<result type="json">
+				<param name="ignoreHierarchy">false</param>
+			</result>
+		</action>
+		<action name="loadResponseTimeHistoryInfo" method="loadResponseTimeHistoryInfo" class="servicePerfomanceMonitorAction">
+			<result type="json">
+				<param name="ignoreHierarchy">false</param>
+			</result>
+		</action>
+		<action name="loadRealTimeBpsConnInfo" method="loadRealTimeBpsConnInfo" class="servicePerfomanceMonitorAction">
+			<result type="json">
+				<param name="ignoreHierarchy">false</param>
+			</result>
+		</action>
+		<action name="checkExportSvcPerfDataExist" method="checkExportSvcPerfDataExist" class="servicePerfomanceMonitorAction">
+			<result type="json">
+				<param name="ignoreHierarchy">false</param>
+			</result>
+		</action>
+		<action name="downloadSvcPerfInfo" method="downloadSvcPerfInfo" class="servicePerfomanceMonitorAction">
+			<result type="stream">
+				<param name="contentType">application/octet-stream</param>
+                <param name="contentLength">${contentLength}</param>
+                <param name="contentDisposition">${contentDisposition}</param>
+                <param name="inputName">inputStream</param>
+                <param name="bufferSize">8192</param>		
+            </result>
+		</action>		
+		
+		<!-- 서비스성능 모니터링 Real Server Page-->
+		<action name="loadRealServerContent" method="loadRealServerContent" class="servicePerfomanceMonitorAction">
+			<result type="freemarker">/WEB-INF/pages/monitor/servicePerfomanceMonitoring/servicePerformanceRealContent.ftl</result>
+		</action>
+				
+		<action name="retrieveVsMemberInfoTotalCount" method="retrieveVsMemberInfoTotalCount" class="servicePerfomanceMonitorAction">
+			<result type="json">
+				<param name="ignoreHierarchy">false</param>
+			</result>
+		</action>
+		
+		<action name="loadSvcMemberInfoList" method="loadSvcMemberInfoList" class="servicePerfomanceMonitorAction">
+			<result type="freemarker">/WEB-INF/pages/monitor/servicePerfomanceMonitoring/servicePerfomanceRealList.ftl</result>
+		</action>
+		
+		<action name="loadAlteonSvcMemberInfoList" method="loadSvcMemberInfoList" class="servicePerfomanceMonitorAction">
+			<result type="freemarker">/WEB-INF/pages/monitor/servicePerfomanceMonitoring/servicePerfomanceAlteonRealList.ftl</result>
+		</action>
+		
+		<action name="loadVsMemberHistoryInfo" method="loadVsMemberHistoryInfo" class="servicePerfomanceMonitorAction">
+			<result type="json">
+				<param name="ignoreHierarchy">false</param>
+			</result>
+		</action>
+		
+		<action name="loadVsMemberConnHistoryInfo" method="loadVsMemberHistoryInfo" class="servicePerfomanceMonitorAction">
+			<result type="json">
+				<param name="ignoreHierarchy">false</param>
+			</result>
+		</action>
+		
+		<action name="loadVsMemberMaxAvgHistoryInfo" method="loadVsMemberMaxAvgHistoryInfo" class="servicePerfomanceMonitorAction">
+			<result type="freemarker">/WEB-INF/pages/monitor/servicePerfomanceMonitoring/servicePerfomanceRealAvgMaxDataContent.ftl</result>
+		</action>
+		<action name="loadVsMemberConnMaxAvgHistoryInfo" method="loadVsMemberMaxAvgHistoryInfo" class="servicePerfomanceMonitorAction">
+			<result type="freemarker">/WEB-INF/pages/monitor/servicePerfomanceMonitoring/servicePerfomanceRealConnAvgMaxDataContent.ftl</result>
+		</action>
+		
+		<action name="checkExportMemberDataExist" method="checkExportMemberDataExist" class="servicePerfomanceMonitorAction">
+			<result type="json">
+				<param name="ignoreHierarchy">false</param>
+			</result>
+		</action>
+		
+		<action name="downloadMemberInfo" method="downloadMemberInfo" class="servicePerfomanceMonitorAction">
+			<result type="stream">
+				<param name="contentType">application/octet-stream</param>
+                <param name="contentLength">${contentLength}</param>
+                <param name="contentDisposition">${contentDisposition}</param>
+                <param name="inputName">inputStream</param>
+                <param name="bufferSize">8192</param>		
+            </result>
+		</action>
+		
+		<!-- FLB 그룹 성능 모니터링 -->		
+		
+		<action name="loadFLBGroupPerfomanceContent" method="loadFLBGroupPerfomanceContent" class="flbGroupPerfomanceMonitorAction">
+			<result type="freemarker">/WEB-INF/pages/monitor/flbGroupPerfomanceMonitoring/flbGroupPerfomanceContent.ftl</result>
+		</action>
+		
+		<action name="loadGroupPerfInfoList" method="loadGroupPerfInfoList" class="flbGroupPerfomanceMonitorAction">
+			<result type="freemarker">/WEB-INF/pages/monitor/flbGroupPerfomanceMonitoring/flbGroupPerfomanceList.ftl</result>
+		</action>
+		
+		<action name="loadGroupPerfInfoTotalCount" method="loadGroupPerfInfoTotalCount" class="flbGroupPerfomanceMonitorAction">
+			<result type="json">
+				<param name="ignoreHierarchy">false</param>
+			</result>
+		</action>
+		<action name="loadGroupPerfBpsConnHistory" method="loadGroupPerfBpsConnHistory" class="flbGroupPerfomanceMonitorAction">
+			<result type="json">
+				<param name="ignoreHierarchy">false</param>
+			</result>
+		</action>
+		<action name="checkExportGroupPerfDataExist" method="checkExportGroupPerfDataExist" class="flbGroupPerfomanceMonitorAction">
+			<result type="json">
+				<param name="ignoreHierarchy">false</param>
+			</result>
+		</action>		
+
+		<action name="downloadGroupPerfInfo" method="downloadGroupPerfInfo" class="flbGroupPerfomanceMonitorAction">
+			<result type="stream">
+				<param name="contentType">application/octet-stream</param>
+                <param name="contentLength">${contentLength}</param>
+                <param name="contentDisposition">${contentDisposition}</param>
+                <param name="inputName">inputStream</param>
+                <param name="bufferSize">8192</param>		
+            </result>
+		</action>
+		
+		<!-- FLB 그룹 Member 성능 모니터링 -->		
+		
+		<action name="loadFLBGroupMemberPerfomanceContent" method="loadFLBGroupMemberPerfomanceContent" class="flbGroupPerfomanceMonitorAction">
+			<result type="freemarker">/WEB-INF/pages/monitor/flbGroupPerfomanceMonitoring/flbGroupPerfomanceRealContent.ftl</result>
+		</action>
+		
+		<action name="loadGroupMemberPerfInfoList" method="loadGroupMemberPerfInfoList" class="flbGroupPerfomanceMonitorAction">
+			<result type="freemarker">/WEB-INF/pages/monitor/flbGroupPerfomanceMonitoring/flbGroupPerfomanceRealList.ftl</result>
+		</action>
+		
+		<action name="loadGroupMemberPerfTotalCount" method="loadGroupMemberPerfTotalCount" class="flbGroupPerfomanceMonitorAction">
+			<result type="json">
+				<param name="ignoreHierarchy">false</param>
+			</result>
+		</action>
+		<action name="loadGroupMemberPerfBpsConnHistory" method="loadGroupMemberPerfBpsConnHistory" class="flbGroupPerfomanceMonitorAction">
+			<result type="json">
+				<param name="ignoreHierarchy">false</param>
+			</result>
+		</action>
+		<action name="checkExportGroupMemberPerfDataExist" method="checkExportGroupMemberPerfDataExist" class="flbGroupPerfomanceMonitorAction">
+			<result type="json">
+				<param name="ignoreHierarchy">false</param>
+			</result>
+		</action>
+		<action name="downloadGroupMemberPerfInfo" method="downloadGroupMemberPerfInfo" class="flbGroupPerfomanceMonitorAction">
+			<result type="stream">
+				<param name="contentType">application/octet-stream</param>
+                <param name="contentLength">${contentLength}</param>
+                <param name="contentDisposition">${contentDisposition}</param>
+                <param name="inputName">inputStream</param>
+                <param name="bufferSize">8192</param>		
+            </result>
+		</action>
+		
+		<!-- Appliance Monitoring -->
+		<!-- 전체 / 그룹인경우 -->
+		<action name="retrieveAdcMonTotal" method="retrieveAdcMonTotal" class="groupTotalMonitorAction">
+			<result type="json">
+				<param name="ignoreHierarchy">false</param>
+			</result>
+		</action>
+		<action name="loadApplianceMonitorList" method="loadApplianceMonitorList" class="groupTotalMonitorAction">
+			<result type="freemarker">/WEB-INF/pages/monitor/groupTotalMonitoring/adcMonitoringListContent.ftl</result>
+		</action>
+		<action name="loadAdcMonitoringTableInListContent" method="loadApplianceMonitorList" class="groupTotalMonitorAction">
+			<result type="json"/>
+<!-- 			<result type="freemarker">/WEB-INF/pages/monitor/groupTotalMonitoring/adcMonitoringTableInListContent.ftl</result> -->
+		</action>
+		<action name="checkExportAdcMonDataExist" method="checkExportAdcMonDataExist" class="groupTotalMonitorAction">
+			<result type="json">
+				<param name="ignoreHierarchy">false</param>
+			</result>
+		</action>
+		<action name="downloadAdcMonList" method="downloadAdcMonList" class="groupTotalMonitorAction">
+			<result type="stream">
+				<param name="contentType">appliance/octet-stream</param>
+				<param name="contentLength">${contentLength}</param>
+				<param name="contentDisposition">${contentDisposition}</param>
+				<param name="inputName">inputStream</param>
+				<param name="bufferSize">8192</param>
+			</result>
+		</action>		
+		
+		<!-- 개별 ADC 경우 -->
+		<action name="loadApplianceMonitorContent" method="loadApplianceMonitorContent" class="applianceMonitorAction">
+			<result type="freemarker">/WEB-INF/pages/monitor/applianceMonitoring/portInfoContent.ftl</result>
+		</action>		
+		
+		<action name="loadApplianceAllChartContent" method="loadApplianceAllChartContent" class="applianceMonitorAction">
+			<result type="freemarker">/WEB-INF/pages/monitor/applianceMonitoring/allChartContent.ftl</result>
+		</action>
+		
+		<action name="loadApplianceDetailChartContent" method="loadApplianceDetailChartContent" class="applianceMonitorAction">
+			<result type="freemarker">/WEB-INF/pages/monitor/applianceMonitoring/detailChartContent.ftl</result>
+		</action>	
+		
+		<action name="loadIntervalInfo" method="loadIntervalInfo" class="applianceMonitorAction">
+			<result type="json">
+				<param name="ignoreHierarchy">false</param>
+			</result>
+		</action>	
+		
+		<action name="loadSessionHistoryInfo" method="loadSessionHistoryInfo" class="applianceMonitorAction">
+			<result type="json">
+				<param name="ignoreHierarchy">false</param>
+			</result>
+		</action>
+		<action name="loadBpsHistoryInfo" method="loadBpsHistoryInfo" class="applianceMonitorAction">
+			<result type="json">
+				<param name="ignoreHierarchy">false</param>
+			</result>
+		</action>
+		<action name="loadCpuHistroyInfo" method="loadCpuHistroyInfo" class="applianceMonitorAction">
+			<result type="json">
+				<param name="ignoreHierarchy">false</param>
+			</result>
+		</action>
+		<action name="loadAdcCpuHistroyInfo" method="loadAdcCpuHistroyInfo" class="applianceMonitorAction">
+			<result type="json">
+				<param name="ignoreHierarchy">false</param>
+			</result>
+		</action>		
+		<action name="loadCpuSPHistroyInfo" method="loadCpuSPHistroyInfo" class="applianceMonitorAction">
+			<result type="json">
+				<param name="ignoreHierarchy">false</param>
+			</result>
+		</action>
+		<action name="loadCpuSpConnectionInfo" method="loadCpuSpConnectionInfo" class="applianceMonitorAction">
+			<result type="json">
+				<param name="ignoreHierarchy">false</param>
+			</result>
+		</action>		
+		<action name="loadMemHistoryInfo" method="loadMemHistoryInfo" class="applianceMonitorAction">
+			<result type="json">
+				<param name="ignoreHierarchy">false</param>
+			</result>
+		</action>
+		<action name="loadPktErrHistoryInfo" method="loadPktErrHistoryInfo" class="applianceMonitorAction">
+			<result type="json">
+				<param name="ignoreHierarchy">false</param>
+			</result>
+		</action>
+		<action name="loadPktDropHistoryInfo" method="loadPktDropHistoryInfo" class="applianceMonitorAction">
+			<result type="json">
+				<param name="ignoreHierarchy">false</param>
+			</result>
+		</action>
+		<action name="loadSSLTransactionHistoryInfo" method="loadSSLTransactionHistoryInfo" class="applianceMonitorAction">
+			<result type="json">
+				<param name="ignoreHierarchy">false</param>
+			</result>
+		</action>
+		<action name="loadHTTPRequestHistoryInfo" method="loadHTTPRequestHistoryInfo" class="applianceMonitorAction">
+			<result type="json">
+				<param name="ignoreHierarchy">false</param>
+			</result>
+		</action>
+		
+		<action name="checkExportDataExist" method="checkExportDataExist" class="applianceMonitorAction">
+			<result type="json">
+				<param name="ignoreHierarchy">false</param>
+			</result>
+		</action>					
+		<!-- statistics내보내기 -->
+        <action name="download" method="download" class="applianceMonitorAction">
+        	<result type="stream">
+        		<param name="content Type">application/octet-stream</param>
+        		<param name="contentLength">${contentLength}</param>
+        		<param name="contentDisposition">${contentDisposition}</param>
+        		<param name="inputName">inputStream</param>
+        		<param name="bufferSize">8192</param>
+        	</result>
+        </action>
+		
+		<!-- 개별 모니터링-인터페이스 전용 -->
+		<action name="loadApplianceInterfaceListContent" method="loadStatisticsContent" class="statisticsAction">
+			<result type="freemarker">/WEB-INF/pages/monitor/applianceMonitoring/interfaceListContent.ftl</result>
+		</action>
+		<action name="loadApplianceInterfaceChartContent" method="loadApplianceDetailChartContent" class="applianceMonitorAction">
+			<result type="freemarker">/WEB-INF/pages/monitor/applianceMonitoring/interfaceChartContent.ftl</result>
+		</action>
+		<!-- 기존 인터페이스 모니터링(statistics), 재활용 -->
+		<!-- @Deprecate -->	
+		<action name="loadStatisticsContent" method="loadStatisticsContent" class="statisticsAction">
+			<result type="freemarker">/WEB-INF/pages/monitor/statisticsContent.ftl</result>
+		</action>
+		<action name="loadRefreshContents" method="loadStatisticsContent" class="statisticsAction">
+			<result type="freemarker">/WEB-INF/pages/monitor/statisticsContent.ftl</result>
+		</action>
+		<!-- !@Deprecate -->
+			
+		<action name="loadInterFaceGraphData" method="loadInterFaceGraphData" class="statisticsAction">
+			<result type="json">
+				<param name="ignoreHierarchy">false</param>
+			</result>
+		</action>
+		<action name="checkExportStatisticsDataExist" method="checkExportStatisticsDataExist" class="statisticsAction">
+			<result type="json">
+				<param name="ignoreHierarchy">false</param>
+			</result>
+		</action>					
+		<!-- statistics내보내기 -->
+        <action name="downloadStatistics" method="downloadStatistics" class="statisticsAction">
+        	<result type="stream">
+        		<param name="content Type">application/octet-stream</param>
+        		<param name="contentLength">${contentLength}</param>
+        		<param name="contentDisposition">${contentDisposition}</param>
+        		<param name="inputName">inputStream</param>
+        		<param name="bufferSize">8192</param>
+        	</result>
+        </action>
+		
+		<!-- Alteon -->
+		<action name="AlteonBasicContent" method="loadApplianceMapContent" class="applianceMonitorAction">
+			<result type="freemarker">/WEB-INF/pages/monitor/applianceMonitoring/alteonMap/alteonBasic.ftl</result>
+		</action>
+		<action name="Alteon2208Content" method="loadApplianceMapContent" class="applianceMonitorAction">
+			<result type="freemarker">/WEB-INF/pages/monitor/applianceMonitoring/alteonMap/alteon2208.ftl</result>
+		</action>
+		<action name="Alteon2216Content" method="loadApplianceMapContent" class="applianceMonitorAction">
+			<result type="freemarker">/WEB-INF/pages/monitor/applianceMonitoring/alteonMap/alteon2216.ftl</result>
+		</action>
+		<action name="Alteon2424Content" method="loadApplianceMapContent" class="applianceMonitorAction">
+			<result type="freemarker">/WEB-INF/pages/monitor/applianceMonitoring/alteonMap/alteon2424.ftl</result>
+		</action>
+		<action name="Alteon3408Content" method="loadApplianceMapContent" class="applianceMonitorAction">
+			<result type="freemarker">/WEB-INF/pages/monitor/applianceMonitoring/alteonMap/alteon3408.ftl</result>
+		</action>
+		<action name="Alteon4408Content" method="loadApplianceMapContent" class="applianceMonitorAction">
+			<result type="freemarker">/WEB-INF/pages/monitor/applianceMonitoring/alteonMap/alteon4408.ftl</result>
+		</action>
+		<action name="Alteon4024Content" method="loadApplianceMapContent" class="applianceMonitorAction">
+			<result type="freemarker">/WEB-INF/pages/monitor/applianceMonitoring/alteonMap/alteon4024.ftl</result>
+		</action>
+		<action name="Alteon4416Content" method="loadApplianceMapContent" class="applianceMonitorAction">
+			<result type="freemarker">/WEB-INF/pages/monitor/applianceMonitoring/alteonMap/alteon4416.ftl</result>
+		</action>
+		<action name="Alteon5208Content" method="loadApplianceMapContent" class="applianceMonitorAction">
+			<result type="freemarker">/WEB-INF/pages/monitor/applianceMonitoring/alteonMap/alteon5208.ftl</result>
+		</action>
+		<action name="Alteon5224Content" method="loadApplianceMapContent" class="applianceMonitorAction">
+			<result type="freemarker">/WEB-INF/pages/monitor/applianceMonitoring/alteonMap/alteon5224.ftl</result>
+		</action>
+		<action name="Alteon5412Content" method="loadApplianceMapContent" class="applianceMonitorAction">
+			<result type="freemarker">/WEB-INF/pages/monitor/applianceMonitoring/alteonMap/alteon5412.ftl</result>
+		</action>
+		<action name="Alteon6420Content" method="loadApplianceMapContent" class="applianceMonitorAction">
+			<result type="freemarker">/WEB-INF/pages/monitor/applianceMonitoring/alteonMap/alteon6420.ftl</result>
+		</action>
+		<action name="Alteon6024Content" method="loadApplianceMapContent" class="applianceMonitorAction">
+			<result type="freemarker">/WEB-INF/pages/monitor/applianceMonitoring/alteonMap/alteon6024.ftl</result>
+		</action>
+		
+		<!-- F5 -->
+		<action name="F5_BasicContent" method="loadApplianceMapContent" class="applianceMonitorAction">
+			<result type="freemarker">/WEB-INF/pages/monitor/applianceMonitoring/f5Map/f5_basic.ftl</result>
+		</action>
+		<action name="F5_1600Content" method="loadApplianceMapContent" class="applianceMonitorAction">
+			<result type="freemarker">/WEB-INF/pages/monitor/applianceMonitoring/f5Map/f5_1600.ftl</result>
+		</action>
+		<action name="F5_2000Content" method="loadApplianceMapContent" class="applianceMonitorAction">
+			<result type="freemarker">/WEB-INF/pages/monitor/applianceMonitoring/f5Map/f5_2000.ftl</result>
+		</action>
+		<action name="F5_2400Content" method="loadApplianceMapContent" class="applianceMonitorAction">
+			<result type="freemarker">/WEB-INF/pages/monitor/applianceMonitoring/f5Map/f5_2400.ftl</result>
+		</action>
+		<action name="F5_2600Content" method="loadApplianceMapContent" class="applianceMonitorAction">
+			<result type="freemarker">/WEB-INF/pages/monitor/applianceMonitoring/f5Map/f5_2600.ftl</result>
+		</action>
+		<action name="F5_2800Content" method="loadApplianceMapContent" class="applianceMonitorAction">
+			<result type="freemarker">/WEB-INF/pages/monitor/applianceMonitoring/f5Map/f5_2800.ftl</result>
+		</action>
+		<action name="F5_3600Content" method="loadApplianceMapContent" class="applianceMonitorAction">
+			<result type="freemarker">/WEB-INF/pages/monitor/applianceMonitoring/f5Map/f5_3600.ftl</result>
+		</action>
+		<action name="F5_3900Content" method="loadApplianceMapContent" class="applianceMonitorAction">
+			<result type="freemarker">/WEB-INF/pages/monitor/applianceMonitoring/f5Map/f5_3900.ftl</result>
+		</action>
+		<action name="F5_4000Content" method="loadApplianceMapContent" class="applianceMonitorAction">
+			<result type="freemarker">/WEB-INF/pages/monitor/applianceMonitoring/f5Map/f5_4000.ftl</result>
+		</action>
+		<action name="F5_4600Content" method="loadApplianceMapContent" class="applianceMonitorAction">
+			<result type="freemarker">/WEB-INF/pages/monitor/applianceMonitoring/f5Map/f5_4600.ftl</result>
+		</action>
+		<action name="F5_4800Content" method="loadApplianceMapContent" class="applianceMonitorAction">
+			<result type="freemarker">/WEB-INF/pages/monitor/applianceMonitoring/f5Map/f5_4800.ftl</result>
+		</action>
+		<action name="F5_5600Content" method="loadApplianceMapContent" class="applianceMonitorAction">
+			<result type="freemarker">/WEB-INF/pages/monitor/applianceMonitoring/f5Map/f5_5600.ftl</result>
+		</action>
+		<action name="F5_5800Content" method="loadApplianceMapContent" class="applianceMonitorAction">
+			<result type="freemarker">/WEB-INF/pages/monitor/applianceMonitoring/f5Map/f5_5800.ftl</result>
+		</action>
+		<action name="F5_6400Content" method="loadApplianceMapContent" class="applianceMonitorAction">
+			<result type="freemarker">/WEB-INF/pages/monitor/applianceMonitoring/f5Map/f5_6400.ftl</result>
+		</action>
+		<action name="F5_6800Content" method="loadApplianceMapContent" class="applianceMonitorAction">
+			<result type="freemarker">/WEB-INF/pages/monitor/applianceMonitoring/f5Map/f5_6800.ftl</result>
+		</action>
+		<action name="F5_6900Content" method="loadApplianceMapContent" class="applianceMonitorAction">
+			<result type="freemarker">/WEB-INF/pages/monitor/applianceMonitoring/f5Map/f5_6900.ftl</result>
+		</action>
+		<action name="F5_7000Content" method="loadApplianceMapContent" class="applianceMonitorAction">
+			<result type="freemarker">/WEB-INF/pages/monitor/applianceMonitoring/f5Map/f5_7000.ftl</result>
+		</action>
+		<action name="F5_7600Content" method="loadApplianceMapContent" class="applianceMonitorAction">
+			<result type="freemarker">/WEB-INF/pages/monitor/applianceMonitoring/f5Map/f5_7600.ftl</result>
+		</action>
+		<action name="F5_7800Content" method="loadApplianceMapContent" class="applianceMonitorAction">
+			<result type="freemarker">/WEB-INF/pages/monitor/applianceMonitoring/f5Map/f5_7800.ftl</result>
+		</action>
+		<action name="F5_8400Content" method="loadApplianceMapContent" class="applianceMonitorAction">
+			<result type="freemarker">/WEB-INF/pages/monitor/applianceMonitoring/f5Map/f5_8400.ftl</result>
+		</action>	
+		<action name="F5_8900Content" method="loadApplianceMapContent" class="applianceMonitorAction">
+			<result type="freemarker">/WEB-INF/pages/monitor/applianceMonitoring/f5Map/f5_8900.ftl</result>
+		</action>		
+		<action name="F5_10000Content" method="loadApplianceMapContent" class="applianceMonitorAction">
+			<result type="freemarker">/WEB-INF/pages/monitor/applianceMonitoring/f5Map/f5_10000.ftl</result>
+		</action>
+		<action name="F5_10600Content" method="loadApplianceMapContent" class="applianceMonitorAction">
+			<result type="freemarker">/WEB-INF/pages/monitor/applianceMonitoring/f5Map/f5_10600.ftl</result>
+		</action>
+		<action name="F5_10800Content" method="loadApplianceMapContent" class="applianceMonitorAction">
+			<result type="freemarker">/WEB-INF/pages/monitor/applianceMonitoring/f5Map/f5_10800.ftl</result>
+		</action>
+	
+		<!--진단 세션 검색 -->
+		<action name="retriveCount" method="retriveCount" class="sessionMonitoringAction">
+			<result type="json">
+				<param name="ignoreHierarchy">false</param>
+			</result>
+		</action>	
+		<action name="checkExportSessionInfoDataExist" method="checkExportSessionInfoDataExist" class="sessionMonitoringAction">
+			<result type="json">
+				<param name="ignoreHierarchy">false</param>
+			</result>
+		</action>
+		<action name="loadSessionSearchListContent" method="loadSessionSearchListContent" class="sessionMonitoringAction">
+			<result type="json">
+				<param name="ignoreHierarchy">false</param>
+			</result>
+		</action>	
+		<action name="loadDefaultPage" method="loadDefaultPage" class="sessionMonitoringAction">
+			<result type="freemarker">/WEB-INF/pages/monitor/sessionMonitoring/sessionListContent.ftl</result>
+		</action>	
+		<action name="loadSessionTableListContent" method="loadSortingListContent" class="sessionMonitoringAction">
+			<result type="freemarker">/WEB-INF/pages/monitor/sessionMonitoring/sessionTableInListContent.ftl</result>
+		</action>	
+		<action name="loadSortingListContent" method="loadSortingListContent" class="sessionMonitoringAction">
+			<result type="freemarker">/WEB-INF/pages/monitor/sessionMonitoring/sessionTableInListContent.ftl</result>
+		</action>	
+		<!-- 진단 세션 내보내기 -->	
+		<action name="downloadfaultSessionInfo" method="downloadfaultSessionInfo" class="sessionMonitoringAction">
+			<result type="stream">
+				<param name="contentType">application/octet-stream</param>
+                <param name="contentLength">${contentLength}</param>
+                <param name="contentDisposition">${contentDisposition}</param>
+                <param name="inputName">inputStream</param>
+                <param name="bufferSize">8192</param>		
+            </result>
+		</action>
+		<action name="checkExportSessionInfoDataExist" method="checkExportSessionInfoDataExist" class="sessionMonitoringAction">
+			<result type="json">
+				<param name="ignoreHierarchy">false</param>
+			</result>
+		</action>
+
+		<!-- L2 Search Monitoring -->
+		<action name="loadL2InfoListTotal" method="loadL2InfoListTotal" class="l2InfoAction">
+			<result type="json">
+				<param name="ignoreHierarchy">false</param>
+			</result>
+		</action>
+		<action name="setL2InfoListToDB" method="setL2InfoListToDB" class="l2InfoAction">
+			<result type="json">
+				<param name="ignoreHierarchy">false</param>
+			</result>
+		</action>
+		<action name="checkExportL2InfoExist" method="checkExportL2InfoExist" class="l2InfoAction">
+			<result type="json">
+				<param name="ignoreHierarchy">false</param>
+			</result>
+		</action>
+		<action name="loadL2SearchContent" method="loadL2SearchContent" class="l2InfoAction">
+			<result type="freemarker">/WEB-INF/pages/monitor/l2InfoMonitoring/l2InfoListContent.ftl</result>
+		</action>
+		<action name="loadL2InfoTableInListContent" method="loadL2InfoTableInListContent" class="l2InfoAction">
+			<result type="freemarker">/WEB-INF/pages/monitor/l2InfoMonitoring/l2InfoTableInListContent.ftl</result>
+		</action>		
+		<action name="downloadL2Info" method="downloadL2Info" class="l2InfoAction">
+        	<result type="stream">
+                <param name="contentType">application/octet-stream</param>
+                <param name="contentLength">${contentLength}</param>
+                <param name="contentDisposition">${contentDisposition}</param>
+                <param name="inputName">inputStream</param>
+                <param name="bufferSize">8192</param>
+            </result>
+        </action>
+	</package>
+</struts>

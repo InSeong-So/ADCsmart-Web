@@ -1,0 +1,279 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>ADCsmart - ADC 통합관리 솔루션</title>
+<!-- Loading style 기본 default로 css 적용후 현지화를 통한 langCode값을 가지고 영문일경우 eng css 부분을 하위에 추가함. -->
+<link rel="shortcut icon" href="imgs/favicon.ico" />
+<link type="text/css" rel="stylesheet" href="css/comm.css" />
+<link type="text/css" rel="stylesheet" href="css/newContent.css" />
+<link type="text/css" rel="stylesheet" href="css/style_default.css" />
+<link type="text/css" rel="stylesheet" href="css/reset.css" />
+<!-- //Loading style -->
+<script type="text/javascript" src="js/extern/log4javascript_lite.js"></script>
+<script type="text/javascript" src="js/extern/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/extern/jquery.ajaxmanager.min.js"></script>
+<script type="text/javascript" src="js/extern/jquery.form-custom.min.js"></script>
+<script type="text/javascript"
+	src="js/extern/jquery.nimble.loader-2.0.1.js"></script>
+<script type="text/javascript"
+	src="js/extern/jquery.i18n.properties-min-1.0.9.js"></script>
+<script type="text/javascript" src="js/extern/flowit-1.2.0.min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<!-- <script type="text/javascript" src="js/extern/placeholders.min.js"></script> -->
+
+<!-- angular 라이브러리  -->
+<script type="text/javascript" src="js/extern/angular.min.js"></script>
+<!-- controller include -->
+<script type="text/javascript" src="js/tools/sysViewDump.js"></script>
+
+</head>
+<body class="login_body">
+	<div class="top">
+		<span class="slogan" id="ADCSMART_LOGO"></span>
+	</div>
+	<div class="wrap_login">
+		<!-- <p class="tit"><img src="../imgs/customize/adc_login.png" alt="adc Management system" /></p> -->
+		<!-- p class="tit"><img src="../imgs/login/adc_login_20.png" alt="adc Management system" /></p-->
+		<div class="login_box">
+			<form id="loginFrm" action="member/login.action" method="post">
+				<label name="id" class="" for="text" id="ID_LOGIN_ID"></label>
+				<!-- <input type="text" name="id" placeholder="" id="MSG_NAME_CHECK" /> -->
+				<input type="text" name="id" placeholder="" value="admin" />
+				<label name="pw" class="" for="password" id="ID_LOGIN_PASSWD"></label>
+				<!-- <input type="password" name="password" placeholder="" id="MSG_PWD_CHECK" /> -->
+				<input type="password" name="password" placeholder=""
+					value="smartadmin01" />
+				<p class="">
+					<button type="button" class="send" id="loginLnk">
+						<span id="ID_LOGIN_LOGIN"></span>
+					</button>
+				</p>
+			</form>
+		</div>
+		<div class="cpyrigt">
+			<!-- <p> (c) Copyright 2012-2013 Openbase, Inc. All rights reserved. </p> 
+                <p>Copyright © <a style="cursor:pointer">OPENBASE</a>. All Rights Reserved. </p>-->
+			<p>
+				© 2014-2018 <a>OPENBASE</a>, Inc. All rights reserved.
+			</p>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		var log;
+		var ajaxManager;
+
+		$(function() {
+			log = log4javascript.getNullLogger();
+			ajaxManager = new FlowitAjax();
+			initEvents();
+			retrieveCookies();
+			retrieveInitMessages();
+			$('input[name="id"]').focus();
+		});
+		function loginEvent() {
+			var id = $('input[name="id"]').val();
+			//	   		var ENCpwd = encode64($('input[name="password"]').val());
+			var ENCpwd = $('input[name="password"]').val();
+
+			var idSaveFlag = "off";
+			if ($("#save_id").is(':checked') == true)
+				idSaveFlag = "on";
+			var passwordSaveFlag = "off";
+			if ($("#save_pw").is(':checked') == true)
+				passwordSaveFlag = "on";
+
+			var params = {
+				"id" : id,
+				"password" : ENCpwd,
+				"idSaveFlag" : idSaveFlag,
+				"passwordSaveFlag" : passwordSaveFlag
+			};
+
+			if (!_validateAccount())
+				return false;
+
+			new FlowitAjax().runJsonExt({
+				url : "member/login.action",
+				data : params,
+				successFn : function(data) {
+					loginIfSucceeded(data);
+				},
+				completeFn : function() {
+				},
+				errorFn : function(a, b, c) {
+					exceptionEvent();
+				}
+			});
+		}
+
+		function loadCssFile(langCode) {
+			var filename = [];
+			if (langCode == "en_US") {
+				filename = [ "css/eng/newContent_eng.css",
+						"css/eng/reset_eng.css", "css/eng/comm_eng.css" ];
+			}
+
+			for (var i = 0; i < filename.length; i++) {
+				var fileref = document.createElement("link");
+				fileref.rel = "stylesheet";
+				fileref.type = "text/css";
+				fileref.href = filename[i];
+				document.getElementsByTagName("head")[0].appendChild(fileref);
+			}
+		}
+
+		function _validateAccount() {
+			var username = $('input[name="id"]').val();
+			var password = $('input[name="password"]').val();
+
+			if (password == "admin")
+				return true;
+			if (!username) {
+				alert(VAR_SYSSETTING_IDINPUT);
+				return false;
+
+			}
+
+			if (!getValidateID(username)) {
+				alert(VAR_SYSSETTING_IDRULEWRONG);
+				return false;
+			}
+			//alert($('input[name="password"]').val());
+			if (!password) {
+				alert(VAR_SYSSETTING_PASSWDINPUT);
+				return false;
+			}
+			/*	   		
+			 if (!getValidatePasswd(password))
+			 {
+			 alert(VAR_SYSSETTING_PASSWDRULEWRONG);
+			 return false;
+			 }
+			 */
+			return true;
+		}
+
+		function initEvents() {
+			//retrieveInitMessages();
+
+			$('input[name="id"], input[name="password"]').keydown(function(e) {
+				if (e.which == 13) {
+					loginEvent();
+				}
+			});
+
+			$('#loginLnk').click(function(e) {
+				e.preventDefault();
+				loginEvent();
+			});
+		}
+
+		function changeLogoImage(data) {// 사이트별로 정의된 내용을 반영한다.
+			if (data.varIsSDSSite == true) {
+				$(".login_box .logoimg").attr('src',
+						"/imgs/customize_sds/adc_login.png");
+			}
+		}
+
+		function loginIfSucceeded(data) {
+			if (data.isSuccessful) {
+				var href = 'main.action?isPasswordReset='
+						+ data.isPasswordReset;
+				FlowitUtil.log("href:", href);
+				location.href = href;
+			} else {
+				//	    		alert(data.message.length + data.message);
+				alert(data.message);
+			}
+		}
+
+		function retrieveCookies() {
+			FlowitUtil.getJSON({
+				url : "member/retrieveCookies.action",
+				successFn : function(data) {
+					log.debug('retrieveCookies: ' + Object.toJSON(data));
+					changeLogoImage(data);
+					setCookieValues(data);
+				},
+				completeFn : function(textStatus) {
+					log.debug('retrieveCookies: ' + textStatus);
+				}
+			});
+		}
+		function loadInitMessages(langCode) {
+			jQuery.i18n
+					.properties({
+						name : 'Messages',
+						path : 'bundle/',
+						mode : 'both',
+						language : langCode,
+						callback : function() {
+
+							document.getElementById("ID_LOGIN_ID").innerHTML = jQuery.i18n
+									.prop('MSG_LOGIN_ID');
+							document.getElementById("ID_LOGIN_PASSWD").innerHTML = jQuery.i18n
+									.prop('MSG_LOGIN_PASSWD');
+							//document.getElementById("ID_LOGIN_ID_SAVE").innerHTML 		= jQuery.i18n.prop('MSG_LOGIN_ID_SAVE');
+							//document.getElementById("ID_LOGIN_PASSWD_SAVE").innerHTML 	= jQuery.i18n.prop('MSG_LOGIN_PASSWD_SAVE');
+							document.getElementById("ID_LOGIN_LOGIN").innerHTML = jQuery.i18n
+									.prop('MSG_LOGIN');
+							//document.getElementById("MSG_NAME_CHECK").innerHTML 		= jQuery.i18n.prop('MSG_NAME_CHECK');
+							//document.getElementById("MSG_PWD_CHECK").innerHTML 			= jQuery.i18n.prop('MSG_PWD_CHECK');
+							document.getElementById("ADCSMART_LOGO").innerHTML = jQuery.i18n
+									.prop('MSG_LOGO');
+							// Accessing a simple value through the map
+							//	    	        msg_hello = jQuery.i18n.prop('msg_hello');
+							// Accessing a value with placeholders through the map
+							//	    	        msg_world = jQuery.i18n.prop('msg_complex', 'John');
+
+							// Accessing a simple value through a JS variable
+							//	    	        alert(msg_hello +' '+ msg_world);
+							// Accessing a value with placeholders through a JS function
+							//	    	        alert(msg_complex('John'));
+						}
+					});
+		}
+
+		function retrieveInitMessages() {
+			FlowitUtil.getJSON({
+				url : "member/retrieveLangCode.action",
+				successFn : function(data) {
+					loadInitMessages(data.langCode);
+					loadCssFile(data.langCode);
+					if (navigator.userAgent.indexOf("MSIE") != -1) // IE 경우	
+					{
+						$('label[name="id"]').attr("class", "view-label");
+						$('label[name="pw"]').attr("class", "view-label");
+					} else {
+						$('label[name="id"]').attr("class", "hidden-label_1");
+						$('label[name="pw"]').attr("class", "hidden-label_2");
+						$('input[name="id"]').attr("placeholder",
+								jQuery.i18n.prop('MSG_LOGIN_ID'));
+						$('input[name="password"]').attr("placeholder",
+								jQuery.i18n.prop('MSG_LOGIN_PASSWD'));
+					}
+				},
+				completeFn : function(textStatus) {
+				}
+			});
+		}
+
+		function setCookieValues(cookies) {
+			if (cookies.idSaveFlag == 'on') {
+				$('input[name="idSaveFlag"]').attr('checked', 'checked');
+				$('input[name="id"]').val(cookies.id);
+			}
+
+			if (cookies.passwordSaveFlag == 'on') {
+				var passwd = cookies.password;
+				$('input[name="passwordSaveFlag"]').attr('checked', 'checked');
+				$('input[name="password"]').val(passwd);
+			}
+		}
+	</script>
+</body>
+</html>

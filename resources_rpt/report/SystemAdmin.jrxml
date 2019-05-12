@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="SystemAdmin" language="groovy" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="495" leftMargin="50" rightMargin="50" topMargin="72" bottomMargin="36" uuid="136e95c2-1d9b-418e-b799-5fb042ec5d9e">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<property name="net.sf.jasperreports.style.evaluation.time.enabled" value="true"/>
+	<style name="text" isBlankWhenNull="true" fontName="NanumGothic">
+		<conditionalStyle>
+			<conditionExpression><![CDATA[$P{OUT_TYPE}.equals("pdf")]]></conditionExpression>
+			<style fontSize="10"/>
+		</conditionalStyle>
+		<conditionalStyle>
+			<conditionExpression><![CDATA[$P{OUT_TYPE}.equals("rtf") || $P{OUT_TYPE}.equals("pptx")]]></conditionExpression>
+			<style fontSize="9"/>
+		</conditionalStyle>
+	</style>
+	<style name="title" style="text" hAlign="Center" vAlign="Middle" isBlankWhenNull="true" fontSize="14" isBold="true">
+		<paragraph lineSpacing="Single"/>
+	</style>
+	<style name="th" style="text" mode="Opaque" backcolor="#EEEEEE" fill="Solid" hAlign="Center" vAlign="Middle" isBlankWhenNull="true" isBold="true">
+		<pen lineWidth="0.5" lineColor="#000000"/>
+		<box topPadding="3" leftPadding="5" bottomPadding="3" rightPadding="5">
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.0"/>
+			<rightPen lineWidth="0.0"/>
+		</box>
+		<paragraph lineSpacing="Single"/>
+	</style>
+	<style name="td" style="text" mode="Opaque" fill="Solid" vAlign="Middle" isBlankWhenNull="true" isBold="false">
+		<pen lineWidth="0.5" lineColor="#000000"/>
+		<box topPadding="3" leftPadding="5" bottomPadding="3" rightPadding="5">
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.0"/>
+			<rightPen lineWidth="0.0"/>
+		</box>
+		<paragraph lineSpacing="Single" lineSpacingSize="10.0"/>
+	</style>
+	<style name="resultTd" style="td">
+		<conditionalStyle>
+			<conditionExpression><![CDATA[false]]></conditionExpression>
+			<style forecolor="#FF3300"/>
+		</conditionalStyle>
+	</style>
+	<style name="mergeableTh" style="th">
+		<pen lineWidth="0.0"/>
+		<box topPadding="3" leftPadding="0" bottomPadding="3" rightPadding="5">
+			<pen lineWidth="0.0"/>
+			<topPen lineWidth="0.0"/>
+			<leftPen lineWidth="0.0"/>
+			<bottomPen lineWidth="0.0"/>
+			<rightPen lineWidth="0.0"/>
+		</box>
+	</style>
+	<subDataset name="contentsList" uuid="3fe430c3-b5ae-4dce-8c78-af85551779cb">
+		<parameter name="ADC_TYPE" class="java.lang.String"/>
+		<parameter name="OUT_TYPE" class="java.lang.String" isForPrompting="false"/>
+		<field name="column" class="java.lang.String"/>
+		<field name="inspectionlist" class="java.lang.String"/>
+		<field name="checkMethod" class="java.lang.String"/>
+		<field name="checklist" class="java.lang.String"/>
+		<field name="result" class="java.lang.String"/>
+	</subDataset>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["./"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="IMG_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="REPORT_INDEX" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["1353327527167"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="IMG_DIR_CUSTOM" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="OUT_TYPE" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="adcInfo" class="kr.openbase.adcsmart.web.report.inspection.dto.OBDtoInspectionReporHeader"/>
+	<field name="contentsList" class="java.util.List"/>
+	<variable name="ADC_TYPE" class="java.lang.String">
+		<variableExpression><![CDATA[$F{adcInfo}.getAdcType() == 1 ? "F5"
+: $F{adcInfo}.getAdcType() == 2 ? "Alteon"
+: $F{adcInfo}.getAdcType() == 3 ? "PAS"
+: $F{adcInfo}.getAdcType() == 4 ? "PASK"
+: ""]]></variableExpression>
+		<initialValueExpression><![CDATA[""]]></initialValueExpression>
+	</variable>
+	<detail>
+		<band height="181" splitType="Stretch">
+			<frame>
+				<reportElement key="adcs" x="0" y="0" width="495" height="180" uuid="14b65f7b-57ef-4fc7-9671-c71c2e60071a"/>
+				<textField>
+					<reportElement style="title" x="0" y="0" width="495" height="20" uuid="2abdf263-7d93-4f43-a611-2691d9670a4d"/>
+					<textFieldExpression><![CDATA[$V{ADC_TYPE} + " 정기점검 보고서"]]></textFieldExpression>
+				</textField>
+				<frame>
+					<reportElement key="adcInfo" stretchType="RelativeToTallestObject" x="0" y="40" width="495" height="80" uuid="f52283c9-d257-4334-a11a-1c7085b44046"/>
+					<staticText>
+						<reportElement style="th" stretchType="RelativeToTallestObject" x="0" y="0" width="80" height="20" uuid="620142db-d05a-4711-8c48-77015ddb96a9"/>
+						<textElement textAlignment="Left"/>
+						<text><![CDATA[ADC 이름]]></text>
+					</staticText>
+					<textField>
+						<reportElement key="adcName" style="td" stretchType="RelativeToTallestObject" x="80" y="0" width="160" height="20" uuid="7d48ba1d-5c02-4410-8208-1082100d02b3"/>
+						<textFieldExpression><![CDATA[$F{adcInfo}.getAdcName()]]></textFieldExpression>
+					</textField>
+					<staticText>
+						<reportElement style="th" stretchType="RelativeToTallestObject" x="0" y="20" width="80" height="20" uuid="309eb094-c91d-45e6-95ad-b5b2042ead15"/>
+						<textElement textAlignment="Left"/>
+						<text><![CDATA[OS Version]]></text>
+					</staticText>
+					<textField>
+						<reportElement key="osVersion" style="td" stretchType="RelativeToTallestObject" x="80" y="20" width="160" height="20" uuid="c91784d7-0c8b-4ef9-a2f2-a4f3a410ccea"/>
+						<textFieldExpression><![CDATA[$F{adcInfo}.getOsVersion()]]></textFieldExpression>
+					</textField>
+					<staticText>
+						<reportElement style="th" stretchType="RelativeToTallestObject" x="0" y="40" width="80" height="20" uuid="0af22693-3a41-4779-9b60-c6bfa3c8e5c2"/>
+						<textElement textAlignment="Left"/>
+						<text><![CDATA[Serial No.]]></text>
+					</staticText>
+					<textField>
+						<reportElement key="serialNo" style="td" stretchType="RelativeToTallestObject" x="80" y="40" width="160" height="20" uuid="f93baf09-5759-4d77-99e2-0d5d360693cb"/>
+						<textFieldExpression><![CDATA[$F{adcInfo}.getSerialNumber()]]></textFieldExpression>
+					</textField>
+					<staticText>
+						<reportElement style="th" stretchType="RelativeToTallestObject" x="0" y="60" width="80" height="20" uuid="0af85b5a-84d7-4ae6-aa5c-ab13fc5e8452"/>
+						<box>
+							<pen lineWidth="0.5" lineColor="#000000"/>
+							<bottomPen lineWidth="0.5"/>
+						</box>
+						<textElement textAlignment="Left"/>
+						<text><![CDATA[보고서 생성시간]]></text>
+					</staticText>
+					<textField pattern="yyyy-MM-dd HH:mm:ss">
+						<reportElement key="creationTime" style="td" stretchType="RelativeToTallestObject" x="80" y="60" width="160" height="20" uuid="5b2a2d4b-6599-4761-9869-1edfd235ec48"/>
+						<box>
+							<pen lineWidth="0.5" lineColor="#000000"/>
+							<bottomPen lineWidth="0.5"/>
+						</box>
+						<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+					</textField>
+					<staticText>
+						<reportElement style="th" stretchType="RelativeToTallestObject" x="240" y="0" width="80" height="20" uuid="913ca079-3c88-43e6-96fc-1f71af6a93c5"/>
+						<textElement textAlignment="Left"/>
+						<text><![CDATA[모델명]]></text>
+					</staticText>
+					<textField pattern="">
+						<reportElement key="modelName" style="td" stretchType="RelativeToTallestObject" x="320" y="0" width="175" height="20" uuid="bf8afbb3-82a0-4053-b792-4c5e2a0aad66"/>
+						<box>
+							<pen lineWidth="0.5" lineColor="#000000"/>
+							<rightPen lineWidth="0.5"/>
+						</box>
+						<textFieldExpression><![CDATA[$F{adcInfo}.getModelName()]]></textFieldExpression>
+					</textField>
+					<staticText>
+						<reportElement style="th" stretchType="RelativeToTallestObject" x="240" y="20" width="80" height="20" uuid="e93e77fd-61c2-4c89-a140-f91b9f77e19c"/>
+						<textElement textAlignment="Left"/>
+						<text><![CDATA[IP Address]]></text>
+					</staticText>
+					<textField>
+						<reportElement key="ip" style="td" stretchType="RelativeToTallestObject" x="320" y="20" width="175" height="20" uuid="23915499-2d41-4489-bd26-3c53f5039696"/>
+						<box>
+							<pen lineWidth="0.5" lineColor="#000000"/>
+							<rightPen lineWidth="0.5"/>
+						</box>
+						<textFieldExpression><![CDATA[$F{adcInfo}.getIpAddr()]]></textFieldExpression>
+					</textField>
+					<staticText>
+						<reportElement style="th" stretchType="RelativeToTallestObject" x="240" y="40" width="80" height="20" uuid="eb1e9cc4-04c9-4abb-8261-9e953ddf9602">
+							<printWhenExpression><![CDATA[!$V{ADC_TYPE}.equals("F5")]]></printWhenExpression>
+						</reportElement>
+						<textElement textAlignment="Left"/>
+						<text><![CDATA[Mac Address]]></text>
+					</staticText>
+					<textField isBlankWhenNull="true">
+						<reportElement key="mac" style="td" stretchType="RelativeToTallestObject" x="320" y="40" width="175" height="20" uuid="ad27a7ac-1af8-4cb2-a307-886ecc933b77">
+							<printWhenExpression><![CDATA[!$V{ADC_TYPE}.equals("F5")]]></printWhenExpression>
+						</reportElement>
+						<box>
+							<pen lineWidth="0.5" lineColor="#000000"/>
+							<rightPen lineWidth="0.5"/>
+						</box>
+						<textFieldExpression><![CDATA[$F{adcInfo}.getMacAddr()]]></textFieldExpression>
+					</textField>
+					<staticText>
+						<reportElement style="th" stretchType="RelativeToTallestObject" x="240" y="40" width="80" height="20" uuid="0f09ae65-ea3e-42ef-83c8-83d129293c2b">
+							<printWhenExpression><![CDATA[$V{ADC_TYPE}.equals("F5")]]></printWhenExpression>
+						</reportElement>
+						<textElement textAlignment="Left"/>
+						<text><![CDATA[Host 명]]></text>
+					</staticText>
+					<textField isBlankWhenNull="true">
+						<reportElement key="hostName" style="td" stretchType="RelativeToTallestObject" x="320" y="40" width="175" height="20" uuid="346a93b6-d821-49cb-b975-9f3b97ee9f49">
+							<printWhenExpression><![CDATA[$V{ADC_TYPE}.equals("F5")]]></printWhenExpression>
+						</reportElement>
+						<box>
+							<pen lineWidth="0.5" lineColor="#000000"/>
+							<rightPen lineWidth="0.5"/>
+						</box>
+						<textFieldExpression><![CDATA[$F{adcInfo}.getHostName()]]></textFieldExpression>
+					</textField>
+					<staticText>
+						<reportElement style="th" stretchType="RelativeToTallestObject" x="240" y="60" width="80" height="20" uuid="9ab4c565-083b-4183-92aa-6f79917a9a95"/>
+						<box>
+							<pen lineWidth="0.5" lineColor="#000000"/>
+							<bottomPen lineWidth="0.5"/>
+						</box>
+						<textElement textAlignment="Left"/>
+						<text><![CDATA[비고]]></text>
+					</staticText>
+					<textField isBlankWhenNull="true">
+						<reportElement key="remarks" style="td" stretchType="RelativeToTallestObject" x="320" y="60" width="175" height="20" uuid="64ffde56-4a71-4370-8205-720791d497b9"/>
+						<box leftPadding="5">
+							<pen lineWidth="0.5" lineColor="#000000"/>
+							<bottomPen lineWidth="0.5"/>
+							<rightPen lineWidth="0.5"/>
+						</box>
+					</textField>
+				</frame>
+				<componentElement>
+					<reportElement key="systemStatusTable" stretchType="RelativeToBandHeight" x="0" y="140" width="495" height="40" uuid="f2410ead-7963-4d02-aa4b-4e80a99ed2f7"/>
+					<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+						<datasetRun subDataset="contentsList" uuid="811432f4-a8b5-4279-8015-c1d4c9b3138a">
+							<datasetParameter name="ADC_TYPE">
+								<datasetParameterExpression><![CDATA[$V{ADC_TYPE}]]></datasetParameterExpression>
+							</datasetParameter>
+							<datasetParameter name="OUT_TYPE">
+								<datasetParameterExpression><![CDATA[$P{OUT_TYPE}]]></datasetParameterExpression>
+							</datasetParameter>
+							<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{contentsList})]]></dataSourceExpression>
+						</datasetRun>
+						<jr:column width="70" uuid="425e2f39-0273-4419-a5ad-3f7e9fc58130">
+							<jr:tableFooter height="71" rowSpan="2">
+								<staticText>
+									<reportElement style="th" stretchType="RelativeToBandHeight" x="0" y="1" width="70" height="70" uuid="8f4c51e0-03a5-4f04-b119-a0048b54739b"/>
+									<box>
+										<pen lineWidth="0.5" lineColor="#000000"/>
+										<bottomPen lineWidth="0.5"/>
+									</box>
+									<text><![CDATA[특이사항]]></text>
+								</staticText>
+							</jr:tableFooter>
+							<jr:columnHeader height="20" rowSpan="1">
+								<staticText>
+									<reportElement style="th" stretchType="RelativeToTallestObject" x="0" y="0" width="70" height="20" uuid="e63b8d57-9f37-40a1-8293-fd7f1f2791c5"/>
+									<box>
+										<leftPen lineWidth="0.0"/>
+									</box>
+									<text><![CDATA[]]></text>
+								</staticText>
+								<line>
+									<reportElement stretchType="RelativeToTallestObject" x="0" y="0" width="1" height="20" uuid="0636eccb-3131-4b55-812e-0aa14db202ee"/>
+									<graphicElement>
+										<pen lineWidth="0.5"/>
+									</graphicElement>
+								</line>
+							</jr:columnHeader>
+							<jr:columnFooter height="20" rowSpan="2">
+								<line>
+									<reportElement x="0" y="0" width="70" height="1" uuid="5db746b3-5907-4b12-b247-34d7200d6308"/>
+									<graphicElement>
+										<pen lineWidth="0.5"/>
+									</graphicElement>
+								</line>
+							</jr:columnFooter>
+							<jr:detailCell height="20" rowSpan="1">
+								<staticText>
+									<reportElement stretchType="RelativeToBandHeight" mode="Opaque" x="0" y="0" width="70" height="20" backcolor="#EEEEEE" uuid="9b58e0a5-fc88-4ff1-9ec7-e97500c82df0"/>
+									<text><![CDATA[]]></text>
+								</staticText>
+								<textField isStretchWithOverflow="true">
+									<reportElement stretchType="RelativeToTallestObject" x="0" y="0" width="70" height="20" uuid="0a3cd21a-a5a1-4ef2-82a1-c1bd536adf40">
+										<printWhenExpression><![CDATA[$P{ADC_TYPE}.equals("F5")]]></printWhenExpression>
+									</reportElement>
+									<textElement>
+										<font size="10"/>
+									</textElement>
+									<textFieldExpression><![CDATA[" \n "]]></textFieldExpression>
+								</textField>
+								<textField>
+									<reportElement style="mergeableTh" stretchType="RelativeToBandHeight" x="0" y="0" width="70" height="20" uuid="6c700459-ffbe-4ad3-9326-0ca5f30cfee1">
+										<printWhenExpression><![CDATA[$F{column} != null && !$F{column}.isEmpty()]]></printWhenExpression>
+									</reportElement>
+									<box>
+										<leftPen lineWidth="0.0"/>
+									</box>
+									<textFieldExpression><![CDATA[$F{column}]]></textFieldExpression>
+								</textField>
+								<line>
+									<reportElement stretchType="RelativeToBandHeight" x="0" y="0" width="1" height="20" uuid="6b6d56b8-32d5-4515-b856-f7912f62daec"/>
+									<graphicElement>
+										<pen lineWidth="0.5"/>
+									</graphicElement>
+								</line>
+								<line>
+									<reportElement x="0" y="0" width="70" height="1" uuid="b2447f00-3f57-4895-97a7-6e88186ff612">
+										<printWhenExpression><![CDATA[$F{column} != null && !$F{column}.isEmpty()]]></printWhenExpression>
+									</reportElement>
+									<graphicElement>
+										<pen lineWidth="0.5"/>
+									</graphicElement>
+								</line>
+							</jr:detailCell>
+						</jr:column>
+						<jr:columnGroup width="425" uuid="9df3403e-f4f4-4d12-a4e8-7f2bee04081f">
+							<jr:tableFooter height="70" rowSpan="1">
+								<staticText>
+									<reportElement style="td" stretchType="RelativeToBandHeight" x="0" y="0" width="425" height="70" uuid="6e9964af-7fb5-4725-8884-6dbeeccdcf24"/>
+									<box>
+										<pen lineWidth="0.5" lineColor="#000000"/>
+										<bottomPen lineWidth="0.5"/>
+										<rightPen lineWidth="0.5"/>
+									</box>
+									<text><![CDATA[]]></text>
+								</staticText>
+							</jr:tableFooter>
+							<jr:columnFooter height="20" rowSpan="1">
+								<line>
+									<reportElement x="0" y="0" width="425" height="1" uuid="ae089ec3-e172-4df5-a43d-c09626bc299e"/>
+									<graphicElement>
+										<pen lineWidth="0.5"/>
+									</graphicElement>
+								</line>
+							</jr:columnFooter>
+							<jr:column width="100" uuid="2537a20e-86a6-4cd3-8278-43c2db743fc5">
+								<jr:tableFooter height="1" rowSpan="1"/>
+								<jr:columnHeader height="20" rowSpan="1">
+									<staticText>
+										<reportElement style="th" stretchType="RelativeToTallestObject" x="0" y="0" width="100" height="20" uuid="b1b9ae8d-dc8f-4ba7-a11b-4b671fe3d392"/>
+										<text><![CDATA[점검사항]]></text>
+									</staticText>
+								</jr:columnHeader>
+								<jr:columnFooter height="0" rowSpan="1"/>
+								<jr:detailCell height="20" rowSpan="1">
+									<textField isStretchWithOverflow="true">
+										<reportElement style="td" stretchType="RelativeToBandHeight" x="0" y="0" width="100" height="20" uuid="93c52ef1-d4f5-4221-9324-f753ee2f4d4d"/>
+										<textFieldExpression><![CDATA[$F{inspectionlist}]]></textFieldExpression>
+									</textField>
+								</jr:detailCell>
+							</jr:column>
+							<jr:column width="100" uuid="b7c03591-7685-4358-90cd-9460ff475f6d">
+								<jr:tableFooter height="1" rowSpan="1"/>
+								<jr:columnHeader height="20" rowSpan="1">
+									<staticText>
+										<reportElement style="th" stretchType="RelativeToTallestObject" x="0" y="0" width="100" height="20" uuid="e6472787-7dec-4c05-a8d9-11c3d6318f0e"/>
+										<text><![CDATA[점검방법]]></text>
+									</staticText>
+								</jr:columnHeader>
+								<jr:columnFooter height="0" rowSpan="1"/>
+								<jr:detailCell height="20" rowSpan="1">
+									<textField isStretchWithOverflow="true">
+										<reportElement style="td" stretchType="RelativeToBandHeight" x="0" y="0" width="100" height="20" uuid="46331bbd-7b79-4030-9f70-58ba128138b3"/>
+										<textFieldExpression><![CDATA[$F{checkMethod}]]></textFieldExpression>
+									</textField>
+								</jr:detailCell>
+							</jr:column>
+							<jr:column width="155" uuid="7f105be7-23d5-41fa-804f-8d6f7bbe58d1">
+								<jr:tableFooter height="1" rowSpan="1"/>
+								<jr:columnHeader height="20" rowSpan="1">
+									<staticText>
+										<reportElement style="th" stretchType="RelativeToTallestObject" x="0" y="0" width="155" height="20" uuid="7508a670-fbb5-495c-89da-0bb1e528573b"/>
+										<text><![CDATA[확인사항]]></text>
+									</staticText>
+								</jr:columnHeader>
+								<jr:columnFooter height="0" rowSpan="1"/>
+								<jr:detailCell height="20" rowSpan="1">
+									<textField isStretchWithOverflow="true">
+										<reportElement style="td" stretchType="RelativeToBandHeight" x="0" y="0" width="155" height="20" uuid="28a94fe9-d39d-42ff-b0ab-deb94fa9f502"/>
+										<textFieldExpression><![CDATA[$F{checklist}]]></textFieldExpression>
+									</textField>
+								</jr:detailCell>
+							</jr:column>
+							<jr:column width="70" uuid="03d470a9-32d3-45fc-8cbc-b4309593e8e8">
+								<jr:tableFooter height="1" rowSpan="1"/>
+								<jr:columnHeader height="20" rowSpan="1">
+									<staticText>
+										<reportElement style="th" stretchType="RelativeToTallestObject" x="0" y="0" width="70" height="20" uuid="7d5e44db-dca0-41ef-b085-443af5ef2b3a"/>
+										<box>
+											<pen lineWidth="0.5" lineColor="#000000"/>
+											<rightPen lineWidth="0.5"/>
+										</box>
+										<text><![CDATA[결과]]></text>
+									</staticText>
+								</jr:columnHeader>
+								<jr:columnFooter height="0" rowSpan="1"/>
+								<jr:detailCell height="20" rowSpan="1">
+									<textField isStretchWithOverflow="true">
+										<reportElement style="resultTd" stretchType="RelativeToBandHeight" x="0" y="0" width="70" height="20" uuid="75bb0139-3566-4abf-a8f5-8661e500d853"/>
+										<box leftPadding="5">
+											<pen lineWidth="0.5" lineColor="#000000"/>
+											<bottomPen lineWidth="0.0"/>
+											<rightPen lineWidth="0.5"/>
+										</box>
+										<textElement textAlignment="Center" markup="html">
+											<font isBold="true"/>
+										</textElement>
+										<textFieldExpression><![CDATA[$F{result}]]></textFieldExpression>
+									</textField>
+								</jr:detailCell>
+							</jr:column>
+						</jr:columnGroup>
+					</jr:table>
+				</componentElement>
+			</frame>
+			<break>
+				<reportElement x="0" y="180" width="495" height="1" isPrintWhenDetailOverflows="true" uuid="39dfac65-5c35-4eb9-b838-e5aadc071a3b"/>
+			</break>
+		</band>
+	</detail>
+</jasperReport>

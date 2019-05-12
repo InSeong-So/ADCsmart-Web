@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ADCDiagnosisCPUMEM" language="groovy" pageWidth="555" pageHeight="802" columnWidth="555" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="4dc6fd56-c17f-489e-9948-f20f21b3283d">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<template><![CDATA["./AdcmsReportStyle.jrtx"]]></template>
+	<subDataset name="Dataset_multiValue" uuid="c52a418c-f487-4b7e-8991-4eb80aacccee">
+		<queryString>
+			<![CDATA[]]>
+		</queryString>
+		<field name="textHdr" class="kr.openbase.adcsmart.web.report.impl.OBDtoReportTextHdr">
+			<fieldDescription><![CDATA[textHdr]]></fieldDescription>
+		</field>
+		<field name="x" class="java.util.Date">
+			<fieldDescription><![CDATA[x]]></fieldDescription>
+		</field>
+		<field name="y" class="java.util.ArrayList">
+			<fieldDescription><![CDATA[y]]></fieldDescription>
+		</field>
+	</subDataset>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["d:\\Users\\oklee\\Documents\\JR Projects\\"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="REPORT_INDEX" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA[$P{REPORT_INDEX}]]></defaultValueExpression>
+	</parameter>
+	<parameter name="IMG_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="cpuHistory" class="java.util.ArrayList">
+		<fieldDescription><![CDATA[cpuHistory]]></fieldDescription>
+	</field>
+	<field name="memHistory" class="java.util.ArrayList">
+		<fieldDescription><![CDATA[memHistory]]></fieldDescription>
+	</field>
+	<field name="textHdr" class="kr.openbase.adcsmart.web.report.impl.OBDtoReportTextHdr">
+		<fieldDescription><![CDATA[textHdr]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="183" splitType="Stretch">
+			<frame>
+				<reportElement mode="Opaque" x="42" y="30" width="246" height="26" backcolor="#FFFFFF" uuid="c8b2661b-5f15-4838-a805-1390d67c083c"/>
+				<box>
+					<pen lineWidth="1.0" lineColor="#D4D4D4"/>
+					<topPen lineWidth="0.0" lineColor="#D4D4D4"/>
+					<leftPen lineWidth="0.0" lineColor="#D4D4D4"/>
+					<bottomPen lineWidth="0.0" lineColor="#D4D4D4"/>
+					<rightPen lineWidth="0.0" lineColor="#D4D4D4"/>
+				</box>
+				<rectangle radius="10">
+					<reportElement x="0" y="0" width="244" height="24" forecolor="#D9D9D9" backcolor="#D9D9D9" uuid="e9566a17-4b8d-4fea-b9a3-8078c0497891"/>
+					<graphicElement>
+						<pen lineWidth="0.0"/>
+					</graphicElement>
+				</rectangle>
+				<image>
+					<reportElement x="12" y="2" width="22" height="23" uuid="8026480f-4e40-448e-93f0-8c9880dde6d4"/>
+					<imageExpression><![CDATA[$P{IMG_DIR} + "icon_disableMonitor.png"]]></imageExpression>
+				</image>
+				<textField>
+					<reportElement style="boldL" x="35" y="3" width="100" height="20" uuid="f688820c-0172-4155-975d-f707849fcc88"/>
+					<textFieldExpression><![CDATA[$F{textHdr}.getTextList().get(0)]]></textFieldExpression>
+				</textField>
+			</frame>
+			<timeSeriesChart>
+				<chart isShowLegend="true">
+					<reportElement x="44" y="72" width="509" height="104" uuid="91540bbc-775e-49b3-bf9e-573514e7499d"/>
+					<chartTitle>
+						<font size="7"/>
+					</chartTitle>
+					<chartSubtitle>
+						<font size="7"/>
+					</chartSubtitle>
+					<chartLegend position="Bottom">
+						<font size="7"/>
+					</chartLegend>
+				</chart>
+				<timeSeriesDataset timePeriod="Second">
+					<dataset>
+						<datasetRun subDataset="Dataset_multiValue" uuid="9581420f-498e-44ba-99fb-93536e6fc71b">
+							<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{cpuHistory})]]></dataSourceExpression>
+						</datasetRun>
+					</dataset>
+					<timeSeries>
+						<seriesExpression><![CDATA[$F{y}.get(0) > -1 ? $F{textHdr}.getTextList().get(0) : ""]]></seriesExpression>
+						<timePeriodExpression><![CDATA[$F{x}]]></timePeriodExpression>
+						<valueExpression><![CDATA[$F{y}.get(0) > -1 ? $F{y}.get(0) : null]]></valueExpression>
+					</timeSeries>
+					<timeSeries>
+						<seriesExpression><![CDATA[$F{y}.get(1) > -1 ? $F{textHdr}.getTextList().get(1) : ""]]></seriesExpression>
+						<timePeriodExpression><![CDATA[$F{x}]]></timePeriodExpression>
+						<valueExpression><![CDATA[$F{y}.get(1) > -1 ? $F{y}.get(1) : null]]></valueExpression>
+					</timeSeries>
+					<timeSeries>
+						<seriesExpression><![CDATA[$F{y}.get(2) > -1 ? $F{textHdr}.getTextList().get(2) : ""]]></seriesExpression>
+						<timePeriodExpression><![CDATA[$F{x}]]></timePeriodExpression>
+						<valueExpression><![CDATA[$F{y}.get(2) > -1 ? $F{y}.get(2) : null]]></valueExpression>
+					</timeSeries>
+					<timeSeries>
+						<seriesExpression><![CDATA[$F{y}.get(3) > -1 ? $F{textHdr}.getTextList().get(3) : ""]]></seriesExpression>
+						<timePeriodExpression><![CDATA[$F{x}]]></timePeriodExpression>
+						<valueExpression><![CDATA[$F{y}.get(3) > -1 ? $F{y}.get(3) : null]]></valueExpression>
+					</timeSeries>
+					<timeSeries>
+						<seriesExpression><![CDATA[$F{y}.get(4) > -1 ? $F{textHdr}.getTextList().get(4) : ""]]></seriesExpression>
+						<timePeriodExpression><![CDATA[$F{x}]]></timePeriodExpression>
+						<valueExpression><![CDATA[$F{y}.get(4) > -1 ? $F{y}.get(4) : null]]></valueExpression>
+					</timeSeries>
+					<timeSeries>
+						<seriesExpression><![CDATA[$F{y}.get(5) > -1 ? $F{textHdr}.getTextList().get(5) : ""]]></seriesExpression>
+						<timePeriodExpression><![CDATA[$F{x}]]></timePeriodExpression>
+						<valueExpression><![CDATA[$F{y}.get(5) > -1 ? $F{y}.get(5) : null]]></valueExpression>
+					</timeSeries>
+					<timeSeries>
+						<seriesExpression><![CDATA[$F{y}.get(6) > -1 ? $F{textHdr}.getTextList().get(6) : ""]]></seriesExpression>
+						<timePeriodExpression><![CDATA[$F{x}]]></timePeriodExpression>
+						<valueExpression><![CDATA[$F{y}.get(6) > -1 ? $F{y}.get(6) : null]]></valueExpression>
+					</timeSeries>
+					<timeSeries>
+						<seriesExpression><![CDATA[$F{y}.get(7) > -1 ? $F{textHdr}.getTextList().get(7) : ""]]></seriesExpression>
+						<timePeriodExpression><![CDATA[$F{x}]]></timePeriodExpression>
+						<valueExpression><![CDATA[$F{y}.get(7) > -1 ? $F{y}.get(7) : null]]></valueExpression>
+					</timeSeries>
+					<timeSeries>
+						<seriesExpression><![CDATA[$F{y}.get(8) > -1 ? $F{textHdr}.getTextList().get(8) : ""]]></seriesExpression>
+						<timePeriodExpression><![CDATA[$F{x}]]></timePeriodExpression>
+						<valueExpression><![CDATA[$F{y}.get(8) > -1 ? $F{y}.get(8) : null]]></valueExpression>
+					</timeSeries>
+					<timeSeries>
+						<seriesExpression><![CDATA[$F{y}.get(9) > -1 ? $F{textHdr}.getTextList().get(9) : ""]]></seriesExpression>
+						<timePeriodExpression><![CDATA[$F{x}]]></timePeriodExpression>
+						<valueExpression><![CDATA[$F{y}.get(9) > -1 ? $F{y}.get(9) : null]]></valueExpression>
+					</timeSeries>
+					<timeSeries>
+						<seriesExpression><![CDATA[$F{y}.get(10) > -1 ? $F{textHdr}.getTextList().get(10) : ""]]></seriesExpression>
+						<timePeriodExpression><![CDATA[$F{x}]]></timePeriodExpression>
+						<valueExpression><![CDATA[$F{y}.get(10) > -1 ? $F{y}.get(10) : null]]></valueExpression>
+					</timeSeries>
+					<timeSeries>
+						<seriesExpression><![CDATA[$F{y}.get(11) > -1 ? $F{textHdr}.getTextList().get(11) : ""]]></seriesExpression>
+						<timePeriodExpression><![CDATA[$F{x}]]></timePeriodExpression>
+						<valueExpression><![CDATA[$F{y}.get(11) > -1 ? $F{y}.get(11) : null]]></valueExpression>
+					</timeSeries>
+					<timeSeries>
+						<seriesExpression><![CDATA[$F{y}.get(12) > -1 ? $F{textHdr}.getTextList().get(12) : ""]]></seriesExpression>
+						<timePeriodExpression><![CDATA[$F{x}]]></timePeriodExpression>
+						<valueExpression><![CDATA[$F{y}.get(12) > -1 ? $F{y}.get(12) : null]]></valueExpression>
+					</timeSeries>
+					<timeSeries>
+						<seriesExpression><![CDATA[$F{y}.get(13) > -1 ? $F{textHdr}.getTextList().get(13) : ""]]></seriesExpression>
+						<timePeriodExpression><![CDATA[$F{x}]]></timePeriodExpression>
+						<valueExpression><![CDATA[$F{y}.get(13) > -1 ? $F{y}.get(13) : null]]></valueExpression>
+					</timeSeries>
+					<timeSeries>
+						<seriesExpression><![CDATA[$F{y}.get(14) > -1 ? $F{textHdr}.getTextList().get(14) : ""]]></seriesExpression>
+						<timePeriodExpression><![CDATA[$F{x}]]></timePeriodExpression>
+						<valueExpression><![CDATA[$F{y}.get(14) > -1 ? $F{y}.get(14) : null]]></valueExpression>
+					</timeSeries>
+					<timeSeries>
+						<seriesExpression><![CDATA[$F{y}.get(15) > -1 ? $F{textHdr}.getTextList().get(15) : ""]]></seriesExpression>
+						<timePeriodExpression><![CDATA[$F{x}]]></timePeriodExpression>
+						<valueExpression><![CDATA[$F{y}.get(15) > -1 ? $F{y}.get(15) : null]]></valueExpression>
+					</timeSeries>
+				</timeSeriesDataset>
+				<timeSeriesPlot isShowLines="true" isShowShapes="false">
+					<plot/>
+					<timeAxisFormat>
+						<axisFormat>
+							<labelFont>
+								<font size="7"/>
+							</labelFont>
+							<tickLabelFont>
+								<font size="7"/>
+							</tickLabelFont>
+						</axisFormat>
+					</timeAxisFormat>
+					<valueAxisFormat>
+						<axisFormat>
+							<labelFont>
+								<font size="7"/>
+							</labelFont>
+							<tickLabelFont>
+								<font size="7"/>
+							</tickLabelFont>
+						</axisFormat>
+					</valueAxisFormat>
+					<rangeAxisMinValueExpression><![CDATA[0]]></rangeAxisMinValueExpression>
+					<rangeAxisMaxValueExpression><![CDATA[100]]></rangeAxisMaxValueExpression>
+				</timeSeriesPlot>
+			</timeSeriesChart>
+		</band>
+	</detail>
+</jasperReport>

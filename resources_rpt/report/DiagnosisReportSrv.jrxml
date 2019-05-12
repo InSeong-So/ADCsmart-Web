@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ADCDiagnosisSrv" language="groovy" pageWidth="555" pageHeight="802" columnWidth="555" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="4dc6fd56-c17f-489e-9948-f20f21b3283d">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<template><![CDATA["./AdcmsReportStyle.jrtx"]]></template>
+	<style name="table"/>
+	<style name="table_CH" mode="Opaque" backcolor="#334F7D">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineColor="#D4D4D4"/>
+			<leftPen lineColor="#D4D4D4"/>
+			<bottomPen lineColor="#D4D4D4"/>
+			<rightPen lineColor="#D4D4D4"/>
+		</box>
+	</style>
+	<style name="table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineColor="#D4D4D4"/>
+			<leftPen lineColor="#D4D4D4"/>
+			<bottomPen lineColor="#D4D4D4"/>
+			<rightPen lineColor="#D4D4D4"/>
+		</box>
+		<conditionalStyle>
+			<conditionExpression><![CDATA[new Boolean($V{REPORT_COUNT}.intValue()%2==0)]]></conditionExpression>
+			<style backcolor="#F2F2F2"/>
+		</conditionalStyle>
+	</style>
+	<subDataset name="TableDataset_HW" uuid="c185b2e5-f27b-472f-be10-999624ceafb2">
+		<queryString>
+			<![CDATA[]]>
+		</queryString>
+		<field name="category" class="java.lang.String">
+			<fieldDescription><![CDATA[category]]></fieldDescription>
+		</field>
+		<field name="class" class="java.lang.Class">
+			<fieldDescription><![CDATA[class]]></fieldDescription>
+		</field>
+		<field name="details" class="java.lang.String">
+			<fieldDescription><![CDATA[details]]></fieldDescription>
+		</field>
+		<field name="status" class="java.lang.String">
+			<fieldDescription><![CDATA[status]]></fieldDescription>
+		</field>
+		<field name="summary" class="java.lang.String">
+			<fieldDescription><![CDATA[summary]]></fieldDescription>
+		</field>
+		<field name="title" class="java.lang.String">
+			<fieldDescription><![CDATA[title]]></fieldDescription>
+		</field>
+		<field name="textHdr" class="kr.openbase.adcsmart.web.report.impl.OBDtoReportTextHdr">
+			<fieldDescription><![CDATA[textHdr]]></fieldDescription>
+		</field>
+		<field name="statusCode" class="java.lang.Integer">
+			<fieldDescription><![CDATA[statusCode]]></fieldDescription>
+		</field>
+	</subDataset>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["d:\\Users\\oklee\\Documents\\JR Projects\\"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="REPORT_INDEX" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA[$P{REPORT_INDEX}]]></defaultValueExpression>
+	</parameter>
+	<parameter name="IMG_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="textHdr" class="kr.openbase.adcsmart.web.report.impl.OBDtoReportTextHdr">
+		<fieldDescription><![CDATA[textHdr]]></fieldDescription>
+	</field>
+	<field name="hwList" class="java.util.ArrayList">
+		<fieldDescription><![CDATA[hwList]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="91" splitType="Stretch">
+			<frame>
+				<reportElement mode="Opaque" x="44" y="11" width="246" height="26" backcolor="#FFFFFF" uuid="c8b2661b-5f15-4838-a805-1390d67c083c"/>
+				<box>
+					<pen lineWidth="1.0" lineColor="#D4D4D4"/>
+					<topPen lineWidth="0.0" lineColor="#D4D4D4"/>
+					<leftPen lineWidth="0.0" lineColor="#D4D4D4"/>
+					<bottomPen lineWidth="0.0" lineColor="#D4D4D4"/>
+					<rightPen lineWidth="0.0" lineColor="#D4D4D4"/>
+				</box>
+				<rectangle radius="10">
+					<reportElement x="0" y="0" width="244" height="24" forecolor="#D9D9D9" backcolor="#D9D9D9" uuid="9e0c693f-9cee-43bd-af8e-bb2aab484608"/>
+					<graphicElement>
+						<pen lineWidth="0.0" lineStyle="Solid"/>
+					</graphicElement>
+				</rectangle>
+				<image>
+					<reportElement x="12" y="2" width="22" height="23" uuid="8026480f-4e40-448e-93f0-8c9880dde6d4"/>
+					<imageExpression><![CDATA[$P{IMG_DIR} + "icon_disableMonitor.png"]]></imageExpression>
+				</image>
+				<textField>
+					<reportElement style="boldL" x="34" y="2" width="100" height="20" uuid="f91380a6-ffe6-4d6f-95e2-849589d23f12"/>
+					<textFieldExpression><![CDATA[$F{textHdr}.getTextList().get(0)]]></textFieldExpression>
+				</textField>
+			</frame>
+			<componentElement>
+				<reportElement key="table 2" style="table" x="44" y="49" width="511" height="35" uuid="9b3bf370-3660-42ee-8019-c43a68d4e7f0"/>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<datasetRun subDataset="TableDataset_HW" uuid="88fd6c25-2e48-4266-9841-c1bbf93a924c">
+						<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{hwList})]]></dataSourceExpression>
+					</datasetRun>
+					<jr:column width="65" uuid="11efebfd-8f3e-40c0-b6c5-3183a7d1822b">
+						<jr:columnHeader style="table_CH" height="20" rowSpan="1">
+							<textField>
+								<reportElement style="inverse_boldS" x="0" y="0" width="65" height="20" uuid="ffc2cf41-46b1-43c2-920d-13e17b247d43"/>
+								<textElement textAlignment="Center"/>
+								<textFieldExpression><![CDATA[$F{textHdr}.getTextList().get(0)]]></textFieldExpression>
+							</textField>
+						</jr:columnHeader>
+						<jr:detailCell style="table_TD" height="20" rowSpan="1">
+							<textField>
+								<reportElement style="plainS" mode="Transparent" x="0" y="0" width="65" height="20" uuid="b3c0166d-e580-4e32-b89a-18e3298c802b"/>
+								<textElement textAlignment="Center"/>
+								<textFieldExpression><![CDATA[$F{category}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="68" uuid="ff5000e6-fd95-4285-bb9d-9e3718b8aff8">
+						<jr:columnHeader style="table_CH" height="20" rowSpan="1">
+							<textField>
+								<reportElement style="inverse_boldS" x="0" y="0" width="68" height="20" uuid="a0858b1c-34a3-4bbe-a3a8-da0838b5238a"/>
+								<textElement textAlignment="Center"/>
+								<textFieldExpression><![CDATA[$F{textHdr}.getTextList().get(1)]]></textFieldExpression>
+							</textField>
+						</jr:columnHeader>
+						<jr:detailCell style="table_TD" height="20" rowSpan="1">
+							<textField>
+								<reportElement style="plainS" x="0" y="0" width="68" height="20" uuid="eb307f8e-5d06-4994-ac84-f5985b72ae10"/>
+								<textFieldExpression><![CDATA[$F{title}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="34" uuid="91ef9a3c-408b-457d-b7e4-9965e4ba9f76">
+						<jr:columnHeader style="table_CH" height="20" rowSpan="1">
+							<textField>
+								<reportElement style="inverse_boldS" x="0" y="0" width="34" height="20" uuid="0ab99c5c-225d-4d5e-a3e3-352e4e8ae40f"/>
+								<textElement textAlignment="Center"/>
+								<textFieldExpression><![CDATA[$F{textHdr}.getTextList().get(2)]]></textFieldExpression>
+							</textField>
+						</jr:columnHeader>
+						<jr:detailCell style="table_TD" height="20" rowSpan="1">
+							<textField>
+								<reportElement style="plainS" x="0" y="0" width="34" height="20" uuid="e4cbea98-3712-4a0c-9ae1-c8bb8daba68d">
+									<printWhenExpression><![CDATA[new Boolean($F{statusCode}.equals(2))]]></printWhenExpression>
+								</reportElement>
+								<textElement textAlignment="Center"/>
+								<textFieldExpression><![CDATA[$F{status}]]></textFieldExpression>
+							</textField>
+							<textField>
+								<reportElement style="plainS" x="0" y="0" width="34" height="20" forecolor="#FF0000" uuid="661d9c74-d270-4254-a9b6-6a0d744387cf">
+									<printWhenExpression><![CDATA[new Boolean($F{statusCode}.equals(1))]]></printWhenExpression>
+								</reportElement>
+								<textElement textAlignment="Center"/>
+								<textFieldExpression><![CDATA[$F{status}]]></textFieldExpression>
+							</textField>
+							<textField>
+								<reportElement style="plainS" x="0" y="0" width="34" height="20" forecolor="#0000FF" uuid="2a35ac44-45a4-41d6-be32-b84b68ce71bf">
+									<printWhenExpression><![CDATA[new Boolean($F{statusCode}.equals(3))]]></printWhenExpression>
+								</reportElement>
+								<textElement textAlignment="Center"/>
+								<textFieldExpression><![CDATA[$F{status}]]></textFieldExpression>
+							</textField>
+							<textField>
+								<reportElement style="plainS" x="0" y="0" width="34" height="20" uuid="716341fb-ab9e-4177-b7a5-71dfca6f95dd">
+									<printWhenExpression><![CDATA[new Boolean($F{statusCode}.equals(0))]]></printWhenExpression>
+								</reportElement>
+								<textElement textAlignment="Center"/>
+								<textFieldExpression><![CDATA[$F{status}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="144" uuid="0d6180b3-d1d5-4b68-b9cd-aa544cdcbe37">
+						<jr:columnHeader style="table_CH" height="20" rowSpan="1">
+							<textField>
+								<reportElement style="inverse_boldS" x="0" y="0" width="144" height="20" uuid="97517630-d921-4ab6-a403-a45d7e50d912"/>
+								<textElement textAlignment="Center"/>
+								<textFieldExpression><![CDATA[$F{textHdr}.getTextList().get(3)]]></textFieldExpression>
+							</textField>
+						</jr:columnHeader>
+						<jr:detailCell style="table_TD" height="20" rowSpan="1">
+							<textField>
+								<reportElement style="plainS" x="0" y="0" width="144" height="20" uuid="5a91e808-bd95-4e33-b010-548c9f5366b2"/>
+								<textFieldExpression><![CDATA[$F{summary}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="199" uuid="fa69517a-a50e-424d-ab91-75196d21cd9a">
+						<jr:columnHeader style="table_CH" height="20" rowSpan="1">
+							<textField>
+								<reportElement style="inverse_boldS" x="0" y="0" width="199" height="20" uuid="fd9f942c-47fa-4460-84d4-dfc347f7cabf"/>
+								<textElement textAlignment="Center"/>
+								<textFieldExpression><![CDATA[$F{textHdr}.getTextList().get(4)]]></textFieldExpression>
+							</textField>
+						</jr:columnHeader>
+						<jr:detailCell style="table_TD" height="20" rowSpan="1">
+							<textField isStretchWithOverflow="true">
+								<reportElement style="plainS" mode="Transparent" x="0" y="0" width="199" height="20" uuid="1ac277f3-c637-45a8-9510-4429eefddd07"/>
+								<textFieldExpression><![CDATA[$F{details}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+				</jr:table>
+			</componentElement>
+		</band>
+	</detail>
+</jasperReport>

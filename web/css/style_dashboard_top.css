@@ -1,0 +1,497 @@
+@charset "utf-8";
+/* CSS Document */
+
+.summary {  height: 125px; width: 100%; border: none; border-bottom: none; text-align:center !important; 	min-width: 1280px;   /*최소,최적사이즈 1280에 맞춤*/
+	max-width: 2000px;}
+.summary td+td {  border-left: none !important;}
+.summary .td2 {  border-left: none; text-align:center !important;}
+
+.adcsum_area{
+	width:427px;
+	height:125px;	
+	background:url(../imgs/dashboard/top_abc01.jpg);
+	background-repeat:no-repeat;
+	display:inline;	
+	float:left;	
+}	
+.adcsum_txt {
+	float:left;	
+	margin: 8px 5px 4px 15px;
+	font-size: 13px;
+	font-weight: bold;
+	color: #bde7ff;
+}
+
+/*전체99,999*/
+.adcsum_all_area {
+	position:fixed;
+	width: 70px;
+    margin: 62px 0px 0px 96px;
+/*  background-color: #999; */
+	text-align: center;
+	font-size: 22px;
+	font-weight: bold;
+	color: #FFFFFF;
+	letter-spacing: -1px;		
+}
+/*정상999,999*/
+.adcsum_1_area {
+	position:fixed;
+	width: 90px;
+    margin: 66px 0px 0px -40px;
+/*  background-color: #999; */
+	text-align: right;
+	text-shadow: 1px 1px 2px #fff;	
+	font-size: 25px;
+	font-weight: bold;
+	letter-spacing: -1px;			
+}
+/*단절*/
+.adcsum_0_area {
+	position:fixed;
+	width: 70px;
+    margin: 66px 0px 0px 215px;
+/*  background-color: #999; */
+	text-align: left;
+	text-shadow: 1px 1px 2px #fff;		
+	font-size: 25px;
+	font-weight: bold;
+	letter-spacing: -1px;			
+}
+/*전체오버999,999*/
+.adcsum_all_area_over {
+	position:fixed;
+	width: 70px;
+    margin: 66px 0px 0px 96px;
+/*  background-color: #999; */
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
+	color: #FFFFFF;
+	letter-spacing: -1px;			
+}
+/*정상오버9,999,999*/
+.adcsum_1_area_over {
+	position:fixed;
+	width: 90px;
+    margin: 66px 0px 0px -40px;
+/*  background-color: #999; */
+	text-align: right;
+	text-shadow: 1px 1px 2px #fff;	
+	font-size: 18px;
+	font-weight: bold;
+	letter-spacing: -1px;			
+}
+/*단절오버*/
+.adcsum_0_area_over {
+	position:fixed;
+	width: 90px;
+    margin: 66px 0px 0px 215px;
+/*  background-color: #999; */
+	text-align: left;
+	text-shadow: 1px 1px 2px #fff;		
+	font-size: 18px;
+	font-weight: bold;
+	letter-spacing: -1px;			
+}
+		
+/**/	
+
+.faultsum_area {
+	width: 426px;
+	height: 125px;
+	position: relative;
+	display:inline;
+	float:left;
+/*	margin-left:426px;*/
+	background:url(../imgs/dashboard/top_abc02.jpg);
+	background-repeat:no-repeat;
+}
+.faultsum_txt {
+	float:left;	
+	margin: 8px 5px 4px 15px;
+	font-size: 13px;
+	font-weight: bold;
+	color: #bde7ff;
+}
+
+/*해결*/
+.faultsum_all_area {
+	position:fixed;
+	width: 70px;
+    margin: 62px 0px 0px 34px;
+/*  background-color: #999; */
+	text-align: center;
+	font-size: 22px;
+	font-weight: bold;
+	color: #FFFFFF;		
+	letter-spacing: -1px;			
+}
+/*경고*/
+.faultsum_1_area {
+	position:fixed;
+	width: 90px;
+    margin: 66px 0px 0px -114px;
+/*  background-color: #999; */
+	text-align: right;
+	text-shadow: 1px 1px 2px #fff;		
+	font-size: 25px;
+	font-weight: bold;
+	letter-spacing: -1px;		
+}
+/*미해결*/
+.faultsum_0_area {
+	position:fixed;
+	width: 70px;
+    margin: 66px 0px 0px 166px;
+/*  background-color: #999; */
+	text-align: left;
+	text-shadow: 1px 1px 2px #fff;			
+	font-size: 25px;
+	font-weight: bold;
+	letter-spacing: -1px;		
+}
+		
+.faultsum_select {float: right;  margin: 9px 10px 0px 4px;}	
+
+/*해결오버*/
+.faultsum_all_area_over {
+	position:fixed;
+	width: 70px;
+    margin: 66px 0px 0px 33px;
+/*  background-color: #999; */
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
+	color: #FFFFFF;		
+	letter-spacing: -1px;				
+}
+/*경고오버*/
+.faultsum_1_area_over {
+	position:fixed;
+	width: 90px;
+    margin: 66px 0px 0px -114px;
+/*  background-color: #999; */
+	text-align: right;
+	text-shadow: 1px 1px 2px #fff;		
+	font-size: 18px;
+	font-weight: bold;
+	letter-spacing: -1px;		
+}
+/*미해결오버*/
+.faultsum_0_area_over {
+	position:fixed;
+	width: 90px;
+    margin: 66px 0px 0px 166px;
+/*  background-color: #999; */
+	text-align: left;
+	text-shadow: 1px 1px 2px #fff;			
+	font-size: 18px;
+	font-weight: bold;
+	letter-spacing: -1px;		
+}
+
+	
+/**/	
+
+.vssum_area{
+	width: 420px;
+	height: 125px;
+	float:left;
+	position:relative;	
+	display:inline;	
+	background:url(../imgs/dashboard/top_abc03.jpg);
+	background-repeat:no-repeat;
+	}
+
+.vssum_txt {
+	float:left;	
+	margin: 8px 5px 4px 15px;
+	font-size: 13px;
+	font-weight: bold;
+	color: #bde7ff;
+}
+
+.vssum_sum {
+	float: left;
+	width: 80px;
+	height: 67px;
+	margin: 54px 0px 2px 10px;
+	background-color: #062846;
+	vertical-align: baseline;
+	position:fixed;
+	color:#98daff;
+}
+/*전체*/
+.vssum_all_area {
+	position:fixed;
+	width: 70px;
+    margin: 62px 0px 0px 34px;
+/*  background-color: #999; */
+	text-align: center;
+	font-size: 22px;
+	font-weight: bold;
+	color: #FFFFFF;	
+	letter-spacing: -1px;				
+}
+/*정상*/
+.vssum_1_area {
+	position: fixed;
+	width: 90px;
+	margin: 66px 0px 0px -101px;
+/*  background-color: #999; */
+	text-align: right;
+	text-shadow: 1px 1px 2px #fff;	
+	font-size: 25px;
+	font-weight: bold;
+	letter-spacing: -1px;		
+}
+/*단절*/
+.vssum_0_area {
+	position:fixed;
+	width: 70px;
+    margin: 50px 0px 0px 153px;
+/*  background-color: red; */
+	text-align: left;
+	text-shadow: 1px 1px 2px #fff;		
+	font-size: 24px;
+	font-weight: bold;
+	letter-spacing: -1px;		
+}
+/*꺼짐*/
+.vssum_2_area {
+	position:fixed;
+	width: 70px;
+    margin: 86px 0px 0px 153px;
+/*  background-color: #999; */
+	text-align: left;
+	text-shadow: 1px 1px 2px #fff;		
+	font-size: 25px;
+	font-weight: bold;
+	letter-spacing: -1px;		
+}
+/*전체오버*/
+.vssum_all_area_over {
+	position:fixed;
+	width: 70px;
+    margin: 62px 0px 0px 34px;
+/*  background-color: #999; */
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
+	color: #FFFFFF;	
+	letter-spacing: -1px;					
+}
+/*정상오버*/
+.vssum_1_area_over {
+	position: fixed;
+	width: 90px;
+	margin: 66px 0px 0px -101px;
+/*  background-color: #999; */
+	text-align: right;
+	text-shadow: 1px 1px 2px #fff;	
+	font-size: 18px;
+	font-weight: bold;
+	letter-spacing: -1px;		
+}
+/*단절오버*/
+.vssum_0_area_over {
+	position:fixed;
+	width: 90px;
+    margin: 50px 0px 0px 153px;
+/*  background-color: red; */
+	text-align: left;
+	text-shadow: 1px 1px 2px #fff;		
+	font-size: 18px;
+	font-weight: bold;
+	letter-spacing: -1px;		
+}
+/*꺼짐오버*/
+.vssum_2_area_over {
+	position:fixed;
+	width: 70px;
+    margin: 86px 0px 0px 153px;
+/*  background-color: #999; */
+	text-align: left;
+	text-shadow: 1px 1px 2px #fff;		
+	font-size: 18px;
+	font-weight: bold;
+	letter-spacing: -1px;			
+}
+
+
+/*ADC 모니터링 */
+
+/*정상S*/
+.monitor_sum1 {
+	position: fixed;
+	float:left;
+	width: 40px;
+	margin: 38px 0px 0px 95px;
+	text-shadow: 1px 1px 2px #333;	
+	font-weight: bolder;
+	color: #fff;
+	font-size: 13px;
+	text-align: right;
+/*  background-color:#f00; */
+}
+/*단절S*/
+.monitor_sum2 {
+	position: fixed;
+	float: left;
+	width: 40px;
+	margin: 38px 0px 0px 168px;
+	text-shadow: 1px 1px 2px #333;		
+	font-weight: bolder;
+	color: #fff;
+	font-size: 13px;
+	text-align: left;
+/*  background-color:#063; */
+}
+/*꺼짐S*/
+.monitor_sum3 {
+	position: fixed;
+	float: left;	
+	width: 40px;
+	margin: 206px 0px 0px 95px;
+	text-shadow: 1px 1px 2px #333;		
+	font-weight: bolder;
+	color: #fff;
+	font-size: 13px;
+	text-align: right;
+/*  background-color:#063; */
+}
+
+/*단절7일S*/
+.monitor_sum4 {
+	position: fixed;
+	float: left;	
+	width: 40px;
+	margin: 206px 0px 0px 168px;
+	text-shadow: 1px 1px 2px #333;		
+	font-weight: bolder;
+	color: #fff;
+	font-size: 13px;
+	text-align: left;
+/*  background-color:#ff0;	 */
+}
+
+/*정상*/
+.monitor_sum1_area {
+	position: relative;
+	float: left;	
+	width: 90px;
+/*  background-color: #062846; */
+	margin: 25px 0px 0px 55px;
+	font-weight: bold;
+	color: #000;
+	font-size: 25px;
+	text-shadow: 1px 1px 2px #FFF;
+	text-align: center;
+	letter-spacing: -1px;	
+}
+
+/*단절*/
+.monitor_sum2_area {
+	position: relative;
+	float: left;	
+	width: 90px;
+/*  background-color: #062846; */
+	margin: 25px 0px 0px 13px;
+	font-weight: bold;
+	color: #000;
+	font-size: 25px;
+	text-shadow: 1px 1px 2px #FFF;
+	text-align: center;
+	letter-spacing: -1px;	
+}
+
+/*꺼짐*/
+.monitor_sum3_area {
+	position: relative;
+	float: left;	
+	width: 90px;
+/*  background-color: #062846; */
+	margin: 115px 0px 0px 55px;
+	color: #000;
+	font-weight: bold;
+	font-size: 25px;
+	text-shadow: 1px 1px 2px #FFF;
+	text-align: center;
+	letter-spacing: -1px;	
+}
+
+/*단절-7*/
+.monitor_sum4_area {
+	position: relative;
+	float: left;	
+	width: 90px;
+/*  background-color: #062846; */
+	margin: 115px 0px 0px 13px;
+	font-weight: bold;
+	color: #000;
+	font-size: 25px;
+	text-shadow: 1px 1px 2px #FFF;
+	text-align: center;
+	letter-spacing: -1px;	
+}
+
+/*정상오버*/
+.monitor_sum1_area_over {
+	position: relative;
+	float: left;	
+	width: 90px;
+/*  background-color: #fff;*/
+	margin: 25px 0px 0px 55px;
+	font-weight: bold;
+	color: #000;
+	font-size: 23px;
+	text-shadow: 1px 1px 2px #FFF;
+	text-align: center;
+	letter-spacing: -1px;	
+}
+
+/*단절오버*/
+.monitor_sum2_area_over {
+	position: relative;
+	float: left;	
+	width: 90px;
+/*  background-color: #fff;*/
+	margin: 25px 0px 0px 13px;
+	font-weight: bold;
+	color: #000;
+	font-size: 23px;
+	text-shadow: 1px 1px 2px #FFF;
+	text-align: center;
+	letter-spacing: -1px;	
+}
+
+/*꺼짐오버*/
+.monitor_sum3_area_over {
+	position: relative;
+	float: left;	
+	width: 90px;
+/*  background-color: #fff;*/
+	margin: 115px 0px 0px 55px;
+	color: #000;
+	font-weight: bold;
+	font-size: 23px;
+	text-shadow: 1px 1px 2px #FFF;
+	text-align: center;
+	letter-spacing: -1px;	
+}
+
+/*단절-7오버*/
+.monitor_sum4_area_over {
+	position: relative;
+	float: left;	
+	width: 90px;
+/*  background-color: #fff;*/
+	margin: 115px 0px 0px 13px;
+	font-weight: bold;
+	color: #000;
+	font-size: 23px;
+	text-shadow: 1px 1px 2px #FFF;
+	text-align: center;
+	letter-spacing: -1px;	
+}

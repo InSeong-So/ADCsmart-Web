@@ -1,0 +1,83 @@
+/* pageNavigator */
+.pageNavigator {text-align:center; margin-top:10px; width: 100;}
+.pageNavigator a img {vertical-align:top;}
+.pageNavigator span a, .pageNavigator span strong {
+	height: 13px;
+	font-size: 11px;
+	line-height: 12px;
+	display: inline-block;
+	border: 1px solid #cbcccc;
+	padding: 3px 5px 0px 5px;
+	margin-right:1px;
+	margin-left:1px;
+	vertical-align: top;
+	/*background: url(../imgs/common/bg_pagingbar2.gif) repeat-x 1px 0;*/
+	background-color:#FFF;
+
+}
+.pageNavigator span a {color:#010101;}
+.pageNavigator span a:hover{
+	border: 1px solid #999999;
+	color: #333; /*font-weight:bold; letter-spacing:-.4px;*/
+	background-color:#fafafa;
+	text-decoration: none;
+}
+.pageNavigator span strong {
+	color: #404040;
+	font-weight: bold;
+	border: 1px solid #8cc6db;
+	background-color: #d9f5ff;
+}
+
+/* pageRowCountCbx */
+.pageRowCountCbx {position:relative; top:-25px; float:right;  height:20px; z-index:0; border:1px solid #ccc; width: 100;}
+.pageRowCountCbx .selected {height:20px; line-height:20px; color:#666; cursor:pointer;}
+.pageRowCountCbx .selected span {float:left; padding:0 7px;}
+.pageRowCountCbx .selected a {float:right;}
+.pageRowCountCbx .selected a:focus {outline:none;}
+.pageRowCountCbx .selected a img {vertical-align:top;}
+.pageRowCountCbx ul {display:none; position:absolute; /*top:21px;*/bottom:21px; width:70px; left:-1px; border:1px solid #cbcccc; border-bottom:0 none; color:#010101; z-index:-1; background-color:#fff;}
+.pageRowCountCbx ul li { padding:0 7px; line-height:20px; cursor:pointer; color:#101010;} /* 행간 수정 */
+.pageRowCountCbx ul li:hover {background-color:#d9f5ff;}
+
+
+.pageNavigatorOn {text-align:center; margin-top:10px; width: 100;}
+.pageNavigatorOn a img {vertical-align:top;}
+.pageNavigatorOn span a, .pageNavigator span a, .pageNavigator span strong, .pageNavigatorOn span strong {
+	height: 13px;
+	font-size: 11px;
+	line-height: 12px;
+	display: inline-block;
+	border: 1px solid #cbcccc;
+	padding: 3px 5px 0px 5px;
+	margin-right:1px;
+	margin-left:1px;
+	vertical-align: top;
+	/*background: url(../imgs/common/bg_pagingbar2.gif) repeat-x 1px 0;*/
+	background-color:#FFF;
+
+}
+.pageNavigatorOn span a {color:#010101;}
+.pageNavigatorOn span a:hover{
+	border: 1px solid #999999;
+	color: #333; /*font-weight:bold; letter-spacing:-.4px;*/
+	background-color:#fafafa;
+	text-decoration: none;
+}
+.pageNavigatorOn span strong, .pageNavigator span strong{
+	color: #404040;
+	font-weight: bold;
+	border: 1px solid #8cc6db;
+	background-color: #d9f5ff;
+}
+
+/* pageRowCountCbxOn */
+.pageRowCountCbxOn {position:relative; top:-25px; float:right;  height:20px; z-index:0; border:1px solid #ccc; width: 100;}
+.pageRowCountCbxOn .selected {height:20px; line-height:20px; color:#666; cursor:pointer;}
+.pageRowCountCbxOn .selected span {float:left; padding:0 7px;}
+.pageRowCountCbxOn .selected a {float:right;}
+.pageRowCountCbxOn .selected a:focus {outline:none;}
+.pageRowCountCbxOn .selected a img {vertical-align:top;}
+.pageRowCountCbxOn ul {display:none; position:absolute; /*top:21px;*/bottom:21px; width:70px; left:-1px; border:1px solid #cbcccc; border-bottom:0 none; color:#010101; z-index:-1; background-color:#fff;}
+.pageRowCountCbxOn ul li { padding:0 7px; line-height:1.8em; cursor:pointer; color:#101010;}
+.pageRowCountCbxOn ul li:hover {background-color:#d9f5ff;}

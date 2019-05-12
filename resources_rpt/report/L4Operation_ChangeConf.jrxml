@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="summaryReport" language="groovy" pageWidth="555" pageHeight="842" columnWidth="555" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="0ab3a948-7c5b-4ce3-8a98-36bd5d2ded93">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<style name="table">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1">
+		<box>
+			<topPen lineWidth="1.0" lineColor="#CCCCCC"/>
+			<bottomPen lineWidth="1.0" lineColor="#CCCCCC"/>
+		</box>
+	</style>
+	<style name="table 1_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#CCCCCC"/>
+			<bottomPen lineWidth="0.5" lineColor="#CCCCCC"/>
+		</box>
+	</style>
+	<style name="table 1_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#CCCCCC"/>
+			<bottomPen lineWidth="0.5" lineColor="#CCCCCC"/>
+		</box>
+	</style>
+	<style name="table 1_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#CCCCCC"/>
+			<bottomPen lineWidth="0.5" lineColor="#CCCCCC"/>
+		</box>
+		<conditionalStyle>
+			<conditionExpression><![CDATA[new Boolean($V{REPORT_COUNT}.intValue()%2==0)]]></conditionExpression>
+			<style backcolor="#EFF7FF"/>
+		</conditionalStyle>
+	</style>
+	<style name="table 2">
+		<box>
+			<topPen lineWidth="1.0" lineColor="#CCCCCC"/>
+			<bottomPen lineWidth="1.0" lineColor="#CCCCCC"/>
+		</box>
+	</style>
+	<style name="table 2_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#CCCCCC"/>
+			<bottomPen lineWidth="0.5" lineColor="#CCCCCC"/>
+		</box>
+	</style>
+	<style name="table 2_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#CCCCCC"/>
+			<bottomPen lineWidth="0.5" lineColor="#CCCCCC"/>
+		</box>
+	</style>
+	<style name="table 2_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#CCCCCC"/>
+			<bottomPen lineWidth="0.5" lineColor="#CCCCCC"/>
+		</box>
+		<conditionalStyle>
+			<conditionExpression><![CDATA[new Boolean($V{REPORT_COUNT}.intValue()%2==0)]]></conditionExpression>
+			<style backcolor="#EFF7FF"/>
+		</conditionalStyle>
+	</style>
+	<subDataset name="Dataset_changeTable" uuid="05da6b3c-70fa-4c97-bf7d-15b30220263a">
+		<queryString>
+			<![CDATA[]]>
+		</queryString>
+		<field name="adcName" class="java.lang.String">
+			<fieldDescription><![CDATA[adcName]]></fieldDescription>
+		</field>
+		<field name="userID" class="java.lang.String">
+			<fieldDescription><![CDATA[userID]]></fieldDescription>
+		</field>
+		<field name="contents" class="java.lang.String">
+			<fieldDescription><![CDATA[contents]]></fieldDescription>
+		</field>
+		<field name="vsIPAddress" class="java.lang.String">
+			<fieldDescription><![CDATA[vsIPAddress]]></fieldDescription>
+		</field>
+		<field name="adcIPAddress" class="java.lang.String">
+			<fieldDescription><![CDATA[adcIPAddress]]></fieldDescription>
+		</field>
+		<field name="vsName" class="java.lang.String">
+			<fieldDescription><![CDATA[vsName]]></fieldDescription>
+		</field>
+		<field name="occurTime" class="java.util.Date">
+			<fieldDescription><![CDATA[occurTime]]></fieldDescription>
+		</field>
+	</subDataset>
+	<parameter name="IMG_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="REPORT_INDEX" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="ACCUNT_INDEX" class="java.lang.Integer" isForPrompting="false">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="configChangeList" class="java.util.ArrayList">
+		<fieldDescription><![CDATA[configChangeList]]></fieldDescription>
+	</field>
+	<field name="totalLogCount" class="java.lang.Integer">
+		<fieldDescription><![CDATA[totalLogCount]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="100" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="becaef45-4ce9-4e97-907e-6ab56dde7087" mode="Opaque" x="0" y="5" width="75" height="18" forecolor="#000000" backcolor="#F6F0F0"/>
+				<box>
+					<pen lineWidth="1.0" lineColor="#CCCCCC"/>
+					<topPen lineWidth="1.0" lineColor="#CCCCCC"/>
+					<leftPen lineWidth="1.0" lineColor="#CCCCCC"/>
+					<bottomPen lineWidth="1.0" lineColor="#CCCCCC"/>
+					<rightPen lineWidth="1.0" lineColor="#CCCCCC"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" rotation="None" markup="none">
+					<font fontName="나눔고딕" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[변경건수]]></text>
+			</staticText>
+			<textField pattern="" isBlankWhenNull="true">
+				<reportElement uuid="9c65fa95-f7da-42dc-ae95-bb94b0ca9409" mode="Transparent" x="75" y="5" width="453" height="18" forecolor="#000000" backcolor="#FFFFFF"/>
+				<box>
+					<pen lineWidth="1.0" lineColor="#CCCCCC"/>
+					<topPen lineWidth="1.0" lineColor="#CCCCCC"/>
+					<leftPen lineWidth="1.0" lineColor="#CCCCCC"/>
+					<bottomPen lineWidth="1.0" lineColor="#CCCCCC"/>
+					<rightPen lineWidth="1.0" lineColor="#CCCCCC"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle" rotation="None" markup="none">
+					<font fontName="나눔고딕" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA["    " + $F{totalLogCount} + "  건"]]></textFieldExpression>
+			</textField>
+			<componentElement>
+				<reportElement uuid="3a02fbc3-cedb-4ffb-b484-6d2884ea17d2" key="table 2" style="table 2" x="0" y="34" width="528" height="50"/>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" whenNoDataType="AllSectionsNoDetail">
+					<datasetRun subDataset="Dataset_changeTable" uuid="3550c8c8-abf3-4734-b74d-3dfe71d6ae67">
+						<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{configChangeList})]]></dataSourceExpression>
+					</datasetRun>
+					<jr:column width="75" uuid="bdfc18f5-148d-40f4-91c7-52e951eb9680">
+						<jr:columnHeader style="table 2_CH" height="18" rowSpan="1">
+							<staticText>
+								<reportElement uuid="1118a601-5bac-407a-b800-7f6bb25ab228" mode="Opaque" x="0" y="0" width="75" height="18" isPrintWhenDetailOverflows="true" forecolor="#000000" backcolor="#F6F0F0"/>
+								<box>
+									<topPen lineWidth="1.0" lineColor="#CCCCCC"/>
+									<leftPen lineWidth="1.0" lineColor="#CCCCCC"/>
+									<bottomPen lineWidth="1.0" lineColor="#CCCCCC"/>
+									<rightPen lineWidth="1.0" lineColor="#CCCCCC"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle" rotation="None" markup="none">
+									<font fontName="나눔고딕" size="7" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+									<paragraph lineSpacing="Single"/>
+								</textElement>
+								<text><![CDATA[변경시간]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table 2_TD" height="18" rowSpan="1">
+							<textField pattern="yyyy-MM-dd HH:mm:ss" isBlankWhenNull="true">
+								<reportElement uuid="f5d3deed-6453-4731-96b5-506ae5dd669b" mode="Transparent" x="0" y="0" width="75" height="18" forecolor="#000000" backcolor="#FFFFFF"/>
+								<box>
+									<leftPen lineWidth="1.0" lineColor="#CCCCCC"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle" rotation="None" markup="none">
+									<font fontName="나눔고딕" size="7" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+									<paragraph lineSpacing="Single"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{occurTime}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="80" uuid="bd29e9e8-f04d-4c8f-b785-97b689db8b3d">
+						<jr:columnHeader style="table 2_CH" height="18" rowSpan="1">
+							<staticText>
+								<reportElement uuid="8fd78541-b8af-4f7e-b089-deca85496cbf" mode="Opaque" x="0" y="0" width="80" height="18" forecolor="#000000" backcolor="#F6F0F0"/>
+								<box>
+									<topPen lineWidth="1.0" lineColor="#CCCCCC"/>
+									<leftPen lineWidth="1.0" lineColor="#CCCCCC"/>
+									<bottomPen lineWidth="1.0" lineColor="#CCCCCC"/>
+									<rightPen lineWidth="1.0" lineColor="#CCCCCC"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle" rotation="None" markup="none">
+									<font fontName="나눔고딕" size="7" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+									<paragraph lineSpacing="Single"/>
+								</textElement>
+								<text><![CDATA[ADC 이름]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table 2_TD" height="18" rowSpan="1">
+							<textField pattern="" isBlankWhenNull="true">
+								<reportElement uuid="8080895f-8882-4585-9661-be85ba30779e" mode="Transparent" x="0" y="0" width="80" height="18" forecolor="#000000" backcolor="#FFFFFF"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle" rotation="None" markup="none">
+									<font fontName="나눔고딕" size="7" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+									<paragraph lineSpacing="Single"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{adcName}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="80" uuid="e10e8f05-cdbb-43e2-9276-0e20d6b30567">
+						<jr:columnHeader style="table 2_CH" height="18" rowSpan="1">
+							<staticText>
+								<reportElement uuid="bf8c9cb8-e01c-4dc3-a2fd-2917e643caa5" mode="Opaque" x="0" y="0" width="80" height="18" forecolor="#000000" backcolor="#F6F0F0"/>
+								<box>
+									<topPen lineWidth="1.0" lineColor="#CCCCCC"/>
+									<leftPen lineWidth="1.0" lineColor="#CCCCCC"/>
+									<bottomPen lineWidth="1.0" lineColor="#CCCCCC"/>
+									<rightPen lineWidth="1.0" lineColor="#CCCCCC"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle" rotation="None" markup="none">
+									<font fontName="나눔고딕" size="7" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+									<paragraph lineSpacing="Single"/>
+								</textElement>
+								<text><![CDATA[Virual Server 이름]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table 2_TD" height="18" rowSpan="1">
+							<textField pattern="" isBlankWhenNull="true">
+								<reportElement uuid="b36fb757-3e56-41e1-ae8d-e00a1734728a" mode="Transparent" x="0" y="0" width="80" height="18" forecolor="#000000" backcolor="#FFFFFF"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle" rotation="None" markup="none">
+									<font fontName="나눔고딕" size="7" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+									<paragraph lineSpacing="Single"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{vsName}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="60" uuid="e4df31dd-258b-41a5-8eb5-d771c8de639b">
+						<jr:columnHeader style="table 2_CH" height="18" rowSpan="1">
+							<staticText>
+								<reportElement uuid="0ce7feb9-5a14-4f1b-84ea-c2e5a8127ee0" mode="Opaque" x="0" y="0" width="60" height="18" forecolor="#000000" backcolor="#F6F0F0"/>
+								<box>
+									<topPen lineWidth="1.0" lineColor="#CCCCCC"/>
+									<leftPen lineWidth="1.0" lineColor="#CCCCCC"/>
+									<bottomPen lineWidth="1.0" lineColor="#CCCCCC"/>
+									<rightPen lineWidth="1.0" lineColor="#CCCCCC"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle" rotation="None" markup="none">
+									<font fontName="나눔고딕" size="7" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+									<paragraph lineSpacing="Single"/>
+								</textElement>
+								<text><![CDATA[Virtual Server IP]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table 2_TD" height="18" rowSpan="1">
+							<textField pattern="" isBlankWhenNull="true">
+								<reportElement uuid="5b89c7ad-a338-4ea2-844a-5abb69c64940" mode="Transparent" x="0" y="0" width="60" height="18" forecolor="#000000" backcolor="#FFFFFF"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle" rotation="None" markup="none">
+									<font fontName="나눔고딕" size="7" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+									<paragraph lineSpacing="Single"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{vsIPAddress}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="55" uuid="dbb0a8e4-f91e-4b02-a516-6db88f8f872d">
+						<jr:columnHeader style="table 2_CH" height="18" rowSpan="1">
+							<staticText>
+								<reportElement uuid="f84be66f-dd7b-4aa6-9f47-2af635464915" mode="Opaque" x="0" y="0" width="55" height="18" forecolor="#000000" backcolor="#F6F0F0"/>
+								<box>
+									<topPen lineWidth="1.0" lineColor="#CCCCCC"/>
+									<leftPen lineWidth="1.0" lineColor="#CCCCCC"/>
+									<bottomPen lineWidth="1.0" lineColor="#CCCCCC"/>
+									<rightPen lineWidth="1.0" lineColor="#CCCCCC"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle" rotation="None" markup="none">
+									<font fontName="나눔고딕" size="7" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+									<paragraph lineSpacing="Single"/>
+								</textElement>
+								<text><![CDATA[사용자]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table 2_TD" height="18" rowSpan="1">
+							<textField pattern="" isBlankWhenNull="true">
+								<reportElement uuid="86132dad-d6b5-4fd8-8259-a71856208cb2" mode="Transparent" x="0" y="0" width="55" height="18" forecolor="#000000" backcolor="#FFFFFF"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle" rotation="None" markup="none">
+									<font fontName="나눔고딕" size="7" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+									<paragraph lineSpacing="Single"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{userID}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="178" uuid="06d0765f-5a42-4e54-9abb-b73b6a8f895f">
+						<jr:columnHeader style="table 2_CH" height="18" rowSpan="1">
+							<staticText>
+								<reportElement uuid="c444f1aa-10b0-4c4f-9770-f8875b3c42e9" mode="Opaque" x="0" y="0" width="178" height="18" forecolor="#000000" backcolor="#F6F0F0"/>
+								<box>
+									<topPen lineWidth="1.0" lineColor="#CCCCCC"/>
+									<leftPen lineWidth="1.0" lineColor="#CCCCCC"/>
+									<bottomPen lineWidth="1.0" lineColor="#CCCCCC"/>
+									<rightPen lineWidth="1.0" lineColor="#CCCCCC"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle" rotation="None" markup="none">
+									<font fontName="나눔고딕" size="7" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+									<paragraph lineSpacing="Single"/>
+								</textElement>
+								<text><![CDATA[변경요약]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table 2_TD" height="18" rowSpan="1">
+							<textField pattern="" isBlankWhenNull="true">
+								<reportElement uuid="ec49052d-b0f9-41c4-ad1d-b2c2470d90e5" mode="Transparent" x="0" y="0" width="178" height="18" forecolor="#000000" backcolor="#FFFFFF"/>
+								<box>
+									<rightPen lineWidth="1.0" lineColor="#CCCCCC"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle" rotation="None" markup="none">
+									<font fontName="나눔고딕" size="7" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+									<paragraph lineSpacing="Single"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{contents}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+				</jr:table>
+			</componentElement>
+			<line>
+				<reportElement uuid="948bd99a-2935-4ff8-b0fd-b8be966f07e0" positionType="Float" mode="Transparent" x="0" y="89" width="528" height="1" backcolor="#999999"/>
+				<graphicElement>
+					<pen lineWidth="1.75" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+		</band>
+	</detail>
+</jasperReport>

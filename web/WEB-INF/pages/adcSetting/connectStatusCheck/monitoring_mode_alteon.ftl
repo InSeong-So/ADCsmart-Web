@@ -1,0 +1,96 @@
+<table class="Atype connectTest" cellpadding="0" cellspacing="0">
+	<caption>&nbsp;</caption>
+	<colgroup>
+		<col width="40px"/>
+		<col width="14px"/>
+		<col width="auto"/>
+		<col width="14px"/>
+		<col width="auto"/>
+		<col width="14px"/>		
+	</colgroup>		
+	<tr>
+		<td class="Start">
+			<a href="#" class="connectAdcChkResult">
+				<img src="imgs/adcSetting/conntest_Start_on.png"/>
+			</a>	
+			<!--
+			<img src="imgs/adcSetting/conntest_Start_off.png"/>
+			-->	
+		</td>
+		<#if chkResultList??>
+		<#list chkResultList as thsChkResult>
+			<#if thsChkResult.checkID == 1>
+				<#if thsChkResult.status == 1>
+					<#assign networkStatus = "o">
+					<td class="State_sx${networkStatus} networkOk"></td>
+					<td class="State_ok networkOk">① ${LANGCODEMAP["MSG_ADCSETTING_CHECK_NETWORK"]!}(ADCsmart→ADC)</td>		
+				<#elseif thsChkResult.status == 2>
+					<#assign networkStatus = "f">
+					<td class="State_sx${networkStatus} networkFail"></td>
+					<td class="State_fail networkFail">① ${LANGCODEMAP["MSG_ADCSETTING_CHECK_NETWORK"]!}(ADCsmart→ADC)</td>
+				<#else>	
+					<#assign networkStatus = "s">
+					<td class="State_${networkStatus}xn networkConfirm"></td>
+					<td class="State_normal networkConfirm">① ${LANGCODEMAP["MSG_ADCSETTING_CHECK_NETWORK"]!}(ADCsmart→ADC)</td>
+				</#if>
+			<#elseif thsChkResult.checkID == 5>
+				<#if thsChkResult.status == 1>
+					<#assign snmpStatus = "o">
+					<td class="State_${networkStatus}x${snmpStatus} snmpOk"></td>
+					<td class="State_ok snmpOk">② snmp</td>
+					<td class="State_o"></td>
+				<#elseif thsChkResult.status == 2>
+					<#assign snmpStatus = "f">
+					<td class="State_${networkStatus}x${snmpStatus} snmpFail"></td>
+					<td class="State_fail snmpFail">② snmp</td>
+					<td class="State_f"></td>
+				<#else>	
+					<td class="State_nxn snmpConfirm"></td>
+					<td class="State_normal snmpConfirm">② snmp</td>
+					<td class="State_n"></td>
+				</#if>
+			</#if>
+		</#list>
+		</#if>
+	</tr>	
+	<tr>
+		<td></td>
+		<#if chkResultList??>
+		<#list chkResultList as thsChkResult>
+		<#if thsChkResult.checkID == 1>
+			<#if thsChkResult.status == 1>	
+			<td colspan=2" class="Script_ok">
+			<#elseif thsChkResult.status == 2>	
+			<td colspan=2" class="Script_fail">
+			<#else>
+			<td colspan=2" class="Script_normal">
+			</#if>
+				<#list lastAdcChkTime as theLastTime>
+					<#if theLastTime.checkID == 1>	
+						<div class="txt"><div class="time">${(theLastTime.checkTime?string("yyyy-MM-dd HH:mm:ss"))!""}</div>
+					</#if>
+				</#list>
+				${(thsChkResult.summary)!""}</div>
+			</td>
+		</#if>
+		<#if thsChkResult.checkID == 5>
+			<#if thsChkResult.status == 1>
+			<td colspan=2" class="Script_ok">
+			<#elseif thsChkResult.status == 2>	
+			<td colspan=2" class="Script_fail">
+			<#else>
+			<td colspan=2" class="Script_normal">
+			</#if>
+				<#list lastAdcChkTime as theLastTime>
+					<#if theLastTime.checkID == 5>	
+						<div class="txt"><div class="time">${(theLastTime.checkTime?string("yyyy-MM-dd HH:mm:ss"))!""}</div>
+					</#if>
+				</#list>
+				${(thsChkResult.summary)!""}</div>
+			</td>
+		</#if>
+		</#list>
+		</#if>
+		<td></td>
+	</tr>	
+</table>      

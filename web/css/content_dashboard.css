@@ -1,0 +1,515 @@
+@charset "utf-8";
+/* CSS Document */
+@import url("style_dashboard_top.css");
+
+/*- text color --------------------------- */
+.txt_red { color: #F00; font-weight: bold;}
+.txt_blue { color:#06F; font-weight: bold;}
+.txt_bold { font-weight: bold;}
+.text-align-center { text-align: center;}
+.text-align-left10 { text-align: left; text-indent: 10px;}
+
+/*- Contents title img --------------------------- */
+.title_h2 {
+	right:1%;
+	top: 196px;
+	float: right;
+	/* position: fixed; */
+	text-align: right;
+	z-index:100;
+}	
+.title_h3 { margin: 30px 0px 15px 20px; }
+.title_h4 {
+	margin: 26px 0px 6px 20px;
+	list-style-position: inside;
+	list-style-image: url(../imgs/bullet_01.gif);
+	text-align: left;
+	font-weight: bold;
+	color: #333;
+	font-size: 13px;
+}	
+.title_h5 {
+	margin: 10px 0px 6px 0px;
+	list-style-position: inside;
+	list-style-image: url(../imgs/bullet_01.gif);
+	text-align: left;
+	font-weight: bold;
+	color: #333;
+	font-size: 13px;
+	width:50%;
+}	
+.title_h6 {
+	list-style-position: inside;
+	padding-left: 10px;
+	text-align: left;
+	font-weight: bold;
+	background-color: #0a7ab8;
+	color: #fff;
+	font-size: 13px;
+	list-style-type: none;
+/*	width: 98.4%;*/
+	line-height: 29px;
+}
+.title_h5-1 {
+	padding-left: 10px;
+	margin: 8px 0px 5px 0px;
+	list-style-position: inside;
+	list-style-image: url(../imgs/bullet_01.gif);
+	text-align: left;
+	font-weight: bold;
+	color: #333;
+	font-size: 13px;
+}	
+.title_h5-2 {
+	margin: 22px 30px 0px 35px;
+	text-align: center;
+	font-weight: bold;
+	color: #333;
+	font-size: 13px;
+	list-style-type: none;
+/*	background-color:#FC0;*/
+	width:230px;
+}	
+.title_h5-3 {
+	padding-left: 10px;
+	margin: 8px 0px 8px 0px;
+	list-style-position: inside;
+	list-style-image: url(../imgs/bullet_05.gif);
+	text-align: left;
+	font-weight: bold;
+	color: #FFF;
+	font-size: 13px;
+}
+
+/*- tab --------------------------- */
+ul.tabs {
+	margin: 0px;
+	padding: 0;
+	float: left;
+	list-style: none;
+	height: 26px; /*--Set height of tabs--*/
+/*	border-bottom: 1px solid #999;*/
+	border-left: 1px solid #ccc;
+/*	width: 1007px;*/
+}
+ul.tabs li {
+	float: left;
+	margin: 0;
+	padding: 0;
+	height: 25px; /*--Subtract 1px from the height of the unordered list--*/
+	line-height: 25px; /*--Vertically aligns the text within the tab--*/
+	border: 1px solid #ccc;
+	border-left: none;
+	margin-bottom: -1px; /*--Pull the list item down 1px--*/
+	overflow: hidden;
+	position: relative;
+	background-color: #FFFFFF;
+}
+ul.tabs li a {
+	text-decoration: none;
+	color: #000;
+	display: block;
+	font-size: 1 em;
+	padding: 0 45px;
+	border: 1px solid #fff; /*--Gives the bevel look with a 1px white border inside the list item--*/
+	outline: none;
+}
+ul.tabs li a:hover {
+	background-color: #E8E8E8;
+}
+
+/*- Board  기본 목록 --------------------------- */
+.Board { width: 100%;}
+/*.Board .titName {
+	font-weight: bold;
+	color: #009
+}
+*/
+A.BoardLink:link		{
+	color: #333333;
+	text-decoration: none;
+}
+A.BoardLink:visited	{  color: #333333; text-decoration:underline;}
+A.BoardLink:active	{  color: #333333; text-decoration:underline;}
+A.BoardLink:hover		{  color: #333333; text-decoration:underline;}
+.Board .StartLine			{ height: 2px; background-color: #d9d9d9;}
+.Board .StartLine1			{ height: 1px; background-color: #d9d9d9;}
+.Board .ContentsHeadLine	{ height: 30px; background-color: #f5f5f6;}
+.Board .ContentsHeadLine1	{
+	height: 24px;
+	background-color: #F7F7F7;
+}
+.Board .ContentsLine1		{ height: 32px; background-color: #ffffff;}
+.Board .ContentsLine2		{ height: 32px; background-color: #fafafa;}
+.Board .ContentsLine3		{ height: 32px; background-color: #ffffff;}
+.Board .ContentsLine4		{ height: 32px; background-color: #fafafa;}
+.Board .ContentsLine1:hover	{ height: 32px; background-color: #e4f4f9;}
+.Board .ContentsLine2:hover	{ height: 32px; background-color: #e4f4f9;}
+.Board .DivideLine			{ height: 1px; background-color: #f5f5f5;}
+.Board .DivideLine1			{ height: 1px; background-color: #cfcfcf;}
+.Board .EndLine			{ height: 2px; background-color: #d9d9d9;}
+.Board .EndLine1			{ height: 1px; background-color: #d9d9d9;}
+.Board .White			{ background-color: #ffffff;}
+.Board .Lth0 { background:#ff; padding-left: 20px; height:36px; text-align:left; 	font-size: 13px;	 }
+.Board .Lth1 { background:#fafafa; padding-left: 40px; height:36px; text-align:left; 	list-style-type: none; color:#555; vertical-align:middle;	font-size: 13px;  }
+.Board .Lth2 {
+	color:#555;
+	background: #fafafa;
+	padding-left: 40px;
+	height: 36px;
+	text-align: left;
+	list-style-position: outside;
+	list-style-image: url(../imgs/bullet_02.gif);	font-size: 13px;
+}
+.Board .chartLine { height: 200px; background-color: #fff;}
+
+/*- board 컨텐츠 정렬 --------------------------- */
+.Board .align_center { text-align:center;}
+.Board .align_left_P5 { text-align:left; padding-left:5px;}
+. text-align-left3 { text-align:left; padding-left:3px;}
+.Board .align_left_P10 { text-align:left; padding-left:10px;}
+.Board .align_left_P20 { text-align:left; padding-left:20px;}
+.Board .align_left_P30 { text-align:left; padding-left:30px;}
+.Board .align_right { text-align:right; }
+.Board .Rcolor {
+	border-right-color: #cfcfcf;
+	border-right-style: solid;
+	border-right-width: thin;
+}
+.Board .Lcolor {
+	border-left-color: #cfcfcf;
+	border-left-width: thin;
+	border-left-style: solid;
+}
+
+.Board .Bcolor {
+	border-bottom-color: #cfcfcf;
+	border-bottom-style: solid;
+	border-bottom-width: thin;
+}
+
+/*new board*/
+td {
+	border-bottom: 1px solid #ccc;
+	line-height: 22px;
+	text-align: center;
+}
+td + td {
+      border-left: 1px solid #ccc;
+}
+th {
+	border-left: 1px solid #ccc;
+	text-align: center;
+	font-size:11px;
+	letter-spacing: -1px;
+	background-color: #f5f5f6;
+	line-height: 18px;
+	font-weight: bood;
+}
+.header-background {
+      border-bottom: 1px solid #ccc;
+}
+.header-background_monitor {
+      border-bottom: 1px solid #666;
+}	
+
+/* above this is decorative, not part of the test */    
+.fixed-table-container {
+      width: 100%;
+      height: 270px;
+      border: 1px solid #ccc;
+      margin: 0px; 
+/*      background-color: white;*/
+      /* above is decorative or flexible */
+      position: relative; /* could be absolute or relative */
+      padding-top: 36px; /* height of header */
+      overflow-x: hidden;
+      overflow-y: scroll;	  
+}
+
+/*7.10추가*/	
+.fixed-table-container_monitor {
+      width: 700px;
+      height: 250px;
+      border: 1px solid #666;
+      margin-left: 8px; 
+	  margin-top: 8px;
+     /* background-color: white;*/
+      /* above is decorative or flexible */
+      position: relative; /* could be absolute or relative */
+      padding-top:23px; /* height of header */
+}	
+.fixed-table-container110 {
+      width: 1027px;
+      height: 110px;
+      border: 1px solid #666;
+      margin: 0px; 
+      background-color: white;
+      /* above is decorative or flexible */
+      position: relative; /* could be absolute or relative */
+      padding-top: 54px; /* height of header */
+}
+.fixed-table-container-inner {
+      width: 100%;
+      overflow-x: hidden;
+      overflow-y: scroll;
+      height: 100%;
+}
+.header-background {
+      background-color: #f5f5f6;
+      height: 36px; /* height of header */
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+}
+/*7.10추가*/   
+.header-background_monitor {
+      background-color: #f5f5f6;
+      height: 22px; /* height of header */
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+}	
+table {
+    /*  background-color: white;*/
+      width: 100%;
+    /*  overflow-x: hidden;*/
+      overflow-y: auto;
+}
+.th-inner {
+	position: absolute;
+	top: -2px;
+	line-height: 26px; /* height of header */
+	text-align: center;
+	border-left: 1px solid #d9d9d9;
+	padding-left: 5px;
+	margin-left: -5px;
+	left: 30px;
+}
+.first .th-inner {
+        border-left: none;
+        padding-left: 10px;
+}
+.chart-td {height:130px; }
+.chart_area { border:thin solid #ccc; border-bottom:none; border-top:none;}
+.chart_th { text-align: center;
+	background-color: #e4f4f9;
+	line-height: 26px;
+	font-weight: normal;
+}
+    
+/* for hidden header hack to calculate widths of dynamic content */
+.hidden-head {
+      min-width: 530px; /* enough width to show all header text, or bad things happen */
+}
+.hidden-header .th-inner {
+      position: static;
+      overflow-y: hidden;
+      height: 0;
+      white-space: nowrap;
+      padding-right: 5px;
+}
+    
+/* for complex headers */
+.complex.fixed-table-container {
+  padding-top: 60px; /* height of header */
+  overflow-x: hidden; /* for border */
+}
+.complex .header-background {
+  height: 60px;
+}
+.complex-top .th-inner {
+  border-bottom: 1px solid black;
+  width: 100%
+}    
+.complex-bottom .th-inner {
+  top: 30px;
+  width: 100%
+}
+
+.complex-top .third .th-inner { /* double row cell */
+  height: 60px;
+  border-bottom: none;
+  background-color: #D5ECFF;
+}
+    
+/* for tableSorter headers */
+.fixed-table-container.sort-decoration { 
+  overflow-x: hidden;
+  min-width: 530px; /* enough width to show arrows */
+}
+.sort-decoration .th-inner {
+   width: 100%;
+}
+.header .th-inner {
+   background-color: #D5ECFF;
+}
+.headerSortUp .th-inner, .headerSortDown .th-inner {
+   background-color: #5DDFFD;
+}
+span.sortArrow {
+   background: url(../imgs/none.gif) 0 4px no-repeat transparent;
+   padding: 6px 10px;
+   line-height: 30px;
+ }
+.headerSortUp span.sortArrow {
+	background-color: transparent;
+	background-image: url(../imgs/Asc.gif);
+	background-repeat: no-repeat;
+	background-position: 0 7px;
+}
+.headerSortDown span.sortArrow {
+     background: url(../imgs/desc.gif) 0 7px no-repeat transparent;
+}
+.odd {background-color:#edf5ff;}
+
+/* table a 0701 */
+.table200 {
+	width: 100%;
+	text-align: center;
+	border-top-width: thin;
+	border-right-width: thin;
+	border-left-width: thin;
+	border-bottom-width: thin;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-left-style: solid;
+	border-bottom-style: solid;
+	border-top-color: #ccc;
+	border-right-color: #ccc;
+	border-left-color: #ccc;
+	border-bottom-color: #ccc;
+	padding: 0px 0px 0px 0px;
+	font-size: 11px;
+}
+.table200_th {
+	border-bottom: 1px solid #ccc;
+	text-align: center;
+	background-color: #f5f5f6;
+	line-height: 15px;	/*font-weight: bold;*/
+}  	
+.table200_th-L {
+	border-bottom: 1px solid #ccc !important;  
+	text-align: center;
+	background-color: #f5f5f6;
+	line-height: 25px;	/*font-weight: bold;*/
+}		
+.table200_td{
+	line-height: 16px;
+	vertical-align: bottom;
+	text-overflow:ellipsis;
+  -o-text-overflow:ellipsis;
+  vertical-align:middle;
+}  	
+.table_VS10 {
+	width: 97%;
+	border-top-width: thin;
+	border-right-width: thin;
+	border-left-width: thin;
+	border-bottom-width: thin;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-left-style: solid;
+	border-bottom-style: solid;
+	border-top-color: #495267;
+	border-right-color: #495267;
+	border-left-color: #495267;
+	border-bottom-color: #495267;
+    float: left;
+	margin-left: 1.5%;
+	margin-top: 0px;
+	font-size: 11px;
+}
+.table_VS10_th {
+	border-bottom: 1px solid #3d5674;
+	text-align: center;
+	background-color:  #28363f;
+	color:white;
+	line-height: 27px;	/*font-weight: bold;*/
+	font-weight: bold;
+}  
+.table_VS10_td{
+	line-height: 27px;
+	color:#FFF;
+	vertical-align: bottom;
+	text-overflow:ellipsis;
+  -o-text-overflow:ellipsis;
+  vertical-align:middle;
+}  	
+.table_VS10 td { border-left: thin solid #3d5674; border-right: none; border-bottom:thin solid #3d5674; }
+.table_VS10 td+td { border-left: none; border-right: none;  }
+
+/* table a 0709 */
+.table300 {
+	width: 100%;
+	text-align: center;
+	border-top-width: thin;
+	border-right-width: thin;
+	border-left-width: thin;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-left-style: solid;
+	border-top-color: #ccc;
+	border-right-color: #ccc;
+	border-left-color: #ccc;
+	padding: 0px 0px 0px 0px;
+	font-size: 11px;
+}
+.table300_th {
+	border-bottom: 1px solid #ccc;
+	text-align: center;
+	background-color: #f5f5f6;
+	line-height: 15px;	/*font-weight: bold;*/
+}  
+.table300_td{
+	line-height: 16px;
+	vertical-align: bottom;
+	text-overflow:ellipsis;
+}  	
+
+/* ADC모니터링_ ADC  */
+.table_monitor {
+	width: 100%;
+	text-align: center;
+	padding: 0px 0px 0px 0px;
+	color:#dbdbdb;	
+	font-size: 11px;
+/*	font-weight:bold;*/
+	text-height: 30px !important;
+}
+.table_monitor_th {
+	text-align: center;
+	background-color: #28363f;
+	text-height: 30px !important;
+	color: #FFF;
+	text-height: 30px;
+	padding: 3px 0px 3px 5px;	
+} 
+.table_monitor_td{
+	text-height: 30px !important;
+    vertical-align:middle;
+	padding: 3px 0px 3px 5px;
+	background-color:#233854;
+}
+.table_monitor_td1{
+	text-height: 30px !important;
+    vertical-align:middle;
+	padding: 1px 0px 1px 5px;
+	background-color:#3d5674;
+}
+.table_monitor_td2{
+	text-height: 30px;
+	background-color: #ecf5ff;
+	color: #white;
+	color:#333333;
+	padding: 2px 0px 2px 5px;	
+	border-bottom:thin solid #fff!important;
+} 
+.table_monitor td+td { border-left: none; border-right: none; border-bottom:thin solid #3d5674; }
+.table_monitor td { border-left: none; border-right: none; border-bottom:thin solid #3d5674; }
+.table_monitor_td a:link	{text-decoration: blue;}!important
+.table_monitor_td a:visited	{text-decoration: none;}
+.table_monitor_td a:active	{text-decoration: none;}
+.table_monitor_td a:hover	{text-decoration: underline; color:#41d0ff;}
