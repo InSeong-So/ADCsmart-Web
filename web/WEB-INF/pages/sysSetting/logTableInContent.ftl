@@ -1,1 +1,0 @@
-<textarea class="adminlog_textarea" id="scrollBottom" name="contents" readonly="readonly" style="overflow-y: scroll; resize:none; ">${contents!""}</textarea>
